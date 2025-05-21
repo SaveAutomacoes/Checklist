@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Acompanhamento de Reque…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "tgTMLuMuw0a1B4XAbYt4UQ",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/tgTMLuMuw0a1B4XAbYt4UQ",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/rqs_aYf4VkakS8L4Vys-yw",
+  "Created": "2025-04-30T16:12:09.4402533Z",
+  "Updated": "2025-04-30T16:12:09.4402533Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

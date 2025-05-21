@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="e5jOf6qKu0Oa7mgaNyQ7pw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="solucoes.receita.fazenda.gov.br/Servicos/cnpjreva/Cnpjreva_Comprovante.asp" CVScreenId="b115e8c2-f647-4c88-bff3-a81e5a1d70a2" CvElementArea="369, 644, 708, 32" CvType="InputBox" DesignTimeRectangle="379, 645, 209, 10" DesignTimeScaleFactor="1.125" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='FONT' class='' aaname=' &amp;#x9;&amp;#x9;CÓDIGO E DESCRIÇÃO DA NATUREZA JURÍDICA &amp;#x9;&amp;#x9;' check:innerText='CÓDIGO E DESCRIÇÃO DA NATUREZA JURÍDICA' /&gt;" Guid="20df398b-abde-43d4-9192-7fe3af7f95e2" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Comprovante de Inscrição e de Situação Cadastral' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="b115e8c2-f647-4c88-bff3-a81e5a1d70a2" CvElementArea="371, 688, 355, 34" CvType="InputBox" DesignTimeRectangle="379, 690, 65, 10" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='FONT' class='' aaname=' &amp;#x9;&amp;#x9;LOGRADOURO &amp;#x9;&amp;#x9;' check:innerText='LOGRADOURO' /&gt;" Guid="babb3491-3d26-4d27-9f36-2fbc29123551" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="91563bba643af50c759c29291c95794a.png" xmlns="">08lhST-RJbEeObSUjpZlXsg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">MouseScrollSearchedElement</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

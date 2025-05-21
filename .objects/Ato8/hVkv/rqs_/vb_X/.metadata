@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Consultar",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "vb_X8fu7bU6OIsUoLUuWpw",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/vb_X8fu7bU6OIsUoLUuWpw",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/rqs_aYf4VkakS8L4Vys-yw",
+  "Created": "2025-04-29T18:00:33.3090524Z",
+  "Updated": "2025-04-29T18:00:33.3090524Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

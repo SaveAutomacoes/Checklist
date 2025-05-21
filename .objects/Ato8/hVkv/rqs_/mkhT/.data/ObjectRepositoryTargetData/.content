@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="R5PFRnQrGkG1NKbBosKdkA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="3c945ba7-b28e-4528-8dc8-e257766732fe" CvElementArea="295, 946, 88, 30" CvTextArea="305, 951, 67, 15" CvTextArgument="Retornar" CvType="Button" DesignTimeRectangle="297, 946, 84, 27" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='btnRetornar' type='button' tag='INPUT' class='print' aaname='Retornar' check:text='Retornar' /&gt;" Guid="c0e08b1e-1d3f-4325-bbee-aaa48ad8c7c6" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="3c945ba7-b28e-4528-8dc8-e257766732fe" CvTextArea="305, 951, 67, 15" CvTextArgument="Retornar" CvType="Text" DesignTimeRectangle="44, 932, 590, 56" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='' aaname='              &amp;#x9; &amp;#x9;                                                                                ' check:text='Retornar' /&gt;" Guid="0937eb42-b76f-48c1-8108-cc10db753a13" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e29c400d4077b8a9f41a0be36153eda6.png" xmlns="">024Mfcjyip0CFOHToko9ZuA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

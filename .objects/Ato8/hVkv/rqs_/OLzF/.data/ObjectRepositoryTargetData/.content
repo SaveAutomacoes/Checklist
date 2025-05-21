@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="WLcLonw5qU2NzUGs_IM9Tw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" DesignTimeRectangle="237, 578, 1659, 25" DesignTimeScaleFactor="1.100000023841858" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl aaname=' O Documento possui alertas (1) ' parentid='page-content-wrapper' tag='DIV' type='' class='text-center warning ng-star-inserted' /&gt;" Guid="c48a5733-f39f-4ecc-98f6-ff7fbbce863c" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="1b21e0e1-8fe1-421e-b88a-0a41124bebcd" CvElementArea="950, 576, 16, 25" CvTextArea="954, 578, 8, 20" CvType="Icon" DesignTimeRectangle="949, 578, 13, 22" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl type='' parentid='page-content-wrapper' tag='I' class='icon-exclamation warning' aaname='' /&gt;" Guid="e81b037c-8364-49ed-b66f-a21b9b53f1b5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABEAAAAaCAYAAABRqrc5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACtSURBVEhLY/hPBcCALkAOGEqGPJjy/0uR4v/PBUi4KPH/9/cIJYQNOZuPagAY+/z/9gyhhLAhz2b//4LNkJcIJWQakv//B5KSoWTI+5VUMOT//v9f0Q2p7fn/E0kFeYa0zP7/C0kFvQy58v9bE5ohM3f8/4OkgghDCAN6GYLFO/0r//9GUkGEIVQJWKoYcvb/13I0Q9pINuT//79fXv3//R4JI6d5Yg0hBIaZIQA8UnML4Yw0GQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="7f70eadb9615db4379c6c711aa008f02.png" xmlns="">0ytonhSbMGk6nynX7wkinOg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

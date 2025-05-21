@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="K-E1erNl30aHZKoJ5dATKQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Default.aspx" CVScreenId="92f26803-244b-4bc0-9364-305d430b06ed" CvElementArea="1021, 534, 113, 22" CvTextArea="1059, 538, 38, 12" CvTextArgument="Alterar" CvType="Button" DesignTimeRectangle="1023, 536, 110, 20" DesignTimeScaleFactor="1.100000023841858" ElementType="Button" FuzzySelectorArgument="&lt;webctrl parentid='formPJ' tag='INPUT' type='button' class='submit' aaname='Alterar' check:text='Alterar' /&gt;" Guid="3ce0193a-7e6c-4f33-8d41-0ce2a669d095" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="92f26803-244b-4bc0-9364-305d430b06ed" CvTextArea="775, 520, 204, 12" CvTextArgument="Procurador de pessoa jurídica - CNPJ" CvType="Text" DesignTimeRectangle="776, 519, 385, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='formPJ' tag='LABEL' type='' class='' aaname='Procurador de pessoa jurídica - CNPJ' check:innerText='Procurador de pessoa jurídica - CNPJ' /&gt;" Guid="2ed6ccd8-9b1b-482e-8a69-6f60ca25b94b" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="6acd340919488f036f3d4e4d63e362af.png" xmlns="">0xSFlFiI_yUiOBUFX1UMusg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "O Documento está apto p…",
+  "Type": "Element",
+  "Id": "7QHQLs4PDUK5v_rL_fXINA",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/7QHQLs4PDUK5v_rL_fXINA",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/rqs_aYf4VkakS8L4Vys-yw",
+  "Created": "2025-03-07T20:13:26.784665Z",
+  "Updated": "2025-03-07T20:13:26.784665Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

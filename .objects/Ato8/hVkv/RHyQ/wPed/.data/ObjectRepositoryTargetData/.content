@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="NCvwooQ9VEmA69IGFFwFJA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="solucoes.receita.fazenda.gov.br/servicos/cnpjreva/Cnpjreva_Comprovante.asp" CVScreenId="e3f5fe3e-0de4-40c2-a96e-67b2e8f584d9" CvTextArea="849, 975, 55, 15" CvTextArgument="Imprimir" CvType="Text" DesignTimeRectangle="801, 964, 117, 37" DesignTimeScaleFactor="1.25" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl aaname='Imprimir' tag='IMG' type='' class='' /&gt;" Guid="a41c2124-bd8c-4b89-a4b4-f7d2898ab29b" ScopeSelectorArgument="&lt;html app='chrome.exe' title='about:blank' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="e3f5fe3e-0de4-40c2-a96e-67b2e8f584d9" CvTextArea="736, 928, 82, 18" CvTextArgument="Página: 1/1" CvType="Text" DesignTimeRectangle="739, 929, 82, 18" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='FONT' aaname='Página: ' check:innerText='Página: 1/1' /&gt;" Guid="1cca4554-5f35-4038-99f5-a9872cf61b3b" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="9d5c320af445ca35938b1685e23e6cae.png" xmlns="">0xsUuWJ21h067JUeqeJXZOA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="CfeDWBRuXESH7F7F-IMQWw" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/93-BXUR0oUmZe_bdx65YPw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac" CVScreenId="e229d265-2b81-4541-8c6f-e354b92a01f0" CvElementArea="308, 454, 212, 35" CvTextArea="322, 464, 185, 16" CvTextArgument="Pagamentos e Parcelamentos" CvType="Button" DesignTimeRectangle="308, 388, 212, 36" DesignTimeScaleFactor="1.25" ElementType="Text" Guid="c7d9e5fb-f2d2-4c54-878c-97d822ed456d" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="CV" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="2590ce49580b62a91e55f5cd21436528.png" xmlns="">00f_EJrxgtk2cferKZkVayA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

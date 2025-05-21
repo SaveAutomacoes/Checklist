@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="VIUsCnAuiECPdDg4zkdUpA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" DesignTimeRectangle="48, 422, 37, 37" DesignTimeScaleFactor="1.25" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl src='https://newassets.hcaptcha.com/captcha/v1/3d86f84f0763959329e7e143f693dec441c0c973/static/hcaptcha.html#frame=checkbox&amp;amp;id=0hzwrgsylht8&amp;amp;host=dctfweb.cav.receita.fazenda.gov.br&amp;amp;sentry=true&amp;amp;reportapi=https%3A%2F%2Faccounts.hcaptcha.com&amp;amp;recaptchacompat=true&amp;amp;custom=false&amp;amp;hl=pt&amp;amp;tplinks=on&amp;amp;andint=off&amp;amp;pstissuer=https%3A%2F%2Fpst-issuer.hcaptcha.com&amp;amp;sitekey=bb355cbd-1a25-4e04-97d2-f8c76ff8fd5d&amp;amp;theme=light&amp;amp;origin=https%3A%2F%2Fdctfweb.cav.receita.fazenda.gov.br' tag='IFRAME' /&gt;&lt;webctrl tag='IMG' type='' class='' aaname='Marca de verificação' /&gt;" Guid="cc33eb45-d630-4b36-b1f5-8448458e3531" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="ee18b105-e64f-4fe5-9058-13fb3477ccac" CvTextArea="102, 434, 100, 17" CvTextArgument="Sou humano" CvType="Text" DesignTimeRectangle="104, 429, 98, 23" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl src='https://newassets.hcaptcha.com/captcha/v1/3d86f84f0763959329e7e143f693dec441c0c973/static/hcaptcha.html#frame=checkbox&amp;amp;id=0hzwrgsylht8&amp;amp;host=dctfweb.cav.receita.fazenda.gov.br&amp;amp;sentry=true&amp;amp;reportapi=https%3A%2F%2Faccounts.hcaptcha.com&amp;amp;recaptchacompat=true&amp;amp;custom=false&amp;amp;hl=pt&amp;amp;tplinks=on&amp;amp;andint=off&amp;amp;pstissuer=https%3A%2F%2Fpst-issuer.hcaptcha.com&amp;amp;sitekey=bb355cbd-1a25-4e04-97d2-f8c76ff8fd5d&amp;amp;theme=light&amp;amp;origin=https%3A%2F%2Fdctfweb.cav.receita.fazenda.gov.br' tag='IFRAME' /&gt;&lt;webctrl id='label' tag='DIV' type='' class='' aaname='Sou humano' check:innerText='Sou humano' /&gt;" Guid="6531878b-8e8d-4164-9a10-dd774e50dd1f" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="6c7db84e3bc82498afaa73d9a32fad84.png" xmlns="">0vH8Wy8poDE-REda1X-zE1Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

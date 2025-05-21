@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Valor Original do Crédi…",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "LYy6FB5qK0KvAd_8yqKknA",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/LYy6FB5qK0KvAd_8yqKknA",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/rqs_aYf4VkakS8L4Vys-yw",
+  "Created": "2025-03-05T14:08:23.3550538Z",
+  "Updated": "2025-03-05T14:08:23.3550538Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

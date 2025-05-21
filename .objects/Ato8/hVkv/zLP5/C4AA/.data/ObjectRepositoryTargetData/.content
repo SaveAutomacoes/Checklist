@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="yz3E5yN5QU6gRRgzlDCagQ" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/C4AA09VIV0eyjAnXahNMRQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="a20d82b6-6ec9-4108-8eb8-99739f83c50a" DesignTimeRectangle="1638, 775, 44, 35" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='A' aaname='Visualizar' /&gt;" Guid="8552b899-a1df-413e-98b1-b9106cca1dbb" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="a20d82b6-6ec9-4108-8eb8-99739f83c50a" CvElementArea="1668, 453, 45, 37" CvType="Button" DesignTimeRectangle="1685, 775, 44, 35" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Retificar' type='' tag='A' class='btn btn-table image-tabela-retificar' /&gt;" Guid="46225024-a027-4db6-8919-22413a5d5ccf" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="a20d82b6-6ec9-4108-8eb8-99739f83c50a" CvTextArea="1720, 416, 57, 17" CvTextArgument="Serviços" CvType="Text" DesignTimeRectangle="1625, 725, 284, 49" ElementType="Text" FuzzyMatches="10000" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Serviços' type='' tag='TH' class='' check:innerText='Serviços' /&gt;" Guid="d2f0b03f-b845-4c66-b50a-f758b00fad73" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="21d789f496ee6099a16853b31dc28a95.png" xmlns="">0uN4QoxomNEqvhRngFD9JQg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

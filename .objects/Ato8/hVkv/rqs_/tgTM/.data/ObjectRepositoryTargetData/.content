@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="luhdB0Xw1EGrp_w1LwOcFg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac" CVScreenId="84a55c50-b4ac-419f-8762-c97f26413f8f" CvTextArea="347, 744, 283, 16" CvTextArgument="Acompanhamento de Requerimentos à PGFN" CvType="Text" DesignTimeRectangle="350, 744, 281, 15" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Acompanhamento de Requerimentos à PGFN' parentid='containerServicos255' tag='A' type='' class='' check:innerText='Acompanhamento de Requerimentos à PGFN' /&gt;" Guid="2d5e2f57-1888-49d9-8258-47ec5fe4587a" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="84a55c50-b4ac-419f-8762-c97f26413f8f" CvTextArea="322, 744, 308, 13" CvTextArgument=". Acompanhamento de Requerimentos à PGFN" CvType="Text" DesignTimeRectangle="323, 744, 690, 15" ElementType="ListItem" FuzzySelectorArgument="&lt;webctrl type='' parentid='containerServicos255' tag='LI' class='showTooltip' aaname='' check:innerText='Acompanhamento de Requerimentos à PGFN' /&gt;" Guid="60af215b-2384-4448-a753-a9f08fb0ab97" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="1e6b539f02ab7084c2f937759a02176a.png" xmlns="">0YK_DeOts10qrSEx00jZivw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

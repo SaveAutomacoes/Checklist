@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Período Apuração Final",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "dkzdQHjxFUWT0HJSRO2prw",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/dkzdQHjxFUWT0HJSRO2prw",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/zLP5butLD0ubDXYcW9dW1Q",
+  "Created": "2025-05-20T14:20:46.8507647Z",
+  "Updated": "2025-05-20T14:20:46.8507647Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

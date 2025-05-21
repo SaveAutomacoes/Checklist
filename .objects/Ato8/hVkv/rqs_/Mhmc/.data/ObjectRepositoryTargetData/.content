@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="orul4w0TbE2s_FkZd2LmNQ" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/MhmczObfm06XQfWiZiRY4w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="27b674e0-ccb2-4c4a-8515-e1214dc02691" CvTextArea="1506, 684, 327, 16" CvTextArgument="Valor informado maior do que O valor disponível" CvType="Text" DesignTimeRectangle="1592, 838, 262, 17" DesignTimeScaleFactor="1.100000023841858" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl class='ng-star-inserted' parentid='valorUtilizado' tag='DIV' type='' aaname=' Valor informado maior do que o valor disponível ' check:innerText='Valor informado maior do que o valor disponível' /&gt;" Guid="7087fb70-5a33-4e0a-816a-1d04b1319d67" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="d1953db8-059d-436e-bb5f-afe7e48caba6" CvElementArea="1639, 986, 75, 30" CvTextArea="1657, 993, 38, 13" CvTextArgument="Voltar" CvType="Button" DesignTimeRectangle="1640, 987, 72, 28" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl name='btnVoltar' tag='BUTTON' type='button' class='button-rollback' aaname='Voltar' check:innerText='Voltar' /&gt;" Guid="e3fe7943-7236-4781-951a-04bdf199547b" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="9c85ad3594e24c16b757278625bc4ee1.png" xmlns="">0BSwfdq6E20KHUsmjpBLMXA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

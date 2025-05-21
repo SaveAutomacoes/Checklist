@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="aXY7FuqK2kuZYqitDqhBXg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="4a221b23-f98f-409c-9ef6-74f4001721b7" CvElementArea="1085, 697, 122, 40" CvTextArea="1131, 707, 28, 16" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="1087, 699, 117, 36" DesignTimeScaleFactor="1.375" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl id='botaoNavegarTelaInicial' tag='BUTTON' type='button' class='botaoModal' aaname='OK' check:innerText='OK' /&gt;" Guid="adcd8d69-5a4d-4cdf-945d-1e2b74f0cfbb" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="4a221b23-f98f-409c-9ef6-74f4001721b7" CvElementArea="712, 697, 142, 40" CvTextArea="721, 707, 124, 20" CvTextArgument="Imprimir Recibo" CvType="Button" DesignTimeRectangle="715, 699, 137, 36" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl id='botaoImprimirRecibo' tag='BUTTON' type='button' class='botaoModal' aaname='Imprimir Recibo' check:innerText='Imprimir Recibo' /&gt;" Guid="f753102d-94f5-42ff-a8eb-eb40777fe0f8" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="d065eda3a1919807e009f3eb3c209d7c.png" xmlns="">00xBLRJYN3ESPS_BUKmpK3g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

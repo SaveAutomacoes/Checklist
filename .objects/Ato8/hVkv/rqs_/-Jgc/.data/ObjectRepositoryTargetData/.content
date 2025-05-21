@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="sXzcAfoY10azIUNja6HMxg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="2376231b-c259-468f-abb8-80b2daa7e078" CvElementArea="1666, 962, 93, 39" CvTextArea="1686, 972, 51, 16" CvTextArgument="Salvar" CvType="Button" DesignTimeRectangle="1668, 963, 89, 36" DesignTimeScaleFactor="1.375" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl name='btnSalvar' tag='BUTTON' type='button' class='' aaname='Salvar' check:innerText='Salvar' /&gt;" Guid="7b2b6291-e1c0-47cb-b33e-7e3d9f8f6d7b" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="2376231b-c259-468f-abb8-80b2daa7e078" CvElementArea="1666, 962, 93, 39" CvTextArea="1686, 972, 51, 16" CvTextArgument="Salvar" CvType="Button" DesignTimeRectangle="1668, 954, 100, 55" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl class='ng-star-inserted' type='' parentid='page-content-wrapper' tag='DIV' aaname='' check:innerText='Salvar' /&gt;" Guid="2172a086-cb5d-418f-939d-1373410ead09" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="360a0b89015ce7465425ead611314da4.png" xmlns="">07ynGwz028EKeUojLODo99w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

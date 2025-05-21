@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="GjjtRTkxzEqKsKwwdTWYwQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="newtab" DesignTimeRectangle="1329, 119, 235, 45" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='Nova guia - Google Chrome' role='pane' /&gt;&lt;ctrl name='Encontrar na página     Nova guia' role='pane' /&gt;&lt;ctrl name='Buscar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Nova guia - Google Chrome' role='pane' /&gt;&lt;ctrl name='Encontrar na página     Nova guia' role='pane' /&gt;&lt;ctrl name='Buscar' role='editable text' automationid='' /&gt;" Guid="155bc347-db71-4506-afea-b6e405051a3c" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Nova guia - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="f7a8f174-53e5-4e15-a4c7-9ee6f3e7eabc" CvElementArea="1621, 130, 26, 23" CvType="ArrowButton" DesignTimeRectangle="1616, 119, 36, 45" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Nova guia - Google Chrome' role='pane' /&gt;&lt;ctrl name='Encontrar na página     Nova guia' role='pane' /&gt;&lt;ctrl name='Anterior' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Nova guia - Google Chrome' role='pane' /&gt;&lt;ctrl name='Encontrar na página     Nova guia' role='pane' /&gt;&lt;ctrl name='Anterior' role='push button' automationid='' check:text='Anterior' /&gt;" Guid="37143b55-01e5-42c5-9a6f-025634402b30" SearchSteps="Selector, FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="1e42f49e57292c2e9c070b688ebac5eb.png" xmlns="">0hThVsjGrE0mVakiSGGXYng</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Opções pelo Simples Nac…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "fGfN_zTZRk2vNPRmmyG0Wg",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/fGfN_zTZRk2vNPRmmyG0Wg",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/duY0MMqRK0aztGgFzHrM6Q",
+  "Created": "2025-04-29T17:29:44.9346932Z",
+  "Updated": "2025-04-29T17:29:44.9346932Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="pC--ovnycUC43cTwT-Y5Qg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="regularize.pgfn.gov.br/cadastro" CVScreenId="7874e00b-255f-4b4a-9ce6-de114c31e702" CvTextArea="289, 260, 855, 18" CvTextArgument="Você ainda não está cadastrado no REGULARIZE. Para acessar Os serviços, efetue seu cadastro." CvType="Text" DesignTimeRectangle="292, 256, 1280, 30" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' tag='DIV' class='' aaname='Você ainda não está cadastrado no REGULARIZE. Para acessar os serviços, efetue seu cadastro.' check:innerText='Você ainda não está cadastrado no REGULARIZE. Para acessar os serviços, efetue seu cadastro.' /&gt;" Guid="d70489ee-122f-4de2-9b0d-18e909c90899" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Regularize' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="7874e00b-255f-4b4a-9ce6-de114c31e702" CvTextArea="265, 337, 300, 38" CvTextArgument="Criar Cadastro" CvType="Text" DesignTimeRectangle="266, 332, 1387, 55" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='' aaname='Criar Cadastro' check:innerText='Criar Cadastro' /&gt;" Guid="0b24fa31-3f0b-457f-82e6-230b3c3c2a59" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="9690c1240baf0bff0394d0ba3d490bf5.png" xmlns="">0rEPGog2ugkSUfzVUuV2mxw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

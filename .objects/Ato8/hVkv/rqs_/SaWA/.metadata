@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Data de arrecadação(1)",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "SaWATjPDX02SOx1RA8dRTw",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/SaWATjPDX02SOx1RA8dRTw",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/rqs_aYf4VkakS8L4Vys-yw",
+  "Created": "2025-05-06T18:30:15.6148754Z",
+  "Updated": "2025-05-06T18:30:15.6148754Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

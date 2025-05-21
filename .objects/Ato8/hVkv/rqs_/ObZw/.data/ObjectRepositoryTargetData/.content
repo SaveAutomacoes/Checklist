@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="wgEFaEhjVEW8GisUVOsTzg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="702be1f9-2ca5-4c60-af0d-4f7b734f774e" CvElementArea="218, 451, 1406, 54" CvType="InputBox" DesignTimeRectangle="224, 451, 1400, 54" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl parentid='painel-mensagens-warning' tag='SPAN' type='' class='ng-star-inserted' aaname='Não foi encontrado nenhum pagamento com data de arrecadação compreendida nos 5 anos anteriores à data atual' check:innerText='Não foi encontrado nenhum pagamento com data de arrecadação compreendida nos 5 anos anteriores à' /&gt;" Guid="10a3b8fe-2866-44ea-92a2-a0e57a0ee6c8" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="702be1f9-2ca5-4c60-af0d-4f7b734f774e" CvElementArea="199, 466, 28, 27" CvTextArea="210, 471, 7, 16" CvType="Icon" DesignTimeRectangle="196, 468, 31, 22" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl parentid='painel-mensagens-warning' tag='I' type='' class='icon icon-alert-sign' aaname='' /&gt;" Guid="eaede264-46c9-42e3-a204-b719861d362b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACMAAAAaCAYAAAA9rOU8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAGXSURBVEhL7ZUxa8JAGIb7V/wj/hC3/gLd3Jzq1m5u2YpLhlJwKC0dlFKyFJdSSsFFHAJapMQ26dXc3VuOxBqPu/MuCnXwhWdJLt/3cDm+O/lsVHAonMgP/pOjjI4dZapIej5oOANPsQ4jwNcE9LkDciF/o6e8jOeBzknBQBMWgT21EMvfKyglE/f6mzthk9BHoqhVxF3G88EUInzs4btbz7kFkxeIbBFylGmCLuQOWfioXVjnq2VAwIKaom6Gk0z88CJX/4udDIAkAFHUFjjI1JC+y5ULGXfsZEBA7+TaGQ4ypgYApv56bbcPLr8vhL+1FPVdZK4CY4MNmWuHtaVkXBq4rC0lc1A70/DATIcmnYGFo4x5JL/dyO5nplHFciqXLcRahoDeyLWdZSqIB/o5Y/2bFv19zBnBqX7WWMmIGVNV1M1wlNHfTVgE+FndTY/qHRRT2nR7u8sIvEuwRG5lDh+dG0UE5WQEZy2koemg5kknoIP6VhFBeZmcuNPG8nUI9hEBhORE4NMh0vumlcSKnWX2yVFGxy8oSm7b4IDojwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="90c7a8abe2aa225351d4f4d04f54bab0.png" xmlns="">03SMhJThYvEat_yZZSj-8jQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

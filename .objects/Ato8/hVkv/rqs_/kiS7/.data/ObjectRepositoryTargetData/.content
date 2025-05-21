@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="QGloZjRa4ESUj6RqnSbxFg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="f32ba2df-e61a-43d5-a319-93a3213c04b2" CvElementArea="315, 803, 726, 41" CvType="InputBox" DesignTimeRectangle="316, 805, 726, 37" DesignTimeScaleFactor="1.375" ElementType="DropDown" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl id='qualificacaoContribuinte' tag='SELECT' type='' class='form-control ng-dirty ng-valid ng-touched' aaname='Qualificação do Contribuinte' /&gt;" Guid="a699e150-010e-4300-80a2-aac168936365" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="f32ba2df-e61a-43d5-a319-93a3213c04b2" CvTextArea="314, 777, 225, 18" CvTextArgument="Qualificação do Contribuinte*" CvType="Text" DesignTimeRectangle="316, 774, 726, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl aaname='Qualificação do Contribuinte' class='required' tag='LABEL' type='' check:innerText='Qualificação do Contribuinte' /&gt;" Guid="5ec8b8de-2bf3-43f1-ab01-ac7159b929a0" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="ab9b485f9d5578f10f9b5a2df0a70570.png" xmlns="">0_l4j-tqDkUuMToIyyUsWEw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

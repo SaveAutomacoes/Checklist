@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="D8216F8AeU-BYGiPdl27pg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="20e893d5-4707-4ea8-9a62-db5d847d4b4d" CvTextArea="1668, 734, 75, 17" CvTextArgument="52.496,43" CvType="Text" DesignTimeRectangle="1668, 734, 75, 18" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl aaname='52.496,43' parentid='page-content-wrapper' tag='A' type='' class='' check:innerText='{0}' /&gt;&quot;, darf)]" Guid="f0c11ae1-ad11-46de-bcae-e97a45ff9dda" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="20e893d5-4707-4ea8-9a62-db5d847d4b4d" CvTextArea="1642, 677, 90, 17" CvTextArgument="Valor Total" CvType="Text" DesignTimeRectangle="1643, 673, 89, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl type='' class='' tag='STRONG' aaname='Valor Total' check:innerText='Valor Total' /&gt;" Guid="197797b9-6247-4504-819f-1de3f8fbad9f" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="2345a7cdcc76812a30163094b6d88554.png" xmlns="">0kSI6QXs5lUChjhgPVeXcPQ</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData Name="darf" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

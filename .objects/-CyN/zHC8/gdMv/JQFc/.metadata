@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Fique atento você tem …",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "JQFcJ_6hWk2LQFcfR8iVag",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/JQFcJ_6hWk2LQFcfR8iVag",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/gdMvnDbGm0-uRckhK3u0kg",
+  "Created": "2025-05-05T13:50:44.8516754Z",
+  "Updated": "2025-05-05T13:50:44.8516754Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

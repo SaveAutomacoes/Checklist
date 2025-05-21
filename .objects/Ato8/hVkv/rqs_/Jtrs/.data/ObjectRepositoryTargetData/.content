@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="1zcf8Ef990Oy3DQhbFrkbA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="ff31fbb9-5a27-475d-a5d6-fc77d3075344" CvElementArea="625, 673, 19, 19" CvType="CheckBox" DesignTimeRectangle="628, 673, 16, 16" DesignTimeScaleFactor="1.25" ElementType="CheckBox" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='palco' tag='IFRAME' /&gt;&lt;webctrl parentid='divDarfNumerado' tag='TABLE' /&gt;&lt;webctrl id='TodosDebitos' type='checkbox' tag='INPUT' class='checkboxSelecao' aaname='Selecionar todos os débitos' /&gt;" Guid="1293778e-b86c-431a-b5d6-5657d1996ad9" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="ff31fbb9-5a27-475d-a5d6-fc77d3075344" CvTextArea="654, 674, 208, 16" CvTextArgument="Selecionar todos os débitos" CvType="Text" DesignTimeRectangle="655, 672, 207, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='palco' tag='IFRAME' /&gt;&lt;webctrl parentid='divDarfNumerado' tag='TABLE' /&gt;&lt;webctrl type='' tag='LABEL' class='' aaname='Selecionar todos os débitos' check:innerText='Selecionar todos os débitos' /&gt;" Guid="e25c0591-d916-49fe-b6a6-bffe524026b0" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0ff521fb917a14914eaf7abd9630074a.png" xmlns="">0108r3nfyvkG12dpjRKFmtA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Selecionar Todos",
+  "Type": "Element",
+  "TaxonomyType": "Checkbox",
+  "Id": "D6q6ZuketkqWCPQcG8ZERA",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/D6q6ZuketkqWCPQcG8ZERA",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/rqs_aYf4VkakS8L4Vys-yw",
+  "Created": "2025-04-29T18:01:40.4875442Z",
+  "Updated": "2025-04-29T18:01:40.4875442Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

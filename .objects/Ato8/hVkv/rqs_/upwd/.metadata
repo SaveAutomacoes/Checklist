@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Nenhuma arrecadação loc…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "upwd-7uUY0eli9ljGpdRwg",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/upwd-7uUY0eli9ljGpdRwg",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/rqs_aYf4VkakS8L4Vys-yw",
+  "Created": "2025-05-14T16:41:19.4739394Z",
+  "Updated": "2025-05-14T16:41:19.4739394Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

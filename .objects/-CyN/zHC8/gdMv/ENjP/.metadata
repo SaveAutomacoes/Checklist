@@ -1,0 +1,13 @@
+﻿{
+  "Name": "CAPACIDADE DE PAGAMENTO",
+  "Type": "Element",
+  "Id": "ENjP5fZMxkCMQn2PflfSBg",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/ENjP5fZMxkCMQn2PflfSBg",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/gdMvnDbGm0-uRckhK3u0kg",
+  "Created": "2025-05-06T15:14:25.2139534Z",
+  "Updated": "2025-05-06T15:14:25.2139534Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

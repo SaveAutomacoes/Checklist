@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Você ainda não está cad…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "3YpQKw1wt0ah6FIJPftgkQ",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/3YpQKw1wt0ah6FIJPftgkQ",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/gdMvnDbGm0-uRckhK3u0kg",
+  "Created": "2025-05-06T20:13:03.5789682Z",
+  "Updated": "2025-05-06T20:13:03.5789682Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Co0ZnPesDkqBREMjlAVRag" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/UIUjrRiU4UKp-dXgCSVzwA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="d5143545-cba1-4050-8dce-cd474859fdb2" CvElementArea="53, 430, 16, 15" CvTextArea="56, 432, 8, 8" CvTextArgument="+" CvType="Button" DesignTimeRectangle="56, 367, 12, 11" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='menuPrincipal_divLinkNodes1' tableRow='1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='menuPrincipal_divLinkNodes1' type='' tag='A' class='linkAbreFechaNode' aaname='' /&gt;" Guid="aa2fa41a-db85-4818-8036-1230947a4df2" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="d5143545-cba1-4050-8dce-cd474859fdb2" CvTextArea="76, 431, 124, 17" CvTextArgument="Diagnóstico Fiscal" CvType="Text" DesignTimeRectangle="76, 362, 128, 22" ElementType="Text" FullSelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='menuPrincipal_divLinks1' tableRow='1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='menuPrincipal_divLinks1' type='' tag='A' class='nodeAtivo' aaname='Diagnóstico Fiscal' check:innerText='Diagnóstico Fiscal' /&gt;" Guid="668bc64f-8cd1-4829-9b1f-1873f3136f94" ImageBase64="" SearchSteps="Selector, FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset Position="TopLeft" X="5" Y="5" />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="6abf20ef4baf2cf3a7d0a4f70d4d4fe2.png" xmlns="">0qwa1OSz2P02ba0SkrTKXQA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

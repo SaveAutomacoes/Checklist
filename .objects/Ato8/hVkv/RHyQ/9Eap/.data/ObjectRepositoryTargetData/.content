@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="A-m9w6HtiUuEg1KJoau2OA" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/9EapKSJbf0ikIJi5pWW0BA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="solucoes.receita.fazenda.gov.br/Servicos/cnpjreva/Cnpjreva_Comprovante.asp" CVScreenId="805a15fe-b7ac-4445-abbf-3cb9d0ed114c" CvElementArea="305, 759, 788, 36" CvType="InputBox" DesignTimeRectangle="314, 772, 187, 15" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='B' class='' aaname='CEREALISTA QUEIROZ LTDA                                                                                                                               ' /&gt;" Guid="8c05b4c0-d693-407f-826d-baff567565e2" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Comprovante de Inscrição e de Situação Cadastral' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="805a15fe-b7ac-4445-abbf-3cb9d0ed114c" CvElementArea="306, 808, 690, 36" CvType="InputBox" DesignTimeRectangle="314, 810, 260, 11" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='FONT' class='' aaname=' &amp;#x9;&amp;#x9;TÍTULO DO ESTABELECIMENTO (NOME DE FANTASIA) &amp;#x9;&amp;#x9;' check:innerText='TÍTULO DO ESTABELECIMENTO (NOME DE FANTASIA)' /&gt;" Guid="63329628-105a-411f-8450-eb122c138029" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="805a15fe-b7ac-4445-abbf-3cb9d0ed114c" CvElementArea="305, 759, 788, 36" CvType="InputBox" DesignTimeRectangle="314, 761, 104, 11" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='FONT' class='' aaname=' &amp;#x9;&amp;#x9;NOME EMPRESARIAL &amp;#x9;&amp;#x9;' check:innerText='NOME EMPRESARIAL' /&gt;" Guid="071b74ae-a7ee-42aa-a279-67028f00cdbd" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e05da8f5d7a71fe60f45a7ea2849e614.png" xmlns="">0bousu6WXnEeKjV9VqJx5Gw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="14YsQDwdQ0S0ZiU46gvUIQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="bf3562d1-82ce-478d-892d-d22fb46ba2ab" CvElementArea="507, 578, 142, 35" CvType="InputBox" DesignTimeRectangle="510, 578, 138, 32" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl id='txtDataTransmissaoInicial' tag='INPUT' type='text' class='span12 datepicker mascaraData hasDatepicker' aaname='' /&gt;" Guid="e3925666-4a9d-471b-8b51-a1b4e8896d72" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="510, 538, 138, 39" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl aaname='Data Transmissão Inicial' tag='LABEL' type='' class='control-label' check:innerText='Data Transmissão Inicial' /&gt;" Guid="30e19c15-c015-4728-9062-c2aeb6ce5c51" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b0e6c160bc0ced484e0aaaef0a5cede2.png" xmlns="">0kE8A8s6GtUC6PGAkTsCgUg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

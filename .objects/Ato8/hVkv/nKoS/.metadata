@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Procuradoria Geral da Fazenda Nacional",
+  "Type": "Screen",
+  "Id": "nKoSsdniOU2WR-U_dciegw",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/nKoSsdniOU2WR-U_dciegw",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/hVkvW8N0iUeJ1h3tUDZkyQ",
+  "Created": "2025-05-05T20:00:20.5355477Z",
+  "Updated": "2025-05-05T20:00:20.5355477Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="0GjAgulmV0qRjds-n4RhsQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" DesignTimeRectangle="8, 321, 198, 46" DesignTimeScaleFactor="1.100000023841858" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl type='' parentid='sidebar-wrapper' tag='DIV' class='row ng-tns-c2954561804-0' aaname='' check:innerText='Novo&amp;#xA;Documento' /&gt;" Guid="d87af5f1-1ebf-4131-9c67-87f53f7b4594" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="8, 307, 198, 66" ElementType="ListItem" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl type='' tag='LI' class='ng-tns-c2954561804-0 sidebar-menu-item-active' aaname='' check:innerText='Novo&amp;#xA;Documento' /&gt;" Guid="032ae763-2431-40af-8b33-a6c22ae377d9" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="4b7f4221433202d5aa3bec042529eb05.png" xmlns="">0CEPJ_wyTzkucf2M4S_HLiQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

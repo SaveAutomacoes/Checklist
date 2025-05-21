@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="MG_p96muqEe1wkL0PKfLQg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac" DesignTimeRectangle="48, 492, 101, 23" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Consulta Pendências - Situação Fiscal' parentid='servicosMaisAcessados' tag='A' type='' class='' check:innerText='Consulta Pendências - Situação Fiscal' /&gt;" Guid="808909bf-50e9-4603-9ede-ce2489d80d27" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="28, 492, 160, 24" ElementType="ListItem" FuzzySelectorArgument="&lt;webctrl type='' parentid='servicosMaisAcessados' tag='LI' class='' aaname='' check:innerText='Consulta Pendências - Situação Fiscal' /&gt;" Guid="3950514f-f623-4a97-b4d8-afad4c6e6816" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="573f2401ced7c281914bf3d9c67e1444.png" xmlns="">00nV70S5D00ejqVzYHOsm1Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

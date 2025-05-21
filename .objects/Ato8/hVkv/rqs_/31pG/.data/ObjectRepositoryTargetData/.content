@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="felmQKn7EE66ul6nhqu3bA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="7798072a-1f2b-4ac6-942d-d4c7a4aa555d" CvElementArea="1802, 667, 102, 30" CvTextArea="1812, 672, 81, 17" CvTextArgument="Emitir Darf" CvType="Button" DesignTimeRectangle="1804, 668, 98, 27" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='palco' tag='IFRAME' /&gt;&lt;webctrl parentid='divDarfNumerado' tag='TABLE' /&gt;&lt;webctrl class='fileDownloadDarfNumerado' tag='INPUT' type='button' aaname='Emitir Darf' check:text='Emitir Darf' /&gt;" Guid="c7179f9d-592d-4c99-aeef-d7ad42e41ecc" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="7798072a-1f2b-4ac6-942d-d4c7a4aa555d" CvElementArea="1802, 667, 102, 30" CvTextArea="1812, 672, 81, 17" CvTextArgument="Emitir Darf" CvType="Button" DesignTimeRectangle="1487, 649, 422, 65" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='palco' tag='IFRAME' /&gt;&lt;webctrl parentid='divDarfNumerado' tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='TD' aaname='' check:text='Emitir Darf' /&gt;" Guid="0c5e2663-c723-4255-ba5e-745b4bece10d" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="defa3e163d9a3cfffe9fa2f6e1b427bf.png" xmlns="">0qKVCV2lj3EKbzx4blvqp2A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

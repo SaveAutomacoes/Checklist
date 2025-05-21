@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="cIH4KSagDUaTh7oSqsfTpg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="solucoes.receita.fazenda.gov.br/servicos/cnpjreva/Cnpjreva_Comprovante.asp" CVScreenId="5757ee83-54f6-4dc7-8cb8-29ee1af887de" CvElementArea="559, 946, 108, 38" CvTextArea="595, 956, 57, 15" CvTextArgument="IMPRIMIR" CvType="Button" DesignTimeRectangle="559, 945, 109, 39" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='print' tag='BUTTON' type='' class='btn btn-info' aaname=' Imprimir' check:innerText='IMPRIMIR' /&gt;" Guid="e61b9333-dfb9-465a-891a-ecaaee7c0dd8" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Comprovante de Inscrição e de Situação Cadastral' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="5757ee83-54f6-4dc7-8cb8-29ee1af887de" CvElementArea="454, 944, 102, 42" CvTextArea="493, 956, 47, 15" CvTextArgument="VOLTAR" CvType="Button" DesignTimeRectangle="457, 945, 97, 39" ElementType="Button" FuzzySelectorArgument="&lt;webctrl name='voltar' tag='BUTTON' type='' class='btn btn-secondary' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; Voltar' check:innerText='VOLTAR' /&gt;" Guid="a11f52e2-9321-4f3c-af39-4d3ce8e84f6e" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="cb70b51f3f89ae57b92e42ab4d33bc5a.png" xmlns="">0W7gGIBMUGECAyoJcdy1cEA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

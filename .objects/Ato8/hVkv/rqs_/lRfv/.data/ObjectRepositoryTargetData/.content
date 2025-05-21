@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="mua60CgU70uLW36eFRFMdw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="f6893d83-3ed3-4dbe-a23e-90349eebe6c7" CvElementArea="234, 361, 1519, 54" CvType="InputBox" DesignTimeRectangle="238, 361, 1514, 54" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl isleaf='1' parentid='painel-mensagens-error' tag='SPAN' type='' class='' aaname='Excedido o número de rascunhos permitidos pelo sistema. Para criar um novo documento é necessário excluir pelo menos um rascunho.' check:innerText='Excedido o número de rascunhos permitidos pelo sistema. Para criar um novo documento é necessário' /&gt;" Guid="2a615b29-b568-40d8-91a7-01b1b46eb36f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="f6893d83-3ed3-4dbe-a23e-90349eebe6c7" CvTextArea="243, 338, 818, 18" CvTextArgument="PER/DCOMP - Pedido Eletrônico de Restituição, Ressarcimento ou Reembolso e Declaração de Compensação" CvType="Text" DesignTimeRectangle="244, 337, 818, 18" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl tag='H1' type='' class='ng-tns-c2954561804-0' aaname='PER/DCOMP - Pedido Eletrônico de Restituição, Ressarcimento ou Reembolso e Declaração de Compensação' check:innerText='PER/DCOMP - Pedido Eletrônico de Restituição, Ressarcimento ou Reembolso e Declaração de Compensação' /&gt;" Guid="b9d57431-3a38-4907-bb6d-c9d4b457178e" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="853be0ffd05afd6aa330680b3830afae.png" xmlns="">07fQNvc_YtEOQhw26IhSzjQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

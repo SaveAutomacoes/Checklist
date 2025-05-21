@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="uuZrs4TOBU-ucSKkryzLuA" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/KvRm1D7XxUS5PnDGmOeZBA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="acdd892f-ac86-4dab-ae27-4995ba9e3d7a" CvElementArea="660, 596, 170, 41" CvType="InputBox" DesignTimeRectangle="663, 598, 165, 37" DesignTimeScaleFactor="1.375" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl id='inicioApuracaoPesquisa' tag='INPUT' type='text' class='ng-tns-c3632051545-29 perdcomp-input-calendar form-control p-inputtext p-component ng-star-inserted' placeholder='DD/MM/AAAA' aaname='' /&gt;" Guid="9845cdb9-e68f-4bb6-8e22-6291a3366b9c" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="84b00acf-fa11-474d-a4ce-9e582194d8e1" CvTextArea="662, 569, 184, 22" CvTextArgument="Período de Apuração" CvType="Text" DesignTimeRectangle="663, 563, 365, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl aaname='Período de Apuração' tag='LABEL' type='' class='' check:innerText='Período de Apuração' /&gt;" Guid="c558c8a0-07da-4876-9722-40103825119c" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="774cdf989ea2e90d3cb2b88763937d72.png" xmlns="">0xwmdG3nU50-S9W7Q_qEYDw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

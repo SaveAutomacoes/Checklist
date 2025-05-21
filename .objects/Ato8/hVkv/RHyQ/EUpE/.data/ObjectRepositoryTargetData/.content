@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="tBBGCyUS3k-qbsyWLmyhJA" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/EUpE0819rkiExPhcNg2OSA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="solucoes.receita.fazenda.gov.br/Servicos/cnpjreva/Cnpjreva_Comprovante.asp" CVScreenId="35628ccd-8d4e-4676-97d7-4e944ab0be8a" CvElementArea="901, 697, 190, 49" CvType="InputBox" DesignTimeRectangle="908, 708, 67, 15" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='B' aaname='10/01/2007' /&gt;" Guid="299001f6-573c-458b-b46b-7f3c2cf4fe89" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Comprovante de Inscrição e de Situação Cadastral' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="35628ccd-8d4e-4676-97d7-4e944ab0be8a" CvTextArea="504, 696, 429, 21" CvTextArgument="COMPROVANTE DE INSCRIÇÃO E DE SITUAÇÃO DATA" CvType="Text" DesignTimeRectangle="504, 698, 395, 18" ElementType="Text" Guid="390a853b-22b9-4706-8df6-50ace440d395" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="02b8214054e263c002a0505a09c925a4.png" xmlns="">0oChIKnt9J0urkgFOUI7XeQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

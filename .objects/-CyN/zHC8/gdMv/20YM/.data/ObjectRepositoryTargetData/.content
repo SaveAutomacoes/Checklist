@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Jhm_FvFu10-tQbxyrALhhA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="regularize.pgfn.gov.br/sispar/sisparnet" CVScreenId="559b5743-7114-467f-8201-fb2d04fc24d9" CvElementArea="945, 521, 187, 61" CvTextArea="986, 545, 102, 15" CvTextArgument="CONTINUAR" CvType="Button" DesignTimeRectangle="948, 522, 180, 55" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='sisparFrame' tag='IFRAME' /&gt;&lt;webctrl aaname=' Continuar ' tag='BUTTON' type='button' class='btn btn-primary' check:innerText='CONTINUAR' /&gt;" Guid="82711eb7-1e7a-4c93-ae9f-ad7e3987c122" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Regularize' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="559b5743-7114-467f-8201-fb2d04fc24d9" CvElementArea="782, 522, 161, 60" CvTextArea="824, 545, 77, 15" CvTextArgument="DESISTIR" CvType="Button" DesignTimeRectangle="786, 522, 155, 55" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='sisparFrame' tag='IFRAME' /&gt;&lt;webctrl aaname=' Desistir ' tag='BUTTON' type='button' class='btn btn-primary' check:innerText='DESISTIR' /&gt;" Guid="45b39431-23ad-4f48-8d95-6abe1d89b351" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a5002584ac805fe9da188428c2764d8b.png" xmlns="">0KBv_e_eyBkOP8Tlkr3ShIw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

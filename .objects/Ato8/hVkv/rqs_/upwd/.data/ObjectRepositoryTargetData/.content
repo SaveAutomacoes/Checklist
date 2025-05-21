@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="NTqBOWSQUkSrmOqEGcycQg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="6b1e9c70-7507-4a61-abe2-5349b5968418" CvTextArea="712, 182, 242, 15" CvTextArgument="Nenhuma arrecadação localizada." CvType="Text" DesignTimeRectangle="714, 177, 510, 26" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;ctrl name='cav.receita.fazenda.gov.br diz' role='dialog' /&gt;&lt;ctrl name='Nenhuma arrecadação localizada.' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='cav.receita.fazenda.gov.br diz' role='dialog' /&gt;&lt;ctrl name='Nenhuma arrecadação localizada.' role='text' automationid='' check:fulltext='Nenhuma arrecadação localizada.' /&gt;" Guid="b328413f-6ec7-4156-89fe-2f6b3c9dd774" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='eCAC - Centro Virtual de Atendimento - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="6b1e9c70-7507-4a61-abe2-5349b5968418" CvTextArea="711, 142, 271, 22" CvTextArgument="cav.receita.fazenda.gov.br diz" CvType="Text" DesignTimeRectangle="711, 142, 271, 24" ElementType="Text" Guid="69a8afd1-4b62-4512-8e7c-bab47436e019" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="6f9e74098647eed6c342510d89b9ff4f.png" xmlns="">0ILmPoXqkHk6h3LQDT3QPdA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

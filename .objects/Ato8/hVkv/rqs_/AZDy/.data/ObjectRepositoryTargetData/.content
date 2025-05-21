@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="uDAd0HUkx0yiAHGul9BgBA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="614da51c-fbd5-4c8f-9b1d-2b0c78ed7ef0" CvTextArea="26, 314, 316, 22" CvTextArgument="Situação Fiscal do Contribuinte" CvType="Text" DesignTimeRectangle="27, 314, 315, 21" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl tag='H1' type='' class='cabecSITFIS' aaname='Situação Fiscal do Contribuinte' check:innerText='Situação Fiscal do Contribuinte' /&gt;" Guid="f50f4fa8-da9b-464f-8794-8a3ef67b2a95" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="614da51c-fbd5-4c8f-9b1d-2b0c78ed7ef0" CvTextArea="26, 314, 316, 22" CvTextArgument="Situação Fiscal do Contribuinte" CvType="Text" DesignTimeRectangle="22, 308, 1894, 32" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl tag='H1' type='' class='cabecSITFIS' aaname='Situação Fiscal do Contribuinte' check:innerText='Situação Fiscal do Contribuinte' /&gt;" Guid="3df64ede-3e64-4926-9e5a-59061e47c9bc" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a500ee6a0cda7646c31c627421d190e1.png" xmlns="">0r0TclnWjtkKm0oPTTUpAgw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

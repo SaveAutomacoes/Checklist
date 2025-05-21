@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-22glpvaVkWAwM8ZmUMolw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="sisparnet.pgfn.fazenda.gov.br/sisparInternet/consultarCapag.jsf" CVScreenId="859c25bb-d613-496c-bd7d-23eebed6b972" CvElementArea="351, 364, 107, 39" CvTextArea="369, 376, 73, 17" CvTextArgument="Pesquisar" CvType="Button" DesignTimeRectangle="355, 367, 101, 33" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='ui-button-text' aaname='Pesquisar' check:innerText='Pesquisar' /&gt;" Guid="15e4cd3b-d26a-458d-9556-e4b8145403c4" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Procuradoria Geral da Fazenda Nacional - PGFN' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="859c25bb-d613-496c-bd7d-23eebed6b972" CvElementArea="351, 364, 107, 39" CvTextArea="369, 376, 73, 17" CvTextArgument="Pesquisar" CvType="Button" DesignTimeRectangle="354, 366, 103, 35" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='formDadosParcelamento:botaoPesquisar' type='submit' tag='BUTTON' class='ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only' aaname='Pesquisar' check:innerText='Pesquisar' /&gt;" Guid="8cd0f5ee-3062-42b4-8ac0-ebf320a28f78" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="5eafebc2340117c44e5b5e6283ef3d40.png" xmlns="">0Siwmh5CekkiY3HwpewFKbw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

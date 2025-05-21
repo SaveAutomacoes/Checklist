@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="xlxDBNB1A0mdhTX7jGYQJQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" DesignTimeRectangle="1329, 119, 235, 45" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='eCAC - Centro Virtual de Atendimento - Google Chrome' role='pane' /&gt;&lt;ctrl name='Encontrar na página     eCAC - Centro Virtual de Atendimento' role='pane' /&gt;&lt;ctrl name='Buscar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='eCAC - Centro Virtual de Atendimento - Google Chrome' role='pane' /&gt;&lt;ctrl name='Encontrar na página     eCAC - Centro Virtual de Atendimento' role='pane' /&gt;&lt;ctrl name='Buscar' role='editable text' automationid='' /&gt;" Guid="f9a1dfc7-495c-4e96-9cca-26e96d134d17" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='eCAC - Centro Virtual de Atendimento - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1314, 109, 443, 65" FullSelectorArgument="&lt;ctrl name='eCAC - Centro Virtual de Atendimento - Google Chrome' role='pane' /&gt;&lt;ctrl name='Encontrar na página     eCAC - Centro Virtual de Atendimento' role='pane' /&gt;&lt;ctrl idx='3' role='pane' /&gt;" FuzzySelectorArgument="&lt;ctrl name='eCAC - Centro Virtual de Atendimento - Google Chrome' role='pane' /&gt;&lt;ctrl name='Encontrar na página     eCAC - Centro Virtual de Atendimento' role='pane' /&gt;&lt;ctrl automationid='' role='pane' check:fulltext='Anterior&amp;#xD;&amp;#xA;Próxima&amp;#xD;&amp;#xA;Fechar barra de localização' /&gt;" Guid="851fca94-c8df-4398-aa8e-8370c9a853c4" SearchSteps="Selector, FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="8f2a33014b26f751a60f734b677f49f8.png" xmlns="">0FvPgeIUL-UGmX6UHBSmO6w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

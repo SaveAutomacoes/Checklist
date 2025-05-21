@@ -1,0 +1,14 @@
+﻿{
+  "Name": "status bar",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "7ahvwamxZ0uoPE5lWd11bg",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/7ahvwamxZ0uoPE5lWd11bg",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/rqs_aYf4VkakS8L4Vys-yw",
+  "Created": "2025-04-29T18:07:21.3020384Z",
+  "Updated": "2025-04-29T18:07:21.3020384Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "UF do CRC",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "phNVEA9NW0iv617N_kayMw",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/phNVEA9NW0iv617N_kayMw",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/rqs_aYf4VkakS8L4Vys-yw",
+  "Created": "2025-03-05T14:21:26.8166017Z",
+  "Updated": "2025-03-05T14:21:26.8166017Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="bdoGUu_yNEerA9tJbv644Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="1cb72f32-dbd1-4e53-bf9b-b72a35176a32" CvElementArea="114, 741, 24, 24" CvType="Icon" DesignTimeRectangle="117, 743, 20, 20" DesignTimeScaleFactor="1.25" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='cphConteudo_TabelaVinculacoesDARF_GridViewVinculacoes_imgCollapse6' type='' tag='IMG' class='por-cno-grupo-tributo icon-expandir' aaname='Expandir/Contrair' /&gt;" Guid="0accf71a-6180-4de0-ba49-a6343ca04091" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADhSURBVEhLzZUxC8JADEb7/0fBwUlcxVlERCergg51UBB0kSJiEVrB9eQVWiRaba8XcXgQcl/yXXPt1Qtvd6OJJxOu+Z1Bo+875a1BkiTmFF1NeLGDWnoUGiDo+WvTHi+toJYehQbsAqF83LJQSw8rg9ZwYUbBLoVYrtc2IH88RymfNNYGncnKxHGcQizXaxk0B3PTnQa5ATE5qatkwJyJ2S0N/c0+NyAmxxqa7EwqGXCYzDtrWgQatP9nIEc02x7ypk5G9IzKIUtUX9OsWPVDU78qyvDVQP26Vv/huOTFQIsH6dq64SKq5dUAAAAASUVORK5CYII=" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="1cb72f32-dbd1-4e53-bf9b-b72a35176a32" CvTextArea="151, 745, 343, 13" CvTextArgument="Total CONTRIBUIÇÃO PARA OUTRAS ENTIDADES E FUNDOS" CvType="Text" DesignTimeRectangle="142, 735, 356, 34" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='descricao-codigo-receita' type='' tag='TD' aaname='Total CONTRIBUIÇÃO PARA OUTRAS ENTIDADES E FUNDOS' check:innerText='Total CONTRIBUIÇÃO PARA OUTRAS ENTIDADES E FUNDOS' /&gt;" Guid="445daab5-1da8-4608-8396-7c096901d1df" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="1eef9d6de0138667a0b87257b507ff20.png" xmlns="">0UNDINATd_UCCcSloG1E1tw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

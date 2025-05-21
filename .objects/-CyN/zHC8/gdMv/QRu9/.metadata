@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Situação da Dívida",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "QRu9hF0OWESO4CCckfFshQ",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/QRu9hF0OWESO4CCckfFshQ",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/gdMvnDbGm0-uRckhK3u0kg",
+  "Created": "2025-05-05T13:30:59.1560504Z",
+  "Updated": "2025-05-05T13:30:59.1560504Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

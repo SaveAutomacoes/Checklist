@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="haToPMk7gEKg1VI9nXc17w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="21041a17-fed9-4914-860f-7aac8d0d3c7e" CvElementArea="1643, 572, 213, 32" CvType="InputBox" DesignTimeRectangle="1645, 573, 210, 29" DesignTimeScaleFactor="1.100000023841858" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl id='valorUtilizadoTxt' tag='INPUT' type='text' class='input-valor-utilizado ng-untouched ng-pristine ng-valid' aaname='' /&gt;" Guid="7657bc62-5207-49e8-8a46-37325b3104da" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="21041a17-fed9-4914-860f-7aac8d0d3c7e" CvTextArea="313, 579, 55, 14" CvTextArgument="1082-01" CvType="Text" DesignTimeRectangle="314, 576, 56, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl id='tooltip' parentid='codReceita' tag='SPAN' type='' class='' aaname=' 1082-01 ' check:innerText='1082-01' /&gt;" Guid="65adc841-d08c-4742-8a5e-e9426051ec4c" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b332de04a99e90dbd6b3cafc6fee8667.png" xmlns="">0mETydfVEvk6_mVZ3F-_Sgw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

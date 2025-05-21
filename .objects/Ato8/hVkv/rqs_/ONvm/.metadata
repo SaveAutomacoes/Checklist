@@ -1,0 +1,14 @@
+﻿{
+  "Name": "A consulta retornou 1,2…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "ONvmmzc14UyREKM0o-0dJw",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/ONvmmzc14UyREKM0o-0dJw",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/rqs_aYf4VkakS8L4Vys-yw",
+  "Created": "2025-05-06T18:21:03.3844649Z",
+  "Updated": "2025-05-06T18:21:03.3844649Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

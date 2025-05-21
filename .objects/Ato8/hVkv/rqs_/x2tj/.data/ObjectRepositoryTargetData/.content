@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="TVvuMtmgBkWduPHfh55GZQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="93978732-254f-4a6d-88b3-8b68e182ea28" CvTextArea="157, 482, 107, 15" CvTextArgument="Conta Corrente" CvType="Text" DesignTimeRectangle="159, 480, 105, 17" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='menuPrincipal_divLinks4' type='' tag='A' class='teste' aaname='Conta Corrente' check:innerText='Conta Corrente' /&gt;" Guid="8cd6859d-1c8e-4711-a9a3-a8c2948ee159" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="93978732-254f-4a6d-88b3-8b68e182ea28" CvTextArea="157, 482, 107, 15" CvTextArgument="Conta Corrente" CvType="Text" DesignTimeRectangle="134, 480, 474, 19" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='menuPrincipal_divNodes4' type='' tag='DIV' class='node' aaname='' check:innerText='Conta Corrente' /&gt;" Guid="8315168f-cb2a-4957-9654-9f45fd26d25e" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="6901061bdb4e0aacdc7516aec55ad531.png" xmlns="">0oDQmrDT4vk2_vZTmPONEFg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="rdNrTAYijEultTNMkgGMEg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="1a110065-767f-477c-8dc0-ea1259fab681" CvElementArea="1787, 943, 103, 39" CvTextArea="1796, 952, 83, 20" CvTextArgument="Prosseguir" CvType="Button" DesignTimeRectangle="1789, 935, 110, 55" DesignTimeScaleFactor="1.375" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl class='ng-star-inserted' parentid='page-content-wrapper' tag='DIV' type='' aaname='' check:innerText='Prosseguir' /&gt;" Guid="34f3ce84-7345-470f-838f-0335b60708e3" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="1a110065-767f-477c-8dc0-ea1259fab681" CvTextArea="955, 741, 317, 17" CvTextArgument="O Documento está apto para envio" CvType="Text" DesignTimeRectangle="295, 730, 1594, 44" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl type='' parentid='page-content-wrapper' tag='DIV' class='info ng-star-inserted' aaname='O Documento está apto para envio ' check:innerText='O Documento está apto para envio' /&gt;" Guid="1e767676-1313-4d7e-b50d-2861d5c1fc22" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="9ba9a61aa93c7f0e8668b4c9ed5b0b1c.png" xmlns="">0CaYEjMiwrkG9VkLqku44Qw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "NOME EMPRESARIAL",
+  "Type": "Element",
+  "Id": "9EapKSJbf0ikIJi5pWW0BA",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/9EapKSJbf0ikIJi5pWW0BA",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/RHyQ6yLdlkKiVILS68JjyQ",
+  "Created": "2025-04-29T17:07:15.6984325Z",
+  "Updated": "2025-04-29T17:07:15.6984325Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

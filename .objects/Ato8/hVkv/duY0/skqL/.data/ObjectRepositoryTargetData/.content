@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="SV5wYCHPgUuPYAYX-LYIfw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="www8.receita.fazenda.gov.br/simplesnacional/aplicacoes.aspx" CVScreenId="856ffd97-9b2d-4821-9eb9-91139d1bbc4b" CvTextArea="392, 761, 88, 17" CvType="AnyWordGroup" DesignTimeRectangle="385, 747, 168, 46" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frame' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='' /&gt;" Guid="070a380b-958e-4658-8a51-bc497680e8b0" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Simples Nacional' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="856ffd97-9b2d-4821-9eb9-91139d1bbc4b" CvTextArea="384, 679, 432, 21" CvTextArgument="Opções pelo Simples Nacional em Períodos Anteriores:" CvType="Text" DesignTimeRectangle="385, 678, 430, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frame' tag='IFRAME' /&gt;&lt;webctrl parentid='maisInfo' tag='SPAN' type='' class='' aaname='Opções pelo Simples Nacional em Períodos Anteriores: ' check:innerText='Opções pelo Simples Nacional em Períodos Anteriores:' /&gt;" Guid="e89badc1-c64f-4050-9060-140513665f54" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f758cd6026d00ce39aeba5f8b758c7d1.png" xmlns="">01wSqq9WcTkSNvCnT3U3fIA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

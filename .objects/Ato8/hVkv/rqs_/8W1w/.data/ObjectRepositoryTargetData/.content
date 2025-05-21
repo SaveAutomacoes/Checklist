@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="hkmMeGUSgUmiC1OR1F8QKQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac" CVScreenId="a601db00-49f4-4584-9eab-4b1178989772" CvElementArea="480, 333, 187, 32" CvTextArea="498, 342, 153, 16" CvTextArgument="Restituição e Compensação" CvType="Button" DesignTimeRectangle="484, 335, 182, 29" DesignTimeScaleFactor="1.100000023841858" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='btn263' tag='A' type='' class='' aaname='Restituição e Compensação' check:innerText='Restituição e Compensação' /&gt;" Guid="d6fe8383-1e40-430c-af36-a867c263f3d8" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="a601db00-49f4-4584-9eab-4b1178989772" CvElementArea="480, 333, 187, 32" CvTextArea="498, 342, 153, 16" CvTextArgument="Restituição e Compensação" CvType="Button" DesignTimeRectangle="481, 335, 185, 29" ElementType="ListItem" FuzzySelectorArgument="&lt;webctrl id='btn263' tag='LI' type='' class='botaoAzulServicos' aaname='' check:innerText='Restituição e Compensação' /&gt;" Guid="9ad250b0-35e2-4c6d-9e96-f6a560ca4f86" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset X="-2" Y="-1" />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="6b8a2f301742d165463ee8dea351198e.png" xmlns="">05qt_ztUfYkuHZ_SLMSVeow</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

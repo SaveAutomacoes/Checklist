@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Página 11",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Id": "wPedg19YcUOx35ALxdrhCA",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/wPedg19YcUOx35ALxdrhCA",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/RHyQ6yLdlkKiVILS68JjyQ",
+  "Created": "2025-05-05T20:04:06.6474871Z",
+  "Updated": "2025-05-05T20:04:06.6474871Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="32a2PQ-T9kKPgfxAfE1bfQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="5965af6c-1247-4cdb-b529-f5c9bd90247f" CvElementArea="1466, 653, 103, 41" CvTextArea="1475, 665, 85, 23" CvTextArgument="Pesquisar" CvType="Button" DesignTimeRectangle="1469, 655, 98, 36" DesignTimeScaleFactor="1.375" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl name='btnPesquisar' tag='BUTTON' type='' class='' aaname='Pesquisar' check:innerText='Pesquisar' /&gt;" Guid="109c9779-6bc8-4150-9b5a-c078de58e8af" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="5965af6c-1247-4cdb-b529-f5c9bd90247f" CvElementArea="1466, 653, 103, 41" CvTextArea="1475, 665, 85, 23" CvTextArgument="Pesquisar" CvType="Button" DesignTimeRectangle="1456, 613, 126, 110" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl type='' class='gs-col1 quebra-linha2' parentid='page-content-wrapper' tag='DIV' aaname='' check:innerText='Pesquisar' /&gt;" Guid="edd3d731-28e6-4ba1-b279-0ae64349a779" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="48805d86c106fea12acf5b558876b18e.png" xmlns="">0ygxJgvyEkEyCncsQpvS0Sg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

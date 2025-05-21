@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Consultar Dívida Ativa",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "hV4T9_SnaUqYVmlEbppJ2A",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/hV4T9_SnaUqYVmlEbppJ2A",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/gdMvnDbGm0-uRckhK3u0kg",
+  "Created": "2025-04-30T16:13:33.392085Z",
+  "Updated": "2025-04-30T16:13:33.392085Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="CxC7zY3A4UyAaI0PO1NvXA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="7ab52e0e-8dd5-4cf2-b454-d4b7aecd6924" CvElementArea="80, 449, 15, 13" CvTextArea="84, 450, 7, 8" CvTextArgument="+" CvType="Button" DesignTimeRectangle="83, 449, 11, 11" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='menuPrincipal_divLinkNodes2' type='' tag='A' class='linkAbreFechaNode' aaname='' /&gt;" Guid="b80936ad-60d9-411e-9cc2-3e089778d85d" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="7ab52e0e-8dd5-4cf2-b454-d4b7aecd6924" CvTextArea="101, 449, 127, 13" CvTextArgument="na Receita Federal" CvType="Text" DesignTimeRectangle="103, 446, 127, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='menuPrincipal_divLinks2' type='' tag='A' class='teste' aaname='na Receita Federal' check:innerText='na Receita Federal' /&gt;" Guid="0071f4b9-116a-4083-bc59-593178db61bb" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="3167729ea4e68b2404035f86854e1542.png" xmlns="">0fxVWTYTgyk-h7EtQvtETRQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

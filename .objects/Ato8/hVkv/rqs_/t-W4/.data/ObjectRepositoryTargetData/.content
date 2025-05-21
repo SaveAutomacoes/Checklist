@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="fSclmMKaq0OggTeo8DTuEQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="566a0967-8ff7-42cf-9766-fce4eaaeaf53" CvElementArea="1658, 674, 213, 32" CvType="InputBox" DesignTimeRectangle="1660, 675, 210, 30" DesignTimeScaleFactor="1.100000023841858" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl id='valorUtilizadoTxt' tag='INPUT' type='text' class='input-valor-utilizado ng-pristine ng-valid ng-touched' aaname='' /&gt;" Guid="2c5a7e26-6f60-4ab4-8bc2-429ebafdc28a" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="566a0967-8ff7-42cf-9766-fce4eaaeaf53" CvTextArea="1650, 625, 231, 14" CvTextArgument="Valor Original do Crédito Inicial" CvType="Text" DesignTimeRectangle="1651, 624, 230, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl aaname='Valor Original do Crédito Inicial' tag='STRONG' type='' class='' check:innerText='Valor Original do Crédito Inicial' /&gt;" Guid="3818dcc4-3ed0-4d32-8e91-4470960a4063" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0f612d1e3f3ff63a2ad205a32adaf1d0.png" xmlns="">0l1IRw0uLA0S7lSkNSAoldA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

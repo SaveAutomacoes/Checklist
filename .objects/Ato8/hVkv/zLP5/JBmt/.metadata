@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Data Transmissão Inicial",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "JBmtku_Oo0qSPgu7-Rp_pw",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/JBmtku_Oo0qSPgu7-Rp_pw",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/zLP5butLD0ubDXYcW9dW1Q",
+  "Created": "2025-05-20T14:58:57.6439557Z",
+  "Updated": "2025-05-20T14:58:57.6439557Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="BAwi37VUOUqNF1JRecM1cg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac" CVScreenId="cf25da2e-bd51-466a-a540-abac6389dd72" CvTextArea="1126, 707, 191, 13" CvTextArgument="Acessar PER/DCOMP WEB" CvType="Text" DesignTimeRectangle="1129, 706, 189, 17" DesignTimeScaleFactor="1.375" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Acessar PER/DCOMP WEB' parentid='containerServicos263' tag='A' type='' class='' check:innerText='Acessar PER/DCOMP WEB' /&gt;" Guid="65251bc6-744b-433e-999e-63ec8b39921b" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="cf25da2e-bd51-466a-a540-abac6389dd72" CvTextArea="1126, 707, 191, 13" CvTextArgument="Acessar PER/DCOMP WEB" CvType="Text" DesignTimeRectangle="1099, 707, 671, 17" ElementType="ListItem" FuzzySelectorArgument="&lt;webctrl type='' parentid='containerServicos263' tag='LI' class='showTooltip' aaname='' check:innerText='Acessar PER/DCOMP WEB' /&gt;" Guid="598a2bb3-3ab6-4a3d-a29e-125d1288e7a6" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="014f8e82aca37ea3ecb80c9d8db4f3cf.png" xmlns="">0KRAsXyJn3E-ozDsOzgMPSA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

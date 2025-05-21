@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="bDjYl_3GS06w6-O1oucrIg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="sisparnet.pgfn.fazenda.gov.br/sisparInternet/autenticacao.jsf" CVScreenId="2bd62325-7e8b-423c-a6ce-53180530becb" CvTextArea="820, 266, 202, 17" CvTextArgument="Capacidade de pagamento" CvType="Text" DesignTimeRectangle="822, 263, 200, 20" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='cabecalho:j_idt48' tag='SPAN' type='' class='ui-menuitem-text' aaname='Capacidade de pagamento' check:innerText='Capacidade de pagamento' /&gt;" Guid="2644ae2d-be39-4149-a07f-465dd9b3b56f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Procuradoria Geral da Fazenda Nacional - PGFN' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="2bd62325-7e8b-423c-a6ce-53180530becb" CvTextArea="820, 266, 202, 17" CvTextArgument="Capacidade de pagamento" CvType="Text" DesignTimeRectangle="818, 262, 212, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='cabecalho:j_idt48' tag='A' type='' class='ui-menuitem-link ui-corner-all' aaname='Capacidade de pagamento' check:innerText='Capacidade de pagamento' /&gt;" Guid="27fc671e-cf05-43eb-b75c-f19ecedaf0ab" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="6f07cad068dfa2b3b50f19966c3149e8.png" xmlns="">0pkhuksifZECDs36P1_vPOg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

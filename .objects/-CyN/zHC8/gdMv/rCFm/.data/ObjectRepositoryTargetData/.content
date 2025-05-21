@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="CKRbR6O-5kGWEebOtOq0qQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="regularize.pgfn.gov.br/sispar/sisparnet" CVScreenId="cdf32839-6eac-4d5b-99c5-24650083da98" CvTextArea="266, 314, 1389, 51" CvTextArgument="Bem-vindo ao Sistema de Negociações da PGFN! SISPAR" CvType="Text" DesignTimeRectangle="266, 316, 1388, 55" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='sisparFrame' tag='IFRAME' /&gt;&lt;webctrl tag='H1' type='' class='' aaname='Bem-vindo ao Sistema de Negociações da PGFN!' check:innerText='Bem-vindo ao Sistema de Negociações da PGFN!' /&gt;" Guid="13a3f998-9121-415c-9d75-0c57ddf0c674" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Regularize' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1414, 592, 226, 49" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='sisparFrame' tag='IFRAME' /&gt;&lt;webctrl aaname='CAPACIDADE DE PAGAMENTO' class='place-info-box-text' tag='SPAN' type='' check:innerText='CAPACIDADE DE PAGAMENTO' /&gt;" Guid="5eaf00ca-aac5-4b18-826d-7aae9a4b0181" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="fc7bb7153df4d1b5beba87a9c6ce5eab.png" xmlns="">0yIfDNsKSbEGCMBdcSREyfg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

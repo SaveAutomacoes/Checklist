@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-rxSkT_9o0SIf19-_ZHd7w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" DesignTimeRectangle="85, 586, 16, 17" DesignTimeScaleFactor="1.25" ElementType="CheckBox" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl parentid='PanelResultado' tag='TABLE' /&gt;&lt;webctrl id='CheckBoxTodos' type='checkbox' tag='INPUT' class='' aaname='Selecionar Todos' /&gt;" Guid="a627703f-be23-4634-a57d-4da72bee2a4d" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="3e0175c0-48f7-44d5-a6fa-ad59fa7e5daa" CvTextArea="104, 587, 105, 12" CvTextArgument="Selecionar Todos" CvType="Text" DesignTimeRectangle="105, 586, 105, 15" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl parentid='PanelResultado' tag='TABLE' /&gt;&lt;webctrl type='' tag='LABEL' class='' aaname='Selecionar Todos' check:innerText='Selecionar Todos' /&gt;" Guid="46466c82-a847-457e-88e2-716301f3d842" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="6e4c7a31ad9bb6c70c281f0b1d34a4cb.png" xmlns="">0lV5Fx9Vxf0q6PbOoXBt7xA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

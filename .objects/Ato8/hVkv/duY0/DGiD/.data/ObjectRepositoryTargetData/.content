@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="PZqtNspIV0u6KBkySyKiNw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="www8.receita.fazenda.gov.br/simplesnacional/aplicacoes.aspx" CVScreenId="856ffd97-9b2d-4821-9eb9-91139d1bbc4b" CvTextArea="394, 714, 93, 17" CvTextArgument="Data Inicial" CvType="Text" DesignTimeRectangle="385, 701, 168, 46" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frame' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='' aaname='                             Data Inicial                         ' check:innerText='Data Inicial' /&gt;" Guid="b3c242ca-ae00-492c-920d-bfd3d47249e1" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Simples Nacional' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="856ffd97-9b2d-4821-9eb9-91139d1bbc4b" CvTextArea="384, 679, 432, 21" CvTextArgument="Opções pelo Simples Nacional em Períodos Anteriores:" CvType="Text" DesignTimeRectangle="385, 678, 430, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frame' tag='IFRAME' /&gt;&lt;webctrl parentid='maisInfo' tag='SPAN' type='' class='' aaname='Opções pelo Simples Nacional em Períodos Anteriores: ' check:innerText='Opções pelo Simples Nacional em Períodos Anteriores:' /&gt;" Guid="4fcc62e8-dc4a-4afb-8940-cd2c180f268a" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="856ffd97-9b2d-4821-9eb9-91139d1bbc4b" CvTextArea="562, 714, 85, 17" CvTextArgument="Data Final" CvType="Text" DesignTimeRectangle="553, 701, 168, 46" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frame' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='                             Data Final                         ' type='' tag='TH' class='' check:innerText='Data Final' /&gt;" Guid="3860141e-20d5-4de6-ad7f-1354b22eca47" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0b196c09559f860d560ab1bde98fc9e2.png" xmlns="">0x7_SsTNrUUiJcQGOkYgC4g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

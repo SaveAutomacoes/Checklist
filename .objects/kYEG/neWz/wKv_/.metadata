@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome aboutblank",
+  "Type": "Screen",
+  "Id": "wKv_1aTjCUSU0XE5993n5w",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/wKv_1aTjCUSU0XE5993n5w",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/neWzlf5Wv0yZ-anXuuDSaA",
+  "Created": "2025-05-08T13:31:31.2302306Z",
+  "Updated": "2025-05-08T13:31:31.2302306Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

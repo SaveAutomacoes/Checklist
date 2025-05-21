@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="HAhRA5UzEk6aVeVdpWbQtg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Default.aspx" CVScreenId="49c1f80a-83d4-4792-ae74-bb95d252e664" CvTextArea="347, 651, 397, 13" CvTextArgument="Consulta Comprovante de Pagamento - DARF, DAS, DAE e DJE" CvType="Text" DesignTimeRectangle="350, 651, 395, 15" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Consulta Comprovante de Pagamento - DARF, DAS, DAE e DJE' parentid='containerServicos259' tag='A' type='' class='' check:innerText='Consulta Comprovante de Pagamento - DARF, DAS, DAE e DJE' /&gt;" Guid="117470bc-8aaf-4907-89ae-93035b003d16" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="49c1f80a-83d4-4792-ae74-bb95d252e664" CvTextArea="324, 651, 420, 13" CvTextArgument=". Consulta Comprovante de Pagamento - DARF, DAS, DAE e DJE" CvType="Text" DesignTimeRectangle="323, 651, 681, 15" ElementType="ListItem" FuzzySelectorArgument="&lt;webctrl type='' parentid='containerServicos259' tag='LI' class='showTooltip' aaname='' check:innerText='Consulta Comprovante de Pagamento - DARF, DAS, DAE e DJE' /&gt;" Guid="9b14acb7-f7a8-471e-9076-b0f1f76c9f8d" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="42a7de72b934bcdfd69ff4b5426ee897.png" xmlns="">03Yyb7RF7HEilMb0Fyy3Fsw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

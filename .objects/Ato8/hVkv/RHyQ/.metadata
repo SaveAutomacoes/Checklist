@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Emissão de Comprovante de Inscrição e",
+  "Type": "Screen",
+  "Id": "RHyQ6yLdlkKiVILS68JjyQ",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/RHyQ6yLdlkKiVILS68JjyQ",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/hVkvW8N0iUeJ1h3tUDZkyQ",
+  "Created": "2025-04-29T17:07:15.5153693Z",
+  "Updated": "2025-04-29T17:07:15.5153693Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome aboutblank",
+  "Type": "App",
+  "Id": "kYEGNp8_XE-kGiDJ7_CBNg",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/kYEGNp8_XE-kGiDJ7_CBNg",
+  "Created": "2025-05-08T13:31:31.1886684Z",
+  "Updated": "2025-05-08T13:31:31.1886684Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="zbhPrsY7lEKVh7kEG2OxEA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Default.aspx" CVScreenId="5360d679-12cf-47a9-8f4c-596f9755b4e2" CvElementArea="1548, 228, 157, 34" CvTextArea="1583, 239, 114, 11" CvTextArgument="Alterar perfil de acesso" CvType="Button" DesignTimeRectangle="1557, 231, 140, 30" DesignTimeScaleFactor="1.100000023841858" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='btnPerfil' tag='SPAN' type='' class='' aaname='Alterar perfil de acesso' check:innerText='Alterar perfil de acesso' /&gt;" Guid="73e02e4f-af92-425c-886c-dc2bb2ec5f49" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="5360d679-12cf-47a9-8f4c-596f9755b4e2" CvElementArea="1548, 228, 157, 34" CvTextArea="1583, 239, 114, 11" CvTextArgument="Alterar perfil de acesso" CvType="Button" DesignTimeRectangle="1550, 230, 153, 31" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='btnPerfil' tag='A' type='' class='botaoAzul' aaname='                         Alterar perfil de acesso                     ' check:innerText='Alterar perfil de acesso' /&gt;" Guid="037887a2-ec81-449b-bd23-b2b0b29e0b28" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="dcf0fde6dbaa398fe8b63ff2cefc34f8.png" xmlns="">0SYk91CMGm06-hWjk24TEbA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

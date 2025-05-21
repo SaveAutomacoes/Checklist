@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="VTm4795j_EKRSOhudDqwxA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="136e2461-e441-48a5-98e5-6d7b7d3e3e84" CvElementArea="585, 733, 29, 28" CvTextArea="621, 740, 27, 14" CvTextArgument="Não" CvType="RadioButton" DesignTimeRectangle="589, 734, 58, 25" DesignTimeScaleFactor="1.100000023841858" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl aaname='Não ' type='' tag='LABEL' class='control control--radio' /&gt;" Guid="b3e30a9c-f1d1-4bf8-bd48-551f869dc900" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="136e2461-e441-48a5-98e5-6d7b7d3e3e84" CvElementArea="768, 773, 72, 33" CvTextArea="775, 782, 58, 13" CvTextArgument="Cancelar" CvType="Button" DesignTimeRectangle="770, 776, 68, 28" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl id='botaoVoltarTermoAceito' tag='BUTTON' type='button' class='botaoModal' aaname='Cancelar' check:innerText='Cancelar' /&gt;" Guid="18edf08d-eb3b-41ae-8fe8-23fe6b16e7a0" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="1500d29196f4eb888db3e87e7b8d287f.png" xmlns="">01QUUauIwJE-IjH2ycZrV2g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

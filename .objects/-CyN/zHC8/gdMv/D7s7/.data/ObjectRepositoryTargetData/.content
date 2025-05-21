@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="GPAknOdmVEOAl5rAOlZMRQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="regularize.pgfn.gov.br/consultaDividas" CVScreenId="879f3d78-ea5b-44d9-a910-cc196c81a123" CvElementArea="266, 621, 1386, 74" CvType="InputBox" DesignTimeRectangle="307, 642, 1305, 30" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl isleaf='1' tag='DIV' type='' class='' aaname=' Você não possui inscrições em dívida ativa. ' check:innerText='Você não possui inscrições em dívida ativa.' /&gt;" Guid="e53e5827-2027-492b-9bff-729bd1699d52" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Regularize' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="879f3d78-ea5b-44d9-a910-cc196c81a123" CvElementArea="266, 621, 1386, 74" CvType="InputBox" DesignTimeRectangle="266, 622, 1387, 72" FuzzySelectorArgument="&lt;webctrl tag='FIELDSET' type='' class='mt-3' aaname='' check:innerText='Você não possui inscrições em dívida ativa.' /&gt;" Guid="54517985-f376-44f0-b2d2-64afc3abfefc" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="bab81de3cf926b32a450260b6b7af5f8.png" xmlns="">0-gVgS9Xsdkq9gToGWUajCA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

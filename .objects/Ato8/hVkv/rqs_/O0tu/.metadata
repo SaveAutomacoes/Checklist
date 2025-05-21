@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Crédito Original na Dat…",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "O0tuFPYGCEuIhpRY6KMomg",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/O0tuFPYGCEuIhpRY6KMomg",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/rqs_aYf4VkakS8L4Vys-yw",
+  "Created": "2025-03-05T14:08:58.1491854Z",
+  "Updated": "2025-03-05T14:08:58.1491854Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

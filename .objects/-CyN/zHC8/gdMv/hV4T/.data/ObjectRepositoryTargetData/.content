@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="WSs-THQkmE69Kvs2C4jRVA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="regularize.pgfn.gov.br/home" CVScreenId="4232dfea-4b60-4e79-8308-4086a089b541" CvElementArea="257, 595, 267, 231" CvTextArea="282, 709, 213, 15" CvTextArgument="CONSULTAR DÍVIDA ATIVA" CvType="Button" DesignTimeRectangle="275, 705, 229, 25" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='place-info-box-text' tag='SPAN' type='' aaname='Consultar Dívida Ativa' check:innerText='CONSULTAR DÍVIDA ATIVA' /&gt;" Guid="e3e7b88d-acc5-4184-88bf-7983547c1323" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Regularize' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="4232dfea-4b60-4e79-8308-4086a089b541" CvElementArea="257, 595, 267, 231" CvType="Button" DesignTimeRectangle="247, 596, 285, 225" FuzzySelectorArgument="&lt;webctrl class='card-body' type='' tag='DIV' aaname='' check:innerText='CONSULTAR DÍVIDA ATIVA' /&gt;" Guid="4c467821-9cc9-48eb-95be-0c86e545c275" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0d40559d3f90062d27abb428da11452b.png" xmlns="">0uGLGvCor1Em_HDrfwbthbA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

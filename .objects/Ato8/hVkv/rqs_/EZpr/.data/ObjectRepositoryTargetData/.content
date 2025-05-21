@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="0nRLsfUiY0-kjU1I4_2Cyg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="regularize.pgfn.gov.br/consultaDividas" CVScreenId="6e6c3ce2-35f6-47cd-bd33-153e483d6f7d" CvElementArea="353, 15, 298, 46" CvTextArea="394, 26, 71, 17" CvTextArgument="Regularize" CvType="Button" DesignTimeRectangle="352, 15, 298, 46" DesignTimeScaleFactor="1.25" ElementType="Button" Guid="0ccab58e-cb27-4b57-b5b8-9e8ffab603ae" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Regularize' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="6e6c3ce2-35f6-47cd-bd33-153e483d6f7d" CvElementArea="353, 15, 298, 46" CvType="Button" DesignTimeRectangle="359, 18, 54, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='A' type='' class='link-barra' aaname='Brasil' check:innerText='BRASIL' /&gt;" Guid="7f16c2e0-34e0-4a52-bdc6-5be1a6b43a71" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset Position="TopRight" X="-21" Y="18" />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="8c16c33f672f2869302f31ba6cb15e41.png" xmlns="">0aLrFw2IsO0KEIG_vmR0UoQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

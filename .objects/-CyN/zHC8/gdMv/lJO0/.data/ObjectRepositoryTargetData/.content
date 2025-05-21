@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="MU0hujX3p0C7r9H1BPXGsw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="regularize.pgfn.gov.br/consultaDividas" CVScreenId="e7eaae30-b781-404b-b8e2-ecc7a1a48271" CvElementArea="261, 662, 1394, 73" CvType="InputBox" DesignTimeRectangle="1009, 684, 123, 27" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='' tag='STRONG' /&gt;" Guid="38d8a80b-7daa-46b8-8919-7034dc355c22" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Regularize' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="e7eaae30-b781-404b-b8e2-ecc7a1a48271" CvElementArea="261, 662, 1394, 73" CvType="InputBox" DesignTimeRectangle="1142, 687, 16, 20" FuzzySelectorArgument="&lt;webctrl type='' tag='I' class='ion ion-ios-help-circle-outline' aaname='' /&gt;" Guid="23d48320-a280-4482-a647-34ac4acb05fb" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="4a5d2e92bdc5e4bf4d8b608b2370a3a4.png" xmlns="">01ENxnXjHvUGuAoBaygk_BA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

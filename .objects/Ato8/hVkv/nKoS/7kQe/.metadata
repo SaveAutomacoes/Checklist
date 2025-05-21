@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Sessão encerrada",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "7kQepuMwX0-mOd_ZiGf94Q",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/7kQepuMwX0-mOd_ZiGf94Q",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/nKoSsdniOU2WR-U_dciegw",
+  "Created": "2025-05-07T13:51:05.7687284Z",
+  "Updated": "2025-05-07T13:51:05.7687284Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

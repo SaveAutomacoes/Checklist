@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="oD_fkNlHhEqv8BdNfsPeQw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="e9d248b3-3603-4fa1-a19c-75c8542f65ad" CvElementArea="106, 465, 15, 14" CvTextArea="110, 466, 7, 10" CvTextArgument="+" CvType="Button" DesignTimeRectangle="109, 466, 11, 11" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='menuPrincipal_divLinkNodes3' type='' tag='A' class='linkAbreFechaNode' aaname='' /&gt;" Guid="0eb64c21-c4aa-4b22-a9c5-5bd1d214b22e" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="e9d248b3-3603-4fa1-a19c-75c8542f65ad" CvTextArea="127, 465, 159, 17" CvTextArgument="Exigibilidade Suspensa" CvType="Text" DesignTimeRectangle="129, 463, 157, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='menuPrincipal_divLinks3' type='' tag='A' class='teste' aaname='Exigibilidade Suspensa' check:innerText='Exigibilidade Suspensa' /&gt;" Guid="2197249b-86a2-463b-8436-b1f33d07b0bd" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b29bcec7ab726bc726e36aefcda1318e.png" xmlns="">0Qk3xyIJgckeB6mOlQWj8-Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

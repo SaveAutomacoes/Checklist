@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Zsn-4s1tI0eLLKoNRGSitQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="www8.receita.fazenda.gov.br/simplesnacional/aplicacoes.aspx" CVScreenId="cea07be5-3b14-4af3-83e6-2fbb49041e21" CvElementArea="447, 605, 120, 45" CvTextArea="464, 617, 87, 18" CvTextArgument="Gerar PDF" CvType="Button" DesignTimeRectangle="449, 607, 117, 42" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='frame' tag='IFRAME' /&gt;&lt;webctrl id='GerarPDF' tag='BUTTON' type='' class='btn btn-verde' aaname='Gerar PDF' check:innerText='Gerar PDF' /&gt;" Guid="efd8012e-3ec6-41b7-9efa-d1c8e57b4940" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Simples Nacional' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="cea07be5-3b14-4af3-83e6-2fbb49041e21" CvElementArea="366, 606, 80, 44" CvTextArea="381, 619, 48, 16" CvTextArgument="Voltar" CvType="Button" DesignTimeRectangle="368, 607, 76, 42" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frame' tag='IFRAME' /&gt;&lt;webctrl tag='A' type='' class='btn btn-verde' aaname='Voltar' check:innerText='Voltar' /&gt;" Guid="8e59d0d6-4756-4a7d-8ba0-7c053ce89cdf" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="39cb2f22cbf0280534c65186117ab8ce.png" xmlns="">0PLAt1O-1aU-guZyHxfm8fQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

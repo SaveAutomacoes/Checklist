@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="FdbQu1A3dkqkKFrl3_hU7w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="01a0bb4c-b753-4d35-afe4-38a058736cbc" CvElementArea="1814, 985, 83, 31" CvTextArea="1821, 993, 68, 16" CvTextArgument="Prosseguir" CvType="Button" DesignTimeRectangle="1816, 979, 88, 44" DesignTimeScaleFactor="1.100000023841858" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl class='ng-star-inserted' parentid='page-content-wrapper' tag='DIV' type='' aaname='' check:innerText='Prosseguir' /&gt;" Guid="5ab99274-0542-42f5-a795-3f1feba782a6" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="01a0bb4c-b753-4d35-afe4-38a058736cbc" CvTextArea="955, 595, 256, 14" CvTextArgument="O Documento está apto para envio" CvType="Text" DesignTimeRectangle="237, 586, 1659, 35" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl type='' parentid='page-content-wrapper' tag='DIV' class='info ng-star-inserted' aaname='O Documento está apto para envio ' check:innerText='O Documento está apto para envio' /&gt;" Guid="91a49231-d85f-4477-8fdb-80eef3a96a00" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset Position="BottomRight" X="-40" Y="-19" />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="690131ab04cdf1608ec755ba05be3d80.png" xmlns="">0H7lvpeQUUEGN8ndYMXoqwA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

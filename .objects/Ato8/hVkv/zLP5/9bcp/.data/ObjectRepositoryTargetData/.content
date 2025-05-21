@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Fp5qsoRlFkmRU3PyotdLlg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="cd36f7b3-32d1-41b1-95d5-5d9177534a96" CvElementArea="787, 634, 96, 39" CvTextArea="799, 645, 73, 18" CvTextArgument="Pesquisar" CvType="Button" DesignTimeRectangle="790, 636, 92, 35" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl aaname='Pesquisar' parentid='conteudo-pagina' tag='A' type='' class='btn btn-success btn-exibe-processando' check:innerText='Pesquisar' /&gt;" Guid="51a1131d-3989-4ff0-ae7f-68c1b93af254" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="cd36f7b3-32d1-41b1-95d5-5d9177534a96" CvElementArea="731, 634, 56, 41" CvType="Button" DesignTimeRectangle="734, 635, 52, 36" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl href='javascript:__doPostBack(&amp;apos;ctl00$cphConteudo$imageFiltrar&amp;apos;,&amp;apos;&amp;apos;)' isleaf='1' parentid='conteudo-pagina' tag='A' type='' class='btn btn-icon-sec btn-exibe-processando image-pesquisar' aaname='' /&gt;" Guid="3dc3c44e-66cc-4a5a-9922-a469d7423212" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="1685991f027f664983bc63b4e7ae03c8.png" xmlns="">0HjKMJfYuoEawArw19eOXag</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

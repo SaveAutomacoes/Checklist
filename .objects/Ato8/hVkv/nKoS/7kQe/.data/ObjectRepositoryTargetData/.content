@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="RphyMHPno06riTfDMNK3Zg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="sisparnet.pgfn.fazenda.gov.br/sisparInternet/autenticacao.jsf" CVScreenId="eecb8209-9560-419d-807b-7acef93829e9" CvTextArea="30, 276, 157, 15" CvTextArgument="Sessão encerrada:" CvType="Text" DesignTimeRectangle="33, 274, 159, 18" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='j_idt53' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' aaname='Sessão encerrada: ' check:innerText='Sessão encerrada:' /&gt;" Guid="057e0e7c-8974-48c0-8121-1f13ec5b69a7" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Procuradoria Geral da Fazenda Nacional - PGFN' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="eecb8209-9560-419d-807b-7acef93829e9" CvTextArea="30, 276, 1016, 15" CvTextArgument="Sessão encerrada: Você não tem permissão de acesso ou ele expirou. Feche o navegador, retorne ao Regularize e tente novamente." CvType="Text" DesignTimeRectangle="30, 275, 1016, 19" FuzzySelectorArgument="&lt;webctrl id='j_idt53' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='' aaname='Você não tem permissão de acesso ou ele expirou. Feche o navegador, retorne ao Regularize e tente novamente.' check:innerText='Sessão encerrada: Você não tem permissão de acesso ou ele expirou. Feche o navegador, retorne ao' /&gt;" Guid="3d9c3f48-20fe-4a48-b92b-b74744489e9d" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="97975fd82c869f4ae52f89edfa6e0384.png" xmlns="">0IPKbHo5EU0WKi09gecyPxA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Total CONTRIBUIÇÃO PARA…",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Id": "Rbby7hF6uUa0g2vjXP4mYw",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/Rbby7hF6uUa0g2vjXP4mYw",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/zLP5butLD0ubDXYcW9dW1Q",
+  "Created": "2025-05-20T14:42:29.9541665Z",
+  "Updated": "2025-05-20T14:42:29.9541665Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

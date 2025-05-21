@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="0SQsU7W72UeI2FjWqe-LtA" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/rmskybfHtUeLQOZpO30FTA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="regularize.pgfn.gov.br/sispar" CVScreenId="8980c00f-6a36-49cf-a184-60f2e7355b82" CvElementArea="263, 715, 231, 61" CvTextArea="304, 739, 144, 18" CvTextArgument="ACESSAR (NOVO)" CvType="Button" DesignTimeRectangle="266, 717, 224, 55" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Acessar (NOVO)' tag='BUTTON' type='button' class='btn btn-primary mt-2' /&gt;" Guid="a24c379a-b5e1-4669-8b70-22cd3e086ee6" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Regularize' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="8980c00f-6a36-49cf-a184-60f2e7355b82" CvTextArea="262, 370, 903, 27" CvTextArgument="Acesso ao Sistema de Negociações - Parcelamento ou Acordo de Transação" CvType="Text" DesignTimeRectangle="266, 337, 1387, 60" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' tag='P' class='h5 pt-4' aaname='Acesso ao Sistema de Negociações - Parcelamento ou Acordo de Transação' check:innerText='Acesso ao Sistema de Negociações - Parcelamento ou Acordo de Transação' /&gt;" Guid="730460ea-5b18-463b-8fa7-564a2ce50008" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="5ad075103635c9f5370ffbc3a4711048.png" xmlns="">0oTm2M27WOk2TFvEFbJd5CA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

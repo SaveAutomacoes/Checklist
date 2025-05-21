@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="FlfjzVw-IEiWwOaXWIV3Xw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/autenticacao/Error/Erro/93003" CVScreenId="7d65100b-7ae7-4eed-83ab-a2fe7bebab1f" CvTextArea="96, 410, 498, 14" CvTextArgument="Vocé atingiu 0 número máximo de dispositivos conectados simultaneamente com esta conta." CvType="Text" DesignTimeRectangle="96, 410, 498, 14" DesignTimeScaleFactor="1" ElementType="Text" Guid="746edb5c-398b-4d40-8a5b-2937f71f08cd" ScopeSelectorArgument="&lt;html app='chrome.exe' title='cav.receita.fazenda.gov.br/autenticacao/Error/Erro/93003?chave=FCC1E299' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="7d65100b-7ae7-4eed-83ab-a2fe7bebab1f" CvTextArea="187, 423, 125, 14" CvTextArgument="&quot;Sair com Segurança&quot;" CvType="Text" DesignTimeRectangle="185, 423, 128, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='body' tag='SPAN' type='' class='' aaname='&amp;quot;Sair com Segurança&amp;quot;' check:innerText='&amp;quot;Sair com Segurança&amp;quot;' /&gt;" Guid="4d6c5255-85ae-469c-bf2e-769c860f3758" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="288a68d2fad1951360c92e0e543763af.png" xmlns="">0v7QJnncSukeCf1F3Eph6yg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

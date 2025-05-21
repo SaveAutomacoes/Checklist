@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="4YpduBuiVEKGlI6Nxqkkvw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="regularize.pgfn.gov.br/consultaDividas" CVScreenId="0d454188-7c70-48da-a216-4ae000f7496b" CvElementArea="305, 700, 1308, 66" CvType="InputBox" DesignTimeRectangle="307, 702, 1305, 62" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aria-role='alert' tag='DIV' type='' class='alert alert-primary text-' aaname=' As inscrições existentes estão extintas. ' check:innerText='As inscrições existentes estão extintas.' /&gt;" Guid="6a1cda69-79ea-47c2-b393-fd8724f8f296" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Regularize' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="0d454188-7c70-48da-a216-4ae000f7496b" CvElementArea="1588, 649, 29, 28" CvTextArea="304, 650, 273, 27" CvTextArgument="Acompanhe sua dívida" CvType="ArrowButton" DesignTimeRectangle="307, 642, 1305, 40" FuzzySelectorArgument="&lt;webctrl id='titulo-graficos' tag='DIV' type='' class='titulo-graficos' aaname=' Acompanhe sua dívida ' check:innerText='Acompanhe sua dívida' /&gt;" Guid="766734c2-3a22-465d-bc74-15f1102e4588" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="db492572f61dd37dfa06a6e8699baeec.png" xmlns="">0-JLKMb1YIk2NZTOyp4YEGw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

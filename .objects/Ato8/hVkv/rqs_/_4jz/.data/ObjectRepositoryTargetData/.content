@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Nx7vHC5h3UCdq5_dnL7BXA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="77068bd2-dbc4-4555-ab8b-69f641fbbcbe" CvElementArea="850, 653, 169, 42" CvType="InputBox" DesignTimeRectangle="853, 655, 165, 37" DesignTimeScaleFactor="1.375" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl id='fimApuracaoPesquisa' tag='INPUT' type='text' class='ng-tns-c3632051545-31 perdcomp-input-calendar form-control p-inputtext p-component ng-star-inserted' placeholder='DD/MM/AAAA' aaname='' /&gt;" Guid="9972cd58-7dc5-4420-95a2-9402b17a2861" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="77068bd2-dbc4-4555-ab8b-69f641fbbcbe" CvTextArea="662, 624, 185, 23" CvTextArgument="Período de Apuração" CvType="Text" DesignTimeRectangle="663, 620, 365, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl aaname='Período de Apuração' tag='LABEL' type='' class='' check:innerText='Período de Apuração' /&gt;" Guid="ea541bb3-8e08-478a-999a-ea567cbbe07e" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="124dc921be4109a1fecbbe0b842dd8f8.png" xmlns="">0dEqmWCxIbUCAa8pVWI7WKQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

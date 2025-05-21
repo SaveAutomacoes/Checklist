@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="A6bJbo2qeE6KXAzbkNA34Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="regularize.pgfn.gov.br/sispar/sisparnet" DesignTimeRectangle="44, 9, 320, 52" DesignTimeScaleFactor="1.25" ElementType="TabPage" FullSelectorArgument="&lt;ctrl name='Regularize - Google Chrome' role='pane' /&gt;&lt;ctrl name='eCAC - Centro Virtual de Atendimento' role='page tab' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Regularize - Google Chrome' role='pane' /&gt;&lt;ctrl name='eCAC - Centro Virtual de Atendimento' role='page tab' automationid='' check:fulltext='Fechar' /&gt;" Guid="17d03b25-df27-45d5-a3c5-b0ddf6f5cf46" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Regularize - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="311, 16, 36, 36" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Regularize - Google Chrome' role='pane' /&gt;&lt;ctrl name='eCAC - Centro Virtual de Atendimento' role='page tab' /&gt;&lt;ctrl name='Fechar' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Regularize - Google Chrome' role='pane' /&gt;&lt;ctrl name='eCAC - Centro Virtual de Atendimento' role='page tab' /&gt;&lt;ctrl name='Fechar' role='push button' automationid='' check:text='Fechar' /&gt;" Guid="b81278b6-a7e1-4aec-832b-17e2583b82f0" SearchSteps="Selector, FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="874d955f932059119ac6d8d0482f233c.png" xmlns="">07PntRR2gpUOsfbpMQl0Fyg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

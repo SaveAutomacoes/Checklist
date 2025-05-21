@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="d64OxzZt3UyHfZBI9qO8qw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="regularize.pgfn.gov.br/home" CVScreenId="bcc51071-baa3-4cb8-a4b0-7f59cdd39c48" CvElementArea="892, 539, 148, 60" CvTextArea="935, 562, 61, 16" CvTextArgument="CIENTE" CvType="Button" DesignTimeRectangle="896, 540, 140, 55" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Ciente' tag='BUTTON' type='button' class='btn btn-primary' check:innerText='CIENTE' /&gt;" Guid="c2b69793-67e3-4021-933c-956c2922876d" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Regularize' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="bcc51071-baa3-4cb8-a4b0-7f59cdd39c48" CvElementArea="892, 539, 148, 60" CvTextArea="935, 562, 61, 16" CvTextArgument="CIENTE" CvType="Button" DesignTimeRectangle="671, 540, 596, 62" FuzzySelectorArgument="&lt;webctrl class='text-center' tag='DIV' type='' aaname='' check:innerText='CIENTE' /&gt;" Guid="5bf48a8c-0020-4b1c-a98b-731f1537083b" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f22515b363a26b0892b5c8f994de8c5f.png" xmlns="">057rXi-ZRO0yCFAFjn6XsNw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

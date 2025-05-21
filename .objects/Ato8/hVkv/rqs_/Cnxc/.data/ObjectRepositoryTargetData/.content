@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="bPJMITcNIUutb3fEBOrmmw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Default.aspx" CVScreenId="83365c23-682d-4dee-8dec-42ff265cc3f2" CvTextArea="56, 621, 176, 13" CvTextArgument="Assinar e Transmitir DCTFWeb" CvType="Text" DesignTimeRectangle="59, 622, 173, 14" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='servicosMaisAcessados' tag='A' type='' class='' aaname='Assinar e Transmitir DCTFWeb' check:innerText='Assinar e Transmitir DCTFWeb' /&gt;" Guid="b700c01c-3ab4-4b55-b57c-5f033358da6d" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="83365c23-682d-4dee-8dec-42ff265cc3f2" CvTextArea="56, 621, 176, 13" CvTextArgument="Assinar e Transmitir DCTFWeb" CvType="Text" DesignTimeRectangle="34, 622, 200, 15" ElementType="ListItem" FuzzySelectorArgument="&lt;webctrl parentid='servicosMaisAcessados' tag='LI' type='' class='' aaname='' check:innerText='Assinar e Transmitir DCTFWeb' /&gt;" Guid="62eef449-d7fe-403a-890b-d93bfb86e13c" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b64da2e2044e5f654fe6991013239f1d.png" xmlns="">0Zc4wyuHUiU6jXJM1-8Blsg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

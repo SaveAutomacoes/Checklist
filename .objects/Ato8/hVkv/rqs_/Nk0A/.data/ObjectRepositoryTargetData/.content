@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="zVGccNM7zUaAiw6Js_bm9A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="f2ca4c6e-52f1-4311-9f65-00fd8113314b" CvTextArea="130, 400, 136, 17" CvTextArgument="Débitos/Pendências" CvType="Text" DesignTimeRectangle="129, 398, 135, 17" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='menuPrincipal_divLinks3' type='' tag='A' class='teste' aaname='Débitos/Pendências' check:innerText='Débitos/Pendências' /&gt;" Guid="9175e548-8e15-4648-8794-86790003d719" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="f2ca4c6e-52f1-4311-9f65-00fd8113314b" CvTextArea="101, 384, 128, 13" CvTextArgument="na Receita Federal" CvType="Text" DesignTimeRectangle="103, 381, 127, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='menuPrincipal_divLinks2' type='' tag='A' class='teste' aaname='na Receita Federal' check:innerText='na Receita Federal' /&gt;" Guid="74e74169-4e65-48bd-bb7c-baad547131bd" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="d4d961f289a989c3ec6883b137f6bf3e.png" xmlns="">0itn-qMal0EeivrlRZ_ZiHg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

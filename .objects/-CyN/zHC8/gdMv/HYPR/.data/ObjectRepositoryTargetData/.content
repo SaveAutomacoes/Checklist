@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="tfrX9GXGTUWEllOIlEPdUg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="regularize.pgfn.gov.br/consultaDividas" DesignTimeRectangle="44, 230, 25, 46" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;webctrl tag='I' type='' class='icon ion-ios-menu' aaname='' /&gt;" Guid="2ea7f4fb-f360-4f4c-9db6-2d785c31f2b3" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Regularize' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="29, 229, 56, 46" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='button' class='navbar-toggler' aaname='Navegação&amp;gt;' check:innerText='Navegação&amp;gt;' /&gt;" Guid="6c48962a-9f50-4797-8ffe-b384425b02c6" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="7212af942f7dc407f680d7f87f3bb5f2.png" xmlns="">08C9tbgI2ckOGp7v36kJf7w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

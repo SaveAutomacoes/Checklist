@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="nO4wX2PdUUGsk9swxrE4rQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="regularize.pgfn.gov.br/sispar/sisparnet" DesignTimeRectangle="1399, 452, 256, 218" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;webctrl id='sisparFrame' tag='IFRAME' /&gt;&lt;webctrl class='card-body' type='' tag='DIV' aaname='' check:innerText='CAPACIDADE DE PAGAMENTO' /&gt;" Guid="4be0cb70-374b-418d-9047-a59bbd31e39f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Regularize' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1414, 592, 226, 49" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='sisparFrame' tag='IFRAME' /&gt;&lt;webctrl aaname='CAPACIDADE DE PAGAMENTO' class='place-info-box-text' tag='SPAN' type='' check:innerText='CAPACIDADE DE PAGAMENTO' /&gt;" Guid="f4c34827-69bd-440c-87c9-c1eac97df630" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="9eb8c4bb4089796a5259545ac5e10876.png" xmlns="">03UR6A93gIU6rXwgUAHanug</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

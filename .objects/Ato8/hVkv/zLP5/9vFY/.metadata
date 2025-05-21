@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Fechar",
+  "Type": "Element",
+  "Id": "9vFYEwQYZ0yV20C6QSSKSg",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/9vFYEwQYZ0yV20C6QSSKSg",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/zLP5butLD0ubDXYcW9dW1Q",
+  "Created": "2025-05-20T17:22:34.5198911Z",
+  "Updated": "2025-05-20T17:22:34.5198911Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

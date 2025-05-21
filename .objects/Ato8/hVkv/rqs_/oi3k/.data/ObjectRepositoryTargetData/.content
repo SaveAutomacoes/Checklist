@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="AKCa_R36hEmAhILDN3mF8A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="2075e5c2-54ea-4211-a5b8-35f0bd0f5067" CvElementArea="1100, 704, 728, 42" CvType="InputBox" DesignTimeRectangle="1102, 706, 726, 37" DesignTimeScaleFactor="1.375" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl id='apelidoDocumento' tag='INPUT' type='text' class='form-control ng-pristine ng-invalid ng-touched' aaname='Apelido para Identificação do Documento' /&gt;" Guid="d7d505e3-d1c7-46f2-9df1-5b07ce3bf498" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="2075e5c2-54ea-4211-a5b8-35f0bd0f5067" CvTextArea="1100, 677, 325, 19" CvTextArgument="Apelido para Identificação do Documento*" CvType="Text" DesignTimeRectangle="1102, 675, 726, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl aaname='Apelido para Identificação do Documento' class='required' tag='LABEL' type='' check:innerText='Apelido para Identificação do Documento' /&gt;" Guid="700b49e1-1d25-4017-a7dc-15d9569f947a" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a70fbc6285869c7893083bf73ad2fc75.png" xmlns="">0mI4tTTA_1U6ych2rswrFRg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

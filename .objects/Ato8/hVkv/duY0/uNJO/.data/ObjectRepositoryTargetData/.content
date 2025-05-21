@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="SdYG0PXQL0iyiWa7FX3S-Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="www8.receita.fazenda.gov.br/simplesnacional/aplicacoes.aspx" CVScreenId="51e0c0d3-18e4-4f08-94a8-43ff052d6b25" CvElementArea="373, 852, 195, 45" CvType="Button" DesignTimeRectangle="374, 853, 192, 42" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='frame' tag='IFRAME' /&gt;&lt;webctrl id='btnMaisInfo' tag='BUTTON' type='' class='btn btn-default' aaname=' Mais informações' check:innerText='Mais informações' /&gt;" Guid="98846daa-27e0-4004-8fac-f1c17950e2d9" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Simples Nacional' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="51e0c0d3-18e4-4f08-94a8-43ff052d6b25" CvElementArea="373, 852, 195, 45" CvType="Button" DesignTimeRectangle="390, 864, 18, 17" FuzzySelectorArgument="&lt;webctrl id='frame' tag='IFRAME' /&gt;&lt;webctrl parentid='btnMaisInfo' tag='SPAN' type='' class='glyphicon glyphicon-plus' aaname='' /&gt;" Guid="bd2b3633-b7e8-4721-be2a-c8ac8548bfea" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="45b594ff972d10bb323e1697b7563b6e.png" xmlns="">01plXTDKB9EKSw5VFVOm21w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "CÓDIGO E DESCRIÇÃO DA A…",
+  "Type": "Element",
+  "Id": "vjgXCB8F-kayIT6hwR1jkA",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/vjgXCB8F-kayIT6hwR1jkA",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/RHyQ6yLdlkKiVILS68JjyQ",
+  "Created": "2025-04-29T17:08:03.264328Z",
+  "Updated": "2025-04-29T17:08:03.264328Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="BlPHmbyuG0SgslfW80KEqQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="www8.receita.fazenda.gov.br/simplesnacional/aplicacoes.aspx" CVScreenId="cb825199-3e32-4726-81b7-69564e1ab95c" CvTextArea="394, 589, 93, 17" CvTextArgument="Data Inicial" CvType="Text" DesignTimeRectangle="385, 576, 168, 46" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frame' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='' aaname='                             Data Inicial                         ' check:innerText='Data Inicial' /&gt;" Guid="d9041c3c-0d60-42f9-a49b-6f87f93ae594" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Simples Nacional' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="cb825199-3e32-4726-81b7-69564e1ab95c" CvTextArea="384, 554, 432, 21" CvTextArgument="Opções pelo Simples Nacional em Períodos Anteriores:" CvType="Text" DesignTimeRectangle="385, 553, 430, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frame' tag='IFRAME' /&gt;&lt;webctrl parentid='maisInfo' tag='SPAN' type='' class='' aaname='Opções pelo Simples Nacional em Períodos Anteriores: ' check:innerText='Opções pelo Simples Nacional em Períodos Anteriores:' /&gt;" Guid="2a24592d-1be2-40de-8df4-e9aa1c018cdf" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="cb825199-3e32-4726-81b7-69564e1ab95c" CvTextArea="562, 589, 85, 17" CvTextArgument="Data Final" CvType="Text" DesignTimeRectangle="553, 576, 168, 46" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frame' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='                             Data Final                         ' type='' tag='TH' class='' check:innerText='Data Final' /&gt;" Guid="097b5379-392f-45d8-98c2-38033d1d07f3" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="cb825199-3e32-4726-81b7-69564e1ab95c" CvTextArea="384, 499, 165, 17" CvTextArgument="Períodos Anteriores" CvType="Text" DesignTimeRectangle="385, 499, 1120, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frame' tag='IFRAME' /&gt;&lt;webctrl parentid='maisInfo' tag='H3' type='' class='panel-title' aaname='Períodos Anteriores' check:innerText='Períodos Anteriores' /&gt;" Guid="d3cbc94c-ba01-4c00-810e-b6049983f805" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="5858285b40e1f6d7bb3a6b3d354adf94.png" xmlns="">0yQZlKvlu3kWnO9CFQpjs6w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ADFOy7FJ6UWFd4kvgH7rzw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="d97b2111-62b9-4c65-9288-a5c939d9b450" CvElementArea="811, 570, 495, 31" CvType="InputBox" DesignTimeRectangle="812, 571, 494, 29" DesignTimeScaleFactor="1.100000023841858" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl id='creditoOriginalDataEntrega' tag='INPUT' type='text' class='form-control ng-pristine ng-invalid ng-touched' aaname='Crédito Original na Data de Entrega' /&gt;" Guid="7654d23e-5369-4027-8b5e-e68c147e1b0d" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="d97b2111-62b9-4c65-9288-a5c939d9b450" CvTextArea="810, 546, 228, 17" CvTextArgument="Crédito Original na Data de Entrega*" CvType="Text" DesignTimeRectangle="812, 545, 225, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl class='required' tag='LABEL' type='' aaname='Crédito Original na Data de Entrega' check:innerText='Crédito Original na Data de Entrega' /&gt;" Guid="638782c9-505e-4755-bf26-0f79655ec128" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="9702c2b87d0c31796b9bf3619d73cfa8.png" xmlns="">0_HnGotwM50GF_99cQFDPKQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Excedido o número de ra…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "lRfvsAeGIkOyT1veR-o08Q",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/lRfvsAeGIkOyT1veR-o08Q",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/rqs_aYf4VkakS8L4Vys-yw",
+  "Created": "2025-03-07T14:00:59.0697597Z",
+  "Updated": "2025-03-07T14:00:59.0697597Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

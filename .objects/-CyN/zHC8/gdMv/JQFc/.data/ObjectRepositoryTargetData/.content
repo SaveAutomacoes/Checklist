@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="wQAxq7WW8kG1N2wTUaE0MA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="regularize.pgfn.gov.br/home" DesignTimeRectangle="671, 254, 596, 60" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='' isleaf='1' tag='P' aaname=' Fique atento: você tem novas notificações na caixa de mensagens da PGFN! ' check:innerText='Fique atento: você tem novas notificações na caixa de mensagens da PGFN!' /&gt;" Guid="9606bb8d-ed98-4b90-8da5-c33aa15a59ab" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Regularize' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="117f330e-5eb7-4166-92aa-2dcef2378f1c" CvTextArea="667, 175, 106, 27" CvTextArgument="Atenção!" CvType="Text" DesignTimeRectangle="671, 173, 102, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='h5' tag='P' type='' aaname='Atenção!' check:innerText='Atenção!' /&gt;" Guid="6d6acbd4-7ad6-40f9-854c-89ff334eb613" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="998ac69823337bada8eabfaeca55f850.png" xmlns="">08CHU_WM1gEOek3NMTswhpw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

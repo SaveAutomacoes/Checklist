@@ -1,0 +1,13 @@
+﻿{
+  "Name": "DATA DE ABERTURA",
+  "Type": "Element",
+  "Id": "EUpE0819rkiExPhcNg2OSA",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/EUpE0819rkiExPhcNg2OSA",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/RHyQ6yLdlkKiVILS68JjyQ",
+  "Created": "2025-04-29T17:21:51.2291457Z",
+  "Updated": "2025-04-29T17:21:51.2291457Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

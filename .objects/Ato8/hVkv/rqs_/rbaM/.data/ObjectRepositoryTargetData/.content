@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ikuDRidZDEGLtUxL_eGt2A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="869da6ec-f763-4b7f-b128-947105873104" CvElementArea="266, 640, 157, 33" CvTextArea="274, 648, 142, 16" CvTextArgument="Selecionar Pagamento" CvType="Button" DesignTimeRectangle="269, 641, 153, 30" DesignTimeScaleFactor="1.100000023841858" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl tag='INPUT' type='button' class='bottom' aaname='Selecionar Pagamento' check:text='Selecionar Pagamento' /&gt;" Guid="644099a4-daea-4342-8c68-5faf27ac4ce6" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="869da6ec-f763-4b7f-b128-947105873104" CvElementArea="266, 640, 157, 33" CvTextArea="274, 648, 142, 16" CvTextArgument="Selecionar Pagamento" CvType="Button" DesignTimeRectangle="252, 641, 532, 30" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl type='' parentid='page-content-wrapper' tag='DIV' class='col-xs-4 ng-star-inserted' aaname='' check:text='Selecionar Pagamento' /&gt;" Guid="11aa6559-928b-44c1-a594-f2811b906709" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="20fd95df1dca6741206bbe5cd607eb61.png" xmlns="">0O1Hz-BpaxE2GD5l3Fg4Ndg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

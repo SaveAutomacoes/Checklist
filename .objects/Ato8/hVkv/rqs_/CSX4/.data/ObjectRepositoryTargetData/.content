@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="h-QmlRsZYEeJ169u3FLQpA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="sso.acesso.gov.br/login" DesignTimeRectangle="157, 317, 284, 32" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;wnd cls='#32770' title='Geral' /&gt;&lt;wnd ctrlid='105' /&gt;" FuzzySelectorArgument="&lt;wnd cls='#32770' title='Geral' /&gt;&lt;wnd ctrlid='105' /&gt;" Guid="78b37e4c-39f2-48fd-9b80-0ba60d7be040" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Certificado' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="a32ec45a-92aa-414c-ac54-5c1be73f4550" CvTextArea="76, 317, 79, 16" CvTextArgument="Emitido para" CvType="Text" DesignTimeRectangle="78, 317, 77, 22" ElementType="Text" FullSelectorArgument="&lt;wnd cls='#32770' title='Geral' /&gt;&lt;wnd ctrlid='113' /&gt;" FuzzySelectorArgument="&lt;wnd cls='#32770' title='Geral' /&gt;&lt;wnd ctrlid='113' check:text='Emitido para:' /&gt;" Guid="da9b2977-54c5-4b0e-a0f0-099e1671f5be" SearchSteps="Selector, FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="4f2a71829b2fb7608e495d85be7e4b4f.png" xmlns="">0aneZWPYfe02SBMpJsRdPxA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

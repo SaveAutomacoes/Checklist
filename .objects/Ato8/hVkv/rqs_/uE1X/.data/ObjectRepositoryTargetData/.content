@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="LBEw53axeUqmGeDH8Z2-pQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="d97b2111-62b9-4c65-9288-a5c939d9b450" CvElementArea="267, 570, 495, 30" CvType="InputBox" DesignTimeRectangle="269, 571, 494, 29" DesignTimeScaleFactor="1.100000023841858" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl id='valorOriginalCreditoInicial' tag='INPUT' type='text' class='form-control ng-untouched ng-pristine ng-valid' aaname='Valor Original do Crédito Inicial' /&gt;" Guid="0a423b64-49e1-4428-a35f-8262c5d1805b" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="d97b2111-62b9-4c65-9288-a5c939d9b450" CvTextArea="267, 547, 192, 13" CvTextArgument="Valor Original do Crédito Inicial" CvType="Text" DesignTimeRectangle="269, 545, 494, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl tag='LABEL' type='' class='' aaname='Valor Original do Crédito Inicial' check:innerText='Valor Original do Crédito Inicial' /&gt;" Guid="0e0840cc-ffd7-473e-9385-07fb106932a6" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="6a72b679ade9f0c832003eed93647805.png" xmlns="">00kcRoTg_NUmQmE7IRG77Xg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

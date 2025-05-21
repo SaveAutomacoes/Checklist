@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Z4YlawEPME6qZ_RGxliHEw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="b2da902e-7468-497e-817a-ca380cde425f" CvElementArea="1194, 532, 136, 31" CvTextArea="1205, 539, 114, 15" CvTextArgument="Gerar Relatório" CvType="Button" DesignTimeRectangle="1197, 534, 133, 26" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='palco' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='validar' type='button' tag='INPUT' class='' aaname='Gerar Relatório' check:text='Gerar Relatório' /&gt;" Guid="d77c6047-a352-4cb0-a934-d5a83e9fc6b7" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="b2da902e-7468-497e-817a-ca380cde425f" CvElementArea="1194, 532, 136, 31" CvTextArea="1205, 539, 114, 15" CvTextArgument="Gerar Relatório" CvType="Button" DesignTimeRectangle="784, 534, 958, 26" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='palco' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='captcha' type='' tag='DIV' class='' aaname='                                                                                  ' check:text='Hcaptcha&amp;#xA;&amp;#xA;                    Gerar Relatório' /&gt;" Guid="0f1c5193-5ceb-452b-8803-a6dd5e48204f" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b83f377b6a8efba80837c6086ec22fd8.png" xmlns="">0797pqfm9I0-kr0GPm-Vh-g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

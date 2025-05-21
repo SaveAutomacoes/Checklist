@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="8ynpNZQGnEu7_4fe3AjNtA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="bb4a4d24-9dd8-4364-aa62-0f780ecd5a1c" CvElementArea="106, 400, 16, 15" CvTextArea="110, 401, 7, 10" CvTextArgument="+" CvType="Button" DesignTimeRectangle="109, 401, 11, 11" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='menuPrincipal_divLinkNodes3' type='' tag='A' class='linkAbreFechaNode' aaname='' /&gt;" Guid="dd0ea459-6234-4edf-9cab-612877f7e748" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="bb4a4d24-9dd8-4364-aa62-0f780ecd5a1c" CvTextArea="127, 400, 137, 16" CvTextArgument="Débitos/Pendências" CvType="Text" DesignTimeRectangle="129, 398, 135, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='menuPrincipal_divLinks3' type='' tag='A' class='teste' aaname='Débitos/Pendências' check:innerText='Débitos/Pendências' /&gt;" Guid="e11461d3-4a06-4def-be55-a868de2d4445" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="ce1365b09602c8757e2afc5ae7ef38e5.png" xmlns="">0HQwx6rIEjEerkg-qg1I7KA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

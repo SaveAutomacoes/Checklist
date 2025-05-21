@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Situação Fiscal do Cont…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "AZDyvSESuESegKN-zSa4hg",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/AZDyvSESuESegKN-zSa4hg",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/rqs_aYf4VkakS8L4Vys-yw",
+  "Created": "2025-05-07T12:23:17.2467857Z",
+  "Updated": "2025-05-07T12:23:17.2467857Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "O número do CNPJ não é …",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "01f4H1G2kUyXbOZuTkHYjg",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/01f4H1G2kUyXbOZuTkHYjg",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/RHyQ6yLdlkKiVILS68JjyQ",
+  "Created": "2025-05-05T13:36:15.8066176Z",
+  "Updated": "2025-05-05T13:36:15.8066176Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

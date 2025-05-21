@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="5GnjhbBQdk23GJnUa4ceUg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" DesignTimeRectangle="1329, 119, 235, 45" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='eCAC - Centro Virtual de Atendimento - Google Chrome' role='pane' /&gt;&lt;ctrl name='Encontrar na página     eCAC - Centro Virtual de Atendimento' role='pane' /&gt;&lt;ctrl name='Buscar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='eCAC - Centro Virtual de Atendimento - Google Chrome' role='pane' /&gt;&lt;ctrl name='Encontrar na página     eCAC - Centro Virtual de Atendimento' role='pane' /&gt;&lt;ctrl name='Buscar' role='editable text' automationid='' /&gt;" Guid="e5ade248-5243-41db-aa62-5fb05a26b012" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='eCAC - Centro Virtual de Atendimento - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1579, 124, 2, 35" FullSelectorArgument="&lt;ctrl name='eCAC - Centro Virtual de Atendimento - Google Chrome' role='pane' /&gt;&lt;ctrl name='Encontrar na página     eCAC - Centro Virtual de Atendimento' role='pane' /&gt;&lt;ctrl idx='2' role='status bar' /&gt;" FuzzySelectorArgument="&lt;ctrl name='eCAC - Centro Virtual de Atendimento - Google Chrome' role='pane' /&gt;&lt;ctrl name='Encontrar na página     eCAC - Centro Virtual de Atendimento' role='pane' /&gt;&lt;ctrl automationid='' role='status bar' /&gt;" Guid="3ac89b7b-18b5-45d0-bd0d-ac39bc51de10" SearchSteps="Selector, FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a8108ad1bf599257cac52764894ba192.png" xmlns="">0J9BlUGhsFkCKjgCo4eJ1FA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

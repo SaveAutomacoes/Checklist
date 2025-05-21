@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="N-4Zz1Hi00WEti_5jQmWVg" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/fGfN_zTZRk2vNPRmmyG0Wg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="www8.receita.fazenda.gov.br/simplesnacional/aplicacoes.aspx" CVScreenId="cbfa444f-722e-4373-af99-43f030f8a587" DesignTimeRectangle="820, 613, 105, 20" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl id='frame' tag='IFRAME' /&gt;&lt;webctrl class='spanValorVerde' parentid='maisInfo' tag='SPAN' innertext='Não Existem' idx='1' /&gt;" FuzzySelectorArgument="&lt;webctrl id='frame' tag='IFRAME' /&gt;&lt;webctrl class='spanValorVerde' parentid='maisInfo' tag='SPAN' type='' /&gt;" Guid="ccdf807d-a5b5-4263-beec-17516e423bc1" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Simples Nacional' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="cbfa444f-722e-4373-af99-43f030f8a587" CvTextArea="384, 684, 165, 18" CvTextArgument="Períodos Anteriores" CvType="Text" DesignTimeRectangle="385, 558, 1120, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frame' tag='IFRAME' /&gt;&lt;webctrl parentid='maisInfo' tag='H3' type='' class='panel-title' aaname='Períodos Anteriores' check:innerText='Períodos Anteriores' /&gt;" Guid="349c5f3d-8fd1-4062-a755-40d5c4b59e89" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e31381f249f0530fa4df07717cb887f1.png" xmlns="">0J1Ssqgmrik2Kc_yJkxIkcQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

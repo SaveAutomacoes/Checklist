@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="1XGzsXf0V02U4Oiip7_jXA" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/01f4H1G2kUyXbOZuTkHYjg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="solucoes.receita.fazenda.gov.br/Servicos/cnpjreva/Cnpjreva_Erro.asp" CVScreenId="ba562ad2-82fa-4933-be3c-2617c40a6486" CvTextArea="461, 505, 702, 21" CvTextArgument="0 número do CNPJ não é válido. Verifique se 0 mesmo foi digitado corretamente. (010-CON-FORM)" CvType="Text" DesignTimeRectangle="399, 550, 1140, 29" DesignTimeScaleFactor="1.125" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' tag='P' class='' aaname='O número do CNPJ não é válido. Verifique se o mesmo foi digitado corretamente. (010-CON-FORM)' /&gt;" Guid="f615893c-268f-4781-b826-8b9f6a4c1c88" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Tela de respostas' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="ba562ad2-82fa-4933-be3c-2617c40a6486" CvTextArea="461, 505, 702, 21" CvTextArgument="0 número do CNPJ não é válido. Verifique se 0 mesmo foi digitado corretamente. (010-CON-FORM)" CvType="Text" DesignTimeRectangle="764, 553, 761, 23" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' tag='P' class='' aaname='O número do CNPJ não é válido. Verifique se o mesmo foi digitado corretamente. (010-CON-FORM)' check:innerText='O número do CNPJ não é válido. Verifique se o mesmo foi digitado corretamente. (010-CON-FORM)' /&gt;" Guid="7994cbba-6c4e-4154-98fe-e79a310373e9" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f0534f2832d0260b36a47f584b8f17b0.png" xmlns="">0zVUN1EOULkOltS8OzF86VA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

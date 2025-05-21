@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Tv21ycmjOEaZPvBpasSYzg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/autenticacao/login" CVScreenId="de53ce5f-063d-42a3-af1e-1031486cbbfb" CvElementArea="1158, 536, 216, 55" CvTextArea="1192, 551, 150, 23" CvTextArgument="Entrar com goubr" CvType="Button" DesignTimeRectangle="1160, 537, 211, 51" DesignTimeScaleFactor="1.375" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='image' class='' aaname='Acesso Gov BR' /&gt;" Guid="4f929b1c-e2d7-4947-9072-13a4e66dd66d" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="de53ce5f-063d-42a3-af1e-1031486cbbfb" CvTextArea="1174, 617, 180, 15" CvTextArgument="Saiba mais sobre GOV.BR" CvType="Text" DesignTimeRectangle="1176, 617, 179, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='login-dados-certificado' tag='A' type='' class='' aaname='                                 Saiba mais sobre GOV.BR                             ' check:innerText='Saiba mais sobre GOV.BR' /&gt;" Guid="b31a7577-2761-44cc-b9f1-49f752456395" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="242349806de5e0c79169efd79f51c257.png" xmlns="">0yXoZpRWGC0uR3gpDc_6T1w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

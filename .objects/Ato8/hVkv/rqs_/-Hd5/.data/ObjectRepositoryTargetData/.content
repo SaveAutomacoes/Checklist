@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ySTf7LZcQEKRoeTB8pmSTg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="fda04006-fee6-4c3f-9ddd-2c9f0cd6318e" CvElementArea="1807, 970, 73, 31" CvTextArea="1824, 978, 41, 13" CvTextArgument="Enviar" CvType="Button" DesignTimeRectangle="1809, 972, 71, 28" DesignTimeScaleFactor="1.100000023841858" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl name='btnEnviar' tag='BUTTON' type='button' class='' aaname='Enviar' check:innerText='Enviar' /&gt;" Guid="d3d175c9-8902-416d-ba8b-c6d3b459a75d" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="fda04006-fee6-4c3f-9ddd-2c9f0cd6318e" CvElementArea="1807, 970, 73, 31" CvTextArea="1824, 978, 41, 13" CvTextArgument="Enviar" CvType="Button" DesignTimeRectangle="1809, 964, 80, 44" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl class='ng-star-inserted' parentid='page-content-wrapper' tag='DIV' type='' aaname='' check:innerText='Enviar' /&gt;" Guid="3e89aed6-bfad-49f1-8217-d6d944893f03" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="1df69dbb61dd883b3e7ea664cf643b7b.png" xmlns="">0WnjOJKDCLEO_Lb161kAbtA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

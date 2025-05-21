@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="jNQDuS101EmwxSDCRsiTRw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="regularize.pgfn.gov.br/consultaDividas" CVScreenId="14035a3d-d81f-43fb-9c23-145d90f2bbda" CvTextArea="280, 574, 143, 22" CvTextArgument="Negociar Dívida" CvType="Text" DesignTimeRectangle="282, 570, 142, 27" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Negociar Dívida' parentid='collapseExample' tag='A' type='' class='' check:innerText='Negociar Dívida' /&gt;" Guid="32946ea1-25ab-4a15-99bd-2df9caa583dd" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Regularize' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="14035a3d-d81f-43fb-9c23-145d90f2bbda" CvElementArea="257, 573, 22, 24" CvTextArea="280, 574, 143, 22" CvTextArgument="Negociar Dívida" CvType="ArrowButton" DesignTimeRectangle="266, 566, 684, 38" ElementType="ListItem" FuzzySelectorArgument="&lt;webctrl type='' parentid='collapseExample' tag='LI' class='' aaname='' check:innerText='Negociar Dívida' /&gt;" Guid="0a7ad65a-74b0-4723-b629-2cb1716753ac" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="795ed93e87f3e3560f1022b9dd60a2e5.png" xmlns="">079HLfq02tEybokFcAtBnMw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

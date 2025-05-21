@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Exigibilidade Suspensa",
+  "Type": "Element",
+  "Id": "Ry4jBiVUa0iXTI4gAZhsDQ",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/Ry4jBiVUa0iXTI4gAZhsDQ",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/rqs_aYf4VkakS8L4Vys-yw",
+  "Created": "2025-05-06T16:38:24.8662791Z",
+  "Updated": "2025-05-06T16:38:24.8662791Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

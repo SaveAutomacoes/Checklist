@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="MLBSUkomw0Oljdv-RcSziw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="solucoes.receita.fazenda.gov.br/servicos/cnpjreva/Cnpjreva_Comprovante.asp" CVScreenId="ceed792c-0f18-43bd-aac5-ce273dd3719b" CvTextArea="442, 537, 366, 11" CvType="AnyWordGroup" DesignTimeRectangle="444, 537, 365, 12" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='B' class='' /&gt;" Guid="95ae3610-5b81-48c2-86b6-4eb4d57a24fa" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Comprovante de Inscrição e de Situação Cadastral' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="ceed792c-0f18-43bd-aac5-ce273dd3719b" CvTextArea="439, 527, 43, 8" CvTextArgument="TCUUIPCE" CvType="Text" DesignTimeRectangle="444, 528, 241, 9" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='FONT' class='' aaname=' &amp;#x9;&amp;#x9;CÓDIGO E DESCRIÇÃO DA ATIVIDADE ECONÔMICA PRINCIPAL  &amp;#x9;&amp;#x9;' check:innerText='CÓDIGO E DESCRIÇÃO DA ATIVIDADE ECONÔMICA PRINCIPAL' /&gt;" Guid="db0604b8-489f-4971-995f-d3987513c325" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a7a9c33eae543a6bda20ad54bcaf2a51.png" xmlns="">0Xg1NPfs1uU-VyFnj2oDFqw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="PSxxi6P6YU6dbSU_qPVCuA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac" CVScreenId="9cdc0f9f-83a6-4034-895c-8364b27e7775" CvTextArea="756, 547, 61, 18" CvTextArgument="Atenção" CvType="Text" DesignTimeRectangle="759, 548, 59, 16" ElementType="Text" FullSelectorArgument="&lt;webctrl id='ui-dialog-title-dialog-bloqueio-ativo-caixapostal' tag='SPAN' /&gt;" Guid="1bf5ba69-cde2-4082-b712-2ef1b9f1cbd3" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="9cdc0f9f-83a6-4034-895c-8364b27e7775" CvTextArea="756, 547, 61, 18" CvTextArgument="Atenção" CvType="Text" DesignTimeRectangle="731, 526, 475, 47" FuzzySelectorArgument="&lt;webctrl type='' class='ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix' tag='DIV' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Atenção' /&gt;" Guid="3e4e78b8-6803-4706-bced-bfb219c2c078" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="39079a1cc7aada6dc9aafaf9cdc59a3d.png" xmlns="">0Qn_IlegLakGiWq1lsZAH2g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

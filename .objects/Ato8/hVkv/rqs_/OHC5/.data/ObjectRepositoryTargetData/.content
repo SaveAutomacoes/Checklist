@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="w8-5DgeduEGNd9wIyRvvlw" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/OHC5bwpNsEGd3oFKEVeEzg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="5993c391-9b93-47af-8fdb-e6a914a053f0" CvTextArea="1668, 687, 76, 18" CvTextArgument="[darf]" CvType="Text" DesignTimeRectangle="1669, 682, 74, 25" DesignTimeScaleFactor="1.100000023841858" ElementType="Text" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl aaname='56.614,36' parentid='page-content-wrapper' tag='A' type='' class='' check:innerText='{0}' /&gt;&quot;, darf)]" Guid="3d9bdf3a-ac86-4280-87ae-ab3623547eff" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="5993c391-9b93-47af-8fdb-e6a914a053f0" CvTextArea="1642, 630, 90, 17" CvTextArgument="Valor Total" CvType="Text" DesignTimeRectangle="1643, 626, 89, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl type='' class='' tag='STRONG' aaname='Valor Total' check:innerText='Valor Total' /&gt;" Guid="296808e2-70ad-42fc-95a9-8ecc2de87bdd" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0b2013670c16cffe779910b8d490d302.png" xmlns="">0IxPH0QnVd0q3MSpz7FyyYg</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="*" Name="darf" />
+    </scg:List>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

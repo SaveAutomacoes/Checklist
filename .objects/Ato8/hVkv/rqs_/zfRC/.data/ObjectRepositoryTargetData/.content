@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="v8fPVXAAdkKriT-VJfAi6g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac" CVScreenId="57c288b0-9368-440d-bf27-a646a6d07841" CvElementArea="1247, 397, 213, 36" CvTextArea="1287, 406, 132, 13" CvTextArgument="Dívida Ativa da União" CvType="Button" DesignTimeRectangle="1248, 396, 211, 35" DesignTimeScaleFactor="1.25" ElementType="Text" Guid="eccf985e-bc50-4de2-a518-a266e4c3360f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="CV" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="8ed49e0d3375bde29ddee7f2a12a3aaa.png" xmlns="">0yhoS5QvrL06FAOgF5LmSNw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

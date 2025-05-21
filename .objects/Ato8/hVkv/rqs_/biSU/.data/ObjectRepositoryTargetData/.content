@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="mD70ytR-PUaDHtIGWoYEGg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="1b21e0e1-8fe1-421e-b88a-0a41124bebcd" CvTextArea="1081, 613, 401, 17" CvType="AnyWordGroup" DesignTimeRectangle="1083, 613, 399, 16" DesignTimeScaleFactor="1.100000023841858" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl parentid='page-content-wrapper' parentname='pendencia' tag='A' type='' class='ng-star-inserted' /&gt;" Guid="c1b7b61d-1da0-4f08-a624-396a4e5c273a" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="1b21e0e1-8fe1-421e-b88a-0a41124bebcd" CvElementArea="950, 576, 16, 25" CvTextArea="954, 578, 8, 20" CvType="Icon" DesignTimeRectangle="949, 578, 13, 22" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl type='' parentid='page-content-wrapper' tag='I' class='icon-exclamation warning' aaname='' /&gt;" Guid="79eed7ae-eed0-45b9-bdde-f56ba236f688" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABEAAAAaCAYAAABRqrc5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACtSURBVEhLY/hPBcCALkAOGEqGPJjy/0uR4v/PBUi4KPH/9/cIJYQNOZuPagAY+/z/9gyhhLAhz2b//4LNkJcIJWQakv//B5KSoWTI+5VUMOT//v9f0Q2p7fn/E0kFeYa0zP7/C0kFvQy58v9bE5ohM3f8/4OkgghDCAN6GYLFO/0r//9GUkGEIVQJWKoYcvb/13I0Q9pINuT//79fXv3//R4JI6d5Yg0hBIaZIQA8UnML4Yw0GQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b82909873d9e56fad82141abf2965cbe.png" xmlns="">0o2UPGAOW5USHh6yViG5ZTA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
