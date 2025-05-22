@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="_xlTPLgqwUegYInjgXvivg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="regularize.pgfn.gov.br/consultaDividas" CVScreenId="4e072b67-708b-4cef-9150-5be5e307e168" CvType="AnyWordGroup" DesignTimeRectangle="327, 595, 145, 20" ElementType="Text" Guid="e67e1775-90b5-4471-9729-64f9c6cac2f8" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Regularize' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="4e072b67-708b-4cef-9150-5be5e307e168" CvTextArea="305, 421, 174, 22" CvTextArgument="Situação da Dívida" CvType="Text" DesignTimeRectangle="307, 418, 172, 27" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='STRONG' type='' class='' aaname='Situação da Dívida' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Situação da Dívida' /&gt;" Guid="01bd7a02-1761-4f29-b7c4-073aea810916" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="1f68490cb6ccecb461183bd12a268b88.png" xmlns="">0LmWBmRQjUk-U2hWV4dt7oA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
