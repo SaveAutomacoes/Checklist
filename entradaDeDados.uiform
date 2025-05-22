@@ -121,6 +121,9 @@
         "components": [
           {
             "label": "Edit Grid",
+            "addAnother": "Adicionar",
+            "saveRow": "Salvar",
+            "removeRow": "Cancelar",
             "key": "editGrid",
             "type": "editgrid",
             "displayAsTable": true,
@@ -151,6 +154,10 @@
                     {
                       "label": "RECUPERA-C",
                       "value": "recuperaC"
+                    },
+                    {
+                      "label": "ELIANE",
+                      "value": "eliane"
                     }
                   ]
                 },
@@ -166,12 +173,15 @@
           },
           {
             "label": "Continuar",
+            "showValidations": false,
+            "theme": "success",
             "size": "sm",
+            "disableOnInvalid": true,
             "tableView": false,
             "key": "continuar",
             "type": "button",
-            "input": true,
-            "saveOnEnter": false
+            "saveOnEnter": false,
+            "input": true
           }
         ]
       }
