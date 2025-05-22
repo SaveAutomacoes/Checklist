@@ -278,7 +278,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="2962.4,46044" sap2010:WorkflowViewState.IdRef="Sequence_6">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="2962.4,46016.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="naoPossuiArrecadacao" />
       <Variable x:TypeArguments="x:Boolean" Name="verificaAcimaDeMil" />
@@ -315,6 +315,7 @@
       <Variable x:TypeArguments="sd:DataTable" Name="tabelaDados" />
       <Variable x:TypeArguments="x:String" Name="btnFormSelecioneUm" />
       <Variable x:TypeArguments="x:String" Name="exigibilidade" />
+      <Variable x:TypeArguments="x:String" Name="negociadas" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -406,13 +407,13 @@
         <InArgument x:TypeArguments="x:String">[system.Environment.UserName]</InArgument>
       </Assign.Value>
     </Assign>
-    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" CreateNewFile="False" DisplayName="Abre o Excel" sap:VirtualizedContainerService.HintSize="2962.4,43922.4" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="[sheet]">
+    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" CreateNewFile="False" DisplayName="Abre o Excel" sap:VirtualizedContainerService.HintSize="2962.4,43895.2" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="[sheet]">
       <ueab:ExcelApplicationCard.Body>
         <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="2928.8,43620.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="2928.8,43593.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="cnpjFormatado" />
             </Sequence.Variables>
@@ -453,13 +454,13 @@
                 <InArgument x:TypeArguments="x:String">[Excel.Sheet("checklist").Cell("B11")]</InArgument>
               </Assign.Value>
             </Assign>
-            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Abre a Emissão de Comprovante" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="2895.2,4920" sap2010:WorkflowViewState.IdRef="NApplicationCard_20" InteractionMode="DebuggerApi" ScopeGuid="22fde0dd-fbb9-4281-b35d-d6f1c97fe7bd" UserDataFolderMode="DefaultFolder" Version="V2">
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Abre a Emissão de Comprovante" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="2895.2,4922.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_20" InteractionMode="DebuggerApi" ScopeGuid="22fde0dd-fbb9-4281-b35d-d6f1c97fe7bd" UserDataFolderMode="DefaultFolder" Version="V2">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Navega pelo Chrome" sap:VirtualizedContainerService.HintSize="633.6,4671.2" sap2010:WorkflowViewState.IdRef="Sequence_390">
+                  <Sequence DisplayName="Navega pelo Chrome" sap:VirtualizedContainerService.HintSize="633.6,4673.6" sap2010:WorkflowViewState.IdRef="Sequence_390">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -841,7 +842,7 @@
                         </ui:Target>
                       </ui:SendHotkey.Target>
                     </ui:SendHotkey>
-                    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Aperta ENTER" sap:VirtualizedContainerService.HintSize="600,169" sap2010:WorkflowViewState.IdRef="SendHotkey_16" Key="enter" KeyModifiers="None" SpecialKey="True">
+                    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Aperta ENTER" sap:VirtualizedContainerService.HintSize="600,168.8" sap2010:WorkflowViewState.IdRef="SendHotkey_16" Key="enter" KeyModifiers="None" SpecialKey="True">
                       <ui:SendHotkey.Target>
                         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="06529e50-bbeb-4af6-96a7-be0064ba343c">
                           <ui:Target.TimeoutMS>
@@ -853,8 +854,8 @@
                         </ui:Target>
                       </ui:SendHotkey.Target>
                     </ui:SendHotkey>
-                    <Delay DisplayName="Aguarda 1 Segundo" Duration="00:00:01" sap:VirtualizedContainerService.HintSize="600,122" sap2010:WorkflowViewState.IdRef="Delay_11" />
-                    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Aperta ENTER" sap:VirtualizedContainerService.HintSize="600,169" sap2010:WorkflowViewState.IdRef="SendHotkey_17" Key="enter" KeyModifiers="None" SpecialKey="True">
+                    <Delay DisplayName="Aguarda 1 Segundo" Duration="00:00:01" sap:VirtualizedContainerService.HintSize="600,122.4" sap2010:WorkflowViewState.IdRef="Delay_11" />
+                    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Aperta ENTER" sap:VirtualizedContainerService.HintSize="600,168.8" sap2010:WorkflowViewState.IdRef="SendHotkey_17" Key="enter" KeyModifiers="None" SpecialKey="True">
                       <ui:SendHotkey.Target>
                         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="06529e50-bbeb-4af6-96a7-be0064ba343c">
                           <ui:Target.TimeoutMS>
@@ -866,8 +867,8 @@
                         </ui:Target>
                       </ui:SendHotkey.Target>
                     </ui:SendHotkey>
-                    <Delay DisplayName="Aguarda 2 Segundos" Duration="00:00:02" sap:VirtualizedContainerService.HintSize="600,122" sap2010:WorkflowViewState.IdRef="Delay_12" />
-                    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Aperta C" sap:VirtualizedContainerService.HintSize="600,169" sap2010:WorkflowViewState.IdRef="SendHotkey_18" Key="c" KeyModifiers="None">
+                    <Delay DisplayName="Aguarda 2 Segundos" Duration="00:00:02" sap:VirtualizedContainerService.HintSize="600,122.4" sap2010:WorkflowViewState.IdRef="Delay_12" />
+                    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Aperta C" sap:VirtualizedContainerService.HintSize="600,168.8" sap2010:WorkflowViewState.IdRef="SendHotkey_18" Key="c" KeyModifiers="None">
                       <ui:SendHotkey.Target>
                         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="5cdc62df-2708-4a6f-9f02-34f00287e859">
                           <ui:Target.TimeoutMS>
@@ -879,7 +880,7 @@
                         </ui:Target>
                       </ui:SendHotkey.Target>
                     </ui:SendHotkey>
-                    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Aperta N" sap:VirtualizedContainerService.HintSize="600,169" sap2010:WorkflowViewState.IdRef="SendHotkey_19" Key="n" KeyModifiers="None">
+                    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Aperta N" sap:VirtualizedContainerService.HintSize="600,168.8" sap2010:WorkflowViewState.IdRef="SendHotkey_19" Key="n" KeyModifiers="None">
                       <ui:SendHotkey.Target>
                         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="5cdc62df-2708-4a6f-9f02-34f00287e859">
                           <ui:Target.TimeoutMS>
@@ -929,7 +930,7 @@
                     </ui:SendHotkey>
                     <Delay DisplayName="Aguarda 5 Segundos" Duration="00:00:02" sap:VirtualizedContainerService.HintSize="600,122" sap2010:WorkflowViewState.IdRef="Delay_13" />
                     <ui:RenameFileX DisplayName="Renomeia o Cartão do CNPJ" FilePath="[System.IO.Directory.GetFiles(&quot;C:\Users\&quot; + Environment.UserName + &quot;\Downloads&quot;, &quot;*.pdf&quot;).OrderByDescending(Function(d) New FileInfo(d).CreationTime).FirstOrDefault()]" sap:VirtualizedContainerService.HintSize="600,175" sap2010:WorkflowViewState.IdRef="RenameFileX_9" KeepExtension="True" NewName="[&quot;CartãoCNPJ - &quot; + cnpjFormatado + &quot;.pdf&quot;]" />
-                    <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[caminho]" DisplayName="Move o Cartão para a pasta" sap:VirtualizedContainerService.HintSize="600,184" sap2010:WorkflowViewState.IdRef="MoveFile_11" Overwrite="True" Path="[System.IO.Directory.GetFiles(&quot;C:\Users\&quot; + Environment.UserName + &quot;\Downloads&quot;, &quot;*.pdf&quot;).OrderByDescending(Function(d) New FileInfo(d).CreationTime).FirstOrDefault()]" />
+                    <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[caminho]" DisplayName="Move o Cartão para a pasta" sap:VirtualizedContainerService.HintSize="600,184.8" sap2010:WorkflowViewState.IdRef="MoveFile_11" Overwrite="True" Path="[System.IO.Directory.GetFiles(&quot;C:\Users\&quot; + Environment.UserName + &quot;\Downloads&quot;, &quot;*.pdf&quot;).OrderByDescending(Function(d) New FileInfo(d).CreationTime).FirstOrDefault()]" />
                   </Sequence>
                 </ActivityAction>
               </uix:NApplicationCard.Body>
@@ -948,27 +949,27 @@
                 <InArgument x:TypeArguments="x:String">[cnpj.replace(".","").replace("-","").replace("/","")]</InArgument>
               </Assign.Value>
             </Assign>
-            <If Condition="[Excel.Sheet(&quot;CHECKLIST&quot;).Cell(&quot;B7&quot;).StringValue = &quot;&quot;]" DisplayName="Verifica se a célula B7 está vazia" sap:VirtualizedContainerService.HintSize="2895.2,2926.4" sap2010:WorkflowViewState.IdRef="If_60">
+            <If Condition="[Excel.Sheet(&quot;CHECKLIST&quot;).Cell(&quot;B7&quot;).StringValue = &quot;&quot;]" DisplayName="Verifica se a célula B7 está vazia" sap:VirtualizedContainerService.HintSize="2895.2,2928.8" sap2010:WorkflowViewState.IdRef="If_60">
               <If.Then>
-                <Sequence DisplayName="Célula B7 está vazia" sap:VirtualizedContainerService.HintSize="1152,2698.4" sap2010:WorkflowViewState.IdRef="Sequence_398">
+                <Sequence DisplayName="Célula B7 está vazia" sap:VirtualizedContainerService.HintSize="1147.2,2700.8" sap2010:WorkflowViewState.IdRef="Sequence_398">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Abre o Simples Nacional" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1118.4,2264.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_21" InteractionMode="DebuggerApi" ScopeGuid="b1b732b3-8ce9-4a33-9a60-fbc138b7fbfb" Version="V2">
+                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Abre o Simples Nacional" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1113.6,2265.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_21" InteractionMode="DebuggerApi" ScopeGuid="b1b732b3-8ce9-4a33-9a60-fbc138b7fbfb" Version="V2">
                     <uix:NApplicationCard.Body>
                       <ActivityAction x:TypeArguments="x:Object">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Navega pelo Simples Nacional" sap:VirtualizedContainerService.HintSize="1083.2,2016" sap2010:WorkflowViewState.IdRef="Sequence_400">
+                        <Sequence DisplayName="Navega pelo Simples Nacional" sap:VirtualizedContainerService.HintSize="1080,2016.8" sap2010:WorkflowViewState.IdRef="Sequence_400">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Digita o CNPJ" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1050,250" sap2010:WorkflowViewState.IdRef="NTypeInto_55" ScopeIdentifier="b1b732b3-8ce9-4a33-9a60-fbc138b7fbfb" Text="[cnpj]" Version="V4">
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Digita o CNPJ" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1046.4,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_55" ScopeIdentifier="b1b732b3-8ce9-4a33-9a60-fbc138b7fbfb" Text="[cnpj]" Version="V4">
                             <uix:NTypeInto.Target>
                               <uix:TargetAnchorable BrowserURL="www8.receita.fazenda.gov.br/simplesnacional/aplicacoes.aspx" CVScreenId="e7531159-d7dc-4c1b-9b87-e712cc2ce299" ContentHash="wxnFKIes6EClY4iG8QX9Zw" CvElementArea="371, 530, 206, 47" CvType="InputBox" DesignTimeRectangle="373, 532, 200, 42" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='frame' tag='IFRAME' /&gt;&lt;webctrl id='Cnpj' tag='INPUT' type='text' class='form-control numeric' aaname='CNPJ' /&gt;" Guid="5bc28d10-fb69-48a6-ac4b-3c143b56896d" InformativeScreenshot="73bfed0899f734eae90476727d0a23bc.png" IsResponsive="True" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/urBsusgeiker_HyMUTnrMQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Simples Nacional' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
                                 <uix:TargetAnchorable.Anchors>
@@ -979,7 +980,7 @@
                               </uix:TargetAnchorable>
                             </uix:NTypeInto.Target>
                           </uix:NTypeInto>
-                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clica em Consultar" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1049.6,189.6" sap2010:WorkflowViewState.IdRef="NClick_159" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b1b732b3-8ce9-4a33-9a60-fbc138b7fbfb" Version="V4">
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clica em Consultar" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1046.4,189.6" sap2010:WorkflowViewState.IdRef="NClick_159" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b1b732b3-8ce9-4a33-9a60-fbc138b7fbfb" Version="V4">
                             <uix:NClick.Target>
                               <uix:TargetAnchorable BrowserURL="www8.receita.fazenda.gov.br/simplesnacional/aplicacoes.aspx" CVScreenId="27b02a19-fc01-416a-9d9d-d67c7a996250" ContentHash="HuTCyUeVmUGnh8y-GpjaXQ" CvElementArea="372, 592, 110, 45" CvTextArea="387, 605, 78, 17" CvTextArgument="Consultar" CvType="Button" DesignTimeRectangle="373, 593, 107, 42" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='frame' tag='IFRAME' /&gt;&lt;webctrl tag='BUTTON' type='' class='btn btn-verde h-captcha' aaname='Consultar' check:innerText='Consultar' /&gt;" Guid="3877d67b-6572-464a-bc8f-b80d240b73b9" InformativeScreenshot="1fb3dbf2c492d91a1845b3c2ffcaefc3.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/p1g60Xhv_k-Yu9SW3aTtmQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Simples Nacional' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
                                 <uix:TargetAnchorable.Anchors>
@@ -990,7 +991,7 @@
                               </uix:TargetAnchorable>
                             </uix:NClick.Target>
                           </uix:NClick>
-                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clica em Mais Informações" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1049.6,189.6" sap2010:WorkflowViewState.IdRef="NClick_160" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b1b732b3-8ce9-4a33-9a60-fbc138b7fbfb" Version="V4">
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clica em Mais Informações" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1046.4,189.6" sap2010:WorkflowViewState.IdRef="NClick_160" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b1b732b3-8ce9-4a33-9a60-fbc138b7fbfb" Version="V4">
                             <uix:NClick.Target>
                               <uix:TargetAnchorable BrowserURL="www8.receita.fazenda.gov.br/simplesnacional/aplicacoes.aspx" CVScreenId="51e0c0d3-18e4-4f08-94a8-43ff052d6b25" ContentHash="SdYG0PXQL0iyiWa7FX3S-Q" CvElementArea="373, 852, 195, 45" CvType="Button" DesignTimeRectangle="374, 853, 192, 42" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='frame' tag='IFRAME' /&gt;&lt;webctrl id='btnMaisInfo' tag='BUTTON' type='' class='btn btn-default' aaname=' Mais informações' check:innerText='Mais informações' /&gt;" Guid="98846daa-27e0-4004-8fac-f1c17950e2d9" InformativeScreenshot="45b594ff972d10bb323e1697b7563b6e.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/uNJOI7--VU2VnfcWZyU18g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Simples Nacional' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
                                 <uix:TargetAnchorable.Anchors>
@@ -1001,7 +1002,7 @@
                               </uix:TargetAnchorable>
                             </uix:NClick.Target>
                           </uix:NClick>
-                          <uix:NCheckState DisplayName="Verifica se tem período do Simples Nacional" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="1049.6,1143.2" sap2010:WorkflowViewState.IdRef="NCheckState_51" ScopeIdentifier="b1b732b3-8ce9-4a33-9a60-fbc138b7fbfb" Version="V4">
+                          <uix:NCheckState DisplayName="Verifica se tem período do Simples Nacional" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="1046.4,1143.2" sap2010:WorkflowViewState.IdRef="NCheckState_51" ScopeIdentifier="b1b732b3-8ce9-4a33-9a60-fbc138b7fbfb" Version="V4">
                             <uix:NCheckState.IfExists>
                               <Sequence DisplayName="Se tem" sap:VirtualizedContainerService.HintSize="544,852.8" sap2010:WorkflowViewState.IdRef="Sequence_401">
                                 <sap:WorkflowViewStateService.ViewState>
@@ -1107,7 +1108,7 @@
                               </uix:TargetAnchorable>
                             </uix:NCheckState.Target>
                           </uix:NCheckState>
-                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clica em Gerar PDF" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1049.6,182.4" sap2010:WorkflowViewState.IdRef="NClick_161" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b1b732b3-8ce9-4a33-9a60-fbc138b7fbfb" Version="V4">
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clica em Gerar PDF" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1046.4,182.4" sap2010:WorkflowViewState.IdRef="NClick_161" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b1b732b3-8ce9-4a33-9a60-fbc138b7fbfb" Version="V4">
                             <uix:NClick.Target>
                               <uix:TargetAnchorable BrowserURL="www8.receita.fazenda.gov.br/simplesnacional/aplicacoes.aspx" CVScreenId="cea07be5-3b14-4af3-83e6-2fbb49041e21" ContentHash="Zsn-4s1tI0eLLKoNRGSitQ" CvElementArea="447, 605, 120, 45" CvTextArea="464, 617, 87, 18" CvTextArgument="Gerar PDF" CvType="Button" DesignTimeRectangle="449, 607, 117, 42" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='frame' tag='IFRAME' /&gt;&lt;webctrl id='GerarPDF' tag='BUTTON' type='' class='btn btn-verde' aaname='Gerar PDF' check:innerText='Gerar PDF' /&gt;" Guid="efd8012e-3ec6-41b7-9efa-d1c8e57b4940" InformativeScreenshot="39cb2f22cbf0280534c65186117ab8ce.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/OYjDTbjvYk-oQ3mFQm-b5w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Simples Nacional' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
                                 <uix:TargetAnchorable.Anchors>
@@ -1125,12 +1126,12 @@
                       <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" ContentHash="3fL6SxBOBUWdfXG3FWuKXA" IconBase64="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" InformativeScreenshot="7e136a3c9d42a83ec44d69bf0bffb5e5.jpg" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/duY0MMqRK0aztGgFzHrM6Q" Selector="&lt;html app='chrome.exe' title='Simples Nacional' /&gt;" Url="https://www8.receita.fazenda.gov.br/simplesnacional/aplicacoes.aspx?id=21" Version="V2" />
                     </uix:NApplicationCard.TargetApp>
                   </uix:NApplicationCard>
-                  <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[caminho + &quot;/consultaOptante&quot; + &quot; - &quot; + cnpjFormatado + &quot;.pdf&quot;]" DisplayName="Move o Arquivo" sap:VirtualizedContainerService.HintSize="1118,191" sap2010:WorkflowViewState.IdRef="MoveFile_9" Overwrite="True" Path="[System.IO.Directory.GetFiles(&quot;C:\Users\&quot; + Environment.UserName + &quot;\Downloads&quot;, &quot;*.pdf&quot;).OrderByDescending(Function(d) New FileInfo(d).CreationTime).FirstOrDefault()]" />
-                  <ueab:WriteCellX Cell="[Excel.Sheet(&quot;CHECKLIST&quot;).Cell(&quot;B7&quot;)]" DisplayName="Escreve na Célula B7" sap:VirtualizedContainerService.HintSize="1118,182" sap2010:WorkflowViewState.IdRef="WriteCellX_53" Value="[optanteSN]" />
+                  <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[caminho + &quot;/consultaOptante&quot; + &quot; - &quot; + cnpjFormatado + &quot;.pdf&quot;]" DisplayName="Move o Arquivo" sap:VirtualizedContainerService.HintSize="1113.6,192" sap2010:WorkflowViewState.IdRef="MoveFile_9" Overwrite="True" Path="[System.IO.Directory.GetFiles(&quot;C:\Users\&quot; + Environment.UserName + &quot;\Downloads&quot;, &quot;*.pdf&quot;).OrderByDescending(Function(d) New FileInfo(d).CreationTime).FirstOrDefault()]" />
+                  <ueab:WriteCellX Cell="[Excel.Sheet(&quot;CHECKLIST&quot;).Cell(&quot;B7&quot;)]" DisplayName="Escreve na Célula B7" sap:VirtualizedContainerService.HintSize="1113.6,183.2" sap2010:WorkflowViewState.IdRef="WriteCellX_53" Value="[optanteSN]" />
                 </Sequence>
               </If.Then>
               <If.Else>
-                <Sequence DisplayName="Célula B7 não está vazia" sap:VirtualizedContainerService.HintSize="1152,90" sap2010:WorkflowViewState.IdRef="Sequence_399">
+                <Sequence DisplayName="Célula B7 não está vazia" sap:VirtualizedContainerService.HintSize="1147.2,89.6" sap2010:WorkflowViewState.IdRef="Sequence_399">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1139,13 +1140,13 @@
                 </Sequence>
               </If.Else>
             </If>
-            <uix:NApplicationCard DisplayName="Abre o eCAC" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="2895.2,34570.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="cd12c88d-9ee2-4e74-a831-638ddf9c26dc" UserDataFolderMode="DefaultFolder">
+            <uix:NApplicationCard DisplayName="Abre o eCAC" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="2895.2,34538.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="cd12c88d-9ee2-4e74-a831-638ddf9c26dc" UserDataFolderMode="DefaultFolder">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="cnpjNavega pelo eCAC" sap:VirtualizedContainerService.HintSize="2861.6,34330.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <Sequence DisplayName="cnpjNavega pelo eCAC" sap:VirtualizedContainerService.HintSize="2861.6,34298.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:Boolean" Name="verificouOlho" />
                       <Variable x:TypeArguments="s:DateTime" Name="dataHoje" />
@@ -1355,7 +1356,7 @@
                         </uix:TargetAnchorable>
                       </uix:NTypeInto.Target>
                     </uix:NTypeInto>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clica em Alterar" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="2804,189" sap2010:WorkflowViewState.IdRef="NClick_30" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="cd12c88d-9ee2-4e74-a831-638ddf9c26dc" Version="V4">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clica em Alterar" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="2828,189.6" sap2010:WorkflowViewState.IdRef="NClick_30" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="cd12c88d-9ee2-4e74-a831-638ddf9c26dc" Version="V4">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac/Default.aspx" CVScreenId="92f26803-244b-4bc0-9364-305d430b06ed" ContentHash="K-E1erNl30aHZKoJ5dATKQ" CvElementArea="1021, 534, 113, 22" CvTextArea="1059, 538, 38, 12" CvTextArgument="Alterar" CvType="Button" DesignTimeRectangle="1023, 536, 110, 20" DesignTimeScaleFactor="1.100000023841858" ElementType="Button" FuzzySelectorArgument="&lt;webctrl parentid='formPJ' tag='INPUT' type='button' class='submit' aaname='Alterar' check:text='Alterar' /&gt;" Guid="3ce0193a-7e6c-4f33-8d41-0ce2a669d095" InformativeScreenshot="6acd340919488f036f3d4e4d63e362af.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/I_ggA9KmKkSCCbu9icPcOQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
                           <uix:TargetAnchorable.Anchors>
@@ -1366,7 +1367,7 @@
                         </uix:TargetAnchorable>
                       </uix:NClick.Target>
                     </uix:NClick>
-                    <uix:NCheckState DisplayName="Aguarda o Elemento desaparecer" EnableIfExists="False" EnableIfNotExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="2804,209" sap2010:WorkflowViewState.IdRef="NCheckState_4" Mode="WaitDisappear" ScopeIdentifier="cd12c88d-9ee2-4e74-a831-638ddf9c26dc" Timeout="20" Version="V4">
+                    <uix:NCheckState DisplayName="Aguarda o Elemento desaparecer" EnableIfExists="False" EnableIfNotExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="2828,210.4" sap2010:WorkflowViewState.IdRef="NCheckState_4" Mode="WaitDisappear" ScopeIdentifier="cd12c88d-9ee2-4e74-a831-638ddf9c26dc" Timeout="20" Version="V4">
                       <uix:NCheckState.IfExists>
                         <Sequence DisplayName="Target disappears" sap:VirtualizedContainerService.HintSize="449.6,91.2" sap2010:WorkflowViewState.IdRef="Sequence_19">
                           <sap:WorkflowViewStateService.ViewState>
@@ -2902,9 +2903,9 @@
                         <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac" CVScreenId="57c288b0-9368-440d-bf27-a646a6d07841" ContentHash="v8fPVXAAdkKriT-VJfAi6g" CvElementArea="1247, 397, 213, 36" CvTextArea="1287, 406, 132, 13" CvTextArgument="Dívida Ativa da União" CvType="Button" DesignTimeRectangle="1248, 396, 211, 35" DesignTimeScaleFactor="1.25" ElementType="Text" Guid="eccf985e-bc50-4de2-a518-a266e4c3360f" InformativeScreenshot="8ed49e0d3375bde29ddee7f2a12a3aaa.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/zfRCKk7p4UOtplBHUSbK2w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="CV" Version="V5" Visibility="Interactive" />
                       </uix:NClick.Target>
                     </uix:NClick>
-                    <uix:NCheckState DisplayName="Check App State 'Acompanhamento de Reque…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="2828,6783.2" sap2010:WorkflowViewState.IdRef="NCheckState_36" ScopeIdentifier="cd12c88d-9ee2-4e74-a831-638ddf9c26dc" Version="V4">
+                    <uix:NCheckState DisplayName="Check App State 'Acompanhamento de Reque…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="2828,6746.4" sap2010:WorkflowViewState.IdRef="NCheckState_36" ScopeIdentifier="cd12c88d-9ee2-4e74-a831-638ddf9c26dc" Version="V4">
                       <uix:NCheckState.IfExists>
-                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="2307.2,6532.8" sap2010:WorkflowViewState.IdRef="Sequence_172">
+                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="2307.2,6496" sap2010:WorkflowViewState.IdRef="Sequence_172">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2922,13 +2923,13 @@
                             </uix:NClick.Target>
                           </uix:NClick>
                           <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="2273.6,122.4" sap2010:WorkflowViewState.IdRef="Delay_3" />
-                          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Regularize" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="2273.6,6159.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="2e7a0e7f-d3c7-4594-ad60-32329489817a" Version="V2">
+                          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Regularize" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="2273.6,6122.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="2e7a0e7f-d3c7-4594-ad60-32329489817a" Version="V2">
                             <uix:NApplicationCard.Body>
                               <ActivityAction x:TypeArguments="x:Object">
                                 <ActivityAction.Argument>
                                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                                 </ActivityAction.Argument>
-                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="2240,5917.6" sap2010:WorkflowViewState.IdRef="Sequence_116">
+                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="2240,5880.8" sap2010:WorkflowViewState.IdRef="Sequence_116">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -3014,7 +3015,7 @@
                                       </uix:TargetAnchorable>
                                     </uix:NCheckState.Target>
                                   </uix:NCheckState>
-                                  <uix:NCheckState DisplayName="Check App State 'Você ainda não está cad…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="2206.4,4867.2" sap2010:WorkflowViewState.IdRef="NCheckState_29" ScopeIdentifier="2e7a0e7f-d3c7-4594-ad60-32329489817a" Version="V4">
+                                  <uix:NCheckState DisplayName="Check App State 'Você ainda não está cad…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="2206.4,4830.4" sap2010:WorkflowViewState.IdRef="NCheckState_29" ScopeIdentifier="2e7a0e7f-d3c7-4594-ad60-32329489817a" Version="V4">
                                     <uix:NCheckState.IfExists>
                                       <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="467.2,360.8" sap2010:WorkflowViewState.IdRef="Sequence_147">
                                         <sap:WorkflowViewStateService.ViewState>
@@ -3027,7 +3028,7 @@
                                       </Sequence>
                                     </uix:NCheckState.IfExists>
                                     <uix:NCheckState.IfNotExists>
-                                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="1686.4,4624" sap2010:WorkflowViewState.IdRef="Sequence_148">
+                                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="1686.4,4587.2" sap2010:WorkflowViewState.IdRef="Sequence_148">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -3044,7 +3045,7 @@
                                             </uix:TargetAnchorable>
                                           </uix:NClick.Target>
                                         </uix:NClick>
-                                        <uix:NCheckState DisplayName="Check App State 'Você não possui inscriç…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="1652.8,4372.8" sap2010:WorkflowViewState.IdRef="NCheckState_20" ScopeIdentifier="2e7a0e7f-d3c7-4594-ad60-32329489817a" Version="V4">
+                                        <uix:NCheckState DisplayName="Check App State 'Você não possui inscriç…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="1652.8,4336" sap2010:WorkflowViewState.IdRef="NCheckState_20" ScopeIdentifier="2e7a0e7f-d3c7-4594-ad60-32329489817a" Version="V4">
                                           <uix:NCheckState.IfExists>
                                             <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="467.2,246.4" sap2010:WorkflowViewState.IdRef="Sequence_119">
                                               <sap:WorkflowViewStateService.ViewState>
@@ -3056,7 +3057,7 @@
                                             </Sequence>
                                           </uix:NCheckState.IfExists>
                                           <uix:NCheckState.IfNotExists>
-                                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="1132.8,4129.6" sap2010:WorkflowViewState.IdRef="Sequence_120">
+                                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="1132.8,4092.8" sap2010:WorkflowViewState.IdRef="Sequence_120">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -3065,9 +3066,6 @@
                                               <uix:NCheckState DisplayName="Check App State 'Situação da Dívida'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="1099.2,1256.8" sap2010:WorkflowViewState.IdRef="NCheckState_21" ScopeIdentifier="2e7a0e7f-d3c7-4594-ad60-32329489817a" Version="V4">
                                                 <uix:NCheckState.IfExists>
                                                   <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="502.4,1006.4" sap2010:WorkflowViewState.IdRef="Sequence_121">
-                                                    <Sequence.Variables>
-                                                      <Variable x:TypeArguments="x:String" Name="negociadas" />
-                                                    </Sequence.Variables>
                                                     <sap:WorkflowViewStateService.ViewState>
                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -3256,14 +3254,14 @@
                                                   </uix:TargetAnchorable>
                                                 </uix:NCheckState.Target>
                                               </uix:NCheckState>
-                                              <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="1068,122" sap2010:WorkflowViewState.IdRef="Delay_4" />
-                                              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Procuradoria Geral da Fazenda Nacional" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1068,1437" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="90b367cd-1d5d-41ab-b5f0-eacb3236539c" Version="V2">
+                                              <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="1099.2,122.4" sap2010:WorkflowViewState.IdRef="Delay_4" />
+                                              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Procuradoria Geral da Fazenda Nacional" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1099.2,1399.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="90b367cd-1d5d-41ab-b5f0-eacb3236539c" Version="V2">
                                                 <uix:NApplicationCard.Body>
                                                   <ActivityAction x:TypeArguments="x:Object">
                                                     <ActivityAction.Argument>
                                                       <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                                                     </ActivityAction.Argument>
-                                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="988,1195" sap2010:WorkflowViewState.IdRef="Sequence_132">
+                                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="985.6,1157.6" sap2010:WorkflowViewState.IdRef="Sequence_132">
                                                       <Sequence.Variables>
                                                         <Variable x:TypeArguments="ui:Image" Name="capacidadePagamento" />
                                                       </Sequence.Variables>
@@ -3272,7 +3270,7 @@
                                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                         </scg:Dictionary>
                                                       </sap:WorkflowViewStateService.ViewState>
-                                                      <uix:NCheckState DisplayName="Check App State 'Sessão encerrada'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="954,1133" sap2010:WorkflowViewState.IdRef="NCheckState_35" ScopeIdentifier="90b367cd-1d5d-41ab-b5f0-eacb3236539c" Version="V4">
+                                                      <uix:NCheckState DisplayName="Check App State 'Sessão encerrada'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="952,1096" sap2010:WorkflowViewState.IdRef="NCheckState_35" ScopeIdentifier="90b367cd-1d5d-41ab-b5f0-eacb3236539c" Version="V4">
                                                         <uix:NCheckState.IfExists>
                                                           <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,92" sap2010:WorkflowViewState.IdRef="Sequence_160">
                                                             <sap:WorkflowViewStateService.ViewState>
@@ -3283,7 +3281,7 @@
                                                           </Sequence>
                                                         </uix:NCheckState.IfExists>
                                                         <uix:NCheckState.IfNotExists>
-                                                          <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,851" sap2010:WorkflowViewState.IdRef="Sequence_161">
+                                                          <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,852.8" sap2010:WorkflowViewState.IdRef="Sequence_161">
                                                             <sap:WorkflowViewStateService.ViewState>
                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -3300,7 +3298,7 @@
                                                                 </uix:TargetAnchorable>
                                                               </uix:NClick.Target>
                                                             </uix:NClick>
-                                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Pesquisar'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_78" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="90b367cd-1d5d-41ab-b5f0-eacb3236539c" Version="V4">
+                                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Pesquisar'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189.6" sap2010:WorkflowViewState.IdRef="NClick_78" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="90b367cd-1d5d-41ab-b5f0-eacb3236539c" Version="V4">
                                                               <uix:NClick.Target>
                                                                 <uix:TargetAnchorable BrowserURL="sisparnet.pgfn.fazenda.gov.br/sisparInternet/consultarCapag.jsf" CVScreenId="859c25bb-d613-496c-bd7d-23eebed6b972" ContentHash="-22glpvaVkWAwM8ZmUMolw" CvElementArea="351, 364, 107, 39" CvTextArea="369, 376, 73, 17" CvTextArgument="Pesquisar" CvType="Button" DesignTimeRectangle="355, 367, 101, 33" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='ui-button-text' aaname='Pesquisar' check:innerText='Pesquisar' /&gt;" Guid="15e4cd3b-d26a-458d-9556-e4b8145403c4" InformativeScreenshot="5eafebc2340117c44e5b5e6283ef3d40.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/cchIdBPREEerUJgBx_FgMA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Procuradoria Geral da Fazenda Nacional - PGFN' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
                                                                   <uix:TargetAnchorable.Anchors>
@@ -3311,7 +3309,7 @@
                                                                 </uix:TargetAnchorable>
                                                               </uix:NClick.Target>
                                                             </uix:NClick>
-                                                            <ui:TakeScreenshot WaitBefore="{x:Null}" DisplayName="Take Screenshot 'FIELDSET  formDadosParc...'" sap:VirtualizedContainerService.HintSize="416,139" sap2010:WorkflowViewState.IdRef="TakeScreenshot_1" Screenshot="[capacidadePagamento]">
+                                                            <ui:TakeScreenshot WaitBefore="{x:Null}" DisplayName="Take Screenshot 'FIELDSET  formDadosParc...'" sap:VirtualizedContainerService.HintSize="416,139.2" sap2010:WorkflowViewState.IdRef="TakeScreenshot_1" Screenshot="[capacidadePagamento]">
                                                               <ui:TakeScreenshot.Target>
                                                                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d9471a07-2536-4faa-92b6-d4f5b009a6ff" InformativeScreenshot="9974b4fdd32afe4743d394008c4e9136" Selector="&lt;webctrl id='formDadosParcelamento:j_idt63' tag='FIELDSET' /&gt;">
                                                                   <ui:Target.TimeoutMS>
@@ -3323,8 +3321,8 @@
                                                                 </ui:Target>
                                                               </ui:TakeScreenshot.Target>
                                                             </ui:TakeScreenshot>
-                                                            <ui:SaveImage DisplayName="Save Image" FileName="[caminho + &quot;/capacidadePagamento - &quot; + cnpjFormatado + &quot;.jpg&quot;]" sap:VirtualizedContainerService.HintSize="416,165" sap2010:WorkflowViewState.IdRef="SaveImage_2" Image="[capacidadePagamento]" />
-                                                            <uix:NNavigateBrowser Action="CloseTab" DisplayName="Navigate Browser - Close Tab" sap:VirtualizedContainerService.HintSize="416,107" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_7" Version="V4" />
+                                                            <ui:SaveImage DisplayName="Save Image" FileName="[caminho + &quot;/capacidadePagamento - &quot; + cnpjFormatado + &quot;.jpg&quot;]" sap:VirtualizedContainerService.HintSize="416,166.4" sap2010:WorkflowViewState.IdRef="SaveImage_2" Image="[capacidadePagamento]" />
+                                                            <uix:NNavigateBrowser Action="CloseTab" DisplayName="Navigate Browser - Close Tab" sap:VirtualizedContainerService.HintSize="416,107.2" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_7" Version="V4" />
                                                           </Sequence>
                                                         </uix:NCheckState.IfNotExists>
                                                         <uix:NCheckState.Target>
@@ -3397,7 +3395,7 @@
                         </uix:TargetAnchorable>
                       </uix:NCheckState.Target>
                     </uix:NCheckState>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Assinar e Transmitir DC…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="2804,225" sap2010:WorkflowViewState.IdRef="NClick_138" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="cd12c88d-9ee2-4e74-a831-638ddf9c26dc" Version="V4">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Assinar e Transmitir DC…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="2828,225.6" sap2010:WorkflowViewState.IdRef="NClick_138" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="cd12c88d-9ee2-4e74-a831-638ddf9c26dc" Version="V4">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac/Default.aspx" CVScreenId="83365c23-682d-4dee-8dec-42ff265cc3f2" ContentHash="bPJMITcNIUutb3fEBOrmmw" CvTextArea="56, 621, 176, 13" CvTextArgument="Assinar e Transmitir DCTFWeb" CvType="Text" DesignTimeRectangle="59, 622, 173, 14" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='servicosMaisAcessados' tag='A' type='' class='' aaname='Assinar e Transmitir DCTFWeb' check:innerText='Assinar e Transmitir DCTFWeb' /&gt;" Guid="b700c01c-3ab4-4b55-b57c-5f033358da6d" InformativeScreenshot="b64da2e2044e5f654fe6991013239f1d.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/CnxcgR4zu0OEZ-RiMnoX_A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
                           <uix:TargetAnchorable.Anchors>
@@ -3418,19 +3416,19 @@
                         </uix:VerifyExecutionOptions>
                       </uix:NClick.VerifyOptions>
                     </uix:NClick>
-                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Inicia a Verificação de Faseamento" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="2804,8442" sap2010:WorkflowViewState.IdRef="NApplicationCard_19" InteractionMode="DebuggerApi" ScopeGuid="1db51043-fa05-4622-96e5-96c2914bc5c6" Version="V2">
+                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Inicia a Verificação de Faseamento" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="2828,8443.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_19" InteractionMode="DebuggerApi" ScopeGuid="1db51043-fa05-4622-96e5-96c2914bc5c6" Version="V2">
                       <uix:NApplicationCard.Body>
                         <ActivityAction x:TypeArguments="x:Object">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="1754,8193" sap2010:WorkflowViewState.IdRef="Sequence_374">
+                          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="1753.6,8194.4" sap2010:WorkflowViewState.IdRef="Sequence_374">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Fecha Guia Antiga" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1720,225" sap2010:WorkflowViewState.IdRef="NClick_155" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1db51043-fa05-4622-96e5-96c2914bc5c6" Version="V4">
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Fecha Guia Antiga" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1720,225.6" sap2010:WorkflowViewState.IdRef="NClick_155" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1db51043-fa05-4622-96e5-96c2914bc5c6" Version="V4">
                               <uix:NClick.Target>
                                 <uix:TargetAnchorable BrowserURL="regularize.pgfn.gov.br/sispar/sisparnet" ContentHash="A6bJbo2qeE6KXAzbkNA34Q" DesignTimeRectangle="44, 9, 320, 52" DesignTimeScaleFactor="1.25" ElementType="TabPage" FullSelectorArgument="&lt;ctrl name='Regularize - Google Chrome' role='pane' /&gt;&lt;ctrl name='eCAC - Centro Virtual de Atendimento' role='page tab' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Regularize - Google Chrome' role='pane' /&gt;&lt;ctrl name='eCAC - Centro Virtual de Atendimento' role='page tab' automationid='' check:fulltext='Fechar' /&gt;" Guid="17d03b25-df27-45d5-a3c5-b0ddf6f5cf46" InformativeScreenshot="874d955f932059119ac6d8d0482f233c.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/9vFYEwQYZ0yV20C6QSSKSg" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Regularize - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
                                   <uix:TargetAnchorable.Anchors>
@@ -3451,7 +3449,7 @@
                                 </uix:VerifyExecutionOptions>
                               </uix:NClick.VerifyOptions>
                             </uix:NClick>
-                            <uix:NCheckState DisplayName="Aguarda Preencher o Capcha" EnableIfExists="False" EnableIfNotExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="1720,209" sap2010:WorkflowViewState.IdRef="NCheckState_48" ScopeIdentifier="1db51043-fa05-4622-96e5-96c2914bc5c6" Timeout="20" Version="V4">
+                            <uix:NCheckState DisplayName="Aguarda Preencher o Capcha" EnableIfExists="False" EnableIfNotExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="1720,210.4" sap2010:WorkflowViewState.IdRef="NCheckState_48" ScopeIdentifier="1db51043-fa05-4622-96e5-96c2914bc5c6" Timeout="20" Version="V4">
                               <uix:NCheckState.IfExists>
                                 <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="449.6,91.2" sap2010:WorkflowViewState.IdRef="Sequence_386">
                                   <sap:WorkflowViewStateService.ViewState>
@@ -3480,7 +3478,7 @@
                                 </uix:TargetAnchorable>
                               </uix:NCheckState.Target>
                             </uix:NCheckState>
-                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Prossegue Após o Captcha" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1720,225" sap2010:WorkflowViewState.IdRef="NClick_139" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1db51043-fa05-4622-96e5-96c2914bc5c6" Version="V4">
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Prossegue Após o Captcha" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1720,225.6" sap2010:WorkflowViewState.IdRef="NClick_139" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1db51043-fa05-4622-96e5-96c2914bc5c6" Version="V4">
                               <uix:NClick.Target>
                                 <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="41bc7366-55aa-492c-9426-887f42fd47aa" ContentHash="4-Q5eJ_kL0qqJXp4oxwCKw" CvElementArea="26, 587, 103, 38" CvTextArea="37, 597, 80, 18" CvTextArgument="Prosseguir" CvType="Button" DesignTimeRectangle="28, 588, 100, 35" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl tag='A' type='' class='btn btn-primary' aaname='                  Prosseguir                 ' check:innerText='Prosseguir' /&gt;" Guid="b0d4d78b-c0a8-4f06-8c2a-2a8e1c0a5b5d" InformativeScreenshot="f406aa42fecd9ace9ca33f57d53e6719.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/hBYTL3BPqEiaij-sJ56k-g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
                                   <uix:TargetAnchorable.Anchors>
@@ -3501,7 +3499,7 @@
                                 </uix:VerifyExecutionOptions>
                               </uix:NClick.VerifyOptions>
                             </uix:NClick>
-                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Define a Data de Transmissão Inicial" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1720,286" sap2010:WorkflowViewState.IdRef="NTypeInto_49" ScopeIdentifier="1db51043-fa05-4622-96e5-96c2914bc5c6" Version="V4">
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Define a Data de Transmissão Inicial" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1720,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_49" ScopeIdentifier="1db51043-fa05-4622-96e5-96c2914bc5c6" Version="V4">
                               <uix:NTypeInto.Target>
                                 <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="bf3562d1-82ce-478d-892d-d22fb46ba2ab" ContentHash="14YsQDwdQ0S0ZiU46gvUIQ" CvElementArea="507, 578, 142, 35" CvType="InputBox" DesignTimeRectangle="510, 578, 138, 32" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl id='txtDataTransmissaoInicial' tag='INPUT' type='text' class='span12 datepicker mascaraData hasDatepicker' aaname='' /&gt;" Guid="e3925666-4a9d-471b-8b51-a1b4e8896d72" InformativeScreenshot="b0e6c160bc0ced484e0aaaef0a5cede2.png" IsResponsive="True" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/JBmtku_Oo0qSPgu7-Rp_pw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
                                   <uix:TargetAnchorable.Anchors>
