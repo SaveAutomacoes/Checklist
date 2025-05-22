@@ -1,0 +1,180 @@
+﻿{
+  "Metadata": {
+    "Id": "96378677-542b-4cdb-b2aa-b03e8a0d5f68",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "entradaDeDados",
+    "Theme": "Default",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ""
+  },
+  "Data": {
+    "components": [
+      {
+        "tag": "h1",
+        "content": "Checklist",
+        "key": "label",
+        "input": false,
+        "tableView": false,
+        "label": "Label",
+        "type": "label"
+      },
+      {
+        "content": "Por favor, selecione o método de selecionar os CNPJ's a serem consultados.",
+        "key": "label1",
+        "input": false,
+        "tableView": false,
+        "label": "Label",
+        "type": "label"
+      },
+      {
+        "label": "Selecione um:",
+        "optionsLabelPosition": "right",
+        "inline": false,
+        "tableView": false,
+        "values": [
+          {
+            "label": "Importar Excel",
+            "value": "importarExcel",
+            "shortcut": ""
+          },
+          {
+            "label": "Manualmente",
+            "value": "manualmente",
+            "shortcut": ""
+          }
+        ],
+        "validate": {
+          "required": true
+        },
+        "key": "selecioneUm",
+        "type": "radio",
+        "input": true
+      },
+      {
+        "label": "Importar Excel",
+        "key": "container1",
+        "conditional": {
+          "show": true,
+          "when": "selecioneUm",
+          "eq": "importarExcel"
+        },
+        "type": "container",
+        "input": true,
+        "tableView": false,
+        "components": [
+          {
+            "content": "Primeiro, faça o download do modelo:",
+            "key": "label2",
+            "input": false,
+            "tableView": false,
+            "label": "Label",
+            "type": "label"
+          },
+          {
+            "label": "HTML",
+            "attrs": [
+              {
+                "attr": "",
+                "value": ""
+              }
+            ],
+            "content": "<a href=\"https://docs.google.com/spreadsheets/d/14jbYCRMMXxfVDQ4pGz5YsqCWfmFFrtt0BGw1ttnQ2To/export?format=xlsx\" target=\"_blank\">\r\n  <button style=\"padding:10px;background-color:#0d6efd;color:white;border:none;border-radius:5px;cursor:pointer;\">\r\n    Baixar modelo Excel\r\n  </button>\r\n</a>\r\n",
+            "refreshOnChange": false,
+            "key": "html",
+            "type": "htmlelement",
+            "input": false,
+            "tableView": false
+          },
+          {
+            "content": "Preencha com os CNPJs a serem consultados e envie o arquivo:",
+            "key": "label3",
+            "input": false,
+            "tableView": false,
+            "label": "Label",
+            "type": "label"
+          },
+          {
+            "label": "Selecionar Arquivo",
+            "showValidations": false,
+            "tableView": false,
+            "key": "selecionarArquivo",
+            "type": "button",
+            "saveOnEnter": false,
+            "input": true
+          }
+        ]
+      },
+      {
+        "label": "Manualmente",
+        "key": "importarExcel1",
+        "conditional": {
+          "show": true,
+          "when": "selecioneUm",
+          "eq": "manualmente"
+        },
+        "type": "container",
+        "input": true,
+        "tableView": false,
+        "components": [
+          {
+            "label": "Edit Grid",
+            "key": "editGrid",
+            "type": "editgrid",
+            "displayAsTable": true,
+            "input": true,
+            "tableView": false,
+            "components": [
+              {
+                "label": "CNPJ",
+                "inputMask": "99.999.999/9999-99",
+                "tableView": true,
+                "validate": {
+                  "required": true
+                },
+                "key": "cnpj",
+                "type": "textfield",
+                "input": true
+              },
+              {
+                "label": "Certificado",
+                "widget": "html5",
+                "tableView": true,
+                "data": {
+                  "values": [
+                    {
+                      "label": "SAVE",
+                      "value": "save"
+                    },
+                    {
+                      "label": "RECUPERA-C",
+                      "value": "recuperaC"
+                    }
+                  ]
+                },
+                "validate": {
+                  "required": true,
+                  "onlyAvailableItems": true
+                },
+                "key": "certificado",
+                "type": "select",
+                "input": true
+              }
+            ]
+          },
+          {
+            "label": "Continuar",
+            "size": "sm",
+            "tableView": false,
+            "key": "continuar",
+            "type": "button",
+            "input": true,
+            "saveOnEnter": false
+          }
+        ]
+      }
+    ]
+  }
+}
