@@ -158,6 +158,18 @@
                     {
                       "label": "ELIANE",
                       "value": "eliane"
+                    },
+                    {
+                      "label": "GSH",
+                      "value": "g s h"
+                    },
+                    {
+                      "label": "D&S",
+                      "value": "d&s"
+                    },
+                    {
+                      "label": "DSR",
+                      "value": "dsr"
                     }
                   ]
                 },
