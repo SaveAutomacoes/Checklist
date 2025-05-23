@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="kdMJDli23k-QCIErdTqXXg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="www3.cav.receita.fazenda.gov.br/consprocperdcomp/consulta/processamento" CVScreenId="53ba2cfc-7470-486a-a2c2-3f8b39defe93" CvElementArea="1705, 668, 199, 52" CvTextArea="1746, 685, 121, 22" CvTextArgument="Exportar XLS" CvType="Button" DesignTimeRectangle="1748, 678, 119, 28" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Exportar XLS' tag='A' /&gt;" Guid="aed4c3db-2e19-4efd-b1a8-6e8849803610" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Consulta Processamento' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="53ba2cfc-7470-486a-a2c2-3f8b39defe93" CvElementArea="1705, 668, 199, 52" CvTextArea="1746, 685, 121, 22" CvTextArgument="Exportar XLS" CvType="Button" DesignTimeRectangle="1705, 668, 198, 50" ElementType="ListItem" FuzzySelectorArgument="&lt;webctrl class='br-item' type='' tag='LI' aaname='                                               ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Exportar XLS' /&gt;" Guid="71aaec5f-02e7-488e-a22d-a4e3177e193d" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="5c6205bdb20911eb49a945a95dd73d9a.png" xmlns="">0MWSWRJpOIkKrWkmMrTzNkg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

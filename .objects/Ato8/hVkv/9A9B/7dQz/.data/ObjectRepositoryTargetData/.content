@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="awoKI1JLcE6utPhOGq_8Pw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="www3.cav.receita.fazenda.gov.br/consprocperdcomp/consulta/processamento" CVScreenId="394466d1-e294-4b04-9dab-bda8afdbb63f" CvElementArea="215, 651, 165, 54" CvTextArea="246, 667, 101, 20" CvTextArgument="Consultar" CvType="Button" DesignTimeRectangle="219, 652, 157, 50" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" Guid="5fea5687-c493-464b-97f8-a5285843034b" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Consulta Processamento' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="394466d1-e294-4b04-9dab-bda8afdbb63f" CvElementArea="80, 650, 139, 56" CvTextArea="114, 667, 72, 23" CvTextArgument="Limpar" CvType="Button" DesignTimeRectangle="84, 652, 132, 50" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname=' Limpar ' tag='BUTTON' type='button' class='br-button secondary' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Limpar' /&gt;" Guid="ce9f34e3-3b39-4b54-8a48-43f078cfeea2" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e22b3ce9f658e808a01a5415501e589a.png" xmlns="">0wNZSIbAoEEmQko15lUHfXg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

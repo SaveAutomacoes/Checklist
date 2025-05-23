@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Período de Apuração",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "6Kf2w-EsL0ODwlT17Nr-Qw",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/6Kf2w-EsL0ODwlT17Nr-Qw",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/MzkWHV9XS0SGyeEV6O8omg",
+  "Created": "2025-05-23T17:02:12.0473669Z",
+  "Updated": "2025-05-23T17:02:12.0473669Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

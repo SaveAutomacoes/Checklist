@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="fh2jZ6btv0ew7RzptUsJNg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="www3.cav.receita.fazenda.gov.br/consprocperdcomp/consulta/processamento" CVScreenId="efe3435f-4bd4-4198-a26f-244a0c6a6edd" CvElementArea="1815, 826, 29, 34" CvType="Icon" DesignTimeRectangle="1815, 833, 30, 20" FullSelectorArgument="&lt;webctrl parentid='dropdown-actions' tag='I' /&gt;" Guid="6961afe0-51de-4202-9e16-86826bd99709" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACIAAAAYCAYAAACfpi8JAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEBSURBVEhLY/g/SAADusBAAYod8uPLx/8vP/5AFyYZkO+QPy//L27Y9l84cAsE55z6f+gLuiLiAdkOebBqN8IRUCzVd/s/uWFDtkN296E6Aozzz/1/gK6QSEC2Q07NRIoWGK66/P8lukIiAdkO+f/l9v/8RCRHhO37P/XhX3RVRAPyHQICvz7+v3Tqxv/Nhx78v/mdfEeAAGUO+f/r/4dnT/9fuvf5/48/6HKkAfId8v3p/94SpKhJPPR/zRt0RcQDsh1yc8lOzMTadmMEZ99BEyKDJo1AwGDINSAwKMqRL7f/p8UjRU3I7oEpWQdNXTNosu+gaY8MmhYaDAx8m5XKAADcOSe548s+dQAAAABJRU5ErkJggg==" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Consulta Processamento' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="efe3435f-4bd4-4198-a26f-244a0c6a6edd" CvTextArea="62, 835, 216, 18" CvTextArgument="Lista de PER/DCOMP" CvType="Text" DesignTimeRectangle="64, 828, 1741, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='title' tag='DIV' type='' aaname='                 Lista de PER/DCOMP             ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Lista de PER/DCOMP' /&gt;" Guid="dda1c0b9-84b7-4ff9-a5ca-cfd8b157adcb" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="107c6c746a7a994ee99bc78063e3719d.png" xmlns="">0D3HAcj0x2U2KhW9jkanboA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

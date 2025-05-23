@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Restituição e Compensaç…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "Ox1UMRmXQU-luUCr4zdC3A",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/Ox1UMRmXQU-luUCr4zdC3A",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/zLP5butLD0ubDXYcW9dW1Q",
+  "Created": "2025-05-23T14:42:30.9502965Z",
+  "Updated": "2025-05-23T14:42:30.9502965Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

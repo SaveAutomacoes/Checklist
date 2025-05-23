@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="lzMMKAymqkiDqOxiDGhmcA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="www3.cav.receita.fazenda.gov.br/consprocperdcomp/consulta/processamento/relacionados/246121364812040613015080" CVScreenId="994685e4-8dbc-49fa-8ab7-48f771a37bc0" CvType="AnyWordGroup" DesignTimeRectangle="1271, 572, 564, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' tag='P' class='' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="26f2a1ad-de91-47cb-ba2b-47dc69a6d766" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Consulta Processamento / Relacionados' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="994685e4-8dbc-49fa-8ab7-48f771a37bc0" CvTextArea="1270, 546, 174, 21" CvTextArgument="Periodo de Apuração" CvType="Text" DesignTimeRectangle="1271, 542, 174, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Período de Apuração' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Período de Apuração' /&gt;" Guid="35baecbf-3f97-4594-99a1-0e309e43661d" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="16254dced6364b7a6e5ccc8e39ea5a21.png" xmlns="">0E_cbN-eECk2_fl9k3Ayq_w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

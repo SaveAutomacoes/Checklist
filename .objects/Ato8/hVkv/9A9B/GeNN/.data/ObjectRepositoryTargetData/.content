@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Aia7EyeHmk-MDVck6xDtXg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="www3.cav.receita.fazenda.gov.br/consprocperdcomp/consulta/processamento" CVScreenId="8f9559bd-1d06-4c2e-94d7-a54580e8e707" CvTextArea="914, 585, 108, 21" CvTextArgument="Carregando..." CvType="Text" DesignTimeRectangle="916, 580, 106, 26" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Carregando...' tag='DIV' /&gt;" Guid="a84e95ee-d720-4433-b926-337c0218cf6e" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Consulta Processamento' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="8f9559bd-1d06-4c2e-94d7-a54580e8e707" CvTextArea="914, 585, 108, 21" CvTextArgument="Carregando..." CvType="Text" DesignTimeRectangle="9, 117, 1920, 912" FuzzySelectorArgument="&lt;webctrl class='loading-container' tag='DIV' type='' aaname='                       ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Carregando...' /&gt;" Guid="347b5980-ae33-4752-9ab2-ce4c1bd2cc35" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="47f81fc0d67d7a3798e3f043a87e0e01.png" xmlns="">0RzNEKV-BNU-uLlEfDc1vYw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

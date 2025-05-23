@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Consulta Processamento …",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "vxK3I_1sfU-g1BJLBcFhPg",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/vxK3I_1sfU-g1BJLBcFhPg",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/zLP5butLD0ubDXYcW9dW1Q",
+  "Created": "2025-05-23T14:43:18.0796087Z",
+  "Updated": "2025-05-23T14:43:18.0796087Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

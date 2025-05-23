@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-B9Punp3Rk6dN2foTgGcuQ" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/Tj_ao6yoiEqjRwBBoCR38g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac" CVScreenId="02f6db55-e079-4743-8fd7-93400c7b7090" CvType="AnyWordGroup" DesignTimeRectangle="1290, 664, 58, 15" FuzzySelectorArgument="&lt;webctrl type='' tag='DATATABLE-BODY-CELL' class='datatable-body-cell right sort-active texto-tabela' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="e19b011b-f143-4b72-8f77-242cc9bdabdc" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Consulta Processamento / Relacionados' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="02f6db55-e079-4743-8fd7-93400c7b7090" CvTextArea="75, 664, 221, 15" CvTextArgument="[numPerdcomp]" CvType="Text" DesignTimeRectangle="314, 659, 138, 24" ElementType="Text" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl aaname=' {0} ' tag='DIV' type='' class='text-down-01 text-weight-semi-bold' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='{0}' /&gt;&quot;, numPerdcomp)]" Guid="292d43e8-380f-458a-a9b0-b38786e938f5" SearchSteps="FuzzySelector, CV" />
+          <Target DesignTimeRectangle="1193, 540, 162, 114" FuzzySelectorArgument="&lt;webctrl class='datatable-header-cell-template-wrap' type='' tag='DIV' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Créd. Orig. Necessário Débitos DCOMP ou Valor do PER' /&gt;" Guid="51af56f0-01e7-410c-a04e-6a544d30a435" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="c3efc04df6e75019909d0fee2ffacd10.png" xmlns="">0JRodiE4GPEaqPvcLTtKV1g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="*" Name="numPerdcomp" />
+    </scg:List>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

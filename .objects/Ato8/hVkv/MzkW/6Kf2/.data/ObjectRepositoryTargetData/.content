@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="cQS15iDoKEOgXZRkD0YdWQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="www3.cav.receita.fazenda.gov.br/consprocperdcomp/consulta/processamento/relacionados/246121364812040613015080" DesignTimeRectangle="1271, 542, 174, 25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Período de Apuração' tag='LABEL' /&gt;" Guid="dacc5ce1-4ff3-4fa9-ade4-7118d1e78ee9" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Consulta Processamento / Relacionados' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="1ab90d761dd91b101a852a54fcdaa4d6.png" xmlns="">0g-2wp9ufg0eAEez9UndsOQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

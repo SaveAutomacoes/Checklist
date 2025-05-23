@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="LMpVvrn7k0q2No8aKfsOLQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="www3.cav.receita.fazenda.gov.br/consprocperdcomp/consulta/processamento" CVScreenId="d464f122-3bad-4c43-8453-4f439c839a4d" CvElementArea="1765, 947, 26, 29" CvType="Icon" DesignTimeRectangle="1763, 951, 30, 20" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;app-root&amp;gt;br-main-layout&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;app-consulta-processamento&amp;gt;br-table&amp;gt;div&amp;gt;ngx-datatable&amp;gt;div&amp;gt;datatable-body&amp;gt;datatable-selection&amp;gt;datatable-scroller&amp;gt;datatable-row-wrapper&amp;gt;datatable-body-row&amp;gt;div&amp;gt;datatable-body-cell&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;i' tag='I' /&gt;" Guid="1b69a99a-4493-41da-93ef-cd1bbe879377" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACIAAAAYCAYAAACfpi8JAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFRSURBVEhL3ZUxS8NAGIb7H+4fuLm65V8YELMUspQOUghIcetP6OSoY6eSMQ2kAZFAKAQRaiCLrRyCQkDQItISLK/EStVLql8qh9EXHgi5477nPu6SCkqSivjit/IzkeQOXj+C6XHwRBwslvVFpmMYugWmvqH7cKfiJHrWFol7J2Cqg1aUYBYF2FItbPcm4jRyaCLTG7SbH3a/5LNIZrx5hgtil0gii93nFCJA7RJJhHfdTAEqSjcWl8vNHxbZdaDs2ZmCq5AmUvfn6alBu2GBGefg4uTXXKIuW4TtD2CaHjbS5x0bmzUnh/eOyRMpiDyRsnSkPGekLLemKNJElCMOfhVCq1pgVRf6oQ8jw+ny3yNNROs/Ac/XaNUssEaA4H6CWOR2CE22SFH+pwjCweK7URgbB2F63b8PTQRzPIzGOO6Ih/ILOkO4o0dxoZUhisjPC/sa8Ah5HxaEAAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Consulta Processamento' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1709, 878, 139, 57" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='PER/DCOMP Relacionados' tag='SPAN' type='' class='datatable-header-cell-label draggable' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='PER/DCOMP Relacionados' /&gt;" Guid="fd3a3b7f-7d8f-4dcb-b08b-0a471546014c" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="9ac9db89204d647a1b64d3239fd96c44.png" xmlns="">09nGi6V9EBUOMvLwLPYaPqw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

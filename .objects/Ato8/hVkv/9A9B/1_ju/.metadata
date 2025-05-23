@@ -1,0 +1,13 @@
+﻿{
+  "Name": "PERDCOMP Relacionados",
+  "Type": "Element",
+  "Id": "1_juXtwMzUKKyj5qsPq-FQ",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/1_juXtwMzUKKyj5qsPq-FQ",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/9A9B44O93UWj1De1wY4YBg",
+  "Created": "2025-05-23T14:57:43.905908Z",
+  "Updated": "2025-05-23T14:57:43.905908Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

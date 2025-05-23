@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="vsw4ItF7bE2GKoDaAovLQw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="www3.cav.receita.fazenda.gov.br/consprocperdcomp/consulta/processamento" CVScreenId="de644729-c7c0-483a-9eb5-f37542bee552" CvTextArea="152, 911, 367, 20" CvTextArgument="Não há documentos a serem exibidos" CvType="Text" DesignTimeRectangle="154, 875, 1720, 91" ElementType="Text" FullSelectorArgument="&lt;webctrl class='content' tag='DIV' /&gt;" Guid="aad12548-cadb-4a1a-8a4c-471f638b7d9c" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Consulta Processamento' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="de644729-c7c0-483a-9eb5-f37542bee552" CvTextArea="162, 834, 111, 17" CvTextArgument="PER/DCOMP" CvType="Text" DesignTimeRectangle="165, 827, 108, 29" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='PER/DCOMP' tag='SPAN' type='' class='datatable-header-cell-label draggable' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='PER/DCOMP' /&gt;" Guid="b5cb19d5-69f5-4093-861b-1f241085f840" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="1c9fc4e47bd0418ddf43f4eaea70c8f2.png" xmlns="">0nxCcyluTOkuleZc0kS_N9g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

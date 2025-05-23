@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Consulta Processamento  Relacionados",
+  "Type": "Screen",
+  "Id": "NPhJHfRAmUK5NMv4zqsILw",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/NPhJHfRAmUK5NMv4zqsILw",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/hVkvW8N0iUeJ1h3tUDZkyQ",
+  "Created": "2025-05-23T15:04:11.6628634Z",
+  "Updated": "2025-05-23T15:04:11.6628634Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

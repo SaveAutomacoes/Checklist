@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Lista de PERDCOMP",
+  "Type": "Element",
+  "Id": "Nrw04zXgP0KrDNIKPTpnwA",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/Nrw04zXgP0KrDNIKPTpnwA",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/9A9B44O93UWj1De1wY4YBg",
+  "Created": "2025-05-23T14:45:53.0069721Z",
+  "Updated": "2025-05-23T14:45:53.0069721Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

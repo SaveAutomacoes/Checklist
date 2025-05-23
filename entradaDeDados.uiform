@@ -170,6 +170,30 @@
                     {
                       "label": "DSR",
                       "value": "dsr"
+                    },
+                    {
+                      "label": "SERGIO",
+                      "value": "sergio"
+                    },
+                    {
+                      "label": "MORASTONI",
+                      "value": "morastoni"
+                    },
+                    {
+                      "label": "CARDOSO",
+                      "value": "cardoso"
+                    },
+                    {
+                      "label": "CRISTIANO",
+                      "value": "cristiano"
+                    },
+                    {
+                      "label": "YURY",
+                      "value": "yury"
+                    },
+                    {
+                      "label": "MARCOS",
+                      "value": "marcos"
                     }
                   ]
                 },

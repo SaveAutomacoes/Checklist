@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Número do PERDCOMP",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "JM00XEJ02Uec2Id_o62mAQ",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/JM00XEJ02Uec2Id_o62mAQ",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/9A9B44O93UWj1De1wY4YBg",
+  "Created": "2025-05-23T14:56:52.1196336Z",
+  "Updated": "2025-05-23T14:56:52.1196336Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

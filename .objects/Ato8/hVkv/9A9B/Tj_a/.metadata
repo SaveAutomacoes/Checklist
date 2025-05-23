@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Créd. Orig. Necessário …",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "Tj_ao6yoiEqjRwBBoCR38g",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/Tj_ao6yoiEqjRwBBoCR38g",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/9A9B44O93UWj1De1wY4YBg",
+  "Created": "2025-05-23T14:59:08.1017411Z",
+  "Updated": "2025-05-23T14:59:08.1017411Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

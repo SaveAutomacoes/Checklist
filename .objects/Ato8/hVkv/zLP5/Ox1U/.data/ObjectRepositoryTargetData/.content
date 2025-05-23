@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="WIY61hOaMUSEd1HbUqNCJg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/eCAC/Default.aspx" CVScreenId="63cac42f-8727-4595-9eeb-b7369921cbdd" CvElementArea="780, 453, 212, 35" CvTextArea="800, 464, 173, 17" CvTextArgument="Restituição e Compensação" CvType="Button" DesignTimeRectangle="785, 455, 206, 32" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='btn263' tag='A' /&gt;" Guid="3003aedc-872d-44ed-a321-7149d4e2bd50" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="63cac42f-8727-4595-9eeb-b7369921cbdd" CvElementArea="780, 453, 212, 35" CvTextArea="800, 464, 173, 17" CvTextArgument="Restituição e Compensação" CvType="Button" DesignTimeRectangle="781, 455, 210, 32" ElementType="ListItem" FuzzySelectorArgument="&lt;webctrl id='btn263' tag='LI' type='' class='botaoAzulServicos' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Restituição e Compensação' /&gt;" Guid="f4cd7c5b-7236-4cec-8154-ce6283a8855b" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="919e53dc048d02cd7cb878359af697f8.png" xmlns="">0oOXRszpQeECS3trRjJdq-Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

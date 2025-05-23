@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="qhJfUS28r0aELDx5BQzRlw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="www3.cav.receita.fazenda.gov.br/consprocperdcomp/consulta/processamento" CVScreenId="53ba2cfc-7470-486a-a2c2-3f8b39defe93" CvElementArea="82, 579, 418, 43" CvType="InputBox" DesignTimeRectangle="84, 581, 415, 40" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='brx-input small ng-untouched ng-pristine ng-valid' placeholder='Digite o número do PER/DCOMP' aaname='             Número do PER/DCOMP                                                     ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="6b4f2f77-1434-4e5e-b16f-701dbb6d7d41" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Consulta Processamento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="53ba2cfc-7470-486a-a2c2-3f8b39defe93" CvTextArea="82, 550, 209, 17" CvTextArgument="Número do PER/DCOMP" CvType="Text" DesignTimeRectangle="84, 546, 415, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='                                                                  ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Número do PER/DCOMP' /&gt;" Guid="775ae425-a28d-4ce6-a3d7-8539699083df" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="00ae104435f7e7ab07b47e45f68de05e.png" xmlns="">0NdGqa_7H_0mB_GL-0p8Yhw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
