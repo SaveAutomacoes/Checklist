@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="vCcH3KjSdkaaZTFzRyg5mA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="3572e1e9-c449-4356-a4ea-6e67633b43d6" CvElementArea="1135, 239, 96, 64" CvTextArea="1171, 264, 23, 15" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="1144, 247, 80, 49" ElementType="Button" FullSelectorArgument="&lt;ctrl name='cav.receita.fazenda.gov.br diz' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' /&gt;" Guid="9075beb1-e6f9-44f8-ac29-36e6a88a6b45" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='eCAC - Centro Virtual de Atendimento - Google Chrome' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="3572e1e9-c449-4356-a4ea-6e67633b43d6" CvElementArea="1135, 239, 96, 64" CvTextArea="1171, 264, 23, 15" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="689, 247, 560, 74" FuzzySelectorArgument="&lt;ctrl name='cav.receita.fazenda.gov.br diz' role='dialog' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl automationid='' role='pane' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:fulltext='OK' /&gt;" Guid="a5a422a1-e2e1-4c26-bca9-ddb5d1b9bcbc" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="4fa25b6fd9ee0ab8cc944d49086beb39.png" xmlns="">07EUnhtPEU0yP_HKSLgJ6CQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="KfF_Bt3hUES1oRry-2zYnw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="ba9defbe-ee9a-47e5-94a5-7133910cd818" CvElementArea="696, 903, 79, 27" CvTextArea="710, 909, 55, 13" CvTextArgument="Retornar" CvType="Button" DesignTimeRectangle="699, 905, 75, 22" ElementType="Button" FullSelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl id='BtnRetornar' tag='INPUT' /&gt;" Guid="f8d0753c-4c76-4483-9bae-7236c5a1f9c1" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="692, 904, 554, 15" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl tag='NOBR' type='' class='' aaname='                                                                           ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Retornar &amp;#xA;          &amp;#xA;     &amp;#xA;          &amp;#xA;    Exibir Comprovantes' /&gt;" Guid="1f0576c2-4a0c-44c3-82c5-83007624f9ae" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="3d9100174f30dea52a3a25ebb82bf01a.png" xmlns="">0LuxPTVO6oE6lgIyi0ch-Ig</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
