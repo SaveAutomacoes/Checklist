@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="vMyYx7X0CUeu7SI7daPeUg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="www3.cav.receita.fazenda.gov.br/consprocperdcomp/consulta/processamento/relacionados/118689343828020813019808" CVScreenId="896b1f84-c5f1-4440-87a0-5e2fcdfd9676" CvElementArea="1636, 543, 25, 29" CvType="Icon" DesignTimeRectangle="1637, 550, 24, 16" FullSelectorArgument="&lt;webctrl parentid='dropdown-actions' tag='I' /&gt;" Guid="f7bdf5da-0631-40a0-a5dd-7fd9d273602c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAUCAYAAACeXl35AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAC2SURBVEhLY/hPZ8CALkBrMPgt/PHsxv/aqt3/LatO/d/87Be6NEFAmoXfb/9Pi9nyXzgQimOO/t/9HV0RfkCahffO/DeCWQbGO/+33kNXhB+QZiHdfUj3OASDv/9/fPz4/+XHH+gSRAESLfz6f/eEbfAg1Zxw+/8HdCUEAGkWPrv43wEl0ez+P/UZuiL8gDQLn5z7b4lu4RN0RfgBaRbSPUjBgK6Jht7Zgu4Zf7RoIwKQbCGlAABLql0x7jav+AAAAABJRU5ErkJggg==" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Consulta Processamento / Relacionados' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1629, 538, 40, 40" FuzzySelectorArgument="&lt;webctrl class='actions' tag='DIV' type='' aaname='                                  ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Exportar TXT&amp;#xA;            &amp;#xA;                &amp;#xA;                Exportar CSV&amp;#xA;            &amp;#xA;                &amp;#xA;                Exportar XLS&amp;#xA;            &amp;#xA;                &amp;#xA;                Exportar PDF&amp;#xA;            &amp;#xA;                &amp;#xA;                Exportar XML' /&gt;" Guid="7baa0851-bf40-40b1-8d93-7ac1dd6dd2d3" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="51108d27ecf4c10d33b6bccb05f48a16.png" xmlns="">0WFGwt0braUyVPSvgvSIO_Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Exportar TXT Exportar C…",
+  "Type": "Element",
+  "Id": "QVYCEQn2pECqOPpGA8vHdQ",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/QVYCEQn2pECqOPpGA8vHdQ",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/MzkWHV9XS0SGyeEV6O8omg",
+  "Created": "2025-05-26T16:44:42.4321706Z",
+  "Updated": "2025-05-26T16:44:42.4321706Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
