@@ -149,19 +149,19 @@
                   "values": [
                     {
                       "label": "SAVE",
-                      "value": "save"
+                      "value": "SAVE"
                     },
                     {
                       "label": "RECUPERA-C",
-                      "value": "recuperaC"
+                      "value": "RECUPERA-C"
                     },
                     {
                       "label": "ELIANE",
-                      "value": "eliane"
+                      "value": "ELIANE"
                     },
                     {
                       "label": "GSH",
-                      "value": "g s h"
+                      "value": "G H S"
                     },
                     {
                       "label": "D&S",
