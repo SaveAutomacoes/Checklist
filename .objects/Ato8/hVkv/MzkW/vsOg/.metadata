@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Período de Apuração DARF",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "vsOgow1oA06reZBgXyU-iQ",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/vsOgow1oA06reZBgXyU-iQ",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/MzkWHV9XS0SGyeEV6O8omg",
+  "Created": "2025-05-27T19:19:35.7440655Z",
+  "Updated": "2025-05-27T19:19:35.7440655Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="4YAbcLDXx0CnB26mpeS6qA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="0a1498e4-c515-4fcd-925c-c76472cccf56" CvTextArea="631, 409, 281, 21" CvTextArgument="Consulta em processamento." CvType="Text" DesignTimeRectangle="631, 408, 281, 22" ElementType="Text" Guid="18689470-fa0a-4f5b-ab2d-e2a60e43f050" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="0a1498e4-c515-4fcd-925c-c76472cccf56" CvTextArea="916, 407, 389, 23" CvTextArgument="Selecione novamente O serviço Situação" CvType="Text" DesignTimeRectangle="916, 408, 389, 22" ElementType="Text" Guid="3f9a350e-6572-418f-949c-bce5131fcc71" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0d54d16a3f25b54d08d4f2bf927e625b.png" xmlns="">0LDG5eCgHd0Oi1GhpJvFL_Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

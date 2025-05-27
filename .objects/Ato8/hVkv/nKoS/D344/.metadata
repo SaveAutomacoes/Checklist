@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Identificação do contri…",
+  "Type": "Element",
+  "Id": "D3440hoSkU-LWP63w87_Fg",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/D3440hoSkU-LWP63w87_Fg",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/nKoSsdniOU2WR-U_dciegw",
+  "Created": "2025-05-27T17:57:32.6611211Z",
+  "Updated": "2025-05-27T17:57:32.6611211Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

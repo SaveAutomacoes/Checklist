@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Consulta em processamen…(1)",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "DYatr67GEEq9xyS9TOrsKQ",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/DYatr67GEEq9xyS9TOrsKQ",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/rqs_aYf4VkakS8L4Vys-yw",
+  "Created": "2025-05-27T19:03:11.7665491Z",
+  "Updated": "2025-05-27T19:03:11.7665491Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
