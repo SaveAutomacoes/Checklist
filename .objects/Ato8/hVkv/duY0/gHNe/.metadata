@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Situação no Simples Nac…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "gHNe6-NicESMriqFGaUvPg",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/gHNe6-NicESMriqFGaUvPg",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/duY0MMqRK0aztGgFzHrM6Q",
+  "Created": "2025-05-27T12:59:14.3341096Z",
+  "Updated": "2025-05-27T12:59:14.3341096Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
