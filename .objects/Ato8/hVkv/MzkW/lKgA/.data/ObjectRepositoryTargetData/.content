@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="4GrxR5lYykO3SLSP3HHNrQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="www3.cav.receita.fazenda.gov.br/consprocperdcomp/consulta/processamento/relacionados/331179651013102013248077" CVScreenId="cf4e7f56-cf89-489e-875b-2c74b7189bf7" CvTextArea="1447, 479, 100, 16" CvTextArgument="20/08/2020" CvType="Text" DesignTimeRectangle="1449, 475, 424, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' tag='P' class='' aaname=' 20/08/2020 ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='20/08/2020' /&gt;" Guid="8a3badb7-7922-451c-b1f6-504f3fe772c9" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Consulta Processamento / Relacionados' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="cf4e7f56-cf89-489e-875b-2c74b7189bf7" CvTextArea="1447, 455, 133, 16" CvTextArgument="Data de Arrecadação" CvType="Text" DesignTimeRectangle="1449, 452, 131, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Data de Arrecadação' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Data de Arrecadação' /&gt;" Guid="fa4c863d-3999-45cf-aa6b-3b2950730add" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="6e089f8735d944e6413b45a6acddaed8.png" xmlns="">0Cg1mAukJt0mKFOU_TuE5vg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
