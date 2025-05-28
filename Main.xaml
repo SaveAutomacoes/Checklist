@@ -279,7 +279,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="3012,54886" sap2010:WorkflowViewState.IdRef="Sequence_6">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="3012,55000" sap2010:WorkflowViewState.IdRef="Sequence_6">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="naoPossuiArrecadacao" />
       <Variable x:TypeArguments="x:Boolean" Name="verificaAcimaDeMil" />
@@ -429,13 +429,13 @@
     </Assign>
     <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" Buttons="Ok" DisplayName="Texto pedindo para escolher" sap:VirtualizedContainerService.HintSize="3012,117" sap2010:WorkflowViewState.IdRef="MessageBox_6" Text="[&quot;Por favor, selecione o modelo de Excel em que será salvo.&quot;]" />
     <ui:SelectFile InitialDirectory="{x:Null}" Multiselect="{x:Null}" SelectedFiles="{x:Null}" DisplayName="Pede para escolher o modelo" Filter="Todos os arquivos |*.*" sap:VirtualizedContainerService.HintSize="3012,170" sap2010:WorkflowViewState.IdRef="SelectFile_2" SelectedFile="[sheet]" />
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[tabelaDados]" DisplayName="Para Cada Linha" sap:VirtualizedContainerService.HintSize="3012,52452" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[tabelaDados]" DisplayName="Para Cada Linha" sap:VirtualizedContainerService.HintSize="3012,52566" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="linhaAtual" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Ações para cada Empresa" sap:VirtualizedContainerService.HintSize="3010,52272" sap2010:WorkflowViewState.IdRef="Sequence_438">
+          <Sequence DisplayName="Ações para cada Empresa" sap:VirtualizedContainerService.HintSize="3010,52386" sap2010:WorkflowViewState.IdRef="Sequence_438">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -474,13 +474,13 @@
               </Assign.Value>
             </Assign>
             <ui:CopyFile ContinueOnError="{x:Null}" Destination="[newSheet]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="2976,186" sap2010:WorkflowViewState.IdRef="CopyFile_2" Overwrite="True" Path="[sheet]" />
-            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" CreateNewFile="False" DisplayName="Abre o Excel" sap:VirtualizedContainerService.HintSize="2976,51164" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="[newSheet]">
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" CreateNewFile="False" DisplayName="Abre o Excel" sap:VirtualizedContainerService.HintSize="2976,51278" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="[newSheet]">
               <ueab:ExcelApplicationCard.Body>
                 <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="2942,50863" sap2010:WorkflowViewState.IdRef="Sequence_515">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="2942,50977" sap2010:WorkflowViewState.IdRef="Sequence_515">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Name="cnpjFormatado" />
                     </Sequence.Variables>
@@ -1233,13 +1233,13 @@
                         </Sequence>
                       </If.Else>
                     </If>
-                    <uix:NApplicationCard DisplayName="Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="2908,40953" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="cd12c88d-9ee2-4e74-a831-638ddf9c26dc" UserDataFolderMode="DefaultFolder">
+                    <uix:NApplicationCard DisplayName="Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="2908,41067" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="cd12c88d-9ee2-4e74-a831-638ddf9c26dc" UserDataFolderMode="DefaultFolder">
                       <uix:NApplicationCard.Body>
                         <ActivityAction x:TypeArguments="x:Object">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="cnpjNavega pelo eCAC" sap:VirtualizedContainerService.HintSize="2874,40713" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                          <Sequence DisplayName="cnpjNavega pelo eCAC" sap:VirtualizedContainerService.HintSize="2874,40827" sap2010:WorkflowViewState.IdRef="Sequence_2">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="x:Boolean" Name="verificouOlho" />
                               <Variable x:TypeArguments="s:DateTime" Name="dataHoje" />
@@ -4095,9 +4095,9 @@
                                 <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac" CVScreenId="57c288b0-9368-440d-bf27-a646a6d07841" ContentHash="v8fPVXAAdkKriT-VJfAi6g" CvElementArea="1247, 397, 213, 36" CvTextArea="1287, 406, 132, 13" CvTextArgument="Dívida Ativa da União" CvType="Button" DesignTimeRectangle="1248, 396, 211, 35" DesignTimeScaleFactor="1.25" ElementType="Text" Guid="eccf985e-bc50-4de2-a518-a266e4c3360f" InformativeScreenshot="8ed49e0d3375bde29ddee7f2a12a3aaa.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/zfRCKk7p4UOtplBHUSbK2w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="CV" Version="V5" Visibility="Interactive" />
                               </uix:NClick.Target>
                             </uix:NClick>
-                            <uix:NCheckState DisplayName="Check App State 'Acompanhamento de Reque…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="2840,7229" sap2010:WorkflowViewState.IdRef="NCheckState_36" ScopeIdentifier="cd12c88d-9ee2-4e74-a831-638ddf9c26dc" Version="V4">
+                            <uix:NCheckState DisplayName="Check App State 'Acompanhamento de Reque…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="2840,7189" sap2010:WorkflowViewState.IdRef="NCheckState_36" ScopeIdentifier="cd12c88d-9ee2-4e74-a831-638ddf9c26dc" Version="V4">
                               <uix:NCheckState.IfExists>
-                                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="2318,6980" sap2010:WorkflowViewState.IdRef="Sequence_172">
+                                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="2318,6940" sap2010:WorkflowViewState.IdRef="Sequence_172">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -4154,7 +4154,7 @@
                                       </Sequence>
                                     </ui:CommentOut.Body>
                                   </ui:CommentOut>
-                                  <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Chrome Regularize" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="2284,6358" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="2e7a0e7f-d3c7-4594-ad60-32329489817a" Version="V2">
+                                  <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Chrome Regularize" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="2284,6318" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="2e7a0e7f-d3c7-4594-ad60-32329489817a" Version="V2">
                                     <uix:NApplicationCard.Body>
                                       <ActivityAction x:TypeArguments="x:Object">
                                         <ActivityAction.Argument>
@@ -4655,9 +4655,9 @@
                                 </uix:TargetAnchorable>
                               </uix:NCheckState.Target>
                             </uix:NCheckState>
-                            <uix:NCheckState DisplayName="Verifica Opção DCTFWEB" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="2840,8919" sap2010:WorkflowViewState.IdRef="NCheckState_70" ScopeIdentifier="cd12c88d-9ee2-4e74-a831-638ddf9c26dc" Version="V4">
+                            <uix:NCheckState DisplayName="Verifica Opção DCTFWEB" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="2840,9073" sap2010:WorkflowViewState.IdRef="NCheckState_70" ScopeIdentifier="cd12c88d-9ee2-4e74-a831-638ddf9c26dc" Version="V4">
                               <uix:NCheckState.IfExists>
-                                <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="1830,8670" sap2010:WorkflowViewState.IdRef="Sequence_491">
+                                <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="1830,8824" sap2010:WorkflowViewState.IdRef="Sequence_491">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -4684,18 +4684,26 @@
                                       </uix:VerifyExecutionOptions>
                                     </uix:NClick.VerifyOptions>
                                   </uix:NClick>
-                                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Inicia a Verificação de Faseamento" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1796,8383" sap2010:WorkflowViewState.IdRef="NApplicationCard_19" InteractionMode="DebuggerApi" ScopeGuid="1db51043-fa05-4622-96e5-96c2914bc5c6" Version="V2">
+                                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Inicia a Verificação de Faseamento" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1796,8537" sap2010:WorkflowViewState.IdRef="NApplicationCard_19" InteractionMode="DebuggerApi" ScopeGuid="1db51043-fa05-4622-96e5-96c2914bc5c6" Version="V2">
                                     <uix:NApplicationCard.Body>
                                       <ActivityAction x:TypeArguments="x:Object">
                                         <ActivityAction.Argument>
                                           <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                                         </ActivityAction.Argument>
-                                        <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="1762,8141" sap2010:WorkflowViewState.IdRef="Sequence_374">
+                                        <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="1762,8295" sap2010:WorkflowViewState.IdRef="Sequence_374">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
+                                          <Assign DisplayName="Define o Ano como 5 anos atrás" sap:VirtualizedContainerService.HintSize="1728,114" sap2010:WorkflowViewState.IdRef="Assign_152">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:Int32">[ano]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:Int32">[now.Year() - 5]</InArgument>
+                                            </Assign.Value>
+                                          </Assign>
                                           <uix:NCheckState DisplayName="Aguarda Preencher o Capcha" EnableIfExists="False" EnableIfNotExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="1728,209" sap2010:WorkflowViewState.IdRef="NCheckState_48" ScopeIdentifier="1db51043-fa05-4622-96e5-96c2914bc5c6" Timeout="15" Version="V4">
                                             <uix:NCheckState.IfExists>
                                               <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="449.6,91.2" sap2010:WorkflowViewState.IdRef="Sequence_386">
@@ -4882,13 +4890,13 @@
                                               </uix:VerifyExecutionOptions>
                                             </uix:NClick.VerifyOptions>
                                           </uix:NClick>
-                                          <ui:RepeatNumberOfTimesX DisplayName="Repete 5 Vezes" sap:VirtualizedContainerService.HintSize="1728,5871" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_23" NumberOfTimes="6" StartAt="1">
+                                          <ui:RepeatNumberOfTimesX DisplayName="Repete 5 Vezes" sap:VirtualizedContainerService.HintSize="1728,5911" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_23" NumberOfTimes="6" StartAt="1">
                                             <ui:RepeatNumberOfTimesX.Body>
                                               <ActivityAction x:TypeArguments="x:Int32">
                                                 <ActivityAction.Argument>
                                                   <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentItem" />
                                                 </ActivityAction.Argument>
-                                                <Sequence DisplayName="Consulta os 5 últimos Anos" sap:VirtualizedContainerService.HintSize="1694,5675" sap2010:WorkflowViewState.IdRef="Sequence_375">
+                                                <Sequence DisplayName="Consulta os 5 últimos Anos" sap:VirtualizedContainerService.HintSize="1694,5715" sap2010:WorkflowViewState.IdRef="Sequence_375">
                                                   <sap:WorkflowViewStateService.ViewState>
                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -4998,15 +5006,15 @@
                                                       </uix:TargetAnchorable>
                                                     </uix:NCheckState.Target>
                                                   </uix:NCheckState>
-                                                  <If Condition="[verificouOlho = False]" DisplayName="Se não verificou o Olho" sap:VirtualizedContainerService.HintSize="1660,4216" sap2010:WorkflowViewState.IdRef="If_57">
+                                                  <If Condition="[verificouOlho = False]" DisplayName="Se não verificou o Olho" sap:VirtualizedContainerService.HintSize="1660,4256" sap2010:WorkflowViewState.IdRef="If_57">
                                                     <If.Then>
-                                                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="1658,3988" sap2010:WorkflowViewState.IdRef="Sequence_376">
+                                                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="1658,4028" sap2010:WorkflowViewState.IdRef="Sequence_376">
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
-                                                        <uix:NCheckState DisplayName="Procura o Olho na Página" EnableIfNotExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="1624,3928" sap2010:WorkflowViewState.IdRef="NCheckState_45" ScopeIdentifier="1db51043-fa05-4622-96e5-96c2914bc5c6" Version="V4">
+                                                        <uix:NCheckState DisplayName="Procura o Olho na Página" EnableIfNotExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="1624,3968" sap2010:WorkflowViewState.IdRef="NCheckState_45" ScopeIdentifier="1db51043-fa05-4622-96e5-96c2914bc5c6" Version="V4">
                                                           <uix:NCheckState.IfExists>
                                                             <Sequence DisplayName="Se achou o olho" sap:VirtualizedContainerService.HintSize="1580,3688" sap2010:WorkflowViewState.IdRef="Sequence_378">
                                                               <sap:WorkflowViewStateService.ViewState>
@@ -5498,6 +5506,6 @@
         </ActivityAction>
       </ui:ForEachRow.Body>
     </ui:ForEachRow>
-    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="616,108" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;Finalizado!&quot;]" />
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="3012,108" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;Finalizado!&quot;]" />
   </Sequence>
 </Activity>
