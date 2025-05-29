@@ -1014,7 +1014,7 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Abre o Simples Nacional" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1118,2911" sap2010:WorkflowViewState.IdRef="NApplicationCard_21" InteractionMode="DebuggerApi" ScopeGuid="b1b732b3-8ce9-4a33-9a60-fbc138b7fbfb" Version="V2">
+                          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Abre o Simples Nacional" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1118,2911" sap2010:WorkflowViewState.IdRef="NApplicationCard_21" InteractionMode="DebuggerApi" ScopeGuid="b1b732b3-8ce9-4a33-9a60-fbc138b7fbfb" UserDataFolderMode="DefaultFolder" Version="V2">
                             <uix:NApplicationCard.Body>
                               <ActivityAction x:TypeArguments="x:Object">
                                 <ActivityAction.Argument>
@@ -1603,7 +1603,7 @@
                                     </uix:NClick.Target>
                                   </uix:NClick>
                                   <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="2808,122" sap2010:WorkflowViewState.IdRef="Delay_16" />
-                                  <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Chrome Consulta Processamento" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="2808,8195" sap2010:WorkflowViewState.IdRef="NApplicationCard_27" InteractionMode="DebuggerApi" ScopeGuid="8460fdfd-4d49-4e02-bf0b-28bd3075acb0" Version="V2">
+                                  <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Chrome Consulta Processamento" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="2808,8195" sap2010:WorkflowViewState.IdRef="NApplicationCard_27" InteractionMode="DebuggerApi" ScopeGuid="8460fdfd-4d49-4e02-bf0b-28bd3075acb0" UserDataFolderMode="DefaultFolder" Version="V2">
                                     <uix:NApplicationCard.Body>
                                       <ActivityAction x:TypeArguments="x:Object">
                                         <ActivityAction.Argument>
@@ -1814,7 +1814,7 @@
                                                             <InArgument x:TypeArguments="x:String">["https://www3.cav.receita.fazenda.gov.br/consprocperdcomp/consulta/processamento/relacionados/" + numPerdcompFormatado]</InArgument>
                                                           </Assign.Value>
                                                         </Assign>
-                                                        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Chrome Consulta Processamento  Relacionados(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="2116,4726" sap2010:WorkflowViewState.IdRef="NApplicationCard_28" InteractionMode="DebuggerApi" ScopeGuid="3184b2f4-8b3f-4998-8030-418eff8befd1" Version="V2">
+                                                        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Chrome Consulta Processamento  Relacionados(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="2116,4726" sap2010:WorkflowViewState.IdRef="NApplicationCard_28" InteractionMode="DebuggerApi" ScopeGuid="3184b2f4-8b3f-4998-8030-418eff8befd1" UserDataFolderMode="DefaultFolder" Version="V2">
                                                           <uix:NApplicationCard.Body>
                                                             <ActivityAction x:TypeArguments="x:Object">
                                                               <ActivityAction.Argument>
@@ -4194,7 +4194,7 @@
                                       </Sequence>
                                     </ui:CommentOut.Body>
                                   </ui:CommentOut>
-                                  <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Chrome Regularize" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="2284,6318" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="2e7a0e7f-d3c7-4594-ad60-32329489817a" Version="V2">
+                                  <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Chrome Regularize" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="2284,6318" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="2e7a0e7f-d3c7-4594-ad60-32329489817a" UserDataFolderMode="DefaultFolder" Version="V2">
                                     <uix:NApplicationCard.Body>
                                       <ActivityAction x:TypeArguments="x:Object">
                                         <ActivityAction.Argument>
@@ -4526,7 +4526,7 @@
                                                         </uix:NCheckState.Target>
                                                       </uix:NCheckState>
                                                       <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="1104,122" sap2010:WorkflowViewState.IdRef="Delay_4" />
-                                                      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Procuradoria Geral da Fazenda Nacional" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1104,1606" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="90b367cd-1d5d-41ab-b5f0-eacb3236539c" Version="V2">
+                                                      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Procuradoria Geral da Fazenda Nacional" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1104,1606" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="90b367cd-1d5d-41ab-b5f0-eacb3236539c" UserDataFolderMode="DefaultFolder" Version="V2">
                                                         <uix:NApplicationCard.Body>
                                                           <ActivityAction x:TypeArguments="x:Object">
                                                             <ActivityAction.Argument>
@@ -4724,7 +4724,7 @@
                                       </uix:VerifyExecutionOptions>
                                     </uix:NClick.VerifyOptions>
                                   </uix:NClick>
-                                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Inicia a Verificação de Faseamento" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="2352,8801" sap2010:WorkflowViewState.IdRef="NApplicationCard_19" InteractionMode="DebuggerApi" ScopeGuid="1db51043-fa05-4622-96e5-96c2914bc5c6" Version="V2">
+                                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Inicia a Verificação de Faseamento" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="2352,8801" sap2010:WorkflowViewState.IdRef="NApplicationCard_19" InteractionMode="DebuggerApi" ScopeGuid="1db51043-fa05-4622-96e5-96c2914bc5c6" UserDataFolderMode="DefaultFolder" Version="V2">
                                     <uix:NApplicationCard.Body>
                                       <ActivityAction x:TypeArguments="x:Object">
                                         <ActivityAction.Argument>
