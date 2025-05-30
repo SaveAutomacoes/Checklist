@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Ggwckk39YUyLjdB1D_GAwg" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/-47OV83MV0C_PrJjgtLWWw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="6cdd7d0c-f6dc-4a1d-aaf0-34922d49a7ca" CvElementArea="695, 626, 211, 25" CvType="InputBox" DesignTimeRectangle="698, 627, 207, 22" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl parentid='PanelParametros' tag='TABLE' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' /&gt;&lt;webctrl id='campoDataArrecadacaoFinal' type='text' tag='INPUT' class='' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="a909d441-86ab-4dca-abb6-2b5a5d1d9430" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="872c8646-0283-4a64-aa40-216f7bf61416" CvTextArea="32, 634, 133, 16" CvTextArgument="Data de arrecadação:" CvType="Text" DesignTimeRectangle="34, 634, 132, 15" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl parentid='PanelParametros' tag='TABLE' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' /&gt;&lt;webctrl type='' tag='STRONG' class='' aaname='Data de arrecadação:' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Data de arrecadação:' /&gt;" Guid="52c63ab8-afb2-4868-93c6-f32b8b244868" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="872c8646-0283-4a64-aa40-216f7bf61416" CvElementArea="466, 626, 211, 25" CvType="InputBox" DesignTimeRectangle="468, 627, 207, 22" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl parentid='PanelParametros' tag='TABLE' /&gt;&lt;webctrl id='campoDataArrecadacaoInicial' tableRow='2' tag='INPUT' /&gt;" Guid="485a0b8e-a34d-4798-8726-41416c5a8ef9" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="d63e215545ca7e9a43d260f3fa31cff3.png" xmlns="">0hmaKbJnWrEG22mbN1GiSUw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

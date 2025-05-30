@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome PagtoWebImpREST.aspx",
+  "Type": "Screen",
+  "Id": "Z-eBmqjO3UmuDHOZW7QWXA",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/Z-eBmqjO3UmuDHOZW7QWXA",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/hVkvW8N0iUeJ1h3tUDZkyQ",
+  "Created": "2025-05-30T13:20:53.6689671Z",
+  "Updated": "2025-05-30T13:20:53.6689671Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

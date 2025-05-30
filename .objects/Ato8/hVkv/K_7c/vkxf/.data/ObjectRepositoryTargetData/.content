@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Nt27vMCK3U6DsNE3xXB_sg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/autenticacao" CVScreenId="6ecb01d4-ca39-46e5-aa42-2c713d9228b6" CvElementArea="1140, 653, 197, 51" CvTextArea="1171, 667, 137, 22" CvTextArgument="Entrar com goubr" CvType="Button" DesignTimeRectangle="1142, 655, 193, 47" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='image' class='' aaname='Acesso Gov BR' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="28007f7d-0467-42a0-8031-7f30f5ca57bc" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="6ecb01d4-ca39-46e5-aa42-2c713d9228b6" CvTextArea="1175, 496, 124, 15" CvTextArgument="ACESSO GOVBR" CvType="Text" DesignTimeRectangle="998, 481, 481, 46" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='frmLoginCert' tag='H2' type='' class='titulo-caixa-login fieldset-metade' aaname='Acesso GovBR' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='ACESSO GOVBR' /&gt;" Guid="5f23b4e4-679d-4670-99c2-c88cb6e1a948" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a372d8a97c1f356bb1228cad77d3ebbb.png" xmlns="">01cpy4opgs0C7HxwKye1eog</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

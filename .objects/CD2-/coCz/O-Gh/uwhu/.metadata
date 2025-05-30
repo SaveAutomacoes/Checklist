@@ -1,0 +1,14 @@
+﻿{
+  "Name": "grouping",
+  "Type": "Element",
+  "TaxonomyType": "RadioButton",
+  "Id": "uwhufJ5QrEuIHJfDB7ssKg",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/uwhufJ5QrEuIHJfDB7ssKg",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/O-GhXqDz5U-KItwmojZMnw",
+  "Created": "2025-05-30T12:23:40.5065637Z",
+  "Updated": "2025-05-30T12:23:40.5065637Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

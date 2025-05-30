@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="R20Xr31z8kWsPfSPHgDc5g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/Servicos/ATFLA/PagtoWeb.app/PagtoWebImpREST.aspx" CVScreenId="debbf6fe-f1b7-4e49-9187-a3f390a969fe" CvElementArea="933, 610, 111, 34" CvTextArea="968, 620, 42, 15" CvTextArgument="Salvar" CvType="Button" DesignTimeRectangle="935, 612, 110, 33" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlid='1' title='Sa&amp;amp;lvar' /&gt;" Guid="51f5b61f-8860-4a6a-8b3f-f979926cf927" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Salvar como' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="7bb76fe98a0de23155a282e8938f6357.png" xmlns="">0TwV1ywQTj0S8Ul2U2HSQtg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

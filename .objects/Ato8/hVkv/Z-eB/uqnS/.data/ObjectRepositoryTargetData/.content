@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="DbqZalKNJUmcq3fN83RHIA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/Servicos/ATFLA/PagtoWeb.app/PagtoWebImpREST.aspx" CVScreenId="d5b25041-fcef-42d2-b6a6-26cf157a6607" CvElementArea="1347, 202, 244, 48" CvType="InputBox" DesignTimeRectangle="1347, 202, 244, 48" ElementType="InputBox" Guid="e52629bb-7bab-4cb7-882b-42460cb5a79f" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='PagtoWebImpREST.aspx' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="d5b25041-fcef-42d2-b6a6-26cf157a6607" CvTextArea="1167, 220, 56, 15" CvTextArgument="Destino" CvType="Text" DesignTimeRectangle="1167, 219, 56, 15" ElementType="Text" Guid="068f20ee-dff0-4eab-b28f-acffb40e66a5" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="609a3f9c124aef2061e00febd7bf15d0.png" xmlns="">07XHZE3QMUE2wg2QyEnITxw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

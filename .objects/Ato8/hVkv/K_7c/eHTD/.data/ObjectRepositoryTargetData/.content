@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="lJXEwnGeV0eo622sFc7lXA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="707fba4a-0209-4034-81c9-464fa601f69e" CvElementArea="148, 64, 1539, 45" CvType="InputBox" DesignTimeRectangle="1604, 72, 30, 31" ElementType="Button" FuzzySelectorArgument="&lt;ctrl name='eCAC - Centro Virtual de Atendimento - Google Chrome' role='pane' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Janelas de pop-up bloqueadas' role='push button' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:fulltext='Janelas de pop-up bloqueadas' /&gt;" Guid="4ad577bd-4135-47e1-ad04-5dfdfc86ae48" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='eCAC - Centro Virtual de Atendimento - Google Chrome' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="707fba4a-0209-4034-81c9-464fa601f69e" CvElementArea="1772, 19, 28, 23" CvType="MinimizeButton" DesignTimeRectangle="1757, 9, 57, 50" ElementType="Button" FuzzySelectorArgument="&lt;ctrl name='eCAC - Centro Virtual de Atendimento - Google Chrome' role='pane' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Minimizar' role='push button' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='Minimizar' /&gt;" Guid="de494fd3-8deb-4b53-b56c-623318d9ec34" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="ea6109609749351a2bc077a841246103.png" xmlns="">0AUkJKxoRdkCbxOaT21VQYQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="5t7fTS6j5UG0dxN04I61_g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac" CVScreenId="7323ca06-fe89-4854-813b-5f3834be4754" CvElementArea="543, 454, 212, 35" CvTextArea="557, 464, 185, 16" CvTextArgument="Pagamentos e Parcelamentos" CvType="Button" DesignTimeRectangle="548, 455, 206, 32" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='btn259' tag='A' /&gt;" Guid="8c994f76-dd8d-4c82-a0c2-c78ef0e8c8d4" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="7323ca06-fe89-4854-813b-5f3834be4754" CvElementArea="543, 454, 212, 35" CvTextArea="557, 464, 185, 16" CvTextArgument="Pagamentos e Parcelamentos" CvType="Button" DesignTimeRectangle="544, 455, 210, 32" ElementType="ListItem" FuzzySelectorArgument="&lt;webctrl id='btn259' tag='LI' type='' class='botaoAzulServicos' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Pagamentos e Parcelamentos' /&gt;" Guid="c1c815a5-1563-402c-957d-8d9099b44573" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="81b1a5f53a81f86247f1d836fe7fbe69.png" xmlns="">0yDWPji2liUOpcIs0FRolWQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

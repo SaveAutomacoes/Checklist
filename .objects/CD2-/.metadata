@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome Definições - Pop-ups e redirecionamentos",
+  "Type": "App",
+  "Id": "CD2-oz10SEee-QZOepqwYQ",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/CD2-oz10SEee-QZOepqwYQ",
+  "Created": "2025-05-30T12:22:21.3389453Z",
+  "Updated": "2025-05-30T12:22:21.3389453Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

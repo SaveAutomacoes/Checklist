@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Destino",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "uqnSeic5XkGUTcfjrZu_-A",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/uqnSeic5XkGUTcfjrZu_-A",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/Z-eBmqjO3UmuDHOZW7QWXA",
+  "Created": "2025-05-30T13:30:46.6426447Z",
+  "Updated": "2025-05-30T13:30:46.6426447Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

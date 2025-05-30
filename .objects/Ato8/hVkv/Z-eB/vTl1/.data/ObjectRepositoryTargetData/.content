@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="MaYSA0lnbU-lVU4GkFsYpw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/Servicos/ATFLA/PagtoWeb.app/PagtoWebImpREST.aspx" CVScreenId="415b2689-5a88-4111-add4-239542da6c76" CvElementArea="1371, 894, 105, 49" CvTextArea="1392, 911, 62, 15" CvTextArgument="Guardar" CvType="Button" DesignTimeRectangle="1370, 893, 105, 49" ElementType="Button" Guid="01b6be2b-cb3c-4bd6-8cd4-3c1e4df11adf" ScopeSelectorArgument="&lt;html app='chrome.exe' title='PagtoWebImpREST.aspx' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="265d8dd2e8f3de49fb47c00f5d951130.png" xmlns="">0c3dQWtEsH0iCOE4nrnk6eA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

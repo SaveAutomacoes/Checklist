@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Volta para a Home",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "z_yd4rVpbk6tqOS43r80pQ",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/z_yd4rVpbk6tqOS43r80pQ",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/K_7cDlVPaUuzKq4AxkFolg",
+  "Created": "2025-05-30T12:41:00.9241113Z",
+  "Updated": "2025-05-30T12:41:00.9241113Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

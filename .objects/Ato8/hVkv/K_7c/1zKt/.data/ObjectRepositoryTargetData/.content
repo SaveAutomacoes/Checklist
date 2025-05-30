@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="6L1DysvBdU6kevRvrCKrpg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="e4011fc0-fdb8-4570-bcbf-90b7e11437d6" CvElementArea="1117, 321, 109, 51" CvTextArea="1137, 339, 66, 15" CvTextArgument="Cancelar" CvType="Button" DesignTimeRectangle="1120, 322, 104, 49" ElementType="Button" FullSelectorArgument="&lt;ctrl name='cav.receita.fazenda.gov.br diz' role='dialog' /&gt;&lt;ctrl name='Cancelar' role='push button' /&gt;" Guid="0858b445-95b7-4bc5-a8db-bde9721768c2" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='eCAC - Centro Virtual de Atendimento - Google Chrome' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="689, 322, 560, 74" FuzzySelectorArgument="&lt;ctrl name='cav.receita.fazenda.gov.br diz' role='dialog' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl automationid='' role='pane' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:fulltext='OK&amp;#xD;&amp;#xA;Cancelar' /&gt;" Guid="cfa2a7bb-2510-4c59-90eb-6295cf744af2" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="7015ab14bf2b2017200cf454c11486d3.png" xmlns="">01MEHcv8760mcm8MpnKKjjw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

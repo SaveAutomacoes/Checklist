@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="4CmqOjzXPUGKlCHi3QXqFw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="settings/content/popups" CVScreenId="883a2924-aef4-4857-b00a-a3d3bf7b8588" CvElementArea="556, 466, 26, 26" CvType="RadioButton" DesignTimeRectangle="562, 496, 23, 23" ElementType="RadioButton" FullSelectorArgument="&lt;ctrl name='Definições - Pop-ups e redirecionamentos' role='document' /&gt;&lt;ctrl name='Os sites podem enviar pop-ups e utilizar redirecionamentos' role='radio button' /&gt;" Guid="eb9a6999-6171-4bfb-bed6-9c3363e6b52c" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Definições - Pop-ups e redirecionamentos - Google Chrome' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="1bf61721-dfac-4080-9fbc-34f041ce9970" CvElementArea="612, 494, 27, 27" CvType="Icon" DesignTimeRectangle="611, 493, 37, 29" FullSelectorArgument="&lt;ctrl name='Definições - Pop-ups e redirecionamentos' role='document' /&gt;&lt;ctrl idx='75' role='grouping' /&gt;" Guid="bef3f8c9-374a-4c3c-83c8-7ab1d8dbfcf5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACkAAAAhCAYAAABEM4KbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEBSURBVFhH7daxCsIwEMbxPk6fqKuDi3NHwcVFcPAlBHESwTHPU6F798g3FEJMLpfciS3kDxksev2hNm1jV1DjH1hiFalVRWpVkVolkafzxW62u+h6PF+s90oikdfb/etk/vo7svQEw/C2+8NxuUgX6EIlqSJ9IF7nzgilhgwBUc6MUOM46iBjQISLCaukaZps13VyJAWUZoyxbdvKkL8Eor7vZd8kF4h91N1Luc0/NaBFSC4QxWakEiFzgCg0g5MKkgNEoRncRP9J4DhAFJvBSeXq5iSZobZPppLOULvjUGnMIJHU82HOKr0tzpFIxHnwpRY+Ly2JXEIVqVVFarUK5AdRNd58uJojYgAAAABJRU5ErkJggg==" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e0aee4de4a465441ee3e1d126a1f96f3.png" xmlns="">0I1fq42RA6E2yxSkjZO6XRg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

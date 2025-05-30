@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Definições - Pop-ups e redirecionament",
+  "Type": "Screen",
+  "Id": "O-GhXqDz5U-KItwmojZMnw",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/O-GhXqDz5U-KItwmojZMnw",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/coCz_v5rUEK_0u0Zb6xX4A",
+  "Created": "2025-05-30T12:22:21.3856616Z",
+  "Updated": "2025-05-30T12:22:21.3856616Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

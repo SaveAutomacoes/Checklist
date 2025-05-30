@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="hTGWB2khZ0OIF0yL3jUIyw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/Servicos/ATFLA/PagtoWeb.app/PagtoWebImpREST.aspx" CVScreenId="a814a2fd-aabe-49e0-9cd0-29789e3f0165" CvTextArea="74, 80, 129, 16" CvTextArgument="Deseja substituí-lo?" CvType="Text" DesignTimeRectangle="74, 80, 129, 16" ElementType="Text" Guid="7a9190b9-be67-4ef6-99d0-ae4d770f3206" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Confirmar Salvar como' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="a814a2fd-aabe-49e0-9cd0-29789e3f0165" CvTextArea="16, 11, 152, 15" CvTextArgument="Confirmar Salvar como" CvType="Text" DesignTimeRectangle="16, 11, 152, 15" ElementType="Text" Guid="ff3558da-472c-406c-b733-f2bc60e3b50a" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e3ecf8abf6e521485fd5e5d6371f5606.png" xmlns="">0nytlktz6E0K5C29yYCsU2w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

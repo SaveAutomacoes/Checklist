@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="88p9aByX-06_md4uA6XHyQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="e4011fc0-fdb8-4570-bcbf-90b7e11437d6" CvTextArea="712, 182, 343, 18" CvTextArgument="Deseja realizar a avaliação do serviço realizado?" CvType="Text" DesignTimeRectangle="714, 177, 510, 26" ElementType="Text" FullSelectorArgument="&lt;ctrl name='cav.receita.fazenda.gov.br diz' role='dialog' /&gt;&lt;ctrl name='Deseja realizar a avaliação do serviço realizado? ' role='text' /&gt;" Guid="7e18a3a2-e442-4634-aaeb-404a9f6ebb14" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='eCAC - Centro Virtual de Atendimento - Google Chrome' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="689, 167, 560, 156" FuzzySelectorArgument="&lt;ctrl name='cav.receita.fazenda.gov.br diz' role='dialog' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl automationid='' role='pane' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:fulltext='Deseja realizar a avaliação do serviço realizado? Protocolo: PAGTOWEB.EMC.92b03330-8f58-408e-a659-9e9f7f1e880aCaso não queira ou já tenha realizado a avaliação, clique em Cancelar.' /&gt;" Guid="30b75dc8-121d-479e-b9f2-18c23a460b18" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="c75fd3ca8bd99a2001cac1a97215804d.png" xmlns="">0b1rzMxZ3TUeCGLhvOtF-ZA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

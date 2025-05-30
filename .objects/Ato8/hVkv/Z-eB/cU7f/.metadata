@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Deseja substituí-lo",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "cU7f6wCEV0SG35ui2fhkhQ",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/cU7f6wCEV0SG35ui2fhkhQ",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/Z-eBmqjO3UmuDHOZW7QWXA",
+  "Created": "2025-05-30T13:43:43.0637403Z",
+  "Updated": "2025-05-30T13:43:43.0637403Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

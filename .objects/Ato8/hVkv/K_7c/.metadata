@@ -1,0 +1,16 @@
+﻿{
+  "Name": "eCAC - Comprovante de Pagamentos",
+  "Type": "Screen",
+  "Id": "K_7cDlVPaUuzKq4AxkFolg",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/K_7cDlVPaUuzKq4AxkFolg",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/hVkvW8N0iUeJ1h3tUDZkyQ",
+  "Created": "2025-05-30T11:39:50.3634919Z",
+  "Updated": "2025-05-30T11:40:12.7359328Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Acesso GovBR",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Id": "vkxfeWSfF0KtaSzuYf2GEg",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/vkxfeWSfF0KtaSzuYf2GEg",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/K_7cDlVPaUuzKq4AxkFolg",
+  "Created": "2025-05-30T11:42:20.1806574Z",
+  "Updated": "2025-05-30T11:42:20.1806574Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

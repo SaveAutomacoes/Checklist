@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="iGr6CQUQ00S0hoHPfKQFiQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac" CVScreenId="40fcddb4-d7c0-4aac-aff5-2cd52a83332b" CvTextArea="347, 707, 397, 15" CvTextArgument="Consulta Comprovante de Pagamento - DARF DAS, DAE e DJE" CvType="Text" DesignTimeRectangle="350, 708, 395, 15" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Consulta Comprovante de Pagamento - DARF, DAS, DAE e DJE' parentid='containerServicos259' tag='A' /&gt;" Guid="de1d96d7-8205-4fce-8642-712a86def2e8" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="40fcddb4-d7c0-4aac-aff5-2cd52a83332b" CvTextArea="321, 620, 72, 16" CvTextArgument="Pagamento" CvType="Text" DesignTimeRectangle="310, 620, 724, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='containerServicos259' tag='H2' type='' class='' aaname='Pagamento' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Pagamento' /&gt;" Guid="506bf7c9-0b62-4200-b334-0c2f5b3d84d8" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="668eca87804cdd1c36b206667e76805d.png" xmlns="">0Ev0G1kAVf0GLgxgHQWvj3g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
