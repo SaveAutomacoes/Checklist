@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="5gxRh2zmMkKvD6HCLvJhEg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="-H2ojKgjIUGgXthBSPTf4g" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/W7N6CZ9Qd0anF_IZV9bbcQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/Servicos/ATFLA/PagtoWeb.app/PagtoWebImpREST.aspx" DesignTimeRectangle="190, 48, 637, 44" ElementType="Toolbar" FullSelectorArgument="&lt;wnd aaname='Carregando' cls='msctls_progress32' /&gt;&lt;wnd ctrlid='1001' title='Endereço: G:\Meu Drive\7. Automação\OUTRAS AUTOMATIZAÇÕES\Checkl*' /&gt;" Guid="6e1bffc0-3e34-41a5-972d-25838e4a389e" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Salvar como' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
-      <imageRef attrName="InformativeScreenshot" originalValue="0b74414a4f105942f8af3f5e8650b114.png" xmlns="">0Kq9DqdJGyU6eyuFWztbrAA</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="63a9c262-47fe-4b63-9687-92e5fc8d6d5e" CvElementArea="179, 46, 691, 45" CvType="InputBox" DesignTimeRectangle="182, 48, 688, 42" ElementType="InputBox" FullSelectorArgument="&lt;wnd aaname='Carregando' cls='msctls_progress32' /&gt;&lt;wnd ctrlid='41477' /&gt;&lt;wnd ctrlid='41477' /&gt;" Guid="9b5c9210-a541-46e3-b58d-0fdfffebe143" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Salvar como' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="9, 38, 1182, 65" FuzzySelectorArgument="&lt;wnd ctrlid='40965' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' check:text='Downloads' /&gt;" Guid="6290f431-6af0-4597-aab8-4dc6867f9d8b" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b99dee8aaba793f7ad09be9650504aac.png" xmlns="">0b4B5y7OcMUufVKduKfMYJw</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">TypeInto</x:String>
   </ObjectRepositoryTargetData.Data>

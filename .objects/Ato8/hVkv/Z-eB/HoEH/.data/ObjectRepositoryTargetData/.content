@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="uo-6ucR6aEmeDUA93PMVug" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/Servicos/ATFLA/PagtoWeb.app/PagtoWebImpREST.aspx" CVScreenId="e7707eb1-2b8e-4572-8375-980f433b784a" CvElementArea="176, 47, 736, 45" CvType="InputBox" DesignTimeRectangle="827, 48, 43, 43" ElementType="Button" FuzzySelectorArgument="&lt;wnd aaname='Carregando' cls='msctls_progress32' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;&lt;wnd cls='ToolbarWindow32' title='Faixa de endereços' matching:title='fuzzy' fuzzylevel:title='0.0' /&gt;&lt;ctrl name='Faixa de endereços' role='tool bar' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Locais Anteriores' role='push button' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='Locais Anteriores' /&gt;" Guid="a674ce84-2932-4ff2-a8de-a2916b002f4f" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Salvar como' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="180, 38, 735, 62" FuzzySelectorArgument="&lt;wnd ctrlid='41477' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' check:text='G:\Meu Drive\7. Automação\OUTRAS AUTOMATIZAÇÕES\Checklist' /&gt;" Guid="cfa65dd5-b48e-4e88-97d8-12c1beb480cc" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="2f9d6ec7af547d8e7819a71c259aa54e.png" xmlns="">0TXXPUT3yt0ix2uLgVBAMvw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
