@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Consulta Pendências - S…(1)",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "oOvX2042SEaAXZsKGbXtHQ",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/oOvX2042SEaAXZsKGbXtHQ",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/rqs_aYf4VkakS8L4Vys-yw",
+  "Created": "2025-06-02T18:33:41.4930678Z",
+  "Updated": "2025-06-02T18:33:41.4930678Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

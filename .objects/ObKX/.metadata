@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome comprovantes.pdf",
+  "Type": "App",
+  "Id": "ObKXN1lpa0q5msFscugebw",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/ObKXN1lpa0q5msFscugebw",
+  "Created": "2025-06-02T12:20:44.0400758Z",
+  "Updated": "2025-06-02T12:20:44.0400758Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

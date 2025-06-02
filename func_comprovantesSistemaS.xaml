@@ -134,13 +134,13 @@
       <AssemblyReference>UiPath.Python.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="func_comprovantesSistemaS" sap:VirtualizedContainerService.HintSize="1667,1089" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="func_comprovantesSistemaS" sap:VirtualizedContainerService.HintSize="1921,1211" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Fluxo Principal" sap:VirtualizedContainerService.HintSize="570,1066" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Fluxo Principal" sap:VirtualizedContainerService.HintSize="570,1188" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1093,7 +1093,7 @@
           </uix:NApplicationCard.TargetApp>
         </uix:NApplicationCard>
       </Sequence>
-      <Sequence DisplayName="Itera com o documento baixado" sap:VirtualizedContainerService.HintSize="536,895" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <Sequence DisplayName="Itera com o documento baixado" sap:VirtualizedContainerService.HintSize="536,1017" sap2010:WorkflowViewState.IdRef="Sequence_3">
         <Sequence.Variables>
           <Variable x:TypeArguments="x:String" Name="textoExtraidoPDF" />
         </Sequence.Variables>
@@ -1112,16 +1112,17 @@
           </sap:WorkflowViewStateService.ViewState>
           <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[in_pastaDestino + &quot;\resultadoTexto.txt&quot;]" sap:VirtualizedContainerService.HintSize="416,156" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[textoExtraidoPDF]" />
         </Sequence>
-        <p:PythonScope OperationTimeout="{x:Null}" DisplayName="Python Scope" sap:VirtualizedContainerService.HintSize="502,442" sap2010:WorkflowViewState.IdRef="PythonScope_1" LibraryPath="C:\Users\lucas\AppData\Local\Programs\Python\Python313\python313.dll" Path="C:\Users\lucas\AppData\Local\Programs\Python\Python313" TargetPlatform="x64">
+        <p:PythonScope OperationTimeout="{x:Null}" DisplayName="Python Scope" sap:VirtualizedContainerService.HintSize="502,564" sap2010:WorkflowViewState.IdRef="PythonScope_1" LibraryPath="C:\Users\lucas\AppData\Local\Programs\Python\Python313\python313.dll" Path="C:\Users\lucas\AppData\Local\Programs\Python\Python313" TargetPlatform="x64">
           <p:PythonScope.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="PythonEngineSessionProperty" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="468,382" sap2010:WorkflowViewState.IdRef="Sequence_43">
+              <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="468,504" sap2010:WorkflowViewState.IdRef="Sequence_43">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="p:PythonObject" Name="py_caminhoFunc" />
                   <Variable x:TypeArguments="p:PythonObject" Name="py_resultadoFunc" />
+                  <Variable x:TypeArguments="x:Object" Name="py_resultadoFuncFormated" />
                 </Sequence.Variables>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -1130,7 +1131,8 @@
                 </sap:WorkflowViewStateService.ViewState>
                 <p:LoadScript Code="{x:Null}" DisplayName="Load Python Script" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="LoadScript_2" Result="[py_caminhoFunc]" ScriptFile="tratarTXT.py" />
                 <p:InvokeMethod Parameters="{x:Null}" DisplayName="Invoke Python Method" sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="InvokeMethod_1" Instance="[py_caminhoFunc]" Name="main" Result="[py_resultadoFunc]" />
-                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[py_resultadoFunc]" />
+                <p:GetObject x:TypeArguments="x:String" DisplayName="Get Python Object" sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="GetObject`1_3" PythonObject="[py_resultadoFunc]" Result="[py_resultadoFuncFormated]" />
+                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[py_resultadoFuncFormated]" />
               </Sequence>
             </ActivityAction>
           </p:PythonScope.Body>
