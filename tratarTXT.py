@@ -23,7 +23,7 @@ def main():
     for cont, item in enumerate(itensCabecalho):
         if cont > 0:
             # Pega apenas os 5 primeiros caracteres do item
-            item = item[:6]
+            item = item[:7]
             itensCabecalhoFormatado.append(item)
 
 

@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="T03erswqhkC46IFYxEFDMA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="7R2i8ggCDEStoOXnp7ESWg" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/oOvX2042SEaAXZsKGbXtHQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac" DesignTimeRectangle="59, 622, 126, 29" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='servicosMaisAcessados' tag='A' /&gt;" Guid="5091f4f6-f70a-4890-93e0-209b7e967c34" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
-      <imageRef attrName="InformativeScreenshot" originalValue="06798962a3ca298bc98e587be9bd1c9e.png" xmlns="">0O1tv_T69-0yqURPmozoO2w</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac" DesignTimeRectangle="59, 557, 126, 29" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='servicosMaisAcessados' tag='A' type='' class='' aaname='Consulta Pendências - Situação Fiscal' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Consulta Pendências - Situação Fiscal' /&gt;" Guid="f73fe703-7cbb-4fa2-acd1-4b3565da4044" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="34, 557, 200, 30" ElementType="ListItem" FuzzySelectorArgument="&lt;webctrl parentid='servicosMaisAcessados' tag='LI' type='' class='' aaname='' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Consulta Pendências - Situação Fiscal' /&gt;" Guid="342b0fb9-fa34-46a6-84d9-44f8e7b51c9f" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="4ffa2fdc39b9892c032ce4900349dcec.png" xmlns="">0z9CXKlUg3Eab6eitihNu3g</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">CheckState</x:String>
   </ObjectRepositoryTargetData.Data>
