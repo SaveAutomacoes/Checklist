@@ -3,6 +3,7 @@ def main():
     import PyPDF2
     import re
     import pandas as pd
+    import openpyxl
 
     # Caminho da planilha modelo
     caminho_planilha_modelo = 'G:\\Meu Drive\\7. Automação\\OUTRAS AUTOMATIZAÇÕES\\Checklist\\Testes\\Sistema S - SESI SENAI SESC SENAC.xlsx'
@@ -10,12 +11,12 @@ def main():
     # Aba da planilha modelo
     aba_planilha_modelo = 'Base Dados (Colar Aqui Pgmtos)'
 
-    # Lê a planilha modelo
-    planilhaModelo = pd.read_excel(caminho_planilha_modelo, sheet_name=aba_planilha_modelo)
+    # Abre o arquivo Excel
+    wb = openpyxl.load_workbook(caminho_planilha_modelo)
+    ws = wb[aba_planilha_modelo]
 
-    # Pega o cabeçalho da planilha modelo
-    itensCabecalho = planilhaModelo.columns.tolist()
-    print(itensCabecalho)
+    # Pega o cabeçalho da planilha modelo com openpyxl
+    itensCabecalho = [cell.value for cell in ws[1]]
 
     itensCabecalhoFormatado = []
 
@@ -25,7 +26,6 @@ def main():
             # Pega apenas os 5 primeiros caracteres do item
             item = item[:7]
             itensCabecalhoFormatado.append(item)
-
 
     # Lista do resultado
     listaResultado = []
@@ -78,7 +78,28 @@ def main():
         if pagamento["codigo"] in itensCabecalhoFormatado:
             listaResultadoFiltrada.append(pagamento)
 
-    print(listaResultadoFiltrada)
+    # print(listaResultadoFiltrada)
+
+
+    for pagamento in listaResultadoFiltrada:
+        for row in range(2, ws.max_row + 1):  # Começa em 2 para pular o cabeçalho
+            data_celula = ws.cell(row=row, column=1).value
+            # Se a célula for datetime, formata para string
+            if hasattr(data_celula, 'strftime'):
+                data_celula_str = data_celula.strftime("%d/%m/%Y")
+            else:
+                data_celula_str = str(data_celula)
+            if pagamento["dtApuracao"] == data_celula_str:
+                coluna = itensCabecalhoFormatado.index(pagamento["codigo"]) + 2  # +2 para alinhar com o Excel
+                ws.cell(row=row, column=coluna, value=pagamento["valor"])
+
+    try:
+        # Salva uma cópia da planilha modelo com os dados preenchidos
+        caminho_planilha_modelo = caminho_planilha_modelo.replace('.xlsx', '_preenchida.xlsx')
+        wb.save(caminho_planilha_modelo)
+    except Exception as e:
+        print(f"Erro ao salvar o arquivo: {e}")
+
 
 if __name__ == "__main__":
     main()
