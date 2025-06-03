@@ -279,15 +279,11 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="4074,52435" sap2010:WorkflowViewState.IdRef="Sequence_6">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="4074,54537" sap2010:WorkflowViewState.IdRef="Sequence_6">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="naoPossuiArrecadacao" />
       <Variable x:TypeArguments="x:Boolean" Name="verificaAcimaDeMil" />
-      <Variable x:TypeArguments="x:Int32" Name="ano">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" Value="2020" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:Int32" Default="2020" Name="ano" />
       <Variable x:TypeArguments="x:String" Name="sheet" />
       <Variable x:TypeArguments="x:String" Name="usuario" />
       <Variable x:TypeArguments="x:String" Name="certificado" />
@@ -295,11 +291,7 @@
       <Variable x:TypeArguments="x:String" Name="pagina" />
       <Variable x:TypeArguments="x:String" Name="empresa" />
       <Variable x:TypeArguments="x:String" Name="cnpj" />
-      <Variable x:TypeArguments="x:Int32" Name="maximoDispositivos">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="maximoDispositivos" />
       <Variable x:TypeArguments="x:Boolean" Name="pastaExiste" />
       <Variable x:TypeArguments="x:String" Name="codigoDescricao" />
       <Variable x:TypeArguments="x:String" Name="dataAbertura" />
@@ -312,11 +304,7 @@
       <Variable x:TypeArguments="x:String" Name="darf" />
       <Variable x:TypeArguments="x:String" Name="valorDarf" />
       <Variable x:TypeArguments="x:String" Name="textoPDF" />
-      <Variable x:TypeArguments="x:Int32" Name="menosAno">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="menosAno" />
       <Variable x:TypeArguments="x:String" Name="data2" />
       <Variable x:TypeArguments="x:String" Name="data1" />
       <Variable x:TypeArguments="s:DateTime" Name="dataInicial" />
@@ -332,11 +320,7 @@
       <Variable x:TypeArguments="x:String" Name="newSheet" />
       <Variable x:TypeArguments="sd:DataTable" Name="tabelaFaseamento" />
       <Variable x:TypeArguments="sd:DataTable" Name="dataPerdcomp" />
-      <Variable x:TypeArguments="x:Int32" Name="mesAtual">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="mesAtual" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -349,16 +333,16 @@
         <OutArgument x:TypeArguments="x:String" x:Key="selecioneUm">[btnFormSelecioneUm]</OutArgument>
       </ufa:ShowFormActivity.Arguments>
     </ufa:ShowFormActivity>
-    <If Condition="[btnFormSelecioneUm =&quot;importarExcel&quot;]" DisplayName="Verifica se Quer Importar Excel" sap:VirtualizedContainerService.HintSize="4074,1684" sap2010:WorkflowViewState.IdRef="If_64">
+    <If Condition="[btnFormSelecioneUm =&quot;importarExcel&quot;]" DisplayName="Verifica se Quer Importar Excel" sap:VirtualizedContainerService.HintSize="4074,1724" sap2010:WorkflowViewState.IdRef="If_64">
       <If.Then>
-        <Sequence DisplayName="Quer Importar Excel" sap:VirtualizedContainerService.HintSize="614,1456" sap2010:WorkflowViewState.IdRef="Sequence_429">
+        <Sequence DisplayName="Quer Importar Excel" sap:VirtualizedContainerService.HintSize="614,1496" sap2010:WorkflowViewState.IdRef="Sequence_429">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <ui:SelectFile InitialDirectory="{x:Null}" Multiselect="{x:Null}" SelectedFiles="{x:Null}" DisplayName="Pede para o Usuário escolher um arquivo" Filter="Excel|*.xlsx;*.xls;*.xlsm;*.xlsb" sap:VirtualizedContainerService.HintSize="580,223" sap2010:WorkflowViewState.IdRef="SelectFile_1" SelectedFile="[sheet]" />
-          <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="580,723" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+          <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="580,763" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
             <ueab:ExcelProcessScopeX.Body>
               <ActivityAction x:TypeArguments="ui:IExcelProcess">
                 <ActivityAction.Argument>
@@ -445,13 +429,13 @@
     </Assign>
     <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" Buttons="Ok" DisplayName="Texto pedindo para escolher" sap:VirtualizedContainerService.HintSize="4074,117" sap2010:WorkflowViewState.IdRef="MessageBox_6" Text="[&quot;Por favor, selecione o modelo de Excel em que será salvo.&quot;]" />
     <ui:SelectFile InitialDirectory="{x:Null}" Multiselect="{x:Null}" SelectedFiles="{x:Null}" DisplayName="Pede para escolher o modelo" Filter="Todos os arquivos |*.*" sap:VirtualizedContainerService.HintSize="4074,170" sap2010:WorkflowViewState.IdRef="SelectFile_2" SelectedFile="[sheet]" />
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[tabelaDados]" DisplayName="Para Cada Linha" sap:VirtualizedContainerService.HintSize="4074,50001" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[tabelaDados]" DisplayName="Para Cada Linha" sap:VirtualizedContainerService.HintSize="4074,52063" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="linhaAtual" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Ações para cada Empresa" sap:VirtualizedContainerService.HintSize="4072,49821" sap2010:WorkflowViewState.IdRef="Sequence_438">
+          <Sequence DisplayName="Ações para cada Empresa" sap:VirtualizedContainerService.HintSize="4072,51883" sap2010:WorkflowViewState.IdRef="Sequence_438">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Boolean" Name="pastaFinalExiste" />
             </Sequence.Variables>
@@ -493,14 +477,14 @@
               </Assign.Value>
             </Assign>
             <ui:CopyFile ContinueOnError="{x:Null}" Destination="[newSheet]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="4038,186" sap2010:WorkflowViewState.IdRef="CopyFile_2" Overwrite="True" Path="[sheet]" />
-            <Sequence DisplayName="Emitir Cartão CNPJ" sap:VirtualizedContainerService.HintSize="4038,57" sap2010:WorkflowViewState.IdRef="Sequence_540">
+            <Sequence DisplayName="Emitir Cartão CNPJ" sap:VirtualizedContainerService.HintSize="4038,2119" sap2010:WorkflowViewState.IdRef="Sequence_540">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Sequence DisplayName="Navega pelo Portal de Emissão de Comprovante" sap:VirtualizedContainerService.HintSize="552,57" sap2010:WorkflowViewState.IdRef="Sequence_543">
+              <Sequence DisplayName="Navega pelo Portal de Emissão de Comprovante" sap:VirtualizedContainerService.HintSize="588,57" sap2010:WorkflowViewState.IdRef="Sequence_543">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -899,30 +883,30 @@
                   </uix:NApplicationCard.TargetApp>
                 </uix:NApplicationCard>
               </Sequence>
-              <Sequence DisplayName="Interage com o cartão do CNPJ" sap:VirtualizedContainerService.HintSize="552,1282" sap2010:WorkflowViewState.IdRef="Sequence_546">
+              <Sequence DisplayName="Interage com o cartão do CNPJ" sap:VirtualizedContainerService.HintSize="588,1613" sap2010:WorkflowViewState.IdRef="Sequence_546">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Acessa página do CNPJ" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="518,1190" sap2010:WorkflowViewState.IdRef="NApplicationCard_30" InteractionMode="DebuggerApi" ScopeGuid="c9008ff8-90ae-48b7-ace8-1da40695e185" UserDataFolderMode="DefaultFolder" Version="V2">
+                <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Acessa página do CNPJ" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="554,1521" sap2010:WorkflowViewState.IdRef="NApplicationCard_30" InteractionMode="DebuggerApi" ScopeGuid="c9008ff8-90ae-48b7-ace8-1da40695e185" UserDataFolderMode="DefaultFolder" Version="V2">
                   <uix:NApplicationCard.Body>
                     <ActivityAction x:TypeArguments="x:Object">
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="484,950" sap2010:WorkflowViewState.IdRef="Sequence_542">
+                      <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="520,1281" sap2010:WorkflowViewState.IdRef="Sequence_542">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clica em Imprimir" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,225" sap2010:WorkflowViewState.IdRef="NClick_195" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c9008ff8-90ae-48b7-ace8-1da40695e185" Version="V4">
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clica em Imprimir" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,225" sap2010:WorkflowViewState.IdRef="NClick_195" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c9008ff8-90ae-48b7-ace8-1da40695e185" Version="V4">
                           <uix:NClick.Target>
                             <uix:TargetAnchorable BrowserURL="" CVScreenId="3e342312-47a2-4ea5-bf93-ed690b4812c1" ContentHash="SZlHq1a-xk-BErOTQw-D0Q" CvTextArea="940, 975, 55, 15" CvTextArgument="Imprimir" CvType="Text" DesignTimeRectangle="892, 964, 118, 37" ElementType="Icon" FullSelectorArgument="&lt;webctrl aaname='Imprimir' tag='IMG' /&gt;" Guid="1ae925eb-e48a-450b-aaa1-6ad303da3332" InformativeScreenshot="883a0f4e4c1ac257620f09695ba60dc7.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/w6NlWw_CD0-3JguB8D479Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='about:blank' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                               <uix:TargetAnchorable.Anchors>
-                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                   <uix:Target CVScreenId="cd12c953-ab95-4646-a252-86e8e269b255" CvTextArea="940, 975, 55, 15" CvTextArgument="Imprimir" CvType="Text" DesignTimeRectangle="19, 964, 1864, 37" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;center' tag='CENTER' /&gt;" Guid="e4430b94-4019-4f8a-ad0c-07d4a3f617fd" SearchSteps="Selector, CV" />
                                 </scg:List>
                               </uix:TargetAnchorable.Anchors>
@@ -939,26 +923,49 @@
                             </uix:VerifyExecutionOptions>
                           </uix:NClick.VerifyOptions>
                         </uix:NClick>
-                        <uix:NSelectItem sap2010:Annotation.AnnotationText="É importante pois se estiver como &quot;Microsoft Print to PDF&quot; ele baixa uma imagem, não sendo possível copiar os textos do arquivo.&#xA;&#xA;No final ele dá Enter para sair do Dropdown" DisplayName="Seleciona o Destino e Dá Enter" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,276" sap2010:WorkflowViewState.IdRef="NSelectItem_4" Item="Guardar como PDF[k(Enter)][k(Tab)][k(Tab)][k(Tab)][k(Tab)][k(Enter)]" ScopeIdentifier="c9008ff8-90ae-48b7-ace8-1da40695e185" Version="V4">
-                          <uix:NSelectItem.Items>
-                            <scg:List x:TypeArguments="x:String" Capacity="0" />
-                          </uix:NSelectItem.Items>
-                          <uix:NSelectItem.Target>
-                            <uix:TargetAnchorable BrowserURL="" CVScreenId="a815b4d0-9b3b-4ed2-95ce-ac24bc6f9ee1" ContentHash="Rz0GAKNk0EKfMo7jLffW7w" CvElementArea="1332, 165, 245, 48" CvType="InputBox" DesignTimeRectangle="1332, 165, 245, 48" ElementType="InputBox" Guid="6bdd70a1-99d0-4345-92e5-88dfd35f680d" InformativeScreenshot="c36f6256bb0b56b82612af1e22398cb7.png" IsResponsive="True" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/MleGX4l2FUOniev2wl7KZw" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='about:blank - Google Chrome' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
-                              <uix:TargetAnchorable.Anchors>
-                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                                  <uix:Target CVScreenId="a815b4d0-9b3b-4ed2-95ce-ac24bc6f9ee1" CvTextArea="1154, 182, 55, 15" CvTextArgument="Destino" CvType="Text" DesignTimeRectangle="1154, 182, 55, 15" ElementType="Text" Guid="9afc2d54-30c3-4da8-aa85-4f4337a4f10b" SearchSteps="CV" TargetType="ComputerVisionBased" />
-                                </scg:List>
-                              </uix:TargetAnchorable.Anchors>
-                            </uix:TargetAnchorable>
-                          </uix:NSelectItem.Target>
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                        </uix:NSelectItem>
-                        <Sequence DisplayName="Interage com o Explorador de Arquivos" sap:VirtualizedContainerService.HintSize="450,387" sap2010:WorkflowViewState.IdRef="Sequence_547">
+                        <ui:CommentOut DisplayName="[DESATIVADO] Seleciona o Destino" sap:VirtualizedContainerService.HintSize="486,438" sap2010:WorkflowViewState.IdRef="CommentOut_6">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Atividades Ignoradas" sap:VirtualizedContainerService.HintSize="450,327" sap2010:WorkflowViewState.IdRef="Sequence_550">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NSelectItem sap2010:Annotation.AnnotationText="É importante pois se estiver como &quot;Microsoft Print to PDF&quot; ele baixa uma imagem, não sendo possível copiar os textos do arquivo.&#xA;&#xA;No final ele dá Enter para sair do Dropdown" DisplayName="Seleciona o Destino e Dá Enter" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,267" sap2010:WorkflowViewState.IdRef="NSelectItem_4" Item="Guardar como PDF[k(Enter)][k(Tab)][k(Tab)][k(Tab)][k(Tab)][k(Enter)]" ScopeIdentifier="c9008ff8-90ae-48b7-ace8-1da40695e185" Version="V4">
+                                <uix:NSelectItem.Items>
+                                  <scg:List x:TypeArguments="x:String" Capacity="0" />
+                                </uix:NSelectItem.Items>
+                                <uix:NSelectItem.Target>
+                                  <uix:TargetAnchorable BrowserURL="" CVScreenId="a815b4d0-9b3b-4ed2-95ce-ac24bc6f9ee1" ContentHash="Rz0GAKNk0EKfMo7jLffW7w" CvElementArea="1332, 165, 245, 48" CvType="InputBox" DesignTimeRectangle="1332, 165, 245, 48" ElementType="InputBox" Guid="6bdd70a1-99d0-4345-92e5-88dfd35f680d" InformativeScreenshot="c36f6256bb0b56b82612af1e22398cb7.png" IsResponsive="True" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/MleGX4l2FUOniev2wl7KZw" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='about:blank - Google Chrome' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                        <uix:Target CVScreenId="a815b4d0-9b3b-4ed2-95ce-ac24bc6f9ee1" CvTextArea="1154, 182, 55, 15" CvTextArgument="Destino" CvType="Text" DesignTimeRectangle="1154, 182, 55, 15" ElementType="Text" Guid="9afc2d54-30c3-4da8-aa85-4f4337a4f10b" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NSelectItem.Target>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </uix:NSelectItem>
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                        </ui:CommentOut>
+                        <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Dá Enter" sap:VirtualizedContainerService.HintSize="486,169" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="enter" KeyModifiers="None" SpecialKey="True">
+                          <ui:SendHotkey.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="b434e7a3-4a60-4677-b88d-65898959e56b">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                              <ui:Target.WaitForReady>
+                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                              </ui:Target.WaitForReady>
+                            </ui:Target>
+                          </ui:SendHotkey.Target>
+                        </ui:SendHotkey>
+                        <Sequence DisplayName="Interage com o Explorador de Arquivos" sap:VirtualizedContainerService.HintSize="486,387" sap2010:WorkflowViewState.IdRef="Sequence_547">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>

@@ -105,26 +105,26 @@
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="func_downloadArquivo" sap:VirtualizedContainerService.HintSize="2203,1903" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="func_downloadArquivo" sap:VirtualizedContainerService.HintSize="2203,2234" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Faz o Download do Arquivo" sap:VirtualizedContainerService.HintSize="622,1880" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Faz o Download do Arquivo" sap:VirtualizedContainerService.HintSize="622,2211" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard sap2010:Annotation.AnnotationText="Esse link está sem o Id que normalmente aparece, então ele sempre vai abrir no último comprovante gerado para a seção atual." AttachMode="ByInstance" CloseMode="Always" DisplayName="Abre o comprovante" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="588,1797" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="9ecf2a9b-fe48-4894-838c-6d0442c6e777" UserDataFolderMode="DefaultFolder" Version="V2">
+      <uix:NApplicationCard sap2010:Annotation.AnnotationText="Esse link está sem o Id que normalmente aparece, então ele sempre vai abrir no último comprovante gerado para a seção atual." AttachMode="ByInstance" CloseMode="Always" DisplayName="Abre o comprovante" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="588,2128" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="9ecf2a9b-fe48-4894-838c-6d0442c6e777" UserDataFolderMode="DefaultFolder" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="554,1515" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="554,1846" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -141,25 +141,48 @@
                   </uix:TargetAnchorable>
                 </uix:NClick.Target>
               </uix:NClick>
-              <uix:NSelectItem sap2010:Annotation.AnnotationText="É importante pois se estiver como &quot;Microsoft Print to PDF&quot; ele baixa uma imagem, não sendo possível copiar os textos do arquivo.&#xA;&#xA;No final ele dá Enter para sair do Dropdown" DisplayName="Select Item 'Destino'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="520,276" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="Guardar como PDF[k(Enter)][k(Tab)][k(Tab)][k(Tab)][k(Enter)]" ScopeIdentifier="9ecf2a9b-fe48-4894-838c-6d0442c6e777" Version="V4">
-                <uix:NSelectItem.Items>
-                  <scg:List x:TypeArguments="x:String" Capacity="0" />
-                </uix:NSelectItem.Items>
-                <uix:NSelectItem.Target>
-                  <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/Servicos/ATFLA/PagtoWeb.app/PagtoWebImpREST.aspx" CVScreenId="d5b25041-fcef-42d2-b6a6-26cf157a6607" ContentHash="DbqZalKNJUmcq3fN83RHIA" CvElementArea="1347, 202, 244, 48" CvType="InputBox" DesignTimeRectangle="1347, 202, 244, 48" ElementType="InputBox" Guid="e52629bb-7bab-4cb7-882b-42460cb5a79f" InformativeScreenshot="609a3f9c124aef2061e00febd7bf15d0.png" IsResponsive="True" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/uqnSeic5XkGUTcfjrZu_-A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='PagtoWebImpREST.aspx' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
-                    <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                        <uix:Target CVScreenId="d5b25041-fcef-42d2-b6a6-26cf157a6607" CvTextArea="1167, 220, 56, 15" CvTextArgument="Destino" CvType="Text" DesignTimeRectangle="1167, 219, 56, 15" ElementType="Text" Guid="068f20ee-dff0-4eab-b28f-acffb40e66a5" SearchSteps="CV" TargetType="ComputerVisionBased" />
-                      </scg:List>
-                    </uix:TargetAnchorable.Anchors>
-                  </uix:TargetAnchorable>
-                </uix:NSelectItem.Target>
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-              </uix:NSelectItem>
+              <ui:CommentOut DisplayName="[DESATIVADO] Seleciona o Destino" sap:VirtualizedContainerService.HintSize="520,438" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Atividades Ignoradas" sap:VirtualizedContainerService.HintSize="450,327" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NSelectItem sap2010:Annotation.AnnotationText="É importante pois se estiver como &quot;Microsoft Print to PDF&quot; ele baixa uma imagem, não sendo possível copiar os textos do arquivo.&#xA;&#xA;No final ele dá Enter para sair do Dropdown" DisplayName="Select Item 'Destino'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,267" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="Guardar como PDF[k(Enter)][k(Tab)][k(Tab)][k(Tab)][k(Enter)]" ScopeIdentifier="9ecf2a9b-fe48-4894-838c-6d0442c6e777" Version="V4">
+                      <uix:NSelectItem.Items>
+                        <scg:List x:TypeArguments="x:String" Capacity="0" />
+                      </uix:NSelectItem.Items>
+                      <uix:NSelectItem.Target>
+                        <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/Servicos/ATFLA/PagtoWeb.app/PagtoWebImpREST.aspx" CVScreenId="d5b25041-fcef-42d2-b6a6-26cf157a6607" ContentHash="DbqZalKNJUmcq3fN83RHIA" CvElementArea="1347, 202, 244, 48" CvType="InputBox" DesignTimeRectangle="1347, 202, 244, 48" ElementType="InputBox" Guid="e52629bb-7bab-4cb7-882b-42460cb5a79f" InformativeScreenshot="609a3f9c124aef2061e00febd7bf15d0.png" IsResponsive="True" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/uqnSeic5XkGUTcfjrZu_-A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='PagtoWebImpREST.aspx' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="d5b25041-fcef-42d2-b6a6-26cf157a6607" CvTextArea="1167, 220, 56, 15" CvTextArgument="Destino" CvType="Text" DesignTimeRectangle="1167, 219, 56, 15" ElementType="Text" Guid="068f20ee-dff0-4eab-b28f-acffb40e66a5" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NSelectItem.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NSelectItem>
+                  </Sequence>
+                </ui:CommentOut.Body>
+              </ui:CommentOut>
+              <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Dá Enter" sap:VirtualizedContainerService.HintSize="520,169" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="enter" KeyModifiers="None" SpecialKey="True">
+                <ui:SendHotkey.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="b434e7a3-4a60-4677-b88d-65898959e56b">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:SendHotkey.Target>
+              </ui:SendHotkey>
               <Sequence DisplayName="Interage com o Explorador  de Arquivos" sap:VirtualizedContainerService.HintSize="520,988" sap2010:WorkflowViewState.IdRef="Sequence_4">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
