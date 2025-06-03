@@ -1,4 +1,4 @@
-def main():
+def main(caminho_planilha_modelo, caminho_arquivo, caminho_pasta_cliente, aba_planilha_modelo='Base Dados (Colar Aqui Pgmtos)'):
     
     import PyPDF2
     import re
@@ -6,10 +6,10 @@ def main():
     import openpyxl
 
     # Caminho da planilha modelo
-    caminho_planilha_modelo = 'G:\\Meu Drive\\7. Automação\\OUTRAS AUTOMATIZAÇÕES\\Checklist\\Testes\\Sistema S - SESI SENAI SESC SENAC.xlsx'
+    caminho_planilha_modelo
 
     # Aba da planilha modelo
-    aba_planilha_modelo = 'Base Dados (Colar Aqui Pgmtos)'
+    aba_planilha_modelo
 
     # Abre o arquivo Excel
     wb = openpyxl.load_workbook(caminho_planilha_modelo)
@@ -31,7 +31,7 @@ def main():
     listaResultado = []
 
     # Caminho do arquivo PDF
-    caminho_arquivo = 'G:\\Meu Drive\\7. Automação\\OUTRAS AUTOMATIZAÇÕES\\Checklist\\Testes\\SEVAN\\comprovantes.pdf'
+    caminho_arquivo
 
     # Abre o PDF
     arquivoPDF = open(caminho_arquivo, 'rb')
@@ -95,11 +95,15 @@ def main():
 
     try:
         # Salva uma cópia da planilha modelo com os dados preenchidos
-        caminho_planilha_modelo = caminho_planilha_modelo.replace('.xlsx', '_preenchida.xlsx')
-        wb.save(caminho_planilha_modelo)
+        wb.save(caminho_pasta_cliente + "\Sistema S - SESI SENAI SESC SENAC - Comprovantes de Pagamento.xlsx")
     except Exception as e:
         print(f"Erro ao salvar o arquivo: {e}")
 
 
 if __name__ == "__main__":
-    main()
+    main(
+        caminho_planilha_modelo='G:\\Meu Drive\\7. Automação\\OUTRAS AUTOMATIZAÇÕES\\Checklist\\Testes\\Teste Checklist\\Sistema S - SESI SENAI SESC SENAC.xlsx',
+        caminho_arquivo='G:\\Meu Drive\\7. Automação\\OUTRAS AUTOMATIZAÇÕES\\Checklist\\Testes\\Teste Checklist\\SEVAN\\Comprovantes de Pagamento.pdf',
+        caminho_pasta_cliente='G:\\Meu Drive\\7. Automação\\OUTRAS AUTOMATIZAÇÕES\\Checklist\\Testes\\Teste Checklist\\SEVAN',
+        aba_planilha_modelo='Base Dados (Colar Aqui Pgmtos)'
+    )

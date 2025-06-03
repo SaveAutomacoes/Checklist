@@ -1,0 +1,279 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="func_downloadArquivo" this:func_downloadArquivo.in_nomeArquivoComprovantes="comprovantes" this:func_downloadArquivo.in_pastaDestino="G:\Meu Drive\7. Automação\OUTRAS AUTOMATIZAÇÕES\Checklist\Testes\Teste Checklist\SEVAN" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_nomeArquivoComprovantes" Type="InArgument(x:String)">
+      <x:Property.Attributes>
+        <RequiredArgumentAttribute />
+      </x:Property.Attributes>
+    </x:Property>
+    <x:Property Name="in_pastaDestino" Type="InArgument(x:String)">
+      <x:Property.Attributes>
+        <RequiredArgumentAttribute />
+      </x:Property.Attributes>
+    </x:Property>
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>func_downloadArquivo_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Python.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR.StudioWeb.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="func_downloadArquivo" sap:VirtualizedContainerService.HintSize="2203,1903" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Faz o Download do Arquivo" sap:VirtualizedContainerService.HintSize="622,1880" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard sap2010:Annotation.AnnotationText="Esse link está sem o Id que normalmente aparece, então ele sempre vai abrir no último comprovante gerado para a seção atual." AttachMode="ByInstance" CloseMode="Always" DisplayName="Abre o comprovante" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="588,1797" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="9ecf2a9b-fe48-4894-838c-6d0442c6e777" UserDataFolderMode="DefaultFolder" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="554,1515" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clica na Impressora" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="520,189" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9ecf2a9b-fe48-4894-838c-6d0442c6e777" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/Servicos/ATFLA/PagtoWeb.app/PagtoWebImpREST.aspx" CVScreenId="a919efd3-bf9e-45dd-bc26-46a44c43ccb9" ContentHash="OXclphWlq0K22eH1bS5k3g" CvElementArea="1829, 203, 30, 29" CvType="Icon" DesignTimeRectangle="1827, 201, 34, 33" ElementType="Icon" Guid="abe77fbd-ebad-4616-8f23-626b06e5ed3c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACIAAAAhCAYAAAC803lsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEOSURBVFhH7ZTNCYQwEEYtzLs3+7ADETzbgQVYitiAXYg3K8gygRH51iQz/q0sOTyUMPP5JgkmaZqaN5Dgwq+IIkgUQaIIohIpikINZrhQiQzDYJZlEUP1mOHikAg9QzwiItny/xbJssx+fCsSgkXonfoxEwmKdF1npmn6uogaqJ9yMFsswpMReBk1cIbvSL0ibdvagNA0e1RVZfq+N3mem7IsbQ7lYR0jEvEFuGiaxvaSBO+sL0clghcyRF3Xa9+lItvzljDP8/UiFMYieBn3oLpxHNfduUQEoWCsRbDntMgWnlQqQvWYgXWMVwQ5IoLrLg6J4JR7PCIi5TYR/E9IwAwXKpE7iSJIFEFeI/IBrwjY9cHMey8AAAAASUVORK5CYII=" InformativeScreenshot="60d298984d3fbbb6367239585d7b2105.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/izQA8q-uKEawHFmqwlQhlg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='PagtoWebImpREST.aspx' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="a919efd3-bf9e-45dd-bc26-46a44c43ccb9" CvElementArea="1878, 203, 23, 29" CvType="Icon" DesignTimeRectangle="1876, 201, 27, 33" ElementType="Icon" Guid="9fc6cf03-fac5-47c1-a97c-906960d7d48f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABsAAAAhCAYAAAAoNdCeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADfSURBVEhL7dIxCoQwEIVhD2ZrG8TawjY3sLGztbUX0ngPK6/gBWw9wSwjRHYzkPA0a5XiQ9gZ+MkmWZ7n9JbM/eGfUiyKFIsixS7TNNFxHGSMEbMQKFbX9RmytNZixweKFUVB27ZdsaZpxI4PFGPDMNCyLNT3vZiFwLEnbsXQu7LgGP+FfF/ruopZCBTjE32/xnEcxY4PFGN8IhtzZyFwjKEnsm7F7oJjXdedj4S/7iwEipVlSfu+X3dWVZXY8YFiSqmf19i2rdjxgWJsnuczxF93FgLHnkixKFIsildjH3vvKs1/hzYuAAAAAElFTkSuQmCC" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NSelectItem sap2010:Annotation.AnnotationText="É importante pois se estiver como &quot;Microsoft Print to PDF&quot; ele baixa uma imagem, não sendo possível copiar os textos do arquivo.&#xA;&#xA;No final ele dá Enter para sair do Dropdown" DisplayName="Select Item 'Destino'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="520,276" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="Guardar como PDF[k(Enter)][k(Tab)][k(Tab)][k(Tab)][k(Enter)]" ScopeIdentifier="9ecf2a9b-fe48-4894-838c-6d0442c6e777" Version="V4">
+                <uix:NSelectItem.Items>
+                  <scg:List x:TypeArguments="x:String" Capacity="0" />
+                </uix:NSelectItem.Items>
+                <uix:NSelectItem.Target>
+                  <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/Servicos/ATFLA/PagtoWeb.app/PagtoWebImpREST.aspx" CVScreenId="d5b25041-fcef-42d2-b6a6-26cf157a6607" ContentHash="DbqZalKNJUmcq3fN83RHIA" CvElementArea="1347, 202, 244, 48" CvType="InputBox" DesignTimeRectangle="1347, 202, 244, 48" ElementType="InputBox" Guid="e52629bb-7bab-4cb7-882b-42460cb5a79f" InformativeScreenshot="609a3f9c124aef2061e00febd7bf15d0.png" IsResponsive="True" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/uqnSeic5XkGUTcfjrZu_-A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='PagtoWebImpREST.aspx' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="d5b25041-fcef-42d2-b6a6-26cf157a6607" CvTextArea="1167, 220, 56, 15" CvTextArgument="Destino" CvType="Text" DesignTimeRectangle="1167, 219, 56, 15" ElementType="Text" Guid="068f20ee-dff0-4eab-b28f-acffb40e66a5" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NSelectItem.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NSelectItem>
+              <Sequence DisplayName="Interage com o Explorador  de Arquivos" sap:VirtualizedContainerService.HintSize="520,988" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,601" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                  <ui:CommentOut.Body>
+                    <Sequence DisplayName="Atividades Ignoradas" sap:VirtualizedContainerService.HintSize="450,490" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Locais Anteriores'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9ecf2a9b-fe48-4894-838c-6d0442c6e777" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/Servicos/ATFLA/PagtoWeb.app/PagtoWebImpREST.aspx" CVScreenId="e7707eb1-2b8e-4572-8375-980f433b784a" ContentHash="uo-6ucR6aEmeDUA93PMVug" CvElementArea="176, 47, 736, 45" CvType="InputBox" DesignTimeRectangle="827, 48, 43, 43" ElementType="Button" FuzzySelectorArgument="&lt;wnd aaname='Carregando' cls='msctls_progress32' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;&lt;wnd cls='ToolbarWindow32' title='Faixa de endereços' matching:title='fuzzy' fuzzylevel:title='0.0' /&gt;&lt;ctrl name='Faixa de endereços' role='tool bar' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Locais Anteriores' role='push button' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='Locais Anteriores' /&gt;" Guid="a674ce84-2932-4ff2-a8de-a2916b002f4f" InformativeScreenshot="2f9d6ec7af547d8e7819a71c259aa54e.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/HoEHPw1uNEi5IrZr2PWH4w" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Salvar como' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target DesignTimeRectangle="180, 38, 735, 62" FuzzySelectorArgument="&lt;wnd ctrlid='41477' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' check:text='G:\Meu Drive\7. Automação\OUTRAS AUTOMATIZAÇÕES\Checklist' /&gt;" Guid="cfa65dd5-b48e-4e88-97d8-12c1beb480cc" SearchSteps="FuzzySelector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Digita a pasta de destino" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,241" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="9ecf2a9b-fe48-4894-838c-6d0442c6e777" Text="[in_pastaDestino]" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable CVScreenId="63a9c262-47fe-4b63-9687-92e5fc8d6d5e" ContentHash="-H2ojKgjIUGgXthBSPTf4g" CvElementArea="179, 46, 691, 45" CvType="InputBox" DesignTimeRectangle="182, 48, 688, 42" ElementType="InputBox" FullSelectorArgument="&lt;wnd aaname='Carregando' cls='msctls_progress32' /&gt;&lt;wnd ctrlid='41477' /&gt;&lt;wnd ctrlid='41477' /&gt;" Guid="9b5c9210-a541-46e3-b58d-0fdfffebe143" InformativeScreenshot="b99dee8aaba793f7ad09be9650504aac.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/W7N6CZ9Qd0anF_IZV9bbcQ" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Salvar como' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target DesignTimeRectangle="9, 38, 1182, 65" FuzzySelectorArgument="&lt;wnd ctrlid='40965' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' check:text='Downloads' /&gt;" Guid="6290f431-6af0-4597-aab8-4dc6867f9d8b" SearchSteps="FuzzySelector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                    </Sequence>
+                  </ui:CommentOut.Body>
+                </ui:CommentOut>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Digita o Nome do Arquivo" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="HardwareEvents" ScopeIdentifier="9ecf2a9b-fe48-4894-838c-6d0442c6e777" Text="[in_pastaDestino + &quot;\&quot; + in_nomeArquivoComprovantes + &quot;[k(Enter)]&quot;]" Version="V4">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/Servicos/ATFLA/PagtoWeb.app/PagtoWebImpREST.aspx" CVScreenId="58493511-43a6-44e2-b6bf-f7c8aba0844b" ContentHash="JmSTlRYjakK2H9WRiHRoFw" CvElementArea="160, 520, 1021, 29" CvType="InputBox" DesignTimeRectangle="169, 525, 992, 22" ElementType="InputBox" FuzzySelectorArgument="&lt;wnd aaname='Painel do Explorer' cls='DirectUIHWND' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;&lt;wnd aaname='Nome:' cls='ComboBox' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;&lt;wnd ctrlid='1001' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;" Guid="7234f71a-e126-4777-9591-be9399c5c996" InformativeScreenshot="3cf057264a191a4845e7fd4d26b5ea66.png" IsResponsive="True" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/p5Lux8QAtEO8HVTgu-Cp0Q" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Salvar como' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="58493511-43a6-44e2-b6bf-f7c8aba0844b" CvTextArea="114, 528, 46, 13" CvTextArgument="Nome:" CvType="Text" DesignTimeRectangle="22, 522, 144, 28" ElementType="Text" FuzzySelectorArgument="&lt;wnd aaname='Painel do Explorer' cls='DirectUIHWND' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;&lt;ctrl name='Painel do Explorer' role='pane' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Painel de Layout de Pastas' role='pane' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Painel de Detalhes' role='pane' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Nome:' role='text' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='Nome:' /&gt;" Guid="06aa933c-4f5e-434b-9d74-e6233f988093" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                </uix:NTypeInto>
+                <uix:NCheckState DisplayName="Verifica se precisa Substituir" EnableIfNotExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="486,50" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="9ecf2a9b-fe48-4894-838c-6d0442c6e777" Version="V4">
+                  <uix:NCheckState.IfExists>
+                    <Sequence DisplayName="Precisa Substituir" sap:VirtualizedContainerService.HintSize="450,276" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clica em &quot;Sim&quot;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,216" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9ecf2a9b-fe48-4894-838c-6d0442c6e777" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/Servicos/ATFLA/PagtoWeb.app/PagtoWebImpREST.aspx" CVScreenId="a814a2fd-aabe-49e0-9cd0-29789e3f0165" ContentHash="KfHkJzxBm0eFUgbVVJeVfQ" CvElementArea="253, 126, 87, 29" CvTextArea="283, 133, 26, 13" CvTextArgument="Sim" CvType="Button" DesignTimeRectangle="254, 127, 87, 29" ElementType="Button" FullSelectorArgument="&lt;wnd aaname='Confirmar Salvar como' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Sim' cls='Button' title='&amp;amp;Sim' /&gt;" Guid="49134f88-2c87-499d-b24b-cc550b656843" InformativeScreenshot="65bd735bcd2ff6cf8502f2e3bf3483cb.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/4HiwQgQ7-ki0Iwrp1hTiKg" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Confirmar Salvar como' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                        </uix:NClick.Target>
+                        <uix:NClick.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NClick.VerifyOptions>
+                      </uix:NClick>
+                    </Sequence>
+                  </uix:NCheckState.IfExists>
+                  <uix:NCheckState.IfNotExists>
+                    <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="450,92" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Sequence>
+                  </uix:NCheckState.IfNotExists>
+                  <uix:NCheckState.Target>
+                    <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/Servicos/ATFLA/PagtoWeb.app/PagtoWebImpREST.aspx" CVScreenId="a814a2fd-aabe-49e0-9cd0-29789e3f0165" ContentHash="hTGWB2khZ0OIF0yL3jUIyw" CvTextArea="74, 80, 129, 16" CvTextArgument="Deseja substituí-lo?" CvType="Text" DesignTimeRectangle="74, 80, 129, 16" ElementType="Text" Guid="7a9190b9-be67-4ef6-99d0-ae4d770f3206" InformativeScreenshot="e3ecf8abf6e521485fd5e5d6371f5606.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/cU7f6wCEV0SG35ui2fhkhQ" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Confirmar Salvar como' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="a814a2fd-aabe-49e0-9cd0-29789e3f0165" CvTextArea="16, 11, 152, 15" CvTextArgument="Confirmar Salvar como" CvType="Text" DesignTimeRectangle="16, 11, 152, 15" ElementType="Text" Guid="ff3558da-472c-406c-b733-f2bc60e3b50a" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NCheckState.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NCheckState>
+              </Sequence>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="81, 28, 1788, 981" BrowserType="Chrome" ContentHash="dRJKWKQ3kUCJ590Q6WmA5A" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFoSURBVDhPY2CgNuDk5pb09PE/EJOQ+jU+OeMfCIPYIDGQHLp6FKCtq18Yl5j2Kz454398cvrf8Ki45yERsY+gBv0HyYHUoOsDA5AESGFcUvoffUPjWiYmJmaQuISktAPEQDj+h2EIyGlxiem/QZr5+QXUYeKm5lY9YVFxz9AMALsExTsg/4EkQDbDxERExUzRNSJjkB64ATHxKd9AfoY5GwQkJKXsA4LDr4JwbELqd3QDQAELNwDkL1CAwQXQgL2T6wpkzbGJqT9BeuAKYKEMw6CwCA6LvmtgZFIPchUnJ5e4salFh7WtwxwFReVQkGUoBkC8gOlPEFZRVY+DK2RgYAAZCPIuihdggYgNW9rYz0Q2ABTQIHGUQIRFI7JGK1uH2RpaOtmSUtJOMHWgKAZ5DyMaQQCWkGAGyCsqBcPkQM4G2QzSjDUhwYC2rn4RLCnHJaX9DouKfQoJsPS/YDF8SRkGKMpM5AAAbhv5+QeyRmkAAAAASUVORK5CYII=" sap2010:WorkflowViewState.IdRef="TargetApp_1" InformativeScreenshot="08baed0c45661ffc6bd4eb3085a5ae55.jpg" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/Z-eBmqjO3UmuDHOZW7QWXA" Selector="&lt;html app='chrome.exe' htmlwindowname='1748611198890' title='PagtoWebImpREST.aspx' /&gt;" Url="https://cav.receita.fazenda.gov.br/Servicos/ATFLA/PagtoWeb.app/PagtoWebImpREST.aspx" Version="V2" />
+        </uix:NApplicationCard.TargetApp>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>

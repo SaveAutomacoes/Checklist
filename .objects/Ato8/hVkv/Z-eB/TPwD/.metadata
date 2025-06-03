@@ -1,0 +1,14 @@
+﻿{
+  "Name": "A aplicação apresentou …",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "TPwDqBltZkGqJKApGyda3w",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/TPwDqBltZkGqJKApGyda3w",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/Z-eBmqjO3UmuDHOZW7QWXA",
+  "Created": "2025-06-03T15:14:45.8566355Z",
+  "Updated": "2025-06-03T15:14:45.8566355Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
