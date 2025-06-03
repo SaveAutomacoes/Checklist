@@ -131,7 +131,7 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="func_consultaComprovantes" sap:VirtualizedContainerService.HintSize="1921,3704" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="func_consultaComprovantes" sap:VirtualizedContainerService.HintSize="2203,3704" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -472,7 +472,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </Assign>
-                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Essa parte é responsável por passar o primeiro período da divisão, do início até a metade" DisplayName="Passa o primeiro Período para consulta" sap:VirtualizedContainerService.HintSize="434,219" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="func_consultaComprovantes.xaml">
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Essa parte é responsável por passar o primeiro período da divisão, do início até a metade" DisplayName="Passa o primeiro Período para consulta" sap:VirtualizedContainerService.HintSize="434,219" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="SistemaS\func_consultaComprovantes.xaml">
                         <ui:InvokeWorkflowFile.Arguments>
                           <OutArgument x:TypeArguments="x:String" x:Key="out_pastaComprovantes" />
                           <InArgument x:TypeArguments="x:String" x:Key="in_nomeArquivoComprovantes">[in_nomeArquivoComprovantes]</InArgument>
@@ -486,7 +486,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:InvokeWorkflowFile>
-                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Essa parte é responsável por passar o segundo período da divisão, da metade +1 até o fim" DisplayName="Passa o segundo Período para consulta" sap:VirtualizedContainerService.HintSize="434,212" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="func_consultaComprovantes.xaml">
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Essa parte é responsável por passar o segundo período da divisão, da metade +1 até o fim" DisplayName="Passa o segundo Período para consulta" sap:VirtualizedContainerService.HintSize="434,212" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="SistemaS\func_consultaComprovantes.xaml">
                         <ui:InvokeWorkflowFile.Arguments>
                           <OutArgument x:TypeArguments="x:String" x:Key="out_pastaComprovantes" />
                           <InArgument x:TypeArguments="x:String" x:Key="in_nomeArquivoComprovantes">[in_nomeArquivoComprovantes]</InArgument>
@@ -607,7 +607,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NCheckState>
-                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Envia para o fluxo responsável por fazer o download do arquivo.&#xA;&#xA;Necessário pois em cada consulta o arquivo vai mudar, pois é o mesmo link de acessi." DisplayName="Salva o PDF" sap:VirtualizedContainerService.HintSize="416,257" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="func_downloadArquivo.xaml">
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Envia para o fluxo responsável por fazer o download do arquivo.&#xA;&#xA;Necessário pois em cada consulta o arquivo vai mudar, pois é o mesmo link de acessi." DisplayName="Salva o PDF" sap:VirtualizedContainerService.HintSize="416,257" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="SistemaS\func_downloadArquivo.xaml">
                         <ui:InvokeWorkflowFile.Arguments>
                           <InArgument x:TypeArguments="x:String" x:Key="in_nomeArquivoComprovantes">[in_nomeArquivoComprovantes + contDownloads.ToString()]</InArgument>
                           <InArgument x:TypeArguments="x:String" x:Key="in_pastaDestino">[in_pastaDestino + "\comprovantes"]</InArgument>
