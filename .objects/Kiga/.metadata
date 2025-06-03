@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Início – Explorador de Arquivos",
+  "Type": "App",
+  "Id": "Kigajs1hTkaqrcfC2d1cVw",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/Kigajs1hTkaqrcfC2d1cVw",
+  "Created": "2025-06-03T18:46:31.8182201Z",
+  "Updated": "2025-06-03T18:46:31.8182201Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Início – Explorador de Arquivos",
+  "Type": "Screen",
+  "Id": "erFdO5SAA0-xdSjCQEVGXA",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/erFdO5SAA0-xdSjCQEVGXA",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/ym45u2zwCUO46WpLcBEJMQ",
+  "Created": "2025-06-03T18:46:31.8753262Z",
+  "Updated": "2025-06-03T18:46:31.8753262Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

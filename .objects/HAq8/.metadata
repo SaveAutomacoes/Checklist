@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Edge   aboutblank - Perfil 1 — Microsoft​ Edge",
+  "Type": "App",
+  "Id": "HAq8M3AwB0iGj2FG8RaCKQ",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/HAq8M3AwB0iGj2FG8RaCKQ",
+  "Created": "2025-06-03T18:24:13.8744678Z",
+  "Updated": "2025-06-03T18:24:13.8744678Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

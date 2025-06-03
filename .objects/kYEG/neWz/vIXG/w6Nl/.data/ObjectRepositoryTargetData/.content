@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="SZlHq1a-xk-BErOTQw-D0Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="" CVScreenId="3e342312-47a2-4ea5-bf93-ed690b4812c1" CvTextArea="940, 975, 55, 15" CvTextArgument="Imprimir" CvType="Text" DesignTimeRectangle="892, 964, 118, 37" ElementType="Icon" FullSelectorArgument="&lt;webctrl aaname='Imprimir' tag='IMG' /&gt;" Guid="1ae925eb-e48a-450b-aaa1-6ad303da3332" ScopeSelectorArgument="&lt;html app='chrome.exe' title='about:blank' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="cd12c953-ab95-4646-a252-86e8e269b255" CvTextArea="940, 975, 55, 15" CvTextArgument="Imprimir" CvType="Text" DesignTimeRectangle="19, 964, 1864, 37" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;center' tag='CENTER' /&gt;" Guid="e4430b94-4019-4f8a-ad0c-07d4a3f617fd" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="883a0f4e4c1ac257620f09695ba60dc7.png" xmlns="">0PfcqhCkC4k2FWdJP13t_KQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Seleciona o Destino e Dá Enter",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "MleGX4l2FUOniev2wl7KZw",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/MleGX4l2FUOniev2wl7KZw",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/vIXGxxPuE0CmKEFHkmc2CQ",
+  "Created": "2025-06-03T18:41:53.3828553Z",
+  "Updated": "2025-06-03T18:41:53.3828553Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

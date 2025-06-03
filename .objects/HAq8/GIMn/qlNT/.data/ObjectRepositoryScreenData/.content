@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="bX5QbNI_lU-QuunIyfjVSg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="6, 0, 1914, 1020" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEFSURBVDhPjZMNDUIxDIRPAQbAABjAANjBAAgAA2AADIAAMAAGMEO+pvdSxl7CJU3Wrr31b9IvlpK2ku6S3ilXSQdJs9a5YpKBrwx4SJqmcLYNny78CkQONsjqmbZd+uI3AFYzryVd6mXinESAh4ZMqIs6MWzSEeFcBRsvcyYLYoIQNsSO9KDqFoIow/rJWcA6dzpJ8FVfAhsEhpsbqVS0ekV7F3rXOIL2LnQWpi7IvyUssvxozrFpoidShcbWJrr5MYo6RljHxmg7vsQMy0YWwZaEOLbAtspzXbwA9fEyRlgpw1sH6BEjw2/v2nsgk/pxCHQwNven1+QBZEA5t/Kd/QtrVoEPxhFTUIu56MAAAAAASUVORK5CYII=" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='  about:blank - Perfil 1 — Microsoft​ Edge' /&gt;" Version="V2">
+      <imageRef attrName="InformativeScreenshot" originalValue="5e94f7aa803ca726475dd4d4d07370db.jpg" xmlns="">000oGF3J1JEy3hK383i_3bA</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

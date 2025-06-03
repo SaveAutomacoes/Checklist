@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge   aboutblank - Perfil 1 — Microsoft​ Edg",
+  "Type": "Screen",
+  "Id": "qlNTxonlZkOruFmX4KxFAQ",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/qlNTxonlZkOruFmX4KxFAQ",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/GIMnWSDsN0OERpNB3JKpkQ",
+  "Created": "2025-06-03T18:24:13.9405836Z",
+  "Updated": "2025-06-03T18:24:13.9405836Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

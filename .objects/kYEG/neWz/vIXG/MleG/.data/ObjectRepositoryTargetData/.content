@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Rz0GAKNk0EKfMo7jLffW7w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="" CVScreenId="a815b4d0-9b3b-4ed2-95ce-ac24bc6f9ee1" CvElementArea="1332, 165, 245, 48" CvType="InputBox" DesignTimeRectangle="1332, 165, 245, 48" ElementType="InputBox" Guid="6bdd70a1-99d0-4345-92e5-88dfd35f680d" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='about:blank - Google Chrome' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="a815b4d0-9b3b-4ed2-95ce-ac24bc6f9ee1" CvTextArea="1154, 182, 55, 15" CvTextArgument="Destino" CvType="Text" DesignTimeRectangle="1154, 182, 55, 15" ElementType="Text" Guid="9afc2d54-30c3-4da8-aa85-4f4337a4f10b" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="c36f6256bb0b56b82612af1e22398cb7.png" xmlns="">0LAjMPs2OFE6MtMeOTAZb1g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

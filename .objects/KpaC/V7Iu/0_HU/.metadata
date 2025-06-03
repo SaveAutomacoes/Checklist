@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Salvar como(1)",
+  "Type": "Screen",
+  "Id": "0_HUmPDaIkW1n9CJcHL4Yw",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/0_HUmPDaIkW1n9CJcHL4Yw",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/V7Iufm9lqEqFD_hcrUvzGw",
+  "Created": "2025-06-03T18:47:25.7457114Z",
+  "Updated": "2025-06-03T18:47:25.7457114Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
