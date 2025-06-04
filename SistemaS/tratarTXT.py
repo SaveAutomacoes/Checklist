@@ -1,15 +1,16 @@
-def main(caminho_planilha_modelo, caminho_arquivo, caminho_pasta_cliente, aba_planilha_modelo='Base Dados (Colar Aqui Pgmtos)'):
-    
+def main(caminho_planilha_modelo, caminho_arquivo, caminho_pasta_cliente, cnpj):
+    '''
+    caminho_planilha_modelo: Caminho do arquivo Excel modelo que contém o cabeçalho com os códigos de pagamento.
+    caminho_arquivo: Caminho do arquivo PDF que contém os comprovantes de pagamento.
+    caminho_pasta_cliente: Caminho da pasta onde o arquivo Excel será salvo após o preenchimento.
+    cnpj: CNPJ do cliente, usado para nomear o arquivo Excel salvo.
+    '''
     import PyPDF2
     import re
-    import pandas as pd
     import openpyxl
 
-    # Caminho da planilha modelo
-    caminho_planilha_modelo
-
-    # Aba da planilha modelo
-    aba_planilha_modelo
+    # Aba da planilha modelo onde serão colados os pagamento
+    aba_planilha_modelo = 'Base Dados (Colar Aqui Pgmtos)'
 
     # Abre o arquivo Excel
     wb = openpyxl.load_workbook(caminho_planilha_modelo)
@@ -18,7 +19,8 @@ def main(caminho_planilha_modelo, caminho_arquivo, caminho_pasta_cliente, aba_pl
     # Pega o cabeçalho da planilha modelo com openpyxl
     itensCabecalho = [cell.value for cell in ws[1]]
 
-    itensCabecalhoFormatado = []
+    # Lista para armazenar os itens do cabeçalho formatados
+    itensCabecalhoFormatado = [] 
 
     # Formata o cabeçalho da planilha modelo
     for cont, item in enumerate(itensCabecalho):
@@ -29,9 +31,6 @@ def main(caminho_planilha_modelo, caminho_arquivo, caminho_pasta_cliente, aba_pl
 
     # Lista do resultado
     listaResultado = []
-
-    # Caminho do arquivo PDF
-    caminho_arquivo
 
     # Abre o PDF
     arquivoPDF = open(caminho_arquivo, 'rb')
@@ -74,11 +73,9 @@ def main(caminho_planilha_modelo, caminho_arquivo, caminho_pasta_cliente, aba_pl
     # Filtra apenas os pagamentos com o código correto
     listaResultadoFiltrada = []
     for pagamento in listaResultado:
-        print(pagamento["codigo"])
         if pagamento["codigo"] in itensCabecalhoFormatado:
             listaResultadoFiltrada.append(pagamento)
 
-    # print(listaResultadoFiltrada)
 
 
     for pagamento in listaResultadoFiltrada:
@@ -95,7 +92,7 @@ def main(caminho_planilha_modelo, caminho_arquivo, caminho_pasta_cliente, aba_pl
 
     try:
         # Salva uma cópia da planilha modelo com os dados preenchidos
-        wb.save(caminho_pasta_cliente + "\Sistema S - SESI SENAI SESC SENAC - Comprovantes de Pagamento.xlsx")
+        wb.save(caminho_pasta_cliente + f"\Sistema S - {cnpj}.xlsx")
     except Exception as e:
         print(f"Erro ao salvar o arquivo: {e}")
 
@@ -105,5 +102,5 @@ if __name__ == "__main__":
         caminho_planilha_modelo='G:\\Meu Drive\\7. Automação\\OUTRAS AUTOMATIZAÇÕES\\Checklist\\Testes\\Teste Checklist\\Sistema S - SESI SENAI SESC SENAC.xlsx',
         caminho_arquivo='G:\\Meu Drive\\7. Automação\\OUTRAS AUTOMATIZAÇÕES\\Checklist\\Testes\\Teste Checklist\\SEVAN\\Comprovantes de Pagamento.pdf',
         caminho_pasta_cliente='G:\\Meu Drive\\7. Automação\\OUTRAS AUTOMATIZAÇÕES\\Checklist\\Testes\\Teste Checklist\\SEVAN',
-        aba_planilha_modelo='Base Dados (Colar Aqui Pgmtos)'
+        cnpj='39043203000109'
     )
