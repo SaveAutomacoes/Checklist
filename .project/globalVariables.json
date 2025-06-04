@@ -17,14 +17,6 @@
   },
   {
     "Constant": false,
-    "Name": "cnpjFormatado",
-    "TypeFullyQualifiedName": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
-    "UnresolvedTypeFullyQualifiedName": null,
-    "Expression": null,
-    "IsLiteral": false
-  },
-  {
-    "Constant": false,
     "Name": "planilha_detalhesPerdComp",
     "TypeFullyQualifiedName": "System.IO.FileInfo, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
     "UnresolvedTypeFullyQualifiedName": null,
@@ -45,6 +37,14 @@
     "TypeFullyQualifiedName": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
     "UnresolvedTypeFullyQualifiedName": null,
     "Expression": "0",
-    "IsLiteral": true
+    "IsLiteral": false
+  },
+  {
+    "Constant": false,
+    "Name": "cnpjFormatado",
+    "TypeFullyQualifiedName": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+    "UnresolvedTypeFullyQualifiedName": null,
+    "Expression": null,
+    "IsLiteral": false
   }
 ]
