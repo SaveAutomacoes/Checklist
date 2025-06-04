@@ -1,12 +1,13 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="func_consultaComprovantes" this:func_consultaComprovantes.in_nomeArquivoComprovantes="comprovantes" this:func_consultaComprovantes.in_pastaDestino="G:\Meu Drive\7. Automação\OUTRAS AUTOMATIZAÇÕES\Checklist\Testes\Teste Checklist\SEVAN" this:func_consultaComprovantes.in_dataFim="[new DateTime(2024, 5, 30, 0, 0, 0)]" this:func_consultaComprovantes.in_dataInicio="[new DateTime(2020, 6, 1, 0, 0, 0)]" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="func_consultaComprovantes" this:func_consultaComprovantes.in_nomeArquivoComprovantes="comprovantes" this:func_consultaComprovantes.in_dataFim="[new DateTime(2024, 5, 30, 0, 0, 0)]" this:func_consultaComprovantes.in_dataInicio="[new DateTime(2020, 6, 1, 0, 0, 0)]" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
+    <x:Property Name="out_erro" Type="OutArgument(x:Boolean)" />
     <x:Property Name="out_pastaComprovantes" Type="OutArgument(x:String)" />
     <x:Property Name="in_nomeArquivoComprovantes" Type="InArgument(x:String)">
       <x:Property.Attributes>
         <RequiredArgumentAttribute />
       </x:Property.Attributes>
     </x:Property>
-    <x:Property Name="in_pastaDestino" Type="InArgument(x:String)">
+    <x:Property Name="in_pastaDestino" Type="InOutArgument(x:String)">
       <x:Property.Attributes>
         <RequiredArgumentAttribute />
       </x:Property.Attributes>
@@ -131,7 +132,7 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="func_consultaComprovantes" sap:VirtualizedContainerService.HintSize="2203,3704" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="func_consultaComprovantes" sap:VirtualizedContainerService.HintSize="2203,3241" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -203,7 +204,7 @@
         </If.Else>
       </If>
     </Sequence>
-    <Sequence DisplayName="Faz a consulta" sap:VirtualizedContainerService.HintSize="1108,2618" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Faz a consulta" sap:VirtualizedContainerService.HintSize="1108,2155" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -218,16 +219,17 @@
           <InArgument x:TypeArguments="x:Int32">[contDownloads + 1]</InArgument>
         </Assign.Value>
       </Assign>
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Chrome eCAC - Centro Virtual de Atendimento(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1074,2421" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="db1dbd93-e155-430a-b6af-f9bcdcd430cc" UserDataFolderMode="DefaultFolder" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Chrome eCAC - Centro Virtual de Atendimento(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1074,1958" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="db1dbd93-e155-430a-b6af-f9bcdcd430cc" UserDataFolderMode="DefaultFolder" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="1040,2141" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="1040,1718" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <Sequence DisplayName="Preenche os Campos" sap:VirtualizedContainerService.HintSize="1006,57" sap2010:WorkflowViewState.IdRef="Sequence_5">
@@ -272,10 +274,77 @@
                   </uix:NTypeInto.Target>
                 </uix:NTypeInto>
               </Sequence>
-              <Sequence DisplayName="Seleciona Todos e Clica em Exibir Comprovantes" sap:VirtualizedContainerService.HintSize="1006,537" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <Sequence DisplayName="Verifica se Não Possui pagamentos" sap:VirtualizedContainerService.HintSize="1006,57" sap2010:WorkflowViewState.IdRef="Sequence_24">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NCheckState DisplayName="Verifica Mensagem Nenhuma Arrecadação localizada" EnableIfNotExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="512,693" sap2010:WorkflowViewState.IdRef="NCheckState_6" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Version="V4">
+                  <uix:NCheckState.IfExists>
+                    <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="468,451" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clica em OK" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,225" sap2010:WorkflowViewState.IdRef="NClick_16" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="79031426-8877-4e27-87d4-407125f36c8e" ContentHash="xA8CpJc0oUK7LyIaUUM4RQ" CvElementArea="1135, 214, 97, 63" CvTextArea="1170, 239, 26, 15" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="1144, 222, 80, 49" ElementType="Button" FullSelectorArgument="&lt;ctrl name='cav.receita.fazenda.gov.br diz' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' /&gt;" Guid="d514c081-b402-4a48-a679-03eb140ada1e" InformativeScreenshot="b42984d357e2a04dc14a0cec61e86719.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/HmHGm2-Q_0iO0rDRv3ddEQ" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='eCAC - Centro Virtual de Atendimento - Google Chrome' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target DesignTimeRectangle="680, 106, 578, 201" FuzzySelectorArgument="&lt;ctrl name='cav.receita.fazenda.gov.br diz' role='dialog' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl automationid='' role='pane' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:fulltext='cav.receita.fazenda.gov.br diz&amp;#xD;&amp;#xA;Nenhuma arrecadação localizada.&amp;#xD;&amp;#xA;OK' /&gt;" Guid="8cca844e-1b41-47b0-8ebc-37d51be51d5c" SearchSteps="FuzzySelector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                        <uix:NClick.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NClick.VerifyOptions>
+                      </uix:NClick>
+                      <Assign DisplayName="Define o Erro" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_5">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Boolean">[out_erro]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <ui:Return sap:VirtualizedContainerService.HintSize="434,50" sap2010:WorkflowViewState.IdRef="Return_1" />
+                    </Sequence>
+                  </uix:NCheckState.IfExists>
+                  <uix:NCheckState.IfNotExists>
+                    <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="450,92" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Sequence>
+                  </uix:NCheckState.IfNotExists>
+                  <uix:NCheckState.Target>
+                    <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="79031426-8877-4e27-87d4-407125f36c8e" ContentHash="6JExoDLQg0Gatfpg3f5FGg" CvTextArea="712, 182, 242, 15" CvTextArgument="Nenhuma arrecadação localizada." CvType="Text" DesignTimeRectangle="714, 177, 510, 26" ElementType="Text" FullSelectorArgument="&lt;ctrl name='cav.receita.fazenda.gov.br diz' role='dialog' /&gt;&lt;ctrl name='Nenhuma arrecadação localizada.' role='text' /&gt;" Guid="63e9d00a-a140-4dd0-985a-ed82319c681b" InformativeScreenshot="7f29038c2578fed3437276bad048a9de.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/k5bjDK2yFEibgtzkB5ULTg" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='eCAC - Centro Virtual de Atendimento - Google Chrome' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                          <uix:Target DesignTimeRectangle="680, 106, 578, 201" FuzzySelectorArgument="&lt;ctrl name='cav.receita.fazenda.gov.br diz' role='dialog' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl automationid='' role='pane' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:fulltext='cav.receita.fazenda.gov.br diz&amp;#xD;&amp;#xA;Nenhuma arrecadação localizada.&amp;#xD;&amp;#xA;OK' /&gt;" Guid="d97d94f2-cc3d-42b8-8f69-d5a9b8c6afdf" SearchSteps="FuzzySelector" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NCheckState.Target>
+                </uix:NCheckState>
+              </Sequence>
+              <Sequence DisplayName="Seleciona Todos e Clica em Exibir Comprovantes" sap:VirtualizedContainerService.HintSize="1006,57" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
@@ -474,9 +543,10 @@
                       </Assign>
                       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Essa parte é responsável por passar o primeiro período da divisão, do início até a metade" DisplayName="Passa o primeiro Período para consulta" sap:VirtualizedContainerService.HintSize="434,219" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="SistemaS\func_consultaComprovantes.xaml">
                         <ui:InvokeWorkflowFile.Arguments>
+                          <OutArgument x:TypeArguments="x:Boolean" x:Key="out_erro" />
                           <OutArgument x:TypeArguments="x:String" x:Key="out_pastaComprovantes" />
                           <InArgument x:TypeArguments="x:String" x:Key="in_nomeArquivoComprovantes">[in_nomeArquivoComprovantes]</InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="in_pastaDestino">[in_pastaDestino]</InArgument>
+                          <InOutArgument x:TypeArguments="x:String" x:Key="in_pastaDestino">[in_pastaDestino]</InOutArgument>
                           <InArgument x:TypeArguments="s:DateTime" x:Key="in_dataFim">[dataMeio]</InArgument>
                           <InArgument x:TypeArguments="s:DateTime" x:Key="in_dataInicio">[in_dataInicio]</InArgument>
                         </ui:InvokeWorkflowFile.Arguments>
@@ -488,9 +558,10 @@
                       </ui:InvokeWorkflowFile>
                       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Essa parte é responsável por passar o segundo período da divisão, da metade +1 até o fim" DisplayName="Passa o segundo Período para consulta" sap:VirtualizedContainerService.HintSize="434,212" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="SistemaS\func_consultaComprovantes.xaml">
                         <ui:InvokeWorkflowFile.Arguments>
+                          <OutArgument x:TypeArguments="x:Boolean" x:Key="out_erro" />
                           <OutArgument x:TypeArguments="x:String" x:Key="out_pastaComprovantes" />
                           <InArgument x:TypeArguments="x:String" x:Key="in_nomeArquivoComprovantes">[in_nomeArquivoComprovantes]</InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="in_pastaDestino">[in_pastaDestino]</InArgument>
+                          <InOutArgument x:TypeArguments="x:String" x:Key="in_pastaDestino">[in_pastaDestino]</InOutArgument>
                           <InArgument x:TypeArguments="s:DateTime" x:Key="in_dataFim">[in_dataFim]</InArgument>
                           <InArgument x:TypeArguments="s:DateTime" x:Key="in_dataInicio">[dataMeio.AddDays(1)]</InArgument>
                         </ui:InvokeWorkflowFile.Arguments>
