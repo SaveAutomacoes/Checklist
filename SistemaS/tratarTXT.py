@@ -76,9 +76,26 @@ def main(caminho_planilha_modelo, caminho_arquivo, caminho_pasta_cliente, cnpj):
         if pagamento["codigo"] in itensCabecalhoFormatado:
             listaResultadoFiltrada.append(pagamento)
 
-
+    # Se tiverem pagamentos com a mesma data e código, unifica os valores
+    pagamentos_unificados = {}
 
     for pagamento in listaResultadoFiltrada:
+        chave = (pagamento["dtApuracao"], pagamento["codigo"])
+        if chave not in pagamentos_unificados:
+            pagamentos_unificados[chave] = pagamento["valor"]
+        else:
+            # Os valores estavam como string, então convertemos para float para somar
+
+            # Se for uma String, convertemos para float
+            if isinstance(pagamentos_unificados[chave], str):
+                pagamentos_unificados[chave] = float(pagamentos_unificados[chave].replace(".", "").replace(',', '.')) # Removendo o ponto e substituindo a vírgula por ponto
+
+            pagamentos_unificados[chave] += float(pagamento["valor"].replace(".", "").replace(',', '.') )# Removendo o ponto, substituindo a vírgula por ponto
+            # Após a soma, convertemos de volta para string no formato brasileiro
+            pagamentos_unificados[chave] = f"{pagamentos_unificados[chave]:.2f}".replace('.', ',')  # Formata para duas casas decimais e substitui ponto por vírgula
+
+
+    for (dtApuracao, codigo), valor in pagamentos_unificados.items():
         for row in range(2, ws.max_row + 1):  # Começa em 2 para pular o cabeçalho
             data_celula = ws.cell(row=row, column=1).value
             # Se a célula for datetime, formata para string
@@ -86,9 +103,9 @@ def main(caminho_planilha_modelo, caminho_arquivo, caminho_pasta_cliente, cnpj):
                 data_celula_str = data_celula.strftime("%d/%m/%Y")
             else:
                 data_celula_str = str(data_celula)
-            if pagamento["dtApuracao"] == data_celula_str:
-                coluna = itensCabecalhoFormatado.index(pagamento["codigo"]) + 2  # +2 para alinhar com o Excel
-                ws.cell(row=row, column=coluna, value=pagamento["valor"])
+            if dtApuracao == data_celula_str:
+                coluna = itensCabecalhoFormatado.index(codigo) + 2  # +2 para alinhar com o Excel
+                ws.cell(row=row, column=coluna, value=valor)
 
     try:
         # Salva uma cópia da planilha modelo com os dados preenchidos
