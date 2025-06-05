@@ -165,6 +165,7 @@ def main(caminho_planilha_modelo, caminho_arquivo, caminho_pasta_cliente, cnpj):
         for linha in logs:
             f.write(str(linha) + "\n")
 
+    return (caminho_pasta_cliente + f"\Sistema S - {cnpj}.xlsx")
 
 if __name__ == "__main__":
     main(
