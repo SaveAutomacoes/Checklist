@@ -8,9 +8,26 @@ def main(caminho_planilha_modelo, caminho_arquivo, caminho_pasta_cliente, cnpj):
     import PyPDF2
     import re
     import openpyxl
+    import os
+    from datetime import datetime
+    from time import time
+
+    # Define o início
+    tempoInicio = time()
 
     # Aba da planilha modelo onde serão colados os pagamento
     aba_planilha_modelo = 'Base Dados (Colar Aqui Pgmtos)'
+
+    # Define o Dia e Hora atual sem os microssegundos
+    hoje = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+
+    # Caminho do arquivo de log
+    caminho_log = os.path.join(caminho_pasta_cliente, f"log_{cnpj}_{hoje}.txt")
+
+    logs = []
+
+    def log(msg):
+        logs.append(msg)
 
     # Abre o arquivo Excel
     wb = openpyxl.load_workbook(caminho_planilha_modelo)
@@ -39,11 +56,10 @@ def main(caminho_planilha_modelo, caminho_arquivo, caminho_pasta_cliente, cnpj):
     arquivoPDF = PyPDF2.PdfReader(arquivoPDF)
 
     # Para cada página do PDF
-    for pagina in arquivoPDF.pages:
-
+    for pagina_num, pagina in enumerate(arquivoPDF.pages):
         # Extrai o texto da página
         texto = pagina.extract_text()
-        
+        log(f"\n--- Texto extraído da página {pagina_num+1} ---\n{texto}\n")
 
         # Capturar as Datas:
         padrao = r"(\d{2}/\d{2}/\d{4})\s+(\d{2}/\d{2}/\d{4})"
@@ -54,6 +70,7 @@ def main(caminho_planilha_modelo, caminho_arquivo, caminho_pasta_cliente, cnpj):
         # Captura os pagamentos:
         padrao = r"(\d{4})\s+[^\d\n]+?\s+([\d.,]+).*?\n.*?([\d.,]+)"
         resultado_REGEX = re.findall(padrao, texto) # Ele salva em uma tupla, sendo (código, valor, dígito)
+        log(f"Pagamentos captados pelo REGEX (página {pagina_num+1}): {resultado_REGEX}")
 
         # Para cada Pagamento encontrado
         for codigo, valor, digito in resultado_REGEX:
@@ -75,25 +92,21 @@ def main(caminho_planilha_modelo, caminho_arquivo, caminho_pasta_cliente, cnpj):
     for pagamento in listaResultado:
         if pagamento["codigo"] in itensCabecalhoFormatado:
             listaResultadoFiltrada.append(pagamento)
+    log(f"Pagamentos filtrados pelo código: {listaResultadoFiltrada}")
 
     # Se tiverem pagamentos com a mesma data e código, unifica os valores
     pagamentos_unificados = {}
 
     for pagamento in listaResultadoFiltrada:
         chave = (pagamento["dtApuracao"], pagamento["codigo"])
+        valor_novo = float(pagamento["valor"].replace(".", "").replace(',', '.'))
         if chave not in pagamentos_unificados:
-            pagamentos_unificados[chave] = pagamento["valor"]
+            pagamentos_unificados[chave] = valor_novo
+            log(f"Pagamento adicionado na planilha: {chave} valor: {valor_novo}")
         else:
-            # Os valores estavam como string, então convertemos para float para somar
-
-            # Se for uma String, convertemos para float
-            if isinstance(pagamentos_unificados[chave], str):
-                pagamentos_unificados[chave] = float(pagamentos_unificados[chave].replace(".", "").replace(',', '.')) # Removendo o ponto e substituindo a vírgula por ponto
-
-            pagamentos_unificados[chave] += float(pagamento["valor"].replace(".", "").replace(',', '.') )# Removendo o ponto, substituindo a vírgula por ponto
-            # Após a soma, convertemos de volta para string no formato brasileiro
-            pagamentos_unificados[chave] = f"{pagamentos_unificados[chave]:.2f}".replace('.', ',')  # Formata para duas casas decimais e substitui ponto por vírgula
-
+            soma = pagamentos_unificados[chave] + valor_novo
+            pagamentos_unificados[chave] = round(soma, 2)
+            log(f"Pagamento SOMADO na planilha: {chave} valor anterior: {pagamentos_unificados[chave] - valor_novo} + valor novo: {valor_novo} = {pagamentos_unificados[chave]}")
 
     for (dtApuracao, codigo), valor in pagamentos_unificados.items():
         for row in range(2, ws.max_row + 1):  # Começa em 2 para pular o cabeçalho
@@ -107,17 +120,56 @@ def main(caminho_planilha_modelo, caminho_arquivo, caminho_pasta_cliente, cnpj):
                 coluna = itensCabecalhoFormatado.index(codigo) + 2  # +2 para alinhar com o Excel
                 ws.cell(row=row, column=coluna, value=valor)
 
+    # Resumo por data e código
+    log("\n--- RESUMO DE PAGAMENTOS ADICIONADOS ---")
+    for (dtApuracao, codigo), valor in pagamentos_unificados.items():
+        # Procura todos os pagamentos filtrados para essa data e código
+        pagamentos = [
+            p for p in listaResultadoFiltrada
+            if p["dtApuracao"] == dtApuracao and p["codigo"] == codigo
+        ]
+        if len(pagamentos) == 1:
+            log(f"Data: {dtApuracao} | Código: {codigo} | Valor adicionado: {pagamentos[0]['valor']}")
+        else:
+            valores = [p['valor'] for p in pagamentos]
+            log(f"Data: {dtApuracao} | Código: {codigo} | Valores somados: {valores} | Soma final: {valor}")
+
     try:
         # Salva uma cópia da planilha modelo com os dados preenchidos
         wb.save(caminho_pasta_cliente + f"\Sistema S - {cnpj}.xlsx")
+        log("Arquivo Excel salvo com sucesso.")
     except Exception as e:
-        print(f"Erro ao salvar o arquivo: {e}")
+        log(f"Erro ao salvar o arquivo: {e}")
+
+    # Define o fim
+    tempoFim = time()
+
+    # Formata horários para o log
+    from datetime import timedelta
+    hora_inicio = datetime.fromtimestamp(tempoInicio).strftime("%H:%M:%S")
+    hora_fim = datetime.fromtimestamp(tempoFim).strftime("%H:%M:%S")
+    duracao = str(timedelta(seconds=int(tempoFim - tempoInicio)))
+
+    # Salva o log no final, adicionando cabeçalho e demais informações
+    with open(caminho_log, "w", encoding="utf-8") as f:
+        f.write(f"Log de execução - {hoje}\n")
+        f.write(f"CNPJ: {cnpj}\n")
+        f.write(f"Caminho da planilha modelo: {caminho_planilha_modelo}\n")
+        f.write(f"Caminho do arquivo PDF: {caminho_arquivo}\n")
+        f.write(f"Caminho da pasta do cliente: {caminho_pasta_cliente}\n\n")
+        f.write(f"Início da Execução: {hora_inicio}\n")
+        f.write(f"Fim da Execução: {hora_fim}\n")
+        f.write(f"Duração da Execução: {duracao}\n")
+        f.write("\n--- Início do Log ---\n")
+
+        for linha in logs:
+            f.write(str(linha) + "\n")
 
 
 if __name__ == "__main__":
     main(
         caminho_planilha_modelo='G:\\Meu Drive\\7. Automação\\OUTRAS AUTOMATIZAÇÕES\\Checklist\\Testes\\Teste Checklist\\Sistema S - SESI SENAI SESC SENAC.xlsx',
-        caminho_arquivo='G:\\Meu Drive\\7. Automação\\OUTRAS AUTOMATIZAÇÕES\\Checklist\\Testes\\Teste Checklist\\SEVAN\\Comprovantes de Pagamento.pdf',
-        caminho_pasta_cliente='G:\\Meu Drive\\7. Automação\\OUTRAS AUTOMATIZAÇÕES\\Checklist\\Testes\\Teste Checklist\\SEVAN',
-        cnpj='39043203000109'
+        caminho_arquivo='G:\\Meu Drive\\7. Automação\\OUTRAS AUTOMATIZAÇÕES\\Checklist\\CONSTRUTUNEL LTDA-04708444000137\\Comprovantes de Pagamento.pdf',
+        caminho_pasta_cliente='G:\\Meu Drive\\7. Automação\\OUTRAS AUTOMATIZAÇÕES\\Checklist\\CONSTRUTUNEL LTDA-04708444000137',
+        cnpj='22060750000191'
     )
