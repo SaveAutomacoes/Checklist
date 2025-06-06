@@ -169,7 +169,7 @@ def main(caminho_planilha_modelo, caminho_arquivo, caminho_pasta_cliente, cnpj):
 
 if __name__ == "__main__":
     main(
-        caminho_planilha_modelo='G:\\Meu Drive\\7. Automação\\OUTRAS AUTOMATIZAÇÕES\\Checklist\\Testes\\Teste Checklist\\Sistema S - SESI SENAI SESC SENAC.xlsx',
+        caminho_planilha_modelo='G:\\Meu Drive\\7. Automação\\[NÃO EXCLUIR] Documentos-Base\\Modelo Sistema S - SESI SENAI SESC SENAC.xlsx',
         caminho_arquivo='G:\\Meu Drive\\7. Automação\\OUTRAS AUTOMATIZAÇÕES\\Checklist\\CONSTRUTUNEL LTDA-04708444000137\\Comprovantes de Pagamento.pdf',
         caminho_pasta_cliente='G:\\Meu Drive\\7. Automação\\OUTRAS AUTOMATIZAÇÕES\\Checklist\\CONSTRUTUNEL LTDA-04708444000137',
         cnpj='22060750000191'
