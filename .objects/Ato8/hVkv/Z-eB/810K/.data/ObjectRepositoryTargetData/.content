@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="xGIAlpgSOkqJCSKDeWvihg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="44f99733-5321-4498-82a8-75ebe4f54ca3" CvTextArea="31, 171, 537, 13" CvTextArgument="A aplicação apresentou um erro imprevisto. Tente novamente dentro de alguns minutos." CvType="Text" DesignTimeRectangle="34, 172, 1870, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='P' type='' class='' aaname='A aplicação apresentou um erro imprevisto. Tente novamente dentro de alguns minutos.' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='A aplicação apresentou um erro imprevisto. Tente novamente dentro de alguns minutos.' /&gt;" Guid="1edf71a9-d1ca-4160-b748-8fa0ef0ef91f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Comprovante de Arrecadação' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="44f99733-5321-4498-82a8-75ebe4f54ca3" CvTextArea="32, 141, 250, 20" CvTextArgument="Comprovante de Arrecadação" CvType="Text" DesignTimeRectangle="34, 140, 248, 20" FuzzySelectorArgument="&lt;webctrl tag='B' type='' class='' aaname='Comprovante de Arrecadação' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Comprovante de Arrecadação' /&gt;" Guid="45d9885e-0623-42d9-9094-8e1d73e3a965" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e64b81e241d1b9a34e19de88902102e8.png" xmlns="">0UDceUl-Gv06L2J_o-ZW2Cw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

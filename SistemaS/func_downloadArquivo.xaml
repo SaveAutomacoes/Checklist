@@ -1,5 +1,26 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="func_downloadArquivo" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="func_downloadArquivo" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
+    <x:Property Name="in_contadorDownloadConsulta" Type="InArgument(x:Int32)" />
+    <x:Property Name="in_nomeArquivoConsulta" Type="InArgument(x:String)">
+      <x:Property.Attributes>
+        <RequiredArgumentAttribute />
+      </x:Property.Attributes>
+    </x:Property>
+    <x:Property Name="in_pastaDestinoConsulta" Type="InArgument(x:String)">
+      <x:Property.Attributes>
+        <RequiredArgumentAttribute />
+      </x:Property.Attributes>
+    </x:Property>
+    <x:Property Name="in_dataFimConsulta" Type="InArgument(s:DateTime)">
+      <x:Property.Attributes>
+        <RequiredArgumentAttribute />
+      </x:Property.Attributes>
+    </x:Property>
+    <x:Property Name="in_dataInicioConsulta" Type="InArgument(s:DateTime)">
+      <x:Property.Attributes>
+        <RequiredArgumentAttribute />
+      </x:Property.Attributes>
+    </x:Property>
     <x:Property Name="in_nomeArquivoComprovantes" Type="InArgument(x:String)">
       <x:Property.Attributes>
         <RequiredArgumentAttribute />
@@ -52,8 +73,11 @@
       <x:String>UiPath.Platform.ObjectLibrary</x:String>
       <x:String>UiPath.Platform.SyncObjects</x:String>
       <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
       <x:String>GlobalVariablesNamespace</x:String>
       <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Numerics</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -103,33 +127,90 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
       <AssemblyReference>System.ComponentModel</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="func_downloadArquivo" sap:VirtualizedContainerService.HintSize="2203,2274" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="func_downloadArquivo" sap:VirtualizedContainerService.HintSize="2203,2874" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Faz o Download do Arquivo" sap:VirtualizedContainerService.HintSize="622,2251" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Faz o Download do Arquivo" sap:VirtualizedContainerService.HintSize="622,2851" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard sap2010:Annotation.AnnotationText="Esse link está sem o Id que normalmente aparece, então ele sempre vai abrir no último comprovante gerado para a seção atual." AttachMode="ByInstance" CloseMode="Always" DisplayName="Abre o comprovante" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="588,2168" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="9ecf2a9b-fe48-4894-838c-6d0442c6e777" UserDataFolderMode="DefaultFolder" Version="V2">
+      <uix:NApplicationCard sap2010:Annotation.AnnotationText="Esse link está sem o Id que normalmente aparece, então ele sempre vai abrir no último comprovante gerado para a seção atual." AttachMode="ByInstance" CloseMode="Always" DisplayName="Abre o comprovante" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="588,2768" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="9ecf2a9b-fe48-4894-838c-6d0442c6e777" UserDataFolderMode="DefaultFolder" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="554,1886" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="554,2486" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
+              <uix:NCheckState sap2010:Annotation.AnnotationText="Esse erro ocorre esporadicamente, quando acontece precisa consultar novamente." DisplayName="Verifica se deu Erro" EnableIfNotExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="520,600" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="9ecf2a9b-fe48-4894-838c-6d0442c6e777" Version="V4">
+                <uix:NCheckState.IfExists>
+                  <Sequence sap2010:Annotation.AnnotationText="Envia para a consulta novamente." DisplayName="Deu Erro" sap:VirtualizedContainerService.HintSize="450,320" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="func_consultaComprovantes - Invoke Workflow File (SistemaS\func_consultaComprovantes.xaml)" sap:VirtualizedContainerService.HintSize="416,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="SistemaS\func_consultaComprovantes.xaml">
+                      <ui:InvokeWorkflowFile.Arguments>
+                        <InOutArgument x:TypeArguments="x:Int32" x:Key="inOut_contadorDownload">[in_contadorDownloadConsulta]</InOutArgument>
+                        <InArgument x:TypeArguments="x:Boolean" x:Key="in_primeiraExecucao" />
+                        <OutArgument x:TypeArguments="x:Boolean" x:Key="out_erro" />
+                        <OutArgument x:TypeArguments="x:String" x:Key="out_pastaComprovantes" />
+                        <InArgument x:TypeArguments="x:String" x:Key="in_nomeArquivoComprovantes" />
+                        <InOutArgument x:TypeArguments="x:String" x:Key="in_pastaDestino" />
+                        <InArgument x:TypeArguments="s:DateTime" x:Key="in_dataFim" />
+                        <InArgument x:TypeArguments="s:DateTime" x:Key="in_dataInicio" />
+                      </ui:InvokeWorkflowFile.Arguments>
+                    </ui:InvokeWorkflowFile>
+                    <ui:Return DisplayName="Return" sap:VirtualizedContainerService.HintSize="416,50" sap2010:WorkflowViewState.IdRef="Return_1" />
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="44f99733-5321-4498-82a8-75ebe4f54ca3" ContentHash="xGIAlpgSOkqJCSKDeWvihg" CvTextArea="31, 171, 537, 13" CvTextArgument="A aplicação apresentou um erro imprevisto. Tente novamente dentro de alguns minutos." CvType="Text" DesignTimeRectangle="34, 172, 1870, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='P' type='' class='' aaname='A aplicação apresentou um erro imprevisto. Tente novamente dentro de alguns minutos.' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='A aplicação apresentou um erro imprevisto. Tente novamente dentro de alguns minutos.' /&gt;" Guid="1edf71a9-d1ca-4160-b748-8fa0ef0ef91f" InformativeScreenshot="e64b81e241d1b9a34e19de88902102e8.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/810KtfI0WkqgOvA5Nx5Nmg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Comprovante de Arrecadação' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CVScreenId="44f99733-5321-4498-82a8-75ebe4f54ca3" CvTextArea="32, 141, 250, 20" CvTextArgument="Comprovante de Arrecadação" CvType="Text" DesignTimeRectangle="34, 140, 248, 20" FuzzySelectorArgument="&lt;webctrl tag='B' type='' class='' aaname='Comprovante de Arrecadação' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Comprovante de Arrecadação' /&gt;" Guid="45d9885e-0623-42d9-9094-8e1d73e3a965" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NCheckState.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NCheckState>
               <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clica na Impressora" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="520,189" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9ecf2a9b-fe48-4894-838c-6d0442c6e777" Version="V4">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/Servicos/ATFLA/PagtoWeb.app/PagtoWebImpREST.aspx" CVScreenId="a919efd3-bf9e-45dd-bc26-46a44c43ccb9" ContentHash="OXclphWlq0K22eH1bS5k3g" CvElementArea="1829, 203, 30, 29" CvType="Icon" DesignTimeRectangle="1827, 201, 34, 33" ElementType="Icon" Guid="abe77fbd-ebad-4616-8f23-626b06e5ed3c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACIAAAAhCAYAAAC803lsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEOSURBVFhH7ZTNCYQwEEYtzLs3+7ADETzbgQVYitiAXYg3K8gygRH51iQz/q0sOTyUMPP5JgkmaZqaN5Dgwq+IIkgUQaIIohIpikINZrhQiQzDYJZlEUP1mOHikAg9QzwiItny/xbJssx+fCsSgkXonfoxEwmKdF1npmn6uogaqJ9yMFsswpMReBk1cIbvSL0ibdvagNA0e1RVZfq+N3mem7IsbQ7lYR0jEvEFuGiaxvaSBO+sL0clghcyRF3Xa9+lItvzljDP8/UiFMYieBn3oLpxHNfduUQEoWCsRbDntMgWnlQqQvWYgXWMVwQ5IoLrLg6J4JR7PCIi5TYR/E9IwAwXKpE7iSJIFEFeI/IBrwjY9cHMey8AAAAASUVORK5CYII=" InformativeScreenshot="60d298984d3fbbb6367239585d7b2105.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/izQA8q-uKEawHFmqwlQhlg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='PagtoWebImpREST.aspx' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
