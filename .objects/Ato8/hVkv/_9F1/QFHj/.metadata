@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Clica em Imprimir Relação",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "QFHj-CS1O0mzboezr-KfXA",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/QFHj-CS1O0mzboezr-KfXA",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/_9F1JRTt8UG0zHOhn4__NQ",
+  "Created": "2025-06-10T11:04:45.0330298Z",
+  "Updated": "2025-06-10T11:04:45.0330298Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

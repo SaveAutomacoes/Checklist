@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Sair com Segurança",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "FQXlo057x0uiAZ-2cE8wWg",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/FQXlo057x0uiAZ-2cE8wWg",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/KuT8uEhBAEWyGdw4Yw7Hzg",
+  "Created": "2025-06-10T14:16:59.2568733Z",
+  "Updated": "2025-06-10T14:16:59.2568733Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
