@@ -179,7 +179,7 @@
             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="eCAC - Comprovante de Pagamentos" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="652,4163" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="0e34caf3-c659-4fe0-a412-29bdf9aa3deb" UserDataFolderMode="DefaultFolder" Version="V2">
+        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="eCAC - Comprovante de Pagamentos" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="652,4163" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="0e34caf3-c659-4fe0-a412-29bdf9aa3deb" UserDataFolderMode="DefaultFolder" Version="V2">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
