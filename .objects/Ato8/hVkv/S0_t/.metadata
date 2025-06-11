@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Consulta Processamento(2)",
+  "Type": "Screen",
+  "Id": "S0_tqVKO30qoILZT01JKDg",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/S0_tqVKO30qoILZT01JKDg",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/hVkvW8N0iUeJ1h3tUDZkyQ",
+  "Created": "2025-06-11T16:43:02.4241538Z",
+  "Updated": "2025-06-11T16:43:02.4241538Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

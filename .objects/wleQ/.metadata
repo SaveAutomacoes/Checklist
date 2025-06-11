@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome Consulta Processamento  Relacionados",
+  "Type": "App",
+  "Id": "wleQ5O4IxEaRFyL6oXnXDg",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/wleQ5O4IxEaRFyL6oXnXDg",
+  "Created": "2025-06-11T17:28:20.9023088Z",
+  "Updated": "2025-06-11T17:28:20.9023088Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

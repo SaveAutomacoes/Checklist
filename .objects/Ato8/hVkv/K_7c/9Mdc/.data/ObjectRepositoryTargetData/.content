@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="buTf9QQpD0WqDqtcRq4-eQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Default.aspx" DesignTimeRectangle="1108, 815, 240, 15" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Consulta Processamento PER/DCOMP' parentid='containerServicos263' tag='A' /&gt;" Guid="608f2f95-5283-44c7-a675-120a658d5c4d" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="a869212e7f0dfc9ca5a8604a41187b1d.png" xmlns="">0mlc5jtLEBUa7d7YBKn4s7Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

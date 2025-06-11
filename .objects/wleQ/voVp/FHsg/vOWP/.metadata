@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Verifica se tem Período de Apuração",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "vOWPiolNcUKMq4vhTkok7Q",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/vOWPiolNcUKMq4vhTkok7Q",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/FHsgyf-nF0eIDPvP_dcdEg",
+  "Created": "2025-06-11T18:31:46.4337664Z",
+  "Updated": "2025-06-11T18:31:46.4337664Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

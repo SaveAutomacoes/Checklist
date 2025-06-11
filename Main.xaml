@@ -1332,7 +1332,7 @@
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="cnpjNavega pelo eCAC" sap:VirtualizedContainerService.HintSize="3936,40525" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                          <Sequence DisplayName="cnpjNavega pelo eCAC" sap:VirtualizedContainerService.HintSize="3936,40485" sap2010:WorkflowViewState.IdRef="Sequence_2">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="x:Boolean" Name="verificouOlho" />
                               <Variable x:TypeArguments="s:DateTime" Name="dataHoje" />
@@ -1649,9 +1649,9 @@
                                 <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac" ContentHash="tnYmiF1BH0mTNN8iZBS5bQ" DesignTimeRectangle="762, 592, 413, 75" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='dialog-bloqueio-ativo-caixapostal' tag='P' /&gt;" Guid="3c3801f5-5bd6-443e-8354-af488f5b6060" InformativeScreenshot="86381629ef0cda24e1e91bb0b0b28fd4.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/H7GRVdEiWEOfvxFReFYL_w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
                               </uix:NCheckState.Target>
                             </uix:NCheckState>
-                            <uix:NCheckState DisplayName="Check App State 'Restituição e Compensaç…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="3902,9390" sap2010:WorkflowViewState.IdRef="NCheckState_62" ScopeIdentifier="cd12c88d-9ee2-4e74-a831-638ddf9c26dc" Version="V4">
+                            <uix:NCheckState DisplayName="Check App State 'Restituição e Compensaç…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="3902,9350" sap2010:WorkflowViewState.IdRef="NCheckState_62" ScopeIdentifier="cd12c88d-9ee2-4e74-a831-638ddf9c26dc" Version="V4">
                               <uix:NCheckState.IfExists>
-                                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="3398,9141" sap2010:WorkflowViewState.IdRef="Sequence_467">
+                                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="3398,9101" sap2010:WorkflowViewState.IdRef="Sequence_467">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1668,7 +1668,7 @@
                                       </uix:TargetAnchorable>
                                     </uix:NClick.Target>
                                   </uix:NClick>
-                                  <uix:NCheckState DisplayName="Check App State 'Consulta Processamento …'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="3364,8890" sap2010:WorkflowViewState.IdRef="NCheckState_81" ScopeIdentifier="cd12c88d-9ee2-4e74-a831-638ddf9c26dc" Version="V4">
+                                  <uix:NCheckState DisplayName="Check App State 'Consulta Processamento …'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="3364,8850" sap2010:WorkflowViewState.IdRef="NCheckState_81" ScopeIdentifier="cd12c88d-9ee2-4e74-a831-638ddf9c26dc" Version="V4">
                                     <uix:NCheckState.IfExists>
                                       <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="2842,8608" sap2010:WorkflowViewState.IdRef="Sequence_530">
                                         <sap:WorkflowViewStateService.ViewState>
@@ -1694,7 +1694,7 @@
                                               <ActivityAction.Argument>
                                                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                                               </ActivityAction.Argument>
-                                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="2774,7993" sap2010:WorkflowViewState.IdRef="Sequence_460">
+                                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="2774,7953" sap2010:WorkflowViewState.IdRef="Sequence_460">
                                                 <Sequence.Variables>
                                                   <Variable x:TypeArguments="x:String" Name="planilhaPerdcomp" />
                                                 </Sequence.Variables>
@@ -1732,7 +1732,7 @@
                                                     </uix:TargetAnchorable>
                                                   </uix:NCheckState.Target>
                                                 </uix:NCheckState>
-                                                <uix:NCheckState DisplayName="Check App State 'Não há documentos a ser…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="2740,7722" sap2010:WorkflowViewState.IdRef="NCheckState_63" ScopeIdentifier="8460fdfd-4d49-4e02-bf0b-28bd3075acb0" Version="V4">
+                                                <uix:NCheckState DisplayName="Check App State 'Não há documentos a ser…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="2740,7682" sap2010:WorkflowViewState.IdRef="NCheckState_63" ScopeIdentifier="8460fdfd-4d49-4e02-bf0b-28bd3075acb0" Version="V4">
                                                   <uix:NCheckState.IfExists>
                                                     <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="468,437" sap2010:WorkflowViewState.IdRef="Sequence_462">
                                                       <sap:WorkflowViewStateService.ViewState>
@@ -1745,7 +1745,7 @@
                                                     </Sequence>
                                                   </uix:NCheckState.IfExists>
                                                   <uix:NCheckState.IfNotExists>
-                                                    <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="2218,7480" sap2010:WorkflowViewState.IdRef="Sequence_466">
+                                                    <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="2218,7440" sap2010:WorkflowViewState.IdRef="Sequence_466">
                                                       <sap:WorkflowViewStateService.ViewState>
                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1833,7 +1833,7 @@
                                                         </ueab:ExcelApplicationCard.Body>
                                                       </ueab:ExcelApplicationCard>
                                                       <ui:ExcelWriteRange AddHeaders="False" DataTable="[dataPerdcomp]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="2184,120" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_6" SheetName="PERDCOMPS" StartingCell="A2" />
-                                                      <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="2184,5721" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_4" Range="[Excel.Sheet(&quot;PERDCOMPS&quot;)]" SaveAfterEachRow="True">
+                                                      <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="2184,5681" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_4" Range="[Excel.Sheet(&quot;PERDCOMPS&quot;)]" SaveAfterEachRow="True">
                                                         <ueab:ExcelForEachRowX.Body>
                                                           <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
                                                             <ActivityAction.Argument1>
@@ -1842,7 +1842,7 @@
                                                             <ActivityAction.Argument2>
                                                               <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                                                             </ActivityAction.Argument2>
-                                                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="2150,5506" sap2010:WorkflowViewState.IdRef="Sequence_475">
+                                                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="2150,5466" sap2010:WorkflowViewState.IdRef="Sequence_475">
                                                               <Sequence.Variables>
                                                                 <Variable x:TypeArguments="x:String" Name="numPerdcomp" />
                                                                 <Variable x:TypeArguments="x:String" Name="periodoApuracao" />
@@ -1900,13 +1900,13 @@
                                                                   <InArgument x:TypeArguments="x:String">["https://www3.cav.receita.fazenda.gov.br/consprocperdcomp/consulta/processamento/relacionados/" + numPerdcompFormatado]</InArgument>
                                                                 </Assign.Value>
                                                               </Assign>
-                                                              <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Chrome Consulta Processamento  Relacionados(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="2116,4766" sap2010:WorkflowViewState.IdRef="NApplicationCard_28" InteractionMode="DebuggerApi" ScopeGuid="3184b2f4-8b3f-4998-8030-418eff8befd1" UserDataFolderMode="DefaultFolder" Version="V2">
+                                                              <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Chrome Consulta Processamento  Relacionados(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="2116,4726" sap2010:WorkflowViewState.IdRef="NApplicationCard_28" InteractionMode="DebuggerApi" ScopeGuid="3184b2f4-8b3f-4998-8030-418eff8befd1" UserDataFolderMode="DefaultFolder" Version="V2">
                                                                 <uix:NApplicationCard.Body>
                                                                   <ActivityAction x:TypeArguments="x:Object">
                                                                     <ActivityAction.Argument>
                                                                       <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                                                                     </ActivityAction.Argument>
-                                                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="2082,4524" sap2010:WorkflowViewState.IdRef="Sequence_478">
+                                                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="2082,4484" sap2010:WorkflowViewState.IdRef="Sequence_478">
                                                                       <sap:WorkflowViewStateService.ViewState>
                                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2101,7 +2101,7 @@
                                                                           </uix:TargetAnchorable>
                                                                         </uix:NCheckState.Target>
                                                                       </uix:NCheckState>
-                                                                      <uix:NCheckState DisplayName="Pocura o PERD/COMP correspondente" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="2048,2426" sap2010:WorkflowViewState.IdRef="NCheckState_71" ScopeIdentifier="3184b2f4-8b3f-4998-8030-418eff8befd1" Version="V4">
+                                                                      <uix:NCheckState DisplayName="Pocura o PERD/COMP correspondente" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="2048,2386" sap2010:WorkflowViewState.IdRef="NCheckState_71" ScopeIdentifier="3184b2f4-8b3f-4998-8030-418eff8befd1" Version="V4">
                                                                         <uix:NCheckState.IfExists>
                                                                           <Sequence DisplayName="Achou o PERD/COMP" sap:VirtualizedContainerService.HintSize="450,244" sap2010:WorkflowViewState.IdRef="Sequence_494">
                                                                             <sap:WorkflowViewStateService.ViewState>
@@ -2111,11 +2111,11 @@
                                                                             </sap:WorkflowViewStateService.ViewState>
                                                                             <uix:NGetText DisplayName="Get Text 'Créd. Orig. Necessário …'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NGetText_52" ScopeIdentifier="3184b2f4-8b3f-4998-8030-418eff8befd1" TextString="[debitosPerdcomp]" Version="V4">
                                                                               <uix:NGetText.Target>
-                                                                                <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac" CVScreenId="02f6db55-e079-4743-8fd7-93400c7b7090" ContentHash="-B9Punp3Rk6dN2foTgGcuQ" CvType="AnyWordGroup" DesignTimeRectangle="1290, 664, 58, 15" FuzzySelectorArgument="&lt;webctrl type='' tag='DATATABLE-BODY-CELL' class='datatable-body-cell right sort-active texto-tabela' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="e19b011b-f143-4b72-8f77-242cc9bdabdc" InformativeScreenshot="c3efc04df6e75019909d0fee2ffacd10.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/Tj_ao6yoiEqjRwBBoCR38g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Consulta Processamento / Relacionados' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                                                                                <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac" CVScreenId="02f6db55-e079-4743-8fd7-93400c7b7090" ContentHash="_yOj8l5JG0ubIx9DWCxVuA" CvType="AnyWordGroup" DesignTimeRectangle="1045, 659, 47, 13" FuzzySelectorArgument="&lt;webctrl type='' tag='DATATABLE-BODY-CELL' class='datatable-body-cell right sort-active texto-tabela' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="e19b011b-f143-4b72-8f77-242cc9bdabdc" InformativeScreenshot="a73b4a70bee14c56d7d9db60d9daccdc.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/Tj_ao6yoiEqjRwBBoCR38g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Consulta Processamento / Relacionados' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                                                                                   <uix:TargetAnchorable.Anchors>
                                                                                     <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
-                                                                                      <uix:Target CVScreenId="02f6db55-e079-4743-8fd7-93400c7b7090" CvTextArea="75, 664, 221, 15" CvTextArgument="[numPerdcomp]" CvType="Text" DesignTimeRectangle="314, 659, 138, 24" ElementType="Text" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl aaname=' {0} ' tag='DIV' type='' class='text-down-01 text-weight-semi-bold' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='{0}' /&gt;&quot;, numPerdcomp)]" Guid="292d43e8-380f-458a-a9b0-b38786e938f5" SearchSteps="FuzzySelector, CV" />
-                                                                                      <uix:Target DesignTimeRectangle="1193, 540, 162, 114" FuzzySelectorArgument="&lt;webctrl class='datatable-header-cell-template-wrap' type='' tag='DIV' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Créd. Orig. Necessário Débitos DCOMP ou Valor do PER' /&gt;" Guid="51af56f0-01e7-410c-a04e-6a544d30a435" SearchSteps="FuzzySelector" />
+                                                                                      <uix:Target CVScreenId="02f6db55-e079-4743-8fd7-93400c7b7090" CvTextArea="75, 664, 221, 15" CvTextArgument="[numPerdcomp]" CvType="Text" DesignTimeRectangle="59, 656, 186, 19" ElementType="Text" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl aaname=' {0} ' tag='DIV' type='' class='text-down-01 text-weight-semi-bold' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='{0}' /&gt;&quot;, in_numPerdcomp)]" Guid="292d43e8-380f-458a-a9b0-b38786e938f5" ImageBase64="" SearchSteps="FuzzySelector, CV" />
+                                                                                      <uix:Target DesignTimeRectangle="967, 561, 129, 91" FuzzySelectorArgument="&lt;webctrl class='datatable-header-cell-template-wrap' type='' tag='DIV' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Créd. Orig. Necessário Débitos DCOMP ou Valor do PER' /&gt;" Guid="51af56f0-01e7-410c-a04e-6a544d30a435" SearchSteps="FuzzySelector" />
                                                                                     </scg:List>
                                                                                   </uix:TargetAnchorable.Anchors>
                                                                                 </uix:TargetAnchorable>
@@ -2130,7 +2130,7 @@
                                                                           </Sequence>
                                                                         </uix:NCheckState.IfExists>
                                                                         <uix:NCheckState.IfNotExists>
-                                                                          <Sequence DisplayName="Não achou o PERDCOMP" sap:VirtualizedContainerService.HintSize="546,2177" sap2010:WorkflowViewState.IdRef="Sequence_495">
+                                                                          <Sequence DisplayName="Não achou o PERDCOMP" sap:VirtualizedContainerService.HintSize="546,2137" sap2010:WorkflowViewState.IdRef="Sequence_495">
                                                                             <sap:WorkflowViewStateService.ViewState>
                                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2157,7 +2157,7 @@
                                                                                 </uix:VerifyExecutionOptions>
                                                                               </uix:NClick.VerifyOptions>
                                                                             </uix:NClick>
-                                                                            <ui:GetLastDownloadedFile FileResource="{x:Null}" Timeout="{x:Null}" DisplayName="Aguarda o Download" DownloadFolder="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads&quot;)]" File="[planilha_detalhesPerdComp]" sap:VirtualizedContainerService.HintSize="512,604" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_7" IgnoreFiles="pdf, png,">
+                                                                            <ui:GetLastDownloadedFile FileResource="{x:Null}" Timeout="{x:Null}" DisplayName="Aguarda o Download" DownloadFolder="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads&quot;)]" File="[planilha_detalhesPerdComp]" sap:VirtualizedContainerService.HintSize="512,564" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_7" IgnoreFiles="pdf, png,">
                                                                               <ui:GetLastDownloadedFile.Body>
                                                                                 <ActivityAction>
                                                                                   <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="450,276" sap2010:WorkflowViewState.IdRef="Sequence_496">
@@ -2256,11 +2256,11 @@
                                                                           </Sequence>
                                                                         </uix:NCheckState.IfNotExists>
                                                                         <uix:NCheckState.Target>
-                                                                          <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac" CVScreenId="02f6db55-e079-4743-8fd7-93400c7b7090" ContentHash="-B9Punp3Rk6dN2foTgGcuQ" CvType="AnyWordGroup" DesignTimeRectangle="1290, 664, 58, 15" FuzzySelectorArgument="&lt;webctrl type='' tag='DATATABLE-BODY-CELL' class='datatable-body-cell right sort-active texto-tabela' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="e19b011b-f143-4b72-8f77-242cc9bdabdc" InformativeScreenshot="c3efc04df6e75019909d0fee2ffacd10.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/Tj_ao6yoiEqjRwBBoCR38g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Consulta Processamento / Relacionados' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                                                                          <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac" CVScreenId="02f6db55-e079-4743-8fd7-93400c7b7090" ContentHash="_yOj8l5JG0ubIx9DWCxVuA" CvType="AnyWordGroup" DesignTimeRectangle="1045, 659, 47, 13" FuzzySelectorArgument="&lt;webctrl type='' tag='DATATABLE-BODY-CELL' class='datatable-body-cell right sort-active texto-tabela' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="e19b011b-f143-4b72-8f77-242cc9bdabdc" InformativeScreenshot="a73b4a70bee14c56d7d9db60d9daccdc.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/Tj_ao6yoiEqjRwBBoCR38g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Consulta Processamento / Relacionados' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                                                                             <uix:TargetAnchorable.Anchors>
                                                                               <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
-                                                                                <uix:Target CVScreenId="02f6db55-e079-4743-8fd7-93400c7b7090" CvTextArea="75, 664, 221, 15" CvTextArgument="[numPerdcomp]" CvType="Text" DesignTimeRectangle="314, 659, 138, 24" ElementType="Text" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl aaname=' {0} ' tag='DIV' type='' class='text-down-01 text-weight-semi-bold' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='{0}' /&gt;&quot;, numPerdcomp)]" Guid="292d43e8-380f-458a-a9b0-b38786e938f5" SearchSteps="FuzzySelector, CV" />
-                                                                                <uix:Target DesignTimeRectangle="1193, 540, 162, 114" FuzzySelectorArgument="&lt;webctrl class='datatable-header-cell-template-wrap' type='' tag='DIV' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Créd. Orig. Necessário Débitos DCOMP ou Valor do PER' /&gt;" Guid="51af56f0-01e7-410c-a04e-6a544d30a435" SearchSteps="FuzzySelector" />
+                                                                                <uix:Target CVScreenId="02f6db55-e079-4743-8fd7-93400c7b7090" CvTextArea="75, 664, 221, 15" CvTextArgument="[numPerdcomp]" CvType="Text" DesignTimeRectangle="59, 656, 186, 19" ElementType="Text" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl aaname=' {0} ' tag='DIV' type='' class='text-down-01 text-weight-semi-bold' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='{0}' /&gt;&quot;, in_numPerdcomp)]" Guid="292d43e8-380f-458a-a9b0-b38786e938f5" ImageBase64="" SearchSteps="FuzzySelector, CV" />
+                                                                                <uix:Target DesignTimeRectangle="967, 561, 129, 91" FuzzySelectorArgument="&lt;webctrl class='datatable-header-cell-template-wrap' type='' tag='DIV' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Créd. Orig. Necessário Débitos DCOMP ou Valor do PER' /&gt;" Guid="51af56f0-01e7-410c-a04e-6a544d30a435" SearchSteps="FuzzySelector" />
                                                                               </scg:List>
                                                                             </uix:TargetAnchorable.Anchors>
                                                                           </uix:TargetAnchorable>

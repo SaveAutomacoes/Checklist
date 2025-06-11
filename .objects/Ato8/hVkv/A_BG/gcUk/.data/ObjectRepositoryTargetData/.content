@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="mMGDYcGnvkW_MWiqPviWlQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="www3.cav.receita.fazenda.gov.br/consprocperdcomp/consulta/processamento" DesignTimeRectangle="1839, 713, 22, 15" FullSelectorArgument="&lt;webctrl parentid='dropdown-actions' tag='I' /&gt;" Guid="84a92dbd-dafe-436d-a897-e42e57133c3a" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Consulta Processamento' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="50fc0c991365777126397b6ed5f891b5.png" xmlns="">0TuRVSNbbyk-M_yfiRnzfNA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

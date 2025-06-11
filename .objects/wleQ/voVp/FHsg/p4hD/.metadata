@@ -1,0 +1,14 @@
+﻿{
+  "Name": "4º Trimestre de 2021",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "p4hDaOE4aEOngoe4xoAovQ",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/p4hDaOE4aEOngoe4xoAovQ",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/FHsgyf-nF0eIDPvP_dcdEg",
+  "Created": "2025-06-11T18:04:59.0700562Z",
+  "Updated": "2025-06-11T18:04:59.0700562Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

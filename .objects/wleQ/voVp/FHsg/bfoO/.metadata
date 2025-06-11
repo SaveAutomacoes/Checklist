@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Data de Apuração",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "bfoOflG1OUKdihTH6kf2OA",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/bfoOflG1OUKdihTH6kf2OA",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/FHsgyf-nF0eIDPvP_dcdEg",
+  "Created": "2025-06-11T18:23:37.7341266Z",
+  "Updated": "2025-06-11T18:23:57.4658831Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

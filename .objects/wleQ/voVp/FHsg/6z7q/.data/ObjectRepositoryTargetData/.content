@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ruwq3tFlz0CO3SzkdrK2ug" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="www3.cav.receita.fazenda.gov.br/consprocperdcomp/consulta/processamento/relacionados/187449427824102213028705" CVScreenId="ac583d7f-8686-44e5-a921-a3b153b2aa7a" CvType="AnyWordGroup" DesignTimeRectangle="1305, 820, 42, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='DIV' type='' class='text-down-01 text-weight-semi-bold' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="b6233123-f893-49db-87db-f67896de0e12" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Consulta Processamento / Relacionados' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="ac583d7f-8686-44e5-a921-a3b153b2aa7a" DesignTimeRectangle="94, 820, 168, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname=' 35101.95667.281122.1.3.02-0067 ' tag='DIV' type='' class='text-down-01 text-weight-semi-bold' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='35101.95667.281122.1.3.02-0067' /&gt;" Guid="8deb73b0-cd3f-404d-bf85-ac714976ec4e" SearchSteps="FuzzySelector" />
+          <Target DesignTimeRectangle="1230, 673, 122, 85" FuzzySelectorArgument="&lt;webctrl class='datatable-header-cell-template-wrap' type='' tag='DIV' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Créd. Orig. Necessário Débitos DCOMP ou Valor do PER' /&gt;" Guid="7b52d2dc-a54d-42f2-a927-fe8778d60304" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="03bfaf8e4f1630baf4b6be3feb59041f.png" xmlns="">0KiyuxQHS6UyoEZnzwGZ1uA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

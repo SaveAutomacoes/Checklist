@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Não há documentos a ser…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "SPCMWc2f70C81fU-JkcKtg",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/SPCMWc2f70C81fU-JkcKtg",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/A_BGNUuMA0-q99UQJJ_mRA",
+  "Created": "2025-06-11T14:49:28.0699918Z",
+  "Updated": "2025-06-11T14:49:28.0699918Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
