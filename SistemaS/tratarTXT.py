@@ -1,10 +1,34 @@
 def main(caminho_planilha_modelo, caminho_arquivo, caminho_pasta_cliente, cnpj):
-    '''
-    caminho_planilha_modelo: Caminho do arquivo Excel modelo que contém o cabeçalho com os códigos de pagamento.
-    caminho_arquivo: Caminho do arquivo PDF que contém os comprovantes de pagamento.
-    caminho_pasta_cliente: Caminho da pasta onde o arquivo Excel será salvo após o preenchimento.
-    cnpj: CNPJ do cliente, usado para nomear o arquivo Excel salvo.
-    '''
+    """
+    Processa comprovantes de pagamento do Sistema S extraídos do e-CAC e preenche uma planilha modelo Excel.
+
+    Parâmetros:
+    -----------
+    caminho_planilha_modelo : str
+        Caminho do arquivo Excel modelo que contém o cabeçalho com os códigos de pagamento.
+    caminho_arquivo : str
+        Caminho do arquivo PDF que contém os comprovantes de pagamento.
+    caminho_pasta_cliente : str
+        Caminho da pasta onde os arquivos de saída (Excel, logs e PDFs) serão salvos.
+    cnpj : str
+        CNPJ do cliente, usado para nomear o arquivo Excel salvo e os arquivos de log.
+
+    O que a função faz:
+    -------------------
+    - Lê um PDF de comprovantes de pagamento do Sistema S.
+    - Remove páginas duplicadas (considerando apenas o conteúdo principal, ignorando as 6 últimas linhas de cada página).
+    - Extrai datas e valores dos comprovantes usando expressões regulares.
+    - Filtra e soma os pagamentos conforme os códigos presentes no cabeçalho da planilha modelo.
+    - Preenche a planilha Excel modelo com os valores extraídos.
+    - Salva uma cópia da planilha preenchida na pasta do cliente.
+    - Gera um log detalhado da execução, incluindo horários, pagamentos processados, filtrados e somados.
+    - Salva dois PDFs: um com as páginas consideradas (únicas) e outro com as páginas duplicadas, ambos na subpasta "logs" do cliente.
+
+    Retorno:
+    --------
+    str
+        Caminho do arquivo Excel preenchido salvo na pasta do cliente.
+    """
     import PyPDF2
     import re
     import openpyxl
@@ -21,8 +45,13 @@ def main(caminho_planilha_modelo, caminho_arquivo, caminho_pasta_cliente, cnpj):
     # Define o Dia e Hora atual sem os microssegundos
     hoje = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 
+
+    # Cria a pasta "logs" dentro da pasta do cliente, se não existir
+    pasta_logs = os.path.join(caminho_pasta_cliente, "logs")
+    os.makedirs(pasta_logs, exist_ok=True)
+
     # Caminho do arquivo de log
-    caminho_log = os.path.join(caminho_pasta_cliente, f"log_{cnpj}_{hoje}.txt")
+    caminho_log = os.path.join(pasta_logs, f"log_{cnpj}_{hoje}.txt")
 
     logs = []
 
@@ -55,10 +84,25 @@ def main(caminho_planilha_modelo, caminho_arquivo, caminho_pasta_cliente, cnpj):
     # Cria um objeto em PDF
     arquivoPDF = PyPDF2.PdfReader(arquivoPDF)
 
-    # Para cada página do PDF
+    # Essas variáveis serão usadas para evitar duplicação de páginas, que podem ocorrer no PDF.
+    textos_processados = set()
+    paginas_duplicadas = []
+    paginas_consideradas = []
+
     for pagina_num, pagina in enumerate(arquivoPDF.pages):
         # Extrai o texto da página
         texto = pagina.extract_text()
+        # Remove as 6 últimas linhas do texto, pois o final sempre muda, e queremos ver se estão duplicados.
+        linhas = texto.splitlines()
+        texto_sem_fim = "\n".join(linhas[:-6]) if len(linhas) > 6 else texto
+
+        if texto_sem_fim in textos_processados:  # Verifica se o texto já foi processado
+            log(f"Página {pagina_num+1} ignorada (duplicada).")
+            paginas_duplicadas.append(pagina_num)
+            continue
+        # Se o texto não foi processado, adiciona à lista de textos processados
+        textos_processados.add(texto_sem_fim)
+        paginas_consideradas.append(pagina_num)
         log(f"\n--- Texto extraído da página {pagina_num+1} ---\n{texto}\n")
 
         # Capturar as Datas:
@@ -165,12 +209,49 @@ def main(caminho_planilha_modelo, caminho_arquivo, caminho_pasta_cliente, cnpj):
         for linha in logs:
             f.write(str(linha) + "\n")
 
+    # Após o processamento, salve os PDFs separados
+    import PyPDF2
+
+    # Caminhos dos PDFs de comprovantes
+    caminho_duplicadas = os.path.join(pasta_logs, "Comprovantes de Pagamento Duplicados.pdf")
+    caminho_consideradas = os.path.join(pasta_logs, "Comprovantes de Pagamento Considerados.pdf")
+
+
+    # Salva as páginas duplicadas
+    if paginas_duplicadas:
+        writer_dup = PyPDF2.PdfWriter()
+        with open(caminho_arquivo, "rb") as f:
+            reader = PyPDF2.PdfReader(f)
+            for idx in paginas_duplicadas:
+                writer_dup.add_page(reader.pages[idx])
+            with open(caminho_duplicadas, "wb") as out_pdf:
+                writer_dup.write(out_pdf)
+        log(f"{len(paginas_duplicadas)} página(s) duplicada(s) salva(s) em: {caminho_duplicadas}")
+    else:
+        log("Nenhuma página duplicada encontrada.")
+
+    # Salva as páginas consideradas (únicas)
+    if paginas_consideradas:
+        writer_cons = PyPDF2.PdfWriter()
+        with open(caminho_arquivo, "rb") as f:
+            reader = PyPDF2.PdfReader(f)
+            for idx in paginas_consideradas:
+                writer_cons.add_page(reader.pages[idx])
+            with open(caminho_consideradas, "wb") as out_pdf:
+                writer_cons.write(out_pdf)
+        log(f"{len(paginas_consideradas)} página(s) considerada(s) salva(s) em: {caminho_consideradas}")
+    else:
+        log("Nenhuma página considerada encontrada.")
+
     return (caminho_pasta_cliente + f"\Sistema S - {cnpj}.xlsx")
+
+
+# Para Testes
 
 if __name__ == "__main__":
     main(
         caminho_planilha_modelo='G:\\Meu Drive\\7. Automação\\[NÃO EXCLUIR] Documentos-Base\\Modelo Sistema S - SESI SENAI SESC SENAC.xlsx',
-        caminho_arquivo='G:\\Meu Drive\\7. Automação\\OUTRAS AUTOMATIZAÇÕES\\Checklist\\CONSTRUTUNEL LTDA-04708444000137\\Comprovantes de Pagamento.pdf',
-        caminho_pasta_cliente='G:\\Meu Drive\\7. Automação\\OUTRAS AUTOMATIZAÇÕES\\Checklist\\CONSTRUTUNEL LTDA-04708444000137',
-        cnpj='22060750000191'
+        caminho_arquivo='G:\\Meu Drive\\7. Automação\\OUTRAS AUTOMATIZAÇÕES\\Checklist\\Testes\\Teste Checklist\\SEVAN\\Comprovantes de Pagamento.pdf',
+        caminho_pasta_cliente='G:\\Meu Drive\\7. Automação\\OUTRAS AUTOMATIZAÇÕES\\Checklist\\Testes\\Teste Checklist\\SEVAN',
+        cnpj='3904323000109'
     )
