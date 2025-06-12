@@ -279,13 +279,13 @@
       <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="func_comprovantesSistemaS" sap:VirtualizedContainerService.HintSize="2006,2307" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="func_comprovantesSistemaS" sap:VirtualizedContainerService.HintSize="2203,2834" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Fluxo Principal" sap:VirtualizedContainerService.HintSize="638,2284" sap2010:WorkflowViewState.IdRef="Sequence_92">
+    <Sequence DisplayName="Fluxo Principal" sap:VirtualizedContainerService.HintSize="722,2811" sap2010:WorkflowViewState.IdRef="Sequence_92">
       <Sequence.Variables>
         <Variable x:TypeArguments="sd:DataTable" Name="df_perdcomps" />
       </Sequence.Variables>
@@ -294,28 +294,28 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap2010:Annotation.AnnotationText="Parte responsável por toda a interação com a Web" DisplayName="Abre o ECAC e Pega os Perdcomps" sap:VirtualizedContainerService.HintSize="604,88" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <Sequence sap2010:Annotation.AnnotationText="Parte responsável por toda a interação com a Web" DisplayName="Abre o ECAC e Pega os Perdcomps" sap:VirtualizedContainerService.HintSize="688,2407" sap2010:WorkflowViewState.IdRef="Sequence_4">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="eCAC - Comprovante de Pagamentos" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="518,508" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="0e34caf3-c659-4fe0-a412-29bdf9aa3deb" UserDataFolderMode="DefaultFolder" Version="V2">
+        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="eCAC - Comprovante de Pagamentos" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="654,2284" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="0e34caf3-c659-4fe0-a412-29bdf9aa3deb" UserDataFolderMode="DefaultFolder" Version="V2">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Dentro do Ecac" sap:VirtualizedContainerService.HintSize="484,268" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <Sequence DisplayName="Dentro do Ecac" sap:VirtualizedContainerService.HintSize="620,2044" sap2010:WorkflowViewState.IdRef="Sequence_5">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NCheckState DisplayName="Verifica se Precisa Acessar o GOV" EnableIfNotExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="0e34caf3-c659-4fe0-a412-29bdf9aa3deb" Version="V4">
+                <uix:NCheckState DisplayName="Verifica se Precisa Acessar o GOV" EnableIfNotExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="586,57" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="0e34caf3-c659-4fe0-a412-29bdf9aa3deb" Version="V4">
                   <uix:NCheckState.IfExists>
                     <Sequence DisplayName="Precisa Acessar o GOV" sap:VirtualizedContainerService.HintSize="540,1030" sap2010:WorkflowViewState.IdRef="Sequence_6">
                       <sap:WorkflowViewStateService.ViewState>
@@ -686,7 +686,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </uix:NCheckState>
-                <Sequence DisplayName="Navega Até a página de PER/DCOMP" sap:VirtualizedContainerService.HintSize="450,408" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                <Sequence DisplayName="Navega Até a página de PER/DCOMP" sap:VirtualizedContainerService.HintSize="586,57" sap2010:WorkflowViewState.IdRef="Sequence_27">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -920,10 +920,10 @@
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:CommentOut>
                 </Sequence>
-                <Sequence sap2010:Annotation.AnnotationText="Faz o Download de todos os PERDCOMPs e adiciona na aba &quot;PERDCOMP&quot; da planilha." DisplayName="Faz o Download dos PER/DCOMPs e salva na Planilha" sap:VirtualizedContainerService.HintSize="450,92" sap2010:WorkflowViewState.IdRef="Sequence_69">
+                <Sequence sap2010:Annotation.AnnotationText="Faz o Download de todos os PERDCOMPs e adiciona na aba &quot;PERDCOMP&quot; da planilha." DisplayName="Faz o Download dos PER/DCOMPs e salva na Planilha" sap:VirtualizedContainerService.HintSize="586,1868" sap2010:WorkflowViewState.IdRef="Sequence_69">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
@@ -1131,50 +1131,82 @@
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NApplicationCard>
                   </Sequence>
-                  <Sequence sap2010:Annotation.AnnotationText="Abre o arquivo baixado, salva da tabela &quot;df_perdcomps&quot; e adiciona no Excel" DisplayName="Abre, Salva em uma Tabela e coloca na planilha" sap:VirtualizedContainerService.HintSize="552,81" sap2010:WorkflowViewState.IdRef="Sequence_77">
+                  <Sequence sap2010:Annotation.AnnotationText="Abre o arquivo baixado, salva da tabela &quot;df_perdcomps&quot; e adiciona no Excel" DisplayName="Abre, Salva em uma Tabela e coloca na planilha" sap:VirtualizedContainerService.HintSize="552,1188" sap2010:WorkflowViewState.IdRef="Sequence_77">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Abre o Arquivo Baixado" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_5" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="[Directory.GetFiles(&quot;C:\Users\&quot;+Environment.UserName+&quot;\Downloads&quot;,&quot;*.xlsx&quot;).OrderByDescending(Function(d) New FileInfo(d).CreationTime).ToList(0)]">
+                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Abre o Arquivo Baixado" sap:VirtualizedContainerService.HintSize="512,557" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_5" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="[Directory.GetFiles(&quot;C:\Users\&quot;+Environment.UserName+&quot;\Downloads&quot;,&quot;*.xlsx&quot;).OrderByDescending(Function(d) New FileInfo(d).CreationTime).ToList(0)]">
                       <ueab:ExcelApplicationCard.Body>
                         <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="planilhaPerdcomp" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="478,252" sap2010:WorkflowViewState.IdRef="Sequence_78">
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="478,256" sap2010:WorkflowViewState.IdRef="Sequence_78">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ueab:ReadRangeX DisplayName="Salva o conteúdo" sap:VirtualizedContainerService.HintSize="444,192" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[planilhaPerdcomp.Sheet(&quot;data&quot;)]" SaveTo="[df_perdcomps]" />
+                            <ueab:ReadRangeX DisplayName="Salva o conteúdo" sap:VirtualizedContainerService.HintSize="444,194" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[planilhaPerdcomp.Sheet(&quot;data&quot;)]" SaveTo="[df_perdcomps]" />
                           </Sequence>
                         </ActivityAction>
                       </ueab:ExcelApplicationCard.Body>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ueab:ExcelApplicationCard>
-                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" CreateNewFile="False" DisplayName="Salva no CheckList" sap:VirtualizedContainerService.HintSize="484,440" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_6" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="[in_caminhoPlanilhaChecklist]">
+                    <Sequence sap2010:Annotation.AnnotationText="Substitui a &quot;/&quot; por &quot;_&quot;, para o Excel não inverter." DisplayName="Formata as Datas" sap:VirtualizedContainerService.HintSize="512,463" sap2010:WorkflowViewState.IdRef="Sequence_106">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[df_perdcomps]" DisplayName="Para cada Perdcomp Coletado" sap:VirtualizedContainerService.HintSize="470,338" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                        <ui:ForEachRow.Body>
+                          <ActivityAction x:TypeArguments="sd:DataRow">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="sd:DataRow" Name="perdcomp" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Formata a Data" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_107">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Assign DisplayName="Substitui &quot;/&quot; por &quot;_&quot;" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_10">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Object">[perdcomp("Data de Transmissão")]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Object">[CType(perdcomp("Data de Transmissão"), String).Replace("/", "_")]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                            </Sequence>
+                          </ActivityAction>
+                        </ui:ForEachRow.Body>
+                      </ui:ForEachRow>
+                    </Sequence>
+                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" CreateNewFile="False" DisplayName="Salva no CheckList" sap:VirtualizedContainerService.HintSize="512,50" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_6" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="[in_caminhoPlanilhaChecklist]">
                       <ueab:ExcelApplicationCard.Body>
                         <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="PlanilhaChecklist" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="450,171" sap2010:WorkflowViewState.IdRef="Sequence_79">
+                          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="450,175" sap2010:WorkflowViewState.IdRef="Sequence_79">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:ExcelWriteRange AddHeaders="False" DataTable="[df_perdcomps]" DisplayName="Escreve no Excel" sap:VirtualizedContainerService.HintSize="416,111" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_1" SheetName="PERDCOMPS" StartingCell="A2" />
+                            <ui:ExcelWriteRange AddHeaders="False" DataTable="[df_perdcomps]" DisplayName="Escreve no Excel" sap:VirtualizedContainerService.HintSize="416,113" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_1" SheetName="PERDCOMPS" StartingCell="A2" />
                           </Sequence>
                         </ActivityAction>
                       </ueab:ExcelApplicationCard.Body>
@@ -1201,7 +1233,7 @@
           </sap:WorkflowViewStateService.ViewState>
         </uix:NApplicationCard>
       </Sequence>
-      <Sequence sap2010:Annotation.AnnotationText="Interage com cada PERDCOMP e pesquisa um de cada vez.&#xD;&#xA;&#xD;&#xA;Paraleliza o processo de achar valor e período." DisplayName="Interage com Cada Perdcomp" sap:VirtualizedContainerService.HintSize="604,1906" sap2010:WorkflowViewState.IdRef="Sequence_93">
+      <Sequence sap2010:Annotation.AnnotationText="Interage com cada PERDCOMP e pesquisa um de cada vez.&#xA;&#xA;Paraleliza o processo de achar valor e período." DisplayName="Interage com Cada Perdcomp" sap:VirtualizedContainerService.HintSize="688,114" sap2010:WorkflowViewState.IdRef="Sequence_93">
         <Sequence.Variables>
           <Variable x:TypeArguments="sd:DataTable" Name="df_perdcompsChecklist" />
           <Variable x:TypeArguments="x:String" Name="periodoPerdcomp" />
@@ -1209,12 +1241,12 @@
         </Sequence.Variables>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" CreateNewFile="False" DisplayName="Usa o Excel" sap:VirtualizedContainerService.HintSize="570,1757" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_9" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="[in_caminhoPlanilhaChecklist]">
+        <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" CreateNewFile="False" DisplayName="Usa o Excel" sap:VirtualizedContainerService.HintSize="570,1797" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_9" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="[in_caminhoPlanilhaChecklist]">
           <ueab:ExcelApplicationCard.Body>
             <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
               <ActivityAction.Argument>
@@ -1308,7 +1340,7 @@
           </ueab:ExcelApplicationCard.Body>
         </ueab:ExcelApplicationCard>
       </Sequence>
-      <ui:CommentOut sap2010:Annotation.AnnotationText="Tentativa de paralelizar a abertura dos PERDCOMPS&#xD;&#xA;Resultado: É muito mais rápido com poucos, mas não muito confiável quando tem mais." DisplayName="[DESATIVADO] Paralell" sap:VirtualizedContainerService.HintSize="604,159" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+      <ui:CommentOut sap2010:Annotation.AnnotationText="Tentativa de paralelizar a abertura dos PERDCOMPS&#xA;Resultado: É muito mais rápido com poucos, mas não muito confiável quando tem mais." DisplayName="[DESATIVADO] Paralell" sap:VirtualizedContainerService.HintSize="688,159" sap2010:WorkflowViewState.IdRef="CommentOut_2">
         <ui:CommentOut.Body>
           <Sequence DisplayName="Atividades Ignoradas" sap:VirtualizedContainerService.HintSize="484,139" sap2010:WorkflowViewState.IdRef="Sequence_100">
             <sap:WorkflowViewStateService.ViewState>
@@ -1406,7 +1438,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:CommentOut>
-      <Sequence DisplayName="Dá um OK no CheckList" sap:VirtualizedContainerService.HintSize="604,48" sap2010:WorkflowViewState.IdRef="Sequence_59">
+      <Sequence DisplayName="Dá um OK no CheckList" sap:VirtualizedContainerService.HintSize="688,48" sap2010:WorkflowViewState.IdRef="Sequence_59">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
