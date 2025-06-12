@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome eCAC - Centro Virtual de Atendimento(3)",
+  "Type": "Screen",
+  "Id": "Qb8ziyc0gkiKfzx5QFv0ag",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/Qb8ziyc0gkiKfzx5QFv0ag",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/hVkvW8N0iUeJ1h3tUDZkyQ",
+  "Created": "2025-06-12T18:14:28.7454734Z",
+  "Updated": "2025-06-12T18:14:28.7454734Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

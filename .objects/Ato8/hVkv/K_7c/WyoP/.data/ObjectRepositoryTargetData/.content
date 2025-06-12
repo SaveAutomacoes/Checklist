@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="GrrDtTw8wUangcdbzoCQyA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Default.aspx" CVScreenId="310027c4-1ded-452b-bcc9-0f9af1e48545" DesignTimeRectangle="1252, 441, 206, 32" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='btn214' tag='A' /&gt;" Guid="bd8ae29e-df9c-4ac2-b360-07eeeb514562" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="93de6ea915201d5deed51d22da7b84d5.png" xmlns="">0VGMdtfS1vUqcwmof401y2A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
