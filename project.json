@@ -10,7 +10,7 @@
     "UiPath.MicrosoftOffice365.Activities": "[3.1.10-preview]",
     "UiPath.PDF.Activities": "[3.22.1]",
     "UiPath.Python.Activities": "[1.10.0]",
-    "UiPath.System.Activities": "[25.4.3]",
+    "UiPath.System.Activities": "[25.4.4]",
     "UiPath.UIAutomation.Activities": "[25.10.4]",
     "UiPath.WebAPI.Activities": "[1.21.1]"
   },
@@ -18,7 +18,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "25.0.161.0",
-  "projectVersion": "1.0.89",
+  "projectVersion": "1.0.90",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
