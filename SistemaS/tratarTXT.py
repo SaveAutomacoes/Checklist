@@ -243,7 +243,9 @@ def main(caminho_planilha_modelo, caminho_arquivo, caminho_pasta_cliente, cnpj):
     else:
         log("Nenhuma página considerada encontrada.")
 
-    return (caminho_pasta_cliente + f"\Sistema S - {cnpj}.xlsx")
+    houve_pagamento = bool(pagamentos_unificados)
+
+    return (caminho_pasta_cliente + f"\Sistema S - {cnpj}.xlsx") + "%%" + str(houve_pagamento)
 
 
 # Para Testes

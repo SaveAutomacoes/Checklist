@@ -1,5 +1,6 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="func_comprovantesSistemaS" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/python" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:upap="clr-namespace:UiPath.PDF.Activities.PDF;assembly=UiPath.PDF.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
+    <x:Property Name="out_possuiPagamentos" Type="OutArgument(x:Boolean)" />
     <x:Property Name="out_caminhoPlanilha" Type="OutArgument(x:String)" />
     <x:Property Name="in_nomeArquivoComprovantes" Type="InArgument(x:String)">
       <x:Property.Attributes>
@@ -79,6 +80,7 @@
       <x:String>System.Numerics</x:String>
       <x:String>GlobalVariablesNamespace</x:String>
       <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Activities.System.Text</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -153,7 +155,7 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="func_comprovantesSistemaS" sap:VirtualizedContainerService.HintSize="1260,2680" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="func_comprovantesSistemaS" sap:VirtualizedContainerService.HintSize="2203,3047" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="pastaComprovantes" />
     </Sequence.Variables>
@@ -162,13 +164,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Fluxo Principal" sap:VirtualizedContainerService.HintSize="588,2657" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Fluxo Principal" sap:VirtualizedContainerService.HintSize="588,3024" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap2010:Annotation.AnnotationText="Parte responsável por toda a interação com a Web e Explorador de Arquivos. " DisplayName="Abre o ECAC e baixa o Arquivo" sap:VirtualizedContainerService.HintSize="554,1468" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <Sequence sap2010:Annotation.AnnotationText="Parte responsável por toda a interação com a Web e Explorador de Arquivos. " DisplayName="Abre o ECAC e baixa o Arquivo" sap:VirtualizedContainerService.HintSize="554,1484" sap2010:WorkflowViewState.IdRef="Sequence_4">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -176,13 +178,13 @@
             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="eCAC - Comprovante de Pagamentos" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="520,1345" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="0e34caf3-c659-4fe0-a412-29bdf9aa3deb" UserDataFolderMode="DefaultFolder" Version="V2">
+        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="eCAC - Comprovante de Pagamentos" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="520,1361" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="0e34caf3-c659-4fe0-a412-29bdf9aa3deb" UserDataFolderMode="DefaultFolder" Version="V2">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Dentro do Ecac" sap:VirtualizedContainerService.HintSize="486,1105" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <Sequence DisplayName="Dentro do Ecac" sap:VirtualizedContainerService.HintSize="486,1121" sap2010:WorkflowViewState.IdRef="Sequence_5">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -671,7 +673,7 @@
                     </uix:NClick.VerifyOptions>
                   </uix:NClick>
                 </Sequence>
-                <ui:CommentOut sap2010:Annotation.AnnotationText="Essas etapas foram unificadas no fluxo &quot;func_consultaComprovantes&quot;.&#xA;&#xA;Antes disso estavam funcionando, só não funcionaram mais quando tem mais de 50 comprovantes." DisplayName="[DESATIVADO] Funções Unificadas" sap:VirtualizedContainerService.HintSize="452,204" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+                <ui:CommentOut sap2010:Annotation.AnnotationText="Essas etapas foram unificadas no fluxo &quot;func_consultaComprovantes&quot;.&#xA;&#xA;Antes disso estavam funcionando, só não funcionaram mais quando tem mais de 50 comprovantes." DisplayName="[DESATIVADO] Funções Unificadas" sap:VirtualizedContainerService.HintSize="452,219" sap2010:WorkflowViewState.IdRef="CommentOut_4">
                   <ui:CommentOut.Body>
                     <Sequence DisplayName="Atividades Ignoradas" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_52">
                       <sap:WorkflowViewStateService.ViewState>
@@ -1134,7 +1136,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:CommentOut>
-                <Sequence sap2010:Annotation.AnnotationText="Envia para um fluxo que faz a consulta, se necessário divide o período e salva todos os comprovantes emitidos em uma pasta chamada &quot;comprovantes&quot;, que é criada dentro da função.&#xA;&#xA;Retorna o caminho da pasta onde estão os arquivos para que seja feia a junção em um único." DisplayName="Faz a consulta e o download dos comprovantes" sap:VirtualizedContainerService.HintSize="452,694" sap2010:WorkflowViewState.IdRef="Sequence_53">
+                <Sequence sap2010:Annotation.AnnotationText="Envia para um fluxo que faz a consulta, se necessário divide o período e salva todos os comprovantes emitidos em uma pasta chamada &quot;comprovantes&quot;, que é criada dentro da função.&#xA;&#xA;Retorna o caminho da pasta onde estão os arquivos para que seja feia a junção em um único." DisplayName="Faz a consulta e o download dos comprovantes" sap:VirtualizedContainerService.HintSize="452,695" sap2010:WorkflowViewState.IdRef="Sequence_53">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:Boolean" Name="erroConsultaComprovante" />
                   </Sequence.Variables>
@@ -1157,7 +1159,7 @@
                       <InArgument x:TypeArguments="s:DateTime" x:Key="in_dataInicio">[new DateTime(2020, 6, 1, 0, 0, 0)]</InArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
-                  <If Condition="[erroConsultaComprovante = True]" DisplayName="Verifica se deu erro" sap:VirtualizedContainerService.HintSize="418,328" sap2010:WorkflowViewState.IdRef="If_4">
+                  <If Condition="[erroConsultaComprovante = True]" DisplayName="Verifica se deu erro" sap:VirtualizedContainerService.HintSize="418,329" sap2010:WorkflowViewState.IdRef="If_4">
                     <If.Then>
                       <Sequence DisplayName="Deu erro" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="Sequence_57">
                         <sap:WorkflowViewStateService.ViewState>
@@ -1169,7 +1171,7 @@
                       </Sequence>
                     </If.Then>
                     <If.Else>
-                      <Sequence DisplayName="Não deu Erro" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_58">
+                      <Sequence DisplayName="Não deu Erro" sap:VirtualizedContainerService.HintSize="416,90" sap2010:WorkflowViewState.IdRef="Sequence_58">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1193,7 +1195,7 @@
           </sap:WorkflowViewStateService.ViewState>
         </uix:NApplicationCard>
       </Sequence>
-      <Sequence sap2010:Annotation.AnnotationText="Recebe o caminho da pasta que contém os PDFs extraídos e faz uma junção dos mesmos em um único arquivo na pasta principal." DisplayName="Junta os PDFs baixados" sap:VirtualizedContainerService.HintSize="452,1030" sap2010:WorkflowViewState.IdRef="Sequence_54">
+      <Sequence sap2010:Annotation.AnnotationText="Recebe o caminho da pasta que contém os PDFs extraídos e faz uma junção dos mesmos em um único arquivo na pasta principal." DisplayName="Junta os PDFs baixados" sap:VirtualizedContainerService.HintSize="554,99" sap2010:WorkflowViewState.IdRef="Sequence_54">
         <Sequence.Variables>
           <Variable x:TypeArguments="si:DirectoryInfo" Name="infoPastaComprovantes" />
         </Sequence.Variables>
@@ -1251,7 +1253,7 @@
           </sap:WorkflowViewStateService.ViewState>
         </ui:DeleteFolderX>
       </Sequence>
-      <Sequence DisplayName="Itera com o documento baixado" sap:VirtualizedContainerService.HintSize="554,1007" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <Sequence DisplayName="Itera com o documento baixado" sap:VirtualizedContainerService.HintSize="554,1358" sap2010:WorkflowViewState.IdRef="Sequence_3">
         <Sequence.Variables>
           <Variable x:TypeArguments="x:String" Name="caminho_planilha_modelo" />
         </Sequence.Variables>
@@ -1269,16 +1271,17 @@
             <InArgument x:TypeArguments="x:String">G:\\Meu Drive\\7. Automação\\[NÃO EXCLUIR] Documentos-Base\\Modelo Sistema S - SESI SENAI SESC SENAC.xlsx</InArgument>
           </Assign.Value>
         </Assign>
-        <p:PythonScope OperationTimeout="{x:Null}" sap2010:Annotation.AnnotationText="O Python está hospedado no Drive compartilhado do time de recuperação tributária, com isso, não é necessário instalar o Python no computador do usuário." DisplayName="Ativa o Python" sap:VirtualizedContainerService.HintSize="502,810" sap2010:WorkflowViewState.IdRef="PythonScope_1" LibraryPath="G:\Meu Drive\7. Automação\[NÃO EXCLUIR] Documentos-Base\Python313\python313.dll" Path="G:\Meu Drive\7. Automação\[NÃO EXCLUIR] Documentos-Base\Python313" TargetPlatform="x64">
+        <p:PythonScope OperationTimeout="{x:Null}" sap2010:Annotation.AnnotationText="O Python está hospedado no Drive compartilhado do time de recuperação tributária, com isso, não é necessário instalar o Python no computador do usuário." DisplayName="Ativa o Python" sap:VirtualizedContainerService.HintSize="502,1161" sap2010:WorkflowViewState.IdRef="PythonScope_1" LibraryPath="G:\Meu Drive\7. Automação\[NÃO EXCLUIR] Documentos-Base\Python313\python313.dll" Path="G:\Meu Drive\7. Automação\[NÃO EXCLUIR] Documentos-Base\Python313" TargetPlatform="x64">
           <p:PythonScope.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="PythonEngineSessionProperty" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="468,708" sap2010:WorkflowViewState.IdRef="Sequence_43">
+              <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="468,1059" sap2010:WorkflowViewState.IdRef="Sequence_43">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="p:PythonObject" Name="py_caminhoFunc" />
                   <Variable x:TypeArguments="p:PythonObject" Name="py_retornoMain" />
+                  <Variable x:TypeArguments="x:String" Name="retornoMain" />
                 </Sequence.Variables>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -1286,21 +1289,34 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <p:LoadScript Code="{x:Null}" DisplayName="Carrega o Script" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="LoadScript_2" Result="[py_caminhoFunc]" ScriptFile="SistemaS/tratarTXT.py" />
-                <p:InvokeMethod sap2010:Annotation.AnnotationText="Esse código em python pode receber até 4 argumentos, sendo eles:&#xA;&#xA;- caminho_planilha_modelo: Onde está a planilha original do sistema S.&#xA;- caminho_arquivo: Onde está o pdf com os pagamentos&#xA;- caminho_pasta_cliente: Caminho para a pasta principal do cliente, dentro do Checklist&#xA;- aba_planilha_modelo: Aba da planilha de modelo onde deve ser salvo. Por padrão &quot;Base Dados (Colar Aqui Pgmtos)&quot;.&#xA;&#xA;Quanto aos caminhos, é necessário enviar com contra-barras duplas, por isso nos arumentos há um Replace.&#xA;&#xA;Ex.: &quot;G:\\Meu Drive\\7. Automação\\OUTRAS AUTOMATIZAÇÕES&quot;" DisplayName="Utiliza função Main" sap:VirtualizedContainerService.HintSize="434,329" sap2010:WorkflowViewState.IdRef="InvokeMethod_1" Instance="[py_caminhoFunc]" Name="main" Parameters="[{caminho_planilha_modelo, (in_pastaDestino + &quot;\Comprovantes de Pagamento.pdf&quot;).Replace(&quot;\&quot;,&quot;\\&quot;), in_pastaDestino, in_cnpjFormatado}]" Result="[py_retornoMain]">
+                <p:InvokeMethod sap2010:Annotation.AnnotationText="Esse código em python pode receber até 4 argumentos, sendo eles:&#xA;&#xA;- caminho_planilha_modelo: Onde está a planilha original do sistema S.&#xA;- caminho_arquivo: Onde está o pdf com os pagamentos&#xA;- caminho_pasta_cliente: Caminho para a pasta principal do cliente, dentro do Checklist&#xA;- aba_planilha_modelo: Aba da planilha de modelo onde deve ser salvo. Por padrão &quot;Base Dados (Colar Aqui Pgmtos)&quot;.&#xA;&#xA;Quanto aos caminhos, é necessário enviar com contra-barras duplas, por isso nos arumentos há um Replace.&#xA;&#xA;Ex.: &quot;G:\\Meu Drive\\7. Automação\\OUTRAS AUTOMATIZAÇÕES&quot;&#xD;&#xA;&#xD;&#xA;Ele vai retornar o py_retornoMain, que contém duas informações:&#xD;&#xA;caminhoAquivo%%possuiPagamento&#xD;&#xA;&#xD;&#xA;Ele retorna junto pois não é possível retornar dois argumentos, então para acessar cada info é necessário separa os dois baseados no &quot;%%&quot;.&#xD;&#xA;&#xD;&#xA;caminhoAquivo é onde está o arquivo do Sistema S com os pagamentos&#xD;&#xA;possuiPagamento é um booleano dizendo se possui ou não pagamentos inseridos." DisplayName="Utiliza função Main" sap:VirtualizedContainerService.HintSize="434,479" sap2010:WorkflowViewState.IdRef="InvokeMethod_1" Instance="[py_caminhoFunc]" Name="main" Parameters="[{caminho_planilha_modelo, (in_pastaDestino + &quot;\Comprovantes de Pagamento.pdf&quot;).Replace(&quot;\&quot;,&quot;\\&quot;), in_pastaDestino, in_cnpjFormatado}]" Result="[py_retornoMain]">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </p:InvokeMethod>
-                <p:GetObject x:TypeArguments="x:String" DisplayName="Transforma o retorno do Python em String" sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="GetObject`1_2" PythonObject="[py_retornoMain]" Result="[out_caminhoPlanilha]" />
-                <Assign DisplayName="Formata o Caminho" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_7">
+                <p:GetObject x:TypeArguments="x:String" DisplayName="Transforma o retorno do Python em String" sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="GetObject`1_2" PythonObject="[py_retornoMain]" Result="[retornoMain]" />
+                <Assign DisplayName="Extrai e Formata o Caminho" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_7">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:String">[out_caminhoPlanilha]</OutArgument>
                   </Assign.To>
                   <Assign.Value>
-                    <InArgument x:TypeArguments="x:String">[out_caminhoPlanilha.Replace("\\\\","\\")]</InArgument>
+                    <InArgument x:TypeArguments="x:String">[retornoMain.Split(New String() {"%%"}, StringSplitOptions.None)(0).Replace("\\\\","\\")]</InArgument>
                   </Assign.Value>
+                </Assign>
+                <Assign sap2010:Annotation.AnnotationText="Esse booleano é o que vai fazer escrever no Checklist se contribui ou não com o Sistema S.&#xD;&#xA;&#xD;&#xA;Ela é gerada no Python, analisando se foi adicionado algum pagamento na planilha." DisplayName="Extrai Se Possui Pagamentos" sap:VirtualizedContainerService.HintSize="434,192" sap2010:WorkflowViewState.IdRef="Assign_8">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:Boolean">[out_possuiPagamentos]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:Boolean">[Boolean.Parse(retornoMain.Split(New String() {"%%"}, StringSplitOptions.None)(1))]</InArgument>
+                  </Assign.Value>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
                 </Assign>
               </Sequence>
             </ActivityAction>
