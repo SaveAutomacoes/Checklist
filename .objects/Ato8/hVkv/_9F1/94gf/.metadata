@@ -1,0 +1,14 @@
+﻿{
+  "Name": "INPUT campoValorInicial",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "94gflMUy60mVnQ0kaFCYzw",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/94gflMUy60mVnQ0kaFCYzw",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/_9F1JRTt8UG0zHOhn4__NQ",
+  "Created": "2025-06-13T19:21:55.3675703Z",
+  "Updated": "2025-06-13T19:21:55.3675703Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
