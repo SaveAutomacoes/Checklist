@@ -1,5 +1,6 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="func_comprovantesSistemaS" this:func_comprovantesSistemaS.in_certificado="SAVE" this:func_comprovantesSistemaS.in_cnpjFormatado="04586744000190" this:func_comprovantesSistemaS.in_caminhoPlanilhaChecklist="C:\Users\lucas\OneDrive\Desktop\teste perdcomp.xlsx" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
+    <x:Property Name="out_tabelaFaseamento" Type="OutArgument(sd:DataTable)" />
     <x:Property Name="in_certificado" Type="InArgument(x:String)">
       <x:Property.Attributes>
         <RequiredArgumentAttribute />
@@ -280,13 +281,13 @@
       <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="func_comprovantesSistemaS" sap:VirtualizedContainerService.HintSize="1374,3750" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="func_comprovantesSistemaS" sap:VirtualizedContainerService.HintSize="2203,3829" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Fluxo Principal" sap:VirtualizedContainerService.HintSize="768,3727" sap2010:WorkflowViewState.IdRef="Sequence_92">
+    <Sequence DisplayName="Fluxo Principal" sap:VirtualizedContainerService.HintSize="768,3806" sap2010:WorkflowViewState.IdRef="Sequence_92">
       <Sequence.Variables>
         <Variable x:TypeArguments="sd:DataTable" Name="df_pgmtDCTFWeb" />
       </Sequence.Variables>
@@ -295,7 +296,7 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap2010:Annotation.AnnotationText="Parte responsável por toda a interação com a Web" DisplayName="Abre o ECAC e Pega os Pagamentos" sap:VirtualizedContainerService.HintSize="734,3596" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <Sequence sap2010:Annotation.AnnotationText="Parte responsável por toda a interação com a Web" DisplayName="Abre o ECAC e Pega os Pagamentos" sap:VirtualizedContainerService.HintSize="734,3561" sap2010:WorkflowViewState.IdRef="Sequence_4">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -303,13 +304,13 @@
             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="eCAC - Comprovante de Pagamentos" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="700,3473" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="0e34caf3-c659-4fe0-a412-29bdf9aa3deb" UserDataFolderMode="DefaultFolder" Version="V2">
+        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="eCAC - Comprovante de Pagamentos" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="700,3438" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="0e34caf3-c659-4fe0-a412-29bdf9aa3deb" UserDataFolderMode="DefaultFolder" Version="V2">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Dentro do Ecac" sap:VirtualizedContainerService.HintSize="666,3232" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <Sequence DisplayName="Dentro do Ecac" sap:VirtualizedContainerService.HintSize="666,3198" sap2010:WorkflowViewState.IdRef="Sequence_5">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -882,36 +883,24 @@
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NCheckState>
                 </Sequence>
-                <Sequence DisplayName="Acessa página da DCTFWeb e coleta os pagamentos" sap:VirtualizedContainerService.HintSize="632,2571" sap2010:WorkflowViewState.IdRef="Sequence_109">
+                <Sequence DisplayName="Acessa página da DCTFWeb e coleta os pagamentos" sap:VirtualizedContainerService.HintSize="632,2540" sap2010:WorkflowViewState.IdRef="Sequence_109">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Página DCTFWeb" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="598,2477" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="5d7cab89-52a1-4f60-90c1-cdf9576e279b" UserDataFolderMode="DefaultFolder" Version="V2">
+                  <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Página DCTFWeb" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="598,2446" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="5d7cab89-52a1-4f60-90c1-cdf9576e279b" UserDataFolderMode="DefaultFolder" Version="V2">
                     <uix:NApplicationCard.Body>
                       <ActivityAction x:TypeArguments="x:Object">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="564,2234" sap2010:WorkflowViewState.IdRef="Sequence_110">
+                        <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="564,2204" sap2010:WorkflowViewState.IdRef="Sequence_110">
                           <Sequence.Variables>
-                            <Variable x:TypeArguments="x:Int32" Name="anoInicioConsulta">
-                              <Variable.Default>
-                                <Literal x:TypeArguments="x:Int32" />
-                              </Variable.Default>
-                            </Variable>
-                            <Variable x:TypeArguments="x:Int32" Name="anoFimConsulta">
-                              <Variable.Default>
-                                <Literal x:TypeArguments="x:Int32" />
-                              </Variable.Default>
-                            </Variable>
-                            <Variable x:TypeArguments="x:Int32" Name="cont">
-                              <Variable.Default>
-                                <Literal x:TypeArguments="x:Int32" />
-                              </Variable.Default>
-                            </Variable>
+                            <Variable x:TypeArguments="x:Int32" Default="0" Name="anoInicioConsulta" />
+                            <Variable x:TypeArguments="x:Int32" Default="0" Name="anoFimConsulta" />
+                            <Variable x:TypeArguments="x:Int32" Default="0" Name="cont" />
                           </Sequence.Variables>
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -1177,7 +1166,7 @@
                               </uix:NClick>
                             </Sequence>
                           </Sequence>
-                          <Assign DisplayName="Define a Data de Início" sap:VirtualizedContainerService.HintSize="530,115" sap2010:WorkflowViewState.IdRef="Assign_11">
+                          <Assign DisplayName="Define a Data de Início" sap:VirtualizedContainerService.HintSize="530,114" sap2010:WorkflowViewState.IdRef="Assign_11">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:Int32">[anoInicioConsulta]</OutArgument>
                             </Assign.To>
@@ -1191,7 +1180,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </Assign>
-                          <Assign DisplayName="Define a Data final" sap:VirtualizedContainerService.HintSize="530,115" sap2010:WorkflowViewState.IdRef="Assign_12">
+                          <Assign DisplayName="Define a Data final" sap:VirtualizedContainerService.HintSize="530,114" sap2010:WorkflowViewState.IdRef="Assign_12">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:Int32">[anoFimConsulta]</OutArgument>
                             </Assign.To>
@@ -1205,31 +1194,31 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </Assign>
-                          <ui:ForEach x:TypeArguments="x:Int32" sap2010:Annotation.AnnotationText="Faz um loop sobre a diferença entre o ano de início e o de fim.&#xD;&#xA;&#xD;&#xA;Ex:&#xD;&#xA;Início: 2020&#xD;&#xA;Fim: 2025&#xD;&#xA;&#xD;&#xA;Intera sobre 5 + 1&#xD;&#xA;&#xD;&#xA;0, 1, 2, 3, 4, 5&#xD;&#xA;&#xD;&#xA;Na hora de colocar a data vai pegar o ano atual + o índex&#xD;&#xA;&#xD;&#xA;2020 + 0&#xD;&#xA;2020 +1&#xD;&#xA;2020 + 2&#xD;&#xA;...&#xD;&#xA;&#xD;&#xA;Extarai a tabela" CurrentIndex="[cont]" DisplayName="Para cada ano entre o início e o fim" sap:VirtualizedContainerService.HintSize="530,1828" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Enumerable.Range(anoInicioConsulta, anoFimConsulta - anoInicioConsulta + 1)]">
+                          <ui:ForEach x:TypeArguments="x:Int32" sap2010:Annotation.AnnotationText="Faz um loop sobre a diferença entre o ano de início e o de fim.&#xA;&#xA;Ex:&#xA;Início: 2020&#xA;Fim: 2025&#xA;&#xA;Intera sobre 5 + 1&#xA;&#xA;0, 1, 2, 3, 4, 5&#xA;&#xA;Na hora de colocar a data vai pegar o ano atual + o índex&#xA;&#xA;2020 + 0&#xA;2020 +1&#xA;2020 + 2&#xA;...&#xA;&#xA;Extarai a tabela" CurrentIndex="[cont]" DisplayName="Para cada ano entre o início e o fim" sap:VirtualizedContainerService.HintSize="530,1800" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Enumerable.Range(anoInicioConsulta, anoFimConsulta - anoInicioConsulta + 1)]">
                             <ui:ForEach.Body>
                               <ActivityAction x:TypeArguments="x:Int32">
                                 <ActivityAction.Argument>
                                   <DelegateInArgument x:TypeArguments="x:Int32" Name="currentNumber" />
                                 </ActivityAction.Argument>
-                                <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="528,1405" sap2010:WorkflowViewState.IdRef="Sequence_119">
+                                <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="528,1395" sap2010:WorkflowViewState.IdRef="Sequence_119">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <Sequence DisplayName="Digita os Campos e Pesquisa" sap:VirtualizedContainerService.HintSize="494,642" sap2010:WorkflowViewState.IdRef="Sequence_120">
+                                  <Sequence DisplayName="Digita os Campos e Pesquisa" sap:VirtualizedContainerService.HintSize="494,640" sap2010:WorkflowViewState.IdRef="Sequence_120">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Digita o Período de Apuração Inicial" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,251" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="5d7cab89-52a1-4f60-90c1-cdf9576e279b" Text="[&quot;01/01/&quot; + (anoInicioConsulta+cont).ToString()]" Version="V4">
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Digita o Período de Apuração Inicial" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="5d7cab89-52a1-4f60-90c1-cdf9576e279b" Text="[&quot;01/01/&quot; + (anoInicioConsulta+cont).ToString()]" Version="V4">
                                       <uix:NTypeInto.Target>
                                         <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" ContentHash="S1aT92a7JUy7vaEyBu5A1A" DesignTimeRectangle="28, 621, 136, 32" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl id='txtDataInicio' tag='INPUT' /&gt;" Guid="30bee9ed-6ee1-4ade-8ed0-c6d8a7f82654" InformativeScreenshot="6a0296e63ea53a616751b4411a6d6c8b.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/6d6fOeZVBEq2vEM4Eh-APg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
                                       </uix:NTypeInto.Target>
                                     </uix:NTypeInto>
-                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Digita o Período de Apuração FInal" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,251" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="5d7cab89-52a1-4f60-90c1-cdf9576e279b" Text="[&quot;31/12/&quot; + (anoInicioConsulta+cont).ToString()]" Version="V4">
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Digita o Período de Apuração FInal" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="5d7cab89-52a1-4f60-90c1-cdf9576e279b" Text="[&quot;31/12/&quot; + (anoInicioConsulta+cont).ToString()]" Version="V4">
                                       <uix:NTypeInto.Target>
                                         <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" ContentHash="tzXv9v-rxk2xIREUiQ6R_w" DesignTimeRectangle="175, 621, 136, 32" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl id='txtDataFinal' tag='INPUT' /&gt;" Guid="21ee876a-7631-4634-be8b-97b8f2b2ed70" InformativeScreenshot="78f2d21a141880ab33e94e97c058a75e.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/fM6rXnmwJEynbBPWoyuOMQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
                                       </uix:NTypeInto.Target>
@@ -1246,7 +1235,7 @@
                                       </sap:WorkflowViewStateService.ViewState>
                                     </uix:NClick>
                                   </Sequence>
-                                  <uix:NCheckState DisplayName="Verifica se Aparece Mensagem de Nenhuma Declaração Encontrada" EnableIfNotExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="494,347" sap2010:WorkflowViewState.IdRef="NCheckState_13" ScopeIdentifier="5d7cab89-52a1-4f60-90c1-cdf9576e279b" Timeout="2" Version="V4">
+                                  <uix:NCheckState DisplayName="Verifica se Aparece Mensagem de Nenhuma Declaração Encontrada" EnableIfNotExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="494,345" sap2010:WorkflowViewState.IdRef="NCheckState_13" ScopeIdentifier="5d7cab89-52a1-4f60-90c1-cdf9576e279b" Timeout="2" Version="V4">
                                     <uix:NCheckState.IfExists>
                                       <Sequence sap2010:Annotation.AnnotationText="Passa para o próximo" DisplayName="Aparece - Não possui Declaração" sap:VirtualizedContainerService.HintSize="450,56" sap2010:WorkflowViewState.IdRef="Sequence_123">
                                         <sap:WorkflowViewStateService.ViewState>
@@ -1278,14 +1267,14 @@
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                   </uix:NCheckState>
-                                  <Sequence DisplayName="Extrai os Dados" sap:VirtualizedContainerService.HintSize="494,356" sap2010:WorkflowViewState.IdRef="Sequence_122">
+                                  <Sequence DisplayName="Extrai os Dados" sap:VirtualizedContainerService.HintSize="494,350" sap2010:WorkflowViewState.IdRef="Sequence_122">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <uix:NExtractData sap2010:Annotation.AnnotationText="Extrai as colunas:&#xD;&#xA;&quot;Período de Apuração&quot;&#xD;&#xA;&quot;Situação&quot;&#xD;&#xA;&#xD;&#xA;Salva na tabela df_pgmtDCTFWeb" ContinueOnError="True" DataTable="[df_pgmtDCTFWeb]" DisplayName="Extrai dados da Tabela" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Período de Apuração'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='Situação'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='tr' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='6' /&gt;&lt;/column&gt;&lt;/extract&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,273" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="5d7cab89-52a1-4f60-90c1-cdf9576e279b" Timeout="1" Version="V4">
+                                    <uix:NExtractData sap2010:Annotation.AnnotationText="Extrai as colunas:&#xA;&quot;Período de Apuração&quot;&#xA;&quot;Situação&quot;&#xA;&#xA;Salva na tabela df_pgmtDCTFWeb" ContinueOnError="True" DataTable="[df_pgmtDCTFWeb]" DisplayName="Extrai dados da Tabela" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Período de Apuração'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='Situação'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='tr' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='6' /&gt;&lt;/column&gt;&lt;/extract&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,267" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="5d7cab89-52a1-4f60-90c1-cdf9576e279b" Timeout="1" Version="V4">
                                       <uix:NExtractData.NextLink>
                                         <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" DesignTimeRectangle="974, 929, 31, 31" DesignTimeScaleFactor="1.25" ElementType="Icon" FullSelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl class='tabela_botoes_paginacao' parentid='conteudo-pagina' tag='TABLE' /&gt;&lt;webctrl tableCol='4' tableRow='1' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl class='tabela_botoes_paginacao' parentid='conteudo-pagina' tag='TABLE' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' /&gt;&lt;webctrl type='' class='dctf-image image-paginacao-proxima' tag='IMG' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="efdd7117-a386-416b-975d-8a1f1afb5612" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
                                           <uix:TargetAnchorable.PointOffset>
@@ -1324,25 +1313,25 @@
                     </uix:NApplicationCard.TargetApp>
                   </uix:NApplicationCard>
                 </Sequence>
-                <Sequence DisplayName="Limpa os Dados Coletados" sap:VirtualizedContainerService.HintSize="632,435" sap2010:WorkflowViewState.IdRef="Sequence_131">
+                <Sequence DisplayName="Limpa os Dados Coletados" sap:VirtualizedContainerService.HintSize="632,432" sap2010:WorkflowViewState.IdRef="Sequence_131">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[df_pgmtDCTFWeb]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="470,341" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[df_pgmtDCTFWeb]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="470,338" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                     <ui:ForEachRow.Body>
                       <ActivityAction x:TypeArguments="sd:DataRow">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="sd:DataRow" Name="faseamento" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="468,166" sap2010:WorkflowViewState.IdRef="Sequence_132">
+                        <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_132">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Assign DisplayName="Tira os espaços do Período" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Assign_13">
+                          <Assign DisplayName="Tira os espaços do Período" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_13">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:Object">[faseamento("Situação")]</OutArgument>
                             </Assign.To>
@@ -1445,6 +1434,14 @@
           </sap:WorkflowViewStateService.ViewState>
         </uix:NApplicationCard>
       </Sequence>
+      <Assign DisplayName="Define o Retorno" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_14">
+        <Assign.To>
+          <OutArgument x:TypeArguments="sd:DataTable">[out_tabelaFaseamento]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="sd:DataTable">[df_pgmtDCTFWeb]</InArgument>
+        </Assign.Value>
+      </Assign>
       <Sequence DisplayName="Dá um OK no CheckList" sap:VirtualizedContainerService.HintSize="734,48" sap2010:WorkflowViewState.IdRef="Sequence_59">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
