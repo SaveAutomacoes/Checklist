@@ -1,5 +1,12 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="func_consultaComprovantes" this:func_consultaComprovantes.in_nomeArquivoComprovantes="comprovantes" this:func_consultaComprovantes.in_dataFim="[new DateTime(2024, 5, 30, 0, 0, 0)]" this:func_consultaComprovantes.in_dataInicio="[new DateTime(2020, 6, 1, 0, 0, 0)]" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:uasa="clr-namespace:UiPath.Activities.System.Arrays;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="func_consultaComprovantes" this:func_consultaComprovantes.in_dataFim="[new DateTime(2024, 5, 30, 0, 0, 0)]" this:func_consultaComprovantes.in_nomeArquivoComprovantes="comprovantes" this:func_consultaComprovantes.in_dataInicio="[new DateTime(2020, 6, 1, 0, 0, 0)]" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:uasa="clr-namespace:UiPath.Activities.System.Arrays;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
+    <x:Property Name="in_dataFim" Type="InArgument(s:DateTime)">
+      <x:Property.Attributes>
+        <RequiredArgumentAttribute />
+      </x:Property.Attributes>
+    </x:Property>
+    <x:Property Name="in_valorFinal" Type="InArgument(x:Double)" />
+    <x:Property Name="in_valorInicial" Type="InArgument(x:Double)" />
     <x:Property Name="inOut_contadorDownload" Type="InOutArgument(x:Int32)" />
     <x:Property Name="in_primeiraExecucao" Type="InArgument(x:Boolean)" />
     <x:Property Name="out_erro" Type="OutArgument(x:Boolean)" />
@@ -9,12 +16,7 @@
         <RequiredArgumentAttribute />
       </x:Property.Attributes>
     </x:Property>
-    <x:Property Name="in_pastaDestino" Type="InOutArgument(x:String)">
-      <x:Property.Attributes>
-        <RequiredArgumentAttribute />
-      </x:Property.Attributes>
-    </x:Property>
-    <x:Property Name="in_dataFim" Type="InArgument(s:DateTime)">
+    <x:Property Name="in_pastaDestino" Type="InArgument(x:String)">
       <x:Property.Attributes>
         <RequiredArgumentAttribute />
       </x:Property.Attributes>
@@ -76,6 +78,8 @@
       <x:String>UiPath.DataTableUtilities</x:String>
       <x:String>System.Activities.Runtime.Collections</x:String>
       <x:String>UiPath.Activities.System.Arrays</x:String>
+      <x:String>Microsoft.Office.Interop.Word</x:String>
+      <x:String>MimeDetective.Storage.Xml.v2</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -143,15 +147,17 @@
       <AssemblyReference>System.Linq.Parallel</AssemblyReference>
       <AssemblyReference>System.Collections.Immutable</AssemblyReference>
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>Microsoft.Office.Interop.Word</AssemblyReference>
+      <AssemblyReference>MimeDetective</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="func_consultaComprovantes" sap:VirtualizedContainerService.HintSize="2203,4668" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="func_consultaComprovantes" sap:VirtualizedContainerService.HintSize="2203,6988" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Verifica Destino" sap:VirtualizedContainerService.HintSize="1272,1605" sap2010:WorkflowViewState.IdRef="Sequence_17">
+    <Sequence DisplayName="Verifica Destino" sap:VirtualizedContainerService.HintSize="802,1605" sap2010:WorkflowViewState.IdRef="Sequence_17">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:Boolean" Name="pastaExiste" />
       </Sequence.Variables>
@@ -232,7 +238,7 @@
         </If.Else>
       </If>
     </Sequence>
-    <Assign DisplayName="Acrescenta ao Contador" sap:VirtualizedContainerService.HintSize="1272,114" sap2010:WorkflowViewState.IdRef="Assign_7">
+    <Assign DisplayName="Acrescenta ao Contador" sap:VirtualizedContainerService.HintSize="802,114" sap2010:WorkflowViewState.IdRef="Assign_7">
       <Assign.To>
         <OutArgument x:TypeArguments="x:Int32">[inOut_contadorDownload]</OutArgument>
       </Assign.To>
@@ -240,34 +246,34 @@
         <InArgument x:TypeArguments="x:Int32">[inOut_contadorDownload + 1]</InArgument>
       </Assign.Value>
     </Assign>
-    <Sequence DisplayName="Faz a consulta" sap:VirtualizedContainerService.HintSize="1272,2926" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Faz a consulta" sap:VirtualizedContainerService.HintSize="802,5246" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Chrome eCAC - Centro Virtual de Atendimento(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1238,2843" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="db1dbd93-e155-430a-b6af-f9bcdcd430cc" UserDataFolderMode="DefaultFolder" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Chrome eCAC - Centro Virtual de Atendimento(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="768,5163" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="db1dbd93-e155-430a-b6af-f9bcdcd430cc" UserDataFolderMode="DefaultFolder" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="1204,2603" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="734,4923" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Sequence DisplayName="Preenche os Campos" sap:VirtualizedContainerService.HintSize="1170,57" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <Sequence DisplayName="Preenche os Campos" sap:VirtualizedContainerService.HintSize="700,57" sap2010:WorkflowViewState.IdRef="Sequence_5">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Primeiro dia do mês atual à 5 anos atrás" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Digita Início Data de Arrecadação" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,281" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Text="[in_dataInicio.ToString(&quot;dd/MM/yyyy&quot;)]" Version="V4">
+                <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Primeiro dia do mês atual à 5 anos atrás" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Digita Início Data de Arrecadação" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,281" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Text="[in_dataInicio.ToString(&quot;dd/MM/yyyy&quot;)]" Version="V4">
                   <uix:NTypeInto.Target>
                     <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="6cdd7d0c-f6dc-4a1d-aaf0-34922d49a7ca" ContentHash="icSIei26uUKOzkY317CHmg" CvElementArea="466, 626, 211, 25" CvType="InputBox" DesignTimeRectangle="468, 627, 207, 22" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl parentid='PanelParametros' tag='TABLE' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' /&gt;&lt;webctrl id='campoDataArrecadacaoInicial' type='text' tag='INPUT' class='' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="61eedb07-25dd-4d21-ac92-fe0917649ba1" InformativeScreenshot="f2a0a9bbf7ae17214183e910678cfd95.png" IsResponsive="True" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/el5_0FaFW0yaMNbJEWJEoA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                       <uix:TargetAnchorable.Anchors>
@@ -283,7 +289,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </uix:NTypeInto>
-                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Data de arrecadação(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_23" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Version="V4">
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Data de arrecadação(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,189" sap2010:WorkflowViewState.IdRef="NClick_23" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Version="V4">
                   <uix:NClick.Target>
                     <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="6cdd7d0c-f6dc-4a1d-aaf0-34922d49a7ca" ContentHash="TGDUnuAxz0K3-mCiVX95YQ" CvElementArea="695, 626, 211, 25" CvType="InputBox" DesignTimeRectangle="698, 670, 207, 22" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl parentid='PanelParametros' tag='TABLE' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' /&gt;&lt;webctrl id='campoDataArrecadacaoFinal' type='text' tag='INPUT' class='' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="a909d441-86ab-4dca-abb6-2b5a5d1d9430" InformativeScreenshot="29e154485a099f82475a864403c98934.png" IsResponsive="True" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/-47OV83MV0C_PrJjgtLWWw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                       <uix:TargetAnchorable.Anchors>
@@ -298,7 +304,7 @@
                     </uix:TargetAnchorable>
                   </uix:NClick.Target>
                 </uix:NClick>
-                <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Dia Atual" ClickBeforeMode="None" ClipboardMode="Never" DisplayName="Digita Fim Data de Arrecadação" EmptyFieldMode="None" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,281" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Text="[&quot;[k(Back)]&quot; + in_dataFim.ToString(&quot;dd/MM/yyyy&quot;)]" Version="V4">
+                <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Dia Atual" ClickBeforeMode="None" ClipboardMode="Never" DisplayName="Digita Fim Data de Arrecadação" EmptyFieldMode="None" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,281" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Text="[&quot;[k(Back)]&quot; + in_dataFim.ToString(&quot;dd/MM/yyyy&quot;)]" Version="V4">
                   <uix:NTypeInto.Target>
                     <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="6cdd7d0c-f6dc-4a1d-aaf0-34922d49a7ca" ContentHash="TGDUnuAxz0K3-mCiVX95YQ" CvElementArea="695, 626, 211, 25" CvType="InputBox" DesignTimeRectangle="698, 670, 207, 22" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl parentid='PanelParametros' tag='TABLE' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' /&gt;&lt;webctrl id='campoDataArrecadacaoFinal' type='text' tag='INPUT' class='' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="a909d441-86ab-4dca-abb6-2b5a5d1d9430" InformativeScreenshot="29e154485a099f82475a864403c98934.png" IsResponsive="True" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/-47OV83MV0C_PrJjgtLWWw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                       <uix:TargetAnchorable.Anchors>
@@ -318,7 +324,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </uix:NTypeInto>
-                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Digita Código da Receita e dá Enter" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Text="1410" Version="V4">
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Digita Código da Receita" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,250" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Text="1410" Version="V4">
                   <uix:NTypeInto.Target>
                     <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="0550b10c-acd6-4c7d-94f2-8e1389eb1ada" ContentHash="o7U024_yCUixB2SQceGV-Q" CvElementArea="465, 677, 212, 25" CvType="InputBox" DesignTimeRectangle="468, 678, 207, 22" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl parentid='PanelParametros' tag='TABLE' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' /&gt;&lt;webctrl id='campoCodReceita' type='text' tag='INPUT' class='' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="59a85074-e51b-438b-89b5-ffd7b57a86de" InformativeScreenshot="7b8dac64c2059012be1312e054e4222b.png" IsResponsive="True" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/QP3CQfJCekygEJG1gD-2_w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                       <uix:TargetAnchorable.Anchors>
@@ -329,7 +335,56 @@
                     </uix:TargetAnchorable>
                   </uix:NTypeInto.Target>
                 </uix:NTypeInto>
-                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clica em Consultar" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_22" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Version="V4">
+                <If sap2010:Annotation.AnnotationText="O valor só vai entrar em cena se não conseguir filtrar mais pela data.&#xD;&#xA;&#xD;&#xA;É acionado quando as datas forem iguais" Condition="[Not in_valorInicial.Equals(Nothing) AndAlso Not Double.IsNaN(in_valorInicial)]" DisplayName="Verifica se Tem Valores a Preencher" sap:VirtualizedContainerService.HintSize="418,310" sap2010:WorkflowViewState.IdRef="If_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <If.Then>
+                    <Sequence DisplayName="Tem Valores a Preencher" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_50">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Tem toda essa formatação nos valores para que sempre preencha apenas com duas casas decimais e sem arredondar nada." ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Digita Valor Inicial" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,307" sap2010:WorkflowViewState.IdRef="NTypeInto_10" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Text="[(Math.Truncate(in_valorInicial * 100) / 100).ToString(&quot;F2&quot;)]" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" ContentHash="gUZselXGO0yHbnwgiEKTkQ" DesignTimeRectangle="468, 823, 207, 22" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl parentid='PanelParametros' tag='TABLE' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' /&gt;&lt;webctrl id='campoValorInicial' type='text' tag='INPUT' class='' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="00cf869e-4076-41fa-ba6f-1099e80c17f1" InformativeScreenshot="03185c6c3aeb7645a36f3a1017148555.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/q7ilMfM3cU6EXzZWl9SYFg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                        </uix:NTypeInto.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Digita o Valor Final" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,241" sap2010:WorkflowViewState.IdRef="NTypeInto_11" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Text="[(Math.Truncate(in_valorFinal * 100) / 100).ToString(&quot;F2&quot;)]" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" ContentHash="ggUnzpS_70SPFCznGz7Zfg" DesignTimeRectangle="690, 823, 207, 22" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl parentid='PanelParametros' tag='TABLE' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' /&gt;&lt;webctrl id='campoValorFinal' type='text' tag='INPUT' class='' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="8c29f210-5f30-47c0-8533-244cb6b1ee53" InformativeScreenshot="cc78553c44be47d703e89bd904ee3fcc.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/-NarHcWSq0uk-21oMRVF2w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                        </uix:NTypeInto.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NTypeInto>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,90" sap2010:WorkflowViewState.IdRef="Sequence_51">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Sequence>
+                  </If.Else>
+                </If>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clica em Consultar" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,216" sap2010:WorkflowViewState.IdRef="NClick_22" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Version="V4">
                   <uix:NClick.Target>
                     <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" ContentHash="c98EgqXhHEK0tAlvYlqNcQ" DesignTimeRectangle="907, 914, 80, 22" ElementType="Button" FullSelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl id='botaoConsultar' tag='INPUT' /&gt;" Guid="d3b8dee5-9fb2-415f-a994-7192fb4692e2" InformativeScreenshot="5afedebd16af9d224fdbae4235eeb048.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/UOzUGR4PxEipAzSy7CvoBg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
                   </uix:NClick.Target>
@@ -345,14 +400,14 @@
                   </uix:NClick.VerifyOptions>
                 </uix:NClick>
               </Sequence>
-              <Sequence DisplayName="Verifica se Não Possui pagamentos" sap:VirtualizedContainerService.HintSize="1170,57" sap2010:WorkflowViewState.IdRef="Sequence_24">
+              <Sequence DisplayName="Verifica se Não Possui pagamentos" sap:VirtualizedContainerService.HintSize="700,57" sap2010:WorkflowViewState.IdRef="Sequence_24">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NCheckState DisplayName="Verifica Mensagem Nenhuma Arrecadação localizada" EnableIfNotExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="512,691" sap2010:WorkflowViewState.IdRef="NCheckState_6" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Version="V4">
+                <uix:NCheckState DisplayName="Verifica Mensagem Nenhuma Arrecadação localizada" EnableIfNotExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="512,693" sap2010:WorkflowViewState.IdRef="NCheckState_6" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Version="V4">
                   <uix:NCheckState.IfExists>
                     <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="468,451" sap2010:WorkflowViewState.IdRef="Sequence_25">
                       <sap:WorkflowViewStateService.ViewState>
@@ -402,7 +457,7 @@
                     </Sequence>
                   </uix:NCheckState.IfNotExists>
                   <uix:NCheckState.Target>
-                    <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="79031426-8877-4e27-87d4-407125f36c8e" ContentHash="6JExoDLQg0Gatfpg3f5FGg" CvTextArea="712, 182, 242, 15" CvTextArgument="Nenhuma arrecadação localizada." CvType="Text" DesignTimeRectangle="714, 177, 510, 26" ElementType="Text" FullSelectorArgument="&lt;ctrl name='cav.receita.fazenda.gov.br diz' role='dialog' /&gt;&lt;ctrl name='Nenhuma arrecadação localizada.' role='text' /&gt;" Guid="63e9d00a-a140-4dd0-985a-ed82319c681b" InformativeScreenshot="7f29038c2578fed3437276bad048a9de.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/k5bjDK2yFEibgtzkB5ULTg" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='eCAC - Centro Virtual de Atendimento - Google Chrome' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                    <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="79031426-8877-4e27-87d4-407125f36c8e" ContentHash="FRtceGCGh0OXI0uzC-GqDw" CvTextArea="712, 182, 242, 15" CvTextArgument="Nenhuma arrecadação localizada." CvType="Text" DesignTimeRectangle="714, 177, 510, 26" ElementType="Text" FullSelectorArgument="&lt;ctrl name='cav.receita.fazenda.gov.br diz' role='dialog' /&gt;&lt;ctrl name='Nenhuma arrecadação localizada.' role='text' /&gt;" Guid="63e9d00a-a140-4dd0-985a-ed82319c681b" InformativeScreenshot="0b1c31387248c9b6c8e12a86c0d0ded6.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/k5bjDK2yFEibgtzkB5ULTg" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='eCAC - Centro Virtual de Atendimento - Google Chrome' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                       <uix:TargetAnchorable.Anchors>
                         <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                           <uix:Target DesignTimeRectangle="680, 106, 578, 201" FuzzySelectorArgument="&lt;ctrl name='cav.receita.fazenda.gov.br diz' role='dialog' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl automationid='' role='pane' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:fulltext='cav.receita.fazenda.gov.br diz&amp;#xD;&amp;#xA;Nenhuma arrecadação localizada.&amp;#xD;&amp;#xA;OK' /&gt;" Guid="d97d94f2-cc3d-42b8-8f69-d5a9b8c6afdf" SearchSteps="FuzzySelector" />
@@ -412,7 +467,7 @@
                   </uix:NCheckState.Target>
                 </uix:NCheckState>
               </Sequence>
-              <Sequence sap2010:Annotation.AnnotationText="Verifica se passou do máximo que é 1000.&#xA;Se sim, divide os períodos e envia novamente para esse fluxo porém dividido em duas partes." DisplayName="Verifica se Passou de 1000" sap:VirtualizedContainerService.HintSize="1170,114" sap2010:WorkflowViewState.IdRef="Sequence_27">
+              <Sequence sap2010:Annotation.AnnotationText="Verifica se passou do máximo que é 1000.&#xA;Se sim, divide os períodos e envia novamente para esse fluxo porém dividido em duas partes." DisplayName="Verifica se Passou de 1000" sap:VirtualizedContainerService.HintSize="700,114" sap2010:WorkflowViewState.IdRef="Sequence_27">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -534,7 +589,7 @@
                           <OutArgument x:TypeArguments="s:DateTime">[dataMeio]</OutArgument>
                         </Assign.To>
                         <Assign.Value>
-                          <InArgument x:TypeArguments="s:DateTime">[in_dataInicio.AddDays((in_dataFim - in_dataInicio).Days / 2)]</InArgument>
+                          <InArgument x:TypeArguments="s:DateTime">[in_dataInicio.Date.AddDays((in_dataFim.Date - in_dataInicio.Date).Days / 2)]</InArgument>
                         </Assign.Value>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -544,12 +599,14 @@
                       </Assign>
                       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Essa parte é responsável por passar o primeiro período da divisão, do início até a metade" DisplayName="Passa o primeiro Período para consulta" sap:VirtualizedContainerService.HintSize="434,219" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="SistemaS\func_consultaComprovantes.xaml">
                         <ui:InvokeWorkflowFile.Arguments>
+                          <InArgument x:TypeArguments="x:Double" x:Key="in_valorFinal" />
+                          <InArgument x:TypeArguments="x:Double" x:Key="in_valorInicial" />
                           <InOutArgument x:TypeArguments="x:Int32" x:Key="inOut_contadorDownload">[inOut_contadorDownload]</InOutArgument>
                           <InArgument x:TypeArguments="x:Boolean" x:Key="in_primeiraExecucao" />
                           <OutArgument x:TypeArguments="x:Boolean" x:Key="out_erro" />
                           <OutArgument x:TypeArguments="x:String" x:Key="out_pastaComprovantes" />
                           <InArgument x:TypeArguments="x:String" x:Key="in_nomeArquivoComprovantes">[in_nomeArquivoComprovantes]</InArgument>
-                          <InOutArgument x:TypeArguments="x:String" x:Key="in_pastaDestino">[in_pastaDestino]</InOutArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="in_pastaDestino">[in_pastaDestino]</InArgument>
                           <InArgument x:TypeArguments="s:DateTime" x:Key="in_dataFim">[dataMeio]</InArgument>
                           <InArgument x:TypeArguments="s:DateTime" x:Key="in_dataInicio">[in_dataInicio]</InArgument>
                         </ui:InvokeWorkflowFile.Arguments>
@@ -561,12 +618,14 @@
                       </ui:InvokeWorkflowFile>
                       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Essa parte é responsável por passar o segundo período da divisão, da metade +1 até o fim" DisplayName="Passa o segundo Período para consulta" sap:VirtualizedContainerService.HintSize="434,219" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="SistemaS\func_consultaComprovantes.xaml">
                         <ui:InvokeWorkflowFile.Arguments>
+                          <InArgument x:TypeArguments="x:Double" x:Key="in_valorFinal" />
+                          <InArgument x:TypeArguments="x:Double" x:Key="in_valorInicial" />
                           <InOutArgument x:TypeArguments="x:Int32" x:Key="inOut_contadorDownload">[inOut_contadorDownload]</InOutArgument>
                           <InArgument x:TypeArguments="x:Boolean" x:Key="in_primeiraExecucao" />
                           <OutArgument x:TypeArguments="x:Boolean" x:Key="out_erro" />
                           <OutArgument x:TypeArguments="x:String" x:Key="out_pastaComprovantes" />
                           <InArgument x:TypeArguments="x:String" x:Key="in_nomeArquivoComprovantes">[in_nomeArquivoComprovantes]</InArgument>
-                          <InOutArgument x:TypeArguments="x:String" x:Key="in_pastaDestino">[in_pastaDestino]</InOutArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="in_pastaDestino">[in_pastaDestino]</InArgument>
                           <InArgument x:TypeArguments="s:DateTime" x:Key="in_dataFim">[in_dataFim]</InArgument>
                           <InArgument x:TypeArguments="s:DateTime" x:Key="in_dataInicio">[dataMeio.AddDays(1)]</InArgument>
                         </ui:InvokeWorkflowFile.Arguments>
@@ -605,7 +664,7 @@
                   </sap:WorkflowViewStateService.ViewState>
                 </uix:NCheckState>
               </Sequence>
-              <Sequence DisplayName="Seleciona Todos e Clica em Exibir Comprovantes" sap:VirtualizedContainerService.HintSize="1170,57" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <Sequence DisplayName="Seleciona Todos e Clica em Exibir Comprovantes" sap:VirtualizedContainerService.HintSize="700,57" sap2010:WorkflowViewState.IdRef="Sequence_4">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -645,16 +704,16 @@
                   </uix:NClick.Target>
                 </uix:NClick>
               </Sequence>
-              <Sequence DisplayName="Verifica se Passou de 50" sap:VirtualizedContainerService.HintSize="1170,2256" sap2010:WorkflowViewState.IdRef="Sequence_12">
+              <Sequence DisplayName="Verifica se Passou de 50" sap:VirtualizedContainerService.HintSize="700,3253" sap2010:WorkflowViewState.IdRef="Sequence_12">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NCheckState DisplayName="Verifica se a Mensagem Apareceu" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="1136,2169" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Version="V4">
+                <uix:NCheckState DisplayName="Verifica se a Mensagem Apareceu" EnableIfNotExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="666,3159" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Version="V4">
                   <uix:NCheckState.IfExists>
-                    <Sequence DisplayName="Passou de 50" sap:VirtualizedContainerService.HintSize="554,1927" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                    <Sequence DisplayName="Passou de 50" sap:VirtualizedContainerService.HintSize="622,2917" sap2010:WorkflowViewState.IdRef="Sequence_13">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="s:DateTime" Name="dataMeio" />
                       </Sequence.Variables>
@@ -663,7 +722,7 @@
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clica em OK" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="520,225" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Version="V4">
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clica em OK" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="588,225" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Version="V4">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="e2809709-dbbb-4f54-b6a0-c805d6e8eef3" ContentHash="o2jLVFztG0WK0j1QTfLFgg" CvElementArea="1135, 215, 97, 63" CvTextArea="1170, 239, 26, 15" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="1144, 247, 80, 49" ElementType="Button" FullSelectorArgument="&lt;ctrl name='cav.receita.fazenda.gov.br diz' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' /&gt;" Guid="0af5ef60-f3f5-4b79-a476-3c7e9c9af849" InformativeScreenshot="8701b7a27baa130713c6637f78fd1ca0.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/q50eyBqsuEuVjnvaNwfnLw" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='eCAC - Centro Virtual de Atendimento - Google Chrome' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                             <uix:TargetAnchorable.Anchors>
@@ -684,28 +743,7 @@
                           </uix:VerifyExecutionOptions>
                         </uix:NClick.VerifyOptions>
                       </uix:NClick>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clica em Retornar" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="520,225" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Version="V4">
-                        <uix:NClick.Target>
-                          <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="bec83923-ed3a-4917-a04a-9c61220b8abe" ContentHash="8unjfuEvtkqpc_Uue9N8AQ" CvElementArea="697, 918, 78, 26" CvTextArea="709, 922, 55, 15" CvTextArgument="Retornar" CvType="Button" DesignTimeRectangle="699, 919, 75, 22" ElementType="Button" FullSelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl id='BtnRetornar' tag='INPUT' /&gt;" Guid="099ce7d9-1a99-4795-8ede-1975393c6ee8" InformativeScreenshot="0892b4503ae8eddc6a467487bae792c5.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/BD2f5Tk3Sk25WclZSnc_xQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
-                            <uix:TargetAnchorable.Anchors>
-                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                <uix:Target DesignTimeRectangle="34, 919, 1870, 36" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl class='lineButtons' parentid='form1' tag='DIV' type='' aaname='        ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Retornar &amp;#xA;          &amp;#xA;     &amp;#xA;          &amp;#xA;    Exibir Comprovantes' /&gt;" Guid="35f7bafb-2776-41e6-bf10-9536481934f9" SearchSteps="FuzzySelector" />
-                              </scg:List>
-                            </uix:TargetAnchorable.Anchors>
-                          </uix:TargetAnchorable>
-                        </uix:NClick.Target>
-                        <uix:NClick.VerifyOptions>
-                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                            <uix:VerifyExecutionOptions.Retry>
-                              <InArgument x:TypeArguments="x:Boolean" />
-                            </uix:VerifyExecutionOptions.Retry>
-                            <uix:VerifyExecutionOptions.Timeout>
-                              <InArgument x:TypeArguments="x:Double" />
-                            </uix:VerifyExecutionOptions.Timeout>
-                          </uix:VerifyExecutionOptions>
-                        </uix:NClick.VerifyOptions>
-                      </uix:NClick>
-                      <uix:NCheckState DisplayName="Verfifica se pediu para Avaliar" EnableIfNotExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="520,57" sap2010:WorkflowViewState.IdRef="NCheckState_5" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Version="V4">
+                      <uix:NCheckState DisplayName="Verfifica se pediu para Avaliar" EnableIfNotExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="588,57" sap2010:WorkflowViewState.IdRef="NCheckState_5" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Version="V4">
                         <uix:NCheckState.IfExists>
                           <Sequence DisplayName="Pediu Para Avaliar" sap:VirtualizedContainerService.HintSize="450,505" sap2010:WorkflowViewState.IdRef="Sequence_20">
                             <sap:WorkflowViewStateService.ViewState>
@@ -782,7 +820,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NCheckState>
-                      <Sequence sap2010:Annotation.AnnotationText="Isso só vai acontecer se ele tiver filtrado tanto que mesmo consultando um único dia tenha mais de 50.&#xD;&#xA;&#xD;&#xA;Nesse caso ele vai para outro fluxo que começa a filtrar pelo valor." DisplayName="Verifica se a Data é igual" sap:VirtualizedContainerService.HintSize="520,771" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                      <Sequence sap2010:Annotation.AnnotationText="Isso só vai acontecer se ele tiver filtrado tanto que mesmo consultando um único dia tenha mais de 50.&#xA;&#xA;Nesse caso ele vai para outro fluxo que começa a filtrar pelo valor." DisplayName="Verifica se a Data é igual" sap:VirtualizedContainerService.HintSize="588,1704" sap2010:WorkflowViewState.IdRef="Sequence_49">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="x:Double" Name="valorFinal" />
                           <Variable x:TypeArguments="x:Double" Name="valorInicial" />
@@ -794,22 +832,25 @@
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <If Condition="[in_dataFim.Date = in_dataInicio.Date]" DisplayName="Faz a Verificação das Datas" sap:VirtualizedContainerService.HintSize="486,605" sap2010:WorkflowViewState.IdRef="If_4">
+                        <If Condition="[in_dataFim.Date = in_dataInicio.Date]" DisplayName="Faz a Verificação das Datas" sap:VirtualizedContainerService.HintSize="554,1538" sap2010:WorkflowViewState.IdRef="If_4">
                           <If.Then>
-                            <Sequence DisplayName="É o mesmo Dia" sap:VirtualizedContainerService.HintSize="484,384" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                            <Sequence DisplayName="É o mesmo Dia" sap:VirtualizedContainerService.HintSize="552,1317" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="x:Double" Name="valorMeio" />
+                              </Sequence.Variables>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <Sequence DisplayName="Captura o Maior e o Menor Valor" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                              <Sequence DisplayName="Captura o Maior e o Menor Valor" sap:VirtualizedContainerService.HintSize="518,679" sap2010:WorkflowViewState.IdRef="Sequence_37">
                                 <Sequence.Variables>
                                   <Variable x:TypeArguments="sd:DataTable" Name="dfPagamentos" />
                                   <Variable x:TypeArguments="scg:IList(x:Double)" Name="list_valoresPagamentos" />
                                 </Sequence.Variables>
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
@@ -820,34 +861,50 @@
                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clica em Selecionar Todos" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NClick_25" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Version="V4">
-                                    <uix:NClick.Target>
-                                      <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" DesignTimeRectangle="85, 600, 16, 16" ElementType="CheckBox" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl parentid='PanelResultado' tag='TABLE' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' /&gt;&lt;webctrl id='CheckBoxTodos' type='checkbox' tag='INPUT' class='' aaname='Selecionar Todos' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="361dded7-0a9b-4dab-b130-bbc92e5e0a73" InformativeScreenshot="c2f298e9f859d91e2c7f30607cbabf50.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
-                                        <uix:TargetAnchorable.Anchors>
-                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                            <uix:Target CVScreenId="3fb67a6d-02b1-4a64-8703-69f021ee4d12" CvTextArea="104, 600, 106, 13" CvTextArgument="Selecionar Todos" CvType="Text" DesignTimeRectangle="105, 600, 105, 15" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl parentid='PanelResultado' tag='TABLE' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' /&gt;&lt;webctrl type='' tag='LABEL' class='' aaname='Selecionar Todos' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Selecionar Todos' /&gt;" Guid="4cfb9dfe-b2f0-4048-8245-b0a11d0d812d" SearchSteps="FuzzySelector, CV" />
-                                          </scg:List>
-                                        </uix:TargetAnchorable.Anchors>
-                                      </uix:TargetAnchorable>
-                                    </uix:NClick.Target>
-                                    <uix:NClick.VerifyOptions>
-                                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                                        <uix:VerifyExecutionOptions.Retry>
-                                          <InArgument x:TypeArguments="x:Boolean" />
-                                        </uix:VerifyExecutionOptions.Retry>
-                                        <uix:VerifyExecutionOptions.Timeout>
-                                          <InArgument x:TypeArguments="x:Double" />
-                                        </uix:VerifyExecutionOptions.Timeout>
-                                      </uix:VerifyExecutionOptions>
-                                    </uix:NClick.VerifyOptions>
+                                  <ui:CommentOut sap2010:Annotation.AnnotationText="Ele já estará selecionado, não sendo necessário clicar novamente." DisplayName="[Desativado] Clicar em Selecionar Todos" sap:VirtualizedContainerService.HintSize="486,386" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+                                    <ui:CommentOut.Body>
+                                      <Sequence DisplayName="Atividades Ignoradas" sap:VirtualizedContainerService.HintSize="450,276" sap2010:WorkflowViewState.IdRef="Sequence_56">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clica em Selecionar Todos" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,216" sap2010:WorkflowViewState.IdRef="NClick_25" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Version="V4">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" DesignTimeRectangle="85, 600, 16, 16" ElementType="CheckBox" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl parentid='PanelResultado' tag='TABLE' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' /&gt;&lt;webctrl id='CheckBoxTodos' type='checkbox' tag='INPUT' class='' aaname='Selecionar Todos' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="361dded7-0a9b-4dab-b130-bbc92e5e0a73" InformativeScreenshot="c2f298e9f859d91e2c7f30607cbabf50.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                  <uix:Target CVScreenId="3fb67a6d-02b1-4a64-8703-69f021ee4d12" CvTextArea="104, 600, 106, 13" CvTextArgument="Selecionar Todos" CvType="Text" DesignTimeRectangle="105, 600, 105, 15" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl parentid='PanelResultado' tag='TABLE' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' /&gt;&lt;webctrl type='' tag='LABEL' class='' aaname='Selecionar Todos' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Selecionar Todos' /&gt;" Guid="4cfb9dfe-b2f0-4048-8245-b0a11d0d812d" SearchSteps="FuzzySelector, CV" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
+                                          </uix:NClick.Target>
+                                          <uix:NClick.VerifyOptions>
+                                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                              <uix:VerifyExecutionOptions.Retry>
+                                                <InArgument x:TypeArguments="x:Boolean" />
+                                              </uix:VerifyExecutionOptions.Retry>
+                                              <uix:VerifyExecutionOptions.Timeout>
+                                                <InArgument x:TypeArguments="x:Double" />
+                                              </uix:VerifyExecutionOptions.Timeout>
+                                            </uix:VerifyExecutionOptions>
+                                          </uix:NClick.VerifyOptions>
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </uix:NClick>
+                                      </Sequence>
+                                    </ui:CommentOut.Body>
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                  </uix:NClick>
-                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clica em Imprimir Relação" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NClick_24" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Version="V4">
+                                  </ui:CommentOut>
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clica em Imprimir Relação" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,57" sap2010:WorkflowViewState.IdRef="NClick_24" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Version="V4">
                                     <uix:NClick.Target>
                                       <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="625920cd-8f89-4c22-a456-04f5e6b83a9b" DesignTimeRectangle="780, 970, 125, 22" ElementType="Button" FullSelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl id='BtnImprimirRelacao' tag='INPUT' /&gt;" Guid="8f1c7203-2c4b-4969-9f1a-7cf6ed25406d" InformativeScreenshot="edc97e236b20c3b6e15d66cbf8051686.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
                                     </uix:NClick.Target>
@@ -868,7 +925,7 @@
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                   </uix:NClick>
-                                  <uix:NExtractData sap2010:Annotation.AnnotationText="Salva os Pagamentos em um dataframe chamado &quot;dfPagamentos&quot; &#xD;&#xA;&#xD;&#xA;Coluna &quot;Valor&quot;" ContinueOnError="True" DataTable="[dfPagamentos]" DisplayName="Extrai os Pagamentos" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='false' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Valor'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='table' idx='3' /&gt;&lt;webctrl tag='tbody' idx='1' /&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='7' /&gt;&lt;webctrl tag='p' idx='1' /&gt;&lt;webctrl tag='font' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,261" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Version="V4">
+                                  <uix:NExtractData sap2010:Annotation.AnnotationText="Salva os Pagamentos em um dataframe chamado &quot;dfPagamentos&quot; &#xA;&#xA;Coluna &quot;Valor&quot;" ContinueOnError="True" DataTable="[dfPagamentos]" DisplayName="Extrai os Pagamentos" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='false' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Valor'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='table' idx='3' /&gt;&lt;webctrl tag='tbody' idx='1' /&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='7' /&gt;&lt;webctrl tag='p' idx='1' /&gt;&lt;webctrl tag='font' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,261" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Version="V4">
                                     <uix:NExtractData.Target>
                                       <uix:TargetAnchorable BrowserURL="https://cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx?id=4&amp;origem=menu" DesignTimeRectangle="19, 176, 1881, 3095" DesignTimeScaleFactor="1.25" ElementType="Container" FullSelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl id='form1' tag='FORM' /&gt;" Guid="8029f950-819b-4f6b-a114-499cec377c96" InformativeScreenshot="e01291a5a4578f97437b73333018b5ce.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" />
                                     </uix:NExtractData.Target>
@@ -880,7 +937,7 @@
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                   </uix:NExtractData>
-                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Retorna" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NClick_26" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Version="V4">
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Retorna" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,57" sap2010:WorkflowViewState.IdRef="NClick_26" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Version="V4">
                                     <uix:NClick.Target>
                                       <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="dc0ed236-4bae-47a9-a449-b4e6fb55203c" CvElementArea="295, 961, 88, 30" CvTextArea="305, 967, 67, 15" CvTextArgument="Retornar" CvType="Button" DesignTimeRectangle="297, 962, 84, 26" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='btnRetornar' type='button' tag='INPUT' class='print' aaname='Retornar' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Retornar' /&gt;" Guid="017ec62b-c1f5-468d-82c9-310077a7b460" InformativeScreenshot="4b682e390762b0519ef3cdf279f4d4e6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                                         <uix:TargetAnchorable.Anchors>
@@ -897,7 +954,7 @@
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                   </uix:NClick>
-                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Retorna Novamente" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="NClick_27" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Version="V4">
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Retorna Novamente" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,48" sap2010:WorkflowViewState.IdRef="NClick_27" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Version="V4">
                                     <uix:NClick.Target>
                                       <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="ba9defbe-ee9a-47e5-94a5-7133910cd818" CvElementArea="696, 903, 79, 27" CvTextArea="710, 909, 55, 13" CvTextArgument="Retornar" CvType="Button" DesignTimeRectangle="699, 905, 75, 22" ElementType="Button" FullSelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl id='BtnRetornar' tag='INPUT' /&gt;" Guid="f8d0753c-4c76-4483-9bae-7236c5a1f9c1" InformativeScreenshot="3d9100174f30dea52a3a25ebb82bf01a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                                         <uix:TargetAnchorable.Anchors>
@@ -933,7 +990,7 @@
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                   </ui:RemoveDataRow>
-                                  <Sequence sap2010:Annotation.AnnotationText="Adiciona na lista &quot;list_valoresPagamentos&quot;.&#xD;&#xA;Formata os valores corretamente para isso." DisplayName="Joga os Valores em Uma Lista" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_47">
+                                  <Sequence sap2010:Annotation.AnnotationText="Adiciona na lista &quot;list_valoresPagamentos&quot;.&#xA;Formata os valores corretamente para isso." DisplayName="Joga os Valores em Uma Lista" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_47">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -984,16 +1041,26 @@
                                   </Assign.Value>
                                 </Assign>
                               </Sequence>
-                              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Essa parte é responsável por passar o primeiro período da divisão, do início até a metade" DisplayName="Passa o primeiro Período para consulta" sap:VirtualizedContainerService.HintSize="450,219" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="SistemaS\func_consultaComprovantesDataEValor.xaml">
+                              <Assign DisplayName="Define o Valor do Meio" sap:VirtualizedContainerService.HintSize="518,114" sap2010:WorkflowViewState.IdRef="Assign_12">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Double">[valorMeio]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Double">[(valorInicial + valorFinal) / 2]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Passa a primeira metade dos valores" DisplayName="Passa o primeiro Período para consulta" sap:VirtualizedContainerService.HintSize="518,208" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" UnSafe="False" WorkflowFileName="SistemaS\func_consultaComprovantes.xaml">
                                 <ui:InvokeWorkflowFile.Arguments>
-                                  <InArgument x:TypeArguments="x:Double" x:Key="in_valorFinal">[valorFinal]</InArgument>
+                                  <InArgument x:TypeArguments="x:Double" x:Key="in_valorFinal">[valorMeio]</InArgument>
                                   <InArgument x:TypeArguments="x:Double" x:Key="in_valorInicial">[valorInicial]</InArgument>
                                   <InOutArgument x:TypeArguments="x:Int32" x:Key="inOut_contadorDownload">[inOut_contadorDownload]</InOutArgument>
+                                  <InArgument x:TypeArguments="x:Boolean" x:Key="in_primeiraExecucao" />
                                   <OutArgument x:TypeArguments="x:Boolean" x:Key="out_erro" />
                                   <OutArgument x:TypeArguments="x:String" x:Key="out_pastaComprovantes" />
                                   <InArgument x:TypeArguments="x:String" x:Key="in_nomeArquivoComprovantes">[in_nomeArquivoComprovantes]</InArgument>
-                                  <InOutArgument x:TypeArguments="x:String" x:Key="in_pastaDestino">[in_pastaDestino]</InOutArgument>
-                                  <InArgument x:TypeArguments="s:DateTime" x:Key="in_data">[in_dataInicio]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="in_pastaDestino">[in_pastaDestino]</InArgument>
+                                  <InArgument x:TypeArguments="s:DateTime" x:Key="in_dataFim">[in_dataFim]</InArgument>
+                                  <InArgument x:TypeArguments="s:DateTime" x:Key="in_dataInicio">[in_dataInicio]</InArgument>
                                 </ui:InvokeWorkflowFile.Arguments>
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -1001,11 +1068,30 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </ui:InvokeWorkflowFile>
-                              <ui:Return DisplayName="Volta" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="Return_3" />
+                              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Passa a segunda metade dos valores" DisplayName="Passa o Segundo Período para consulta" sap:VirtualizedContainerService.HintSize="518,208" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" UnSafe="False" WorkflowFileName="SistemaS\func_consultaComprovantes.xaml">
+                                <ui:InvokeWorkflowFile.Arguments>
+                                  <InArgument x:TypeArguments="x:Double" x:Key="in_valorFinal">[valorFinal]</InArgument>
+                                  <InArgument x:TypeArguments="x:Double" x:Key="in_valorInicial">[valorMeio + 0.01]</InArgument>
+                                  <InOutArgument x:TypeArguments="x:Int32" x:Key="inOut_contadorDownload">[inOut_contadorDownload]</InOutArgument>
+                                  <InArgument x:TypeArguments="x:Boolean" x:Key="in_primeiraExecucao" />
+                                  <OutArgument x:TypeArguments="x:Boolean" x:Key="out_erro" />
+                                  <OutArgument x:TypeArguments="x:String" x:Key="out_pastaComprovantes" />
+                                  <InArgument x:TypeArguments="x:String" x:Key="in_nomeArquivoComprovantes">[in_nomeArquivoComprovantes]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="in_pastaDestino">[in_pastaDestino]</InArgument>
+                                  <InArgument x:TypeArguments="s:DateTime" x:Key="in_dataFim">[in_dataFim]</InArgument>
+                                  <InArgument x:TypeArguments="s:DateTime" x:Key="in_dataInicio">[in_dataInicio]</InArgument>
+                                </ui:InvokeWorkflowFile.Arguments>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:InvokeWorkflowFile>
+                              <ui:Return DisplayName="Volta" sap:VirtualizedContainerService.HintSize="518,48" sap2010:WorkflowViewState.IdRef="Return_3" />
                             </Sequence>
                           </If.Then>
                           <If.Else>
-                            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="484,90" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="552,90" sap2010:WorkflowViewState.IdRef="Sequence_36">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1015,63 +1101,7 @@
                           </If.Else>
                         </If>
                       </Sequence>
-                      <Assign sap2010:Annotation.AnnotationText="Define a data entre o início e o fim, pegando a diferença de dias entre elas e somando à data de inicio." DisplayName="Define a data do Meio" sap:VirtualizedContainerService.HintSize="520,156" sap2010:WorkflowViewState.IdRef="Assign_1">
-                        <Assign.To>
-                          <OutArgument x:TypeArguments="s:DateTime">[dataMeio]</OutArgument>
-                        </Assign.To>
-                        <Assign.Value>
-                          <InArgument x:TypeArguments="s:DateTime">[in_dataInicio.AddDays((in_dataFim - in_dataInicio).Days / 2)]</InArgument>
-                        </Assign.Value>
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                      </Assign>
-                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Essa parte é responsável por passar o primeiro período da divisão, do início até a metade" DisplayName="Passa o primeiro Período para consulta" sap:VirtualizedContainerService.HintSize="520,219" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="SistemaS\func_consultaComprovantes.xaml">
-                        <ui:InvokeWorkflowFile.Arguments>
-                          <InOutArgument x:TypeArguments="x:Int32" x:Key="inOut_contadorDownload">[inOut_contadorDownload]</InOutArgument>
-                          <InArgument x:TypeArguments="x:Boolean" x:Key="in_primeiraExecucao" />
-                          <OutArgument x:TypeArguments="x:Boolean" x:Key="out_erro" />
-                          <OutArgument x:TypeArguments="x:String" x:Key="out_pastaComprovantes" />
-                          <InArgument x:TypeArguments="x:String" x:Key="in_nomeArquivoComprovantes">[in_nomeArquivoComprovantes]</InArgument>
-                          <InOutArgument x:TypeArguments="x:String" x:Key="in_pastaDestino">[in_pastaDestino]</InOutArgument>
-                          <InArgument x:TypeArguments="s:DateTime" x:Key="in_dataFim">[dataMeio]</InArgument>
-                          <InArgument x:TypeArguments="s:DateTime" x:Key="in_dataInicio">[in_dataInicio]</InArgument>
-                        </ui:InvokeWorkflowFile.Arguments>
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                      </ui:InvokeWorkflowFile>
-                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Essa parte é responsável por passar o segundo período da divisão, da metade +1 até o fim" DisplayName="Passa o segundo Período para consulta" sap:VirtualizedContainerService.HintSize="520,212" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="SistemaS\func_consultaComprovantes.xaml">
-                        <ui:InvokeWorkflowFile.Arguments>
-                          <InOutArgument x:TypeArguments="x:Int32" x:Key="inOut_contadorDownload">[inOut_contadorDownload]</InOutArgument>
-                          <InArgument x:TypeArguments="x:Boolean" x:Key="in_primeiraExecucao" />
-                          <OutArgument x:TypeArguments="x:Boolean" x:Key="out_erro" />
-                          <OutArgument x:TypeArguments="x:String" x:Key="out_pastaComprovantes" />
-                          <InArgument x:TypeArguments="x:String" x:Key="in_nomeArquivoComprovantes">[in_nomeArquivoComprovantes]</InArgument>
-                          <InOutArgument x:TypeArguments="x:String" x:Key="in_pastaDestino">[in_pastaDestino]</InOutArgument>
-                          <InArgument x:TypeArguments="s:DateTime" x:Key="in_dataFim">[in_dataFim]</InArgument>
-                          <InArgument x:TypeArguments="s:DateTime" x:Key="in_dataInicio">[dataMeio.AddDays(1)]</InArgument>
-                        </ui:InvokeWorkflowFile.Arguments>
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                      </ui:InvokeWorkflowFile>
-                    </Sequence>
-                  </uix:NCheckState.IfExists>
-                  <uix:NCheckState.IfNotExists>
-                    <Sequence DisplayName="Não passou de 50" sap:VirtualizedContainerService.HintSize="528,1298" sap2010:WorkflowViewState.IdRef="Sequence_14">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clica em Retornar" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="494,225" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Version="V4">
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clica em Retornar" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="588,225" sap2010:WorkflowViewState.IdRef="NClick_31" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Version="V4">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="bec83923-ed3a-4917-a04a-9c61220b8abe" ContentHash="8unjfuEvtkqpc_Uue9N8AQ" CvElementArea="697, 918, 78, 26" CvTextArea="709, 922, 55, 15" CvTextArgument="Retornar" CvType="Button" DesignTimeRectangle="699, 919, 75, 22" ElementType="Button" FullSelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl id='BtnRetornar' tag='INPUT' /&gt;" Guid="099ce7d9-1a99-4795-8ede-1975393c6ee8" InformativeScreenshot="0892b4503ae8eddc6a467487bae792c5.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/BD2f5Tk3Sk25WclZSnc_xQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                             <uix:TargetAnchorable.Anchors>
@@ -1092,92 +1122,31 @@
                           </uix:VerifyExecutionOptions>
                         </uix:NClick.VerifyOptions>
                       </uix:NClick>
-                      <uix:NCheckState DisplayName="Verfifica se pediu para Avaliar" EnableIfNotExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="494,754" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Version="V4">
-                        <uix:NCheckState.IfExists>
-                          <Sequence DisplayName="Pediu Para Avaliar" sap:VirtualizedContainerService.HintSize="450,505" sap2010:WorkflowViewState.IdRef="Sequence_22">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Cancela Avaliação" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_13" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Version="V4">
-                              <uix:NClick.Target>
-                                <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="e4011fc0-fdb8-4570-bcbf-90b7e11437d6" CvElementArea="1117, 321, 109, 51" CvTextArea="1137, 339, 66, 15" CvTextArgument="Cancelar" CvType="Button" DesignTimeRectangle="1120, 322, 104, 49" ElementType="Button" FullSelectorArgument="&lt;ctrl name='cav.receita.fazenda.gov.br diz' role='dialog' /&gt;&lt;ctrl name='Cancelar' role='push button' /&gt;" Guid="0858b445-95b7-4bc5-a8db-bde9721768c2" InformativeScreenshot="c83f284d747d0857e9a5b240a7dc6f51.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='eCAC - Centro Virtual de Atendimento - Google Chrome' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
-                                  <uix:TargetAnchorable.Anchors>
-                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                      <uix:Target DesignTimeRectangle="689, 322, 560, 74" FuzzySelectorArgument="&lt;ctrl name='cav.receita.fazenda.gov.br diz' role='dialog' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl automationid='' role='pane' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:fulltext='OK&amp;#xD;&amp;#xA;Cancelar' /&gt;" Guid="cfa2a7bb-2510-4c59-90eb-6295cf744af2" SearchSteps="FuzzySelector" />
-                                    </scg:List>
-                                  </uix:TargetAnchorable.Anchors>
-                                </uix:TargetAnchorable>
-                              </uix:NClick.Target>
-                              <uix:NClick.VerifyOptions>
-                                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                                  <uix:VerifyExecutionOptions.Retry>
-                                    <InArgument x:TypeArguments="x:Boolean" />
-                                  </uix:VerifyExecutionOptions.Retry>
-                                  <uix:VerifyExecutionOptions.Timeout>
-                                    <InArgument x:TypeArguments="x:Double" />
-                                  </uix:VerifyExecutionOptions.Timeout>
-                                </uix:VerifyExecutionOptions>
-                              </uix:NClick.VerifyOptions>
-                            </uix:NClick>
-                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clica em Retornar" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Version="V4">
-                              <uix:NClick.Target>
-                                <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="bec83923-ed3a-4917-a04a-9c61220b8abe" ContentHash="8unjfuEvtkqpc_Uue9N8AQ" CvElementArea="697, 918, 78, 26" CvTextArea="709, 922, 55, 15" CvTextArgument="Retornar" CvType="Button" DesignTimeRectangle="699, 919, 75, 22" ElementType="Button" FullSelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl id='BtnRetornar' tag='INPUT' /&gt;" Guid="099ce7d9-1a99-4795-8ede-1975393c6ee8" InformativeScreenshot="0892b4503ae8eddc6a467487bae792c5.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/BD2f5Tk3Sk25WclZSnc_xQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
-                                  <uix:TargetAnchorable.Anchors>
-                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                      <uix:Target DesignTimeRectangle="34, 919, 1870, 36" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl class='lineButtons' parentid='form1' tag='DIV' type='' aaname='        ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Retornar &amp;#xA;          &amp;#xA;     &amp;#xA;          &amp;#xA;    Exibir Comprovantes' /&gt;" Guid="35f7bafb-2776-41e6-bf10-9536481934f9" SearchSteps="FuzzySelector" />
-                                    </scg:List>
-                                  </uix:TargetAnchorable.Anchors>
-                                </uix:TargetAnchorable>
-                              </uix:NClick.Target>
-                              <uix:NClick.VerifyOptions>
-                                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                                  <uix:VerifyExecutionOptions.Retry>
-                                    <InArgument x:TypeArguments="x:Boolean" />
-                                  </uix:VerifyExecutionOptions.Retry>
-                                  <uix:VerifyExecutionOptions.Timeout>
-                                    <InArgument x:TypeArguments="x:Double" />
-                                  </uix:VerifyExecutionOptions.Timeout>
-                                </uix:VerifyExecutionOptions>
-                              </uix:NClick.VerifyOptions>
-                            </uix:NClick>
-                          </Sequence>
-                        </uix:NCheckState.IfExists>
-                        <uix:NCheckState.IfNotExists>
-                          <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="450,92" sap2010:WorkflowViewState.IdRef="Sequence_23">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                          </Sequence>
-                        </uix:NCheckState.IfNotExists>
-                        <uix:NCheckState.Target>
-                          <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="e4011fc0-fdb8-4570-bcbf-90b7e11437d6" ContentHash="88p9aByX-06_md4uA6XHyQ" CvTextArea="712, 182, 343, 18" CvTextArgument="Deseja realizar a avaliação do serviço realizado?" CvType="Text" DesignTimeRectangle="714, 177, 510, 26" ElementType="Text" FullSelectorArgument="&lt;ctrl name='cav.receita.fazenda.gov.br diz' role='dialog' /&gt;&lt;ctrl name='Deseja realizar a avaliação do serviço realizado? ' role='text' /&gt;" Guid="7e18a3a2-e442-4634-aaeb-404a9f6ebb14" InformativeScreenshot="c75fd3ca8bd99a2001cac1a97215804d.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/agsER26_-EK7cVQ1NGfltw" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='eCAC - Centro Virtual de Atendimento - Google Chrome' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
-                            <uix:TargetAnchorable.Anchors>
-                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                <uix:Target DesignTimeRectangle="689, 167, 560, 156" FuzzySelectorArgument="&lt;ctrl name='cav.receita.fazenda.gov.br diz' role='dialog' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl automationid='' role='pane' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:fulltext='Deseja realizar a avaliação do serviço realizado? Protocolo: PAGTOWEB.EMC.92b03330-8f58-408e-a659-9e9f7f1e880aCaso não queira ou já tenha realizado a avaliação, clique em Cancelar.' /&gt;" Guid="30b75dc8-121d-479e-b9f2-18c23a460b18" SearchSteps="FuzzySelector" />
-                              </scg:List>
-                            </uix:TargetAnchorable.Anchors>
-                          </uix:TargetAnchorable>
-                        </uix:NCheckState.Target>
+                      <Assign sap2010:Annotation.AnnotationText="Define a data entre o início e o fim, pegando a diferença de dias entre elas e somando à data de inicio." DisplayName="Define a data do Meio" sap:VirtualizedContainerService.HintSize="588,156" sap2010:WorkflowViewState.IdRef="Assign_1">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="s:DateTime">[dataMeio]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="s:DateTime">[in_dataInicio.Date.AddDays((in_dataFim.Date - in_dataInicio.Date).Days / 2)]</InArgument>
+                        </Assign.Value>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                      </uix:NCheckState>
-                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Envia para o fluxo responsável por fazer o download do arquivo.&#xA;&#xA;Necessário pois em cada consulta o arquivo vai mudar, pois é o mesmo link de acessi." DisplayName="Salva o PDF" sap:VirtualizedContainerService.HintSize="494,257" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="SistemaS\func_downloadArquivo.xaml">
+                      </Assign>
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Essa parte é responsável por passar o primeiro período da divisão, do início até a metade" DisplayName="Passa o primeiro Período para consulta" sap:VirtualizedContainerService.HintSize="588,219" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="SistemaS\func_consultaComprovantes.xaml">
                         <ui:InvokeWorkflowFile.Arguments>
-                          <InArgument x:TypeArguments="x:Int32" x:Key="in_contadorDownloadConsulta">[inOut_contadorDownload]</InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="in_nomeArquivoConsulta">[in_nomeArquivoComprovantes]</InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="in_pastaDestinoConsulta">[in_pastaDestino]</InArgument>
-                          <InArgument x:TypeArguments="s:DateTime" x:Key="in_dataFimConsulta">[in_dataFim]</InArgument>
-                          <InArgument x:TypeArguments="s:DateTime" x:Key="in_dataInicioConsulta">[in_dataInicio]</InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="in_nomeArquivoComprovantes">[in_nomeArquivoComprovantes + inOut_contadorDownload.ToString()]</InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="in_pastaDestino">[in_pastaDestino + "\comprovantes"]</InArgument>
+                          <InArgument x:TypeArguments="x:Double" x:Key="in_valorFinal" />
+                          <InArgument x:TypeArguments="x:Double" x:Key="in_valorInicial" />
+                          <InOutArgument x:TypeArguments="x:Int32" x:Key="inOut_contadorDownload">[inOut_contadorDownload]</InOutArgument>
+                          <InArgument x:TypeArguments="x:Boolean" x:Key="in_primeiraExecucao" />
+                          <OutArgument x:TypeArguments="x:Boolean" x:Key="out_erro" />
+                          <OutArgument x:TypeArguments="x:String" x:Key="out_pastaComprovantes" />
+                          <InArgument x:TypeArguments="x:String" x:Key="in_nomeArquivoComprovantes">[in_nomeArquivoComprovantes]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="in_pastaDestino">[in_pastaDestino]</InArgument>
+                          <InArgument x:TypeArguments="s:DateTime" x:Key="in_dataFim">[dataMeio]</InArgument>
+                          <InArgument x:TypeArguments="s:DateTime" x:Key="in_dataInicio">[in_dataInicio]</InArgument>
                         </ui:InvokeWorkflowFile.Arguments>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -1185,8 +1154,28 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:InvokeWorkflowFile>
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Essa parte é responsável por passar o segundo período da divisão, da metade +1 até o fim" DisplayName="Passa o segundo Período para consulta" sap:VirtualizedContainerService.HintSize="588,219" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="SistemaS\func_consultaComprovantes.xaml">
+                        <ui:InvokeWorkflowFile.Arguments>
+                          <InArgument x:TypeArguments="x:Double" x:Key="in_valorFinal" />
+                          <InArgument x:TypeArguments="x:Double" x:Key="in_valorInicial" />
+                          <InOutArgument x:TypeArguments="x:Int32" x:Key="inOut_contadorDownload">[inOut_contadorDownload]</InOutArgument>
+                          <InArgument x:TypeArguments="x:Boolean" x:Key="in_primeiraExecucao" />
+                          <OutArgument x:TypeArguments="x:Boolean" x:Key="out_erro" />
+                          <OutArgument x:TypeArguments="x:String" x:Key="out_pastaComprovantes" />
+                          <InArgument x:TypeArguments="x:String" x:Key="in_nomeArquivoComprovantes">[in_nomeArquivoComprovantes]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="in_pastaDestino">[in_pastaDestino]</InArgument>
+                          <InArgument x:TypeArguments="s:DateTime" x:Key="in_dataFim">[in_dataFim]</InArgument>
+                          <InArgument x:TypeArguments="s:DateTime" x:Key="in_dataInicio">[dataMeio.AddDays(1)]</InArgument>
+                        </ui:InvokeWorkflowFile.Arguments>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:InvokeWorkflowFile>
+                      <ui:Return sap:VirtualizedContainerService.HintSize="588,50" sap2010:WorkflowViewState.IdRef="Return_4" />
                     </Sequence>
-                  </uix:NCheckState.IfNotExists>
+                  </uix:NCheckState.IfExists>
                   <uix:NCheckState.Target>
                     <uix:TargetAnchorable CVScreenId="5f46d635-cb4e-4299-924b-ec63822584da" ContentHash="bpkgBcOI6UeSM3BJ-FkXmQ" DesignTimeRectangle="714, 177, 510, 26" ElementType="Text" FuzzySelectorArgument="&lt;ctrl name='cav.receita.fazenda.gov.br diz' role='dialog' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl role='text' automationid='' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' /&gt;" Guid="0efb7546-1f1a-470f-8ff6-024e0086728d" ImageBase64="" InformativeScreenshot="858c56e27de282a4a6571ff3a775cc41.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/sA-P25rKu0C6YXYAqh-QiQ" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='eCAC - Centro Virtual de Atendimento - Google Chrome' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                       <uix:TargetAnchorable.Anchors>
@@ -1203,6 +1192,130 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </uix:NCheckState>
+              </Sequence>
+              <Sequence DisplayName="Salva o PDF" sap:VirtualizedContainerService.HintSize="700,1323" sap2010:WorkflowViewState.IdRef="Sequence_53">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clica em Retornar" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="494,225" sap2010:WorkflowViewState.IdRef="NClick_28" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="bec83923-ed3a-4917-a04a-9c61220b8abe" ContentHash="8unjfuEvtkqpc_Uue9N8AQ" CvElementArea="697, 918, 78, 26" CvTextArea="709, 922, 55, 15" CvTextArgument="Retornar" CvType="Button" DesignTimeRectangle="699, 919, 75, 22" ElementType="Button" FullSelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl id='BtnRetornar' tag='INPUT' /&gt;" Guid="099ce7d9-1a99-4795-8ede-1975393c6ee8" InformativeScreenshot="0892b4503ae8eddc6a467487bae792c5.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/BD2f5Tk3Sk25WclZSnc_xQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target DesignTimeRectangle="34, 919, 1870, 36" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl class='lineButtons' parentid='form1' tag='DIV' type='' aaname='        ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Retornar &amp;#xA;          &amp;#xA;     &amp;#xA;          &amp;#xA;    Exibir Comprovantes' /&gt;" Guid="35f7bafb-2776-41e6-bf10-9536481934f9" SearchSteps="FuzzySelector" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <uix:NCheckState DisplayName="Verfifica se pediu para Avaliar" EnableIfNotExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="494,754" sap2010:WorkflowViewState.IdRef="NCheckState_9" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Version="V4">
+                  <uix:NCheckState.IfExists>
+                    <Sequence DisplayName="Pediu Para Avaliar" sap:VirtualizedContainerService.HintSize="450,505" sap2010:WorkflowViewState.IdRef="Sequence_54">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Cancela Avaliação" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_29" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="e4011fc0-fdb8-4570-bcbf-90b7e11437d6" CvElementArea="1117, 321, 109, 51" CvTextArea="1137, 339, 66, 15" CvTextArgument="Cancelar" CvType="Button" DesignTimeRectangle="1120, 322, 104, 49" ElementType="Button" FullSelectorArgument="&lt;ctrl name='cav.receita.fazenda.gov.br diz' role='dialog' /&gt;&lt;ctrl name='Cancelar' role='push button' /&gt;" Guid="0858b445-95b7-4bc5-a8db-bde9721768c2" InformativeScreenshot="c83f284d747d0857e9a5b240a7dc6f51.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='eCAC - Centro Virtual de Atendimento - Google Chrome' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target DesignTimeRectangle="689, 322, 560, 74" FuzzySelectorArgument="&lt;ctrl name='cav.receita.fazenda.gov.br diz' role='dialog' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl automationid='' role='pane' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:fulltext='OK&amp;#xD;&amp;#xA;Cancelar' /&gt;" Guid="cfa2a7bb-2510-4c59-90eb-6295cf744af2" SearchSteps="FuzzySelector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                        <uix:NClick.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NClick.VerifyOptions>
+                      </uix:NClick>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clica em Retornar" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_30" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="db1dbd93-e155-430a-b6af-f9bcdcd430cc" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="bec83923-ed3a-4917-a04a-9c61220b8abe" ContentHash="8unjfuEvtkqpc_Uue9N8AQ" CvElementArea="697, 918, 78, 26" CvTextArea="709, 922, 55, 15" CvTextArgument="Retornar" CvType="Button" DesignTimeRectangle="699, 919, 75, 22" ElementType="Button" FullSelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl id='BtnRetornar' tag='INPUT' /&gt;" Guid="099ce7d9-1a99-4795-8ede-1975393c6ee8" InformativeScreenshot="0892b4503ae8eddc6a467487bae792c5.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/BD2f5Tk3Sk25WclZSnc_xQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target DesignTimeRectangle="34, 919, 1870, 36" FuzzySelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl class='lineButtons' parentid='form1' tag='DIV' type='' aaname='        ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Retornar &amp;#xA;          &amp;#xA;     &amp;#xA;          &amp;#xA;    Exibir Comprovantes' /&gt;" Guid="35f7bafb-2776-41e6-bf10-9536481934f9" SearchSteps="FuzzySelector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                        <uix:NClick.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NClick.VerifyOptions>
+                      </uix:NClick>
+                    </Sequence>
+                  </uix:NCheckState.IfExists>
+                  <uix:NCheckState.IfNotExists>
+                    <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="450,92" sap2010:WorkflowViewState.IdRef="Sequence_55">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Sequence>
+                  </uix:NCheckState.IfNotExists>
+                  <uix:NCheckState.Target>
+                    <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" CVScreenId="e4011fc0-fdb8-4570-bcbf-90b7e11437d6" ContentHash="88p9aByX-06_md4uA6XHyQ" CvTextArea="712, 182, 343, 18" CvTextArgument="Deseja realizar a avaliação do serviço realizado?" CvType="Text" DesignTimeRectangle="714, 177, 510, 26" ElementType="Text" FullSelectorArgument="&lt;ctrl name='cav.receita.fazenda.gov.br diz' role='dialog' /&gt;&lt;ctrl name='Deseja realizar a avaliação do serviço realizado? ' role='text' /&gt;" Guid="7e18a3a2-e442-4634-aaeb-404a9f6ebb14" InformativeScreenshot="c75fd3ca8bd99a2001cac1a97215804d.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/agsER26_-EK7cVQ1NGfltw" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='eCAC - Centro Virtual de Atendimento - Google Chrome' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target DesignTimeRectangle="689, 167, 560, 156" FuzzySelectorArgument="&lt;ctrl name='cav.receita.fazenda.gov.br diz' role='dialog' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl automationid='' role='pane' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:fulltext='Deseja realizar a avaliação do serviço realizado? Protocolo: PAGTOWEB.EMC.92b03330-8f58-408e-a659-9e9f7f1e880aCaso não queira ou já tenha realizado a avaliação, clique em Cancelar.' /&gt;" Guid="30b75dc8-121d-479e-b9f2-18c23a460b18" SearchSteps="FuzzySelector" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NCheckState.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NCheckState>
+                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Envia para o fluxo responsável por fazer o download do arquivo.&#xA;&#xA;Necessário pois em cada consulta o arquivo vai mudar, pois é o mesmo link de acessi." DisplayName="Salva o PDF" sap:VirtualizedContainerService.HintSize="494,257" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_14" UnSafe="False" WorkflowFileName="SistemaS\func_downloadArquivo.xaml">
+                  <ui:InvokeWorkflowFile.Arguments>
+                    <InArgument x:TypeArguments="x:Double" x:Key="in_valorFinal">[in_valorFinal]</InArgument>
+                    <InArgument x:TypeArguments="x:Double" x:Key="in_valorInicial">[in_valorInicial]</InArgument>
+                    <InArgument x:TypeArguments="x:Int32" x:Key="in_contadorDownloadConsulta">[inOut_contadorDownload]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_nomeArquivoConsulta">[in_nomeArquivoComprovantes]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_pastaDestinoConsulta">[in_pastaDestino]</InArgument>
+                    <InArgument x:TypeArguments="s:DateTime" x:Key="in_dataFimConsulta">[in_dataFim]</InArgument>
+                    <InArgument x:TypeArguments="s:DateTime" x:Key="in_dataInicioConsulta">[in_dataInicio]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_nomeArquivoComprovantes">[in_nomeArquivoComprovantes + inOut_contadorDownload.ToString()]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_pastaDestino">[in_pastaDestino + "\comprovantes"]</InArgument>
+                  </ui:InvokeWorkflowFile.Arguments>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:InvokeWorkflowFile>
               </Sequence>
             </Sequence>
           </ActivityAction>
