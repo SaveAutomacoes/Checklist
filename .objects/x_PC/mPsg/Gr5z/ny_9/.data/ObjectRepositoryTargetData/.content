@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="TLE39TisDEKo10Tcd_Fcqw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="eprocesso.cav.receita.fazenda.gov.br/eprocessocontribuinte/tela_inicial" DesignTimeRectangle="206, 486, 236, 46" ElementType="Text" FullSelectorArgument="&lt;webctrl class='texto-link-grande' tag='SPAN' aaname=' Processos em que sou o Interessado Principal ' /&gt;" Guid="94c3f971-f5d6-467a-9905-e26081b89943" ScopeSelectorArgument="&lt;html app='chrome.exe' title='e-Processo Contribuinte' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="76e759e7901176ff5e933b198464d6c2.png" xmlns="">08oD7XE0sX0iGFs5I6mJJ2A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

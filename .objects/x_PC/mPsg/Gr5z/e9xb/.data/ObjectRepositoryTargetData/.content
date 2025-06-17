@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="7kG-y1cSGEmAaaJ4zHcJ6A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="eprocesso.cav.receita.fazenda.gov.br/eprocessocontribuinte/processos_consultar" DesignTimeRectangle="145, 393, 164, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Arquivados e Inativos' class='ui-tabview-title' tag='SPAN' /&gt;" Guid="375cc46f-64fa-4fa3-acbb-fd00f57e94c6" ScopeSelectorArgument="&lt;html app='chrome.exe' title='e-Processo Contribuinte' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="33fc1362ffed885b4dcee6b30170151c.png" xmlns="">0b5Ychtt2DUWtBOC0GHypjA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome e-Processo Contribuinte",
+  "Type": "Screen",
+  "Id": "Gr5zH-I5fkmi7vRugTh89w",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/Gr5zH-I5fkmi7vRugTh89w",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/mPsgHCSyjUGNS2ODyzCj3g",
+  "Created": "2025-06-17T19:50:49.717571Z",
+  "Updated": "2025-06-17T19:50:49.717571Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
