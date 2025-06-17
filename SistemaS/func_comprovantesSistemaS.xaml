@@ -155,7 +155,7 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="func_comprovantesSistemaS" sap:VirtualizedContainerService.HintSize="1177.2,1751.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="func_comprovantesSistemaS" sap:VirtualizedContainerService.HintSize="2203,1737" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="pastaComprovantes" />
     </Sequence.Variables>
@@ -164,13 +164,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Fluxo Principal" sap:VirtualizedContainerService.HintSize="587.2,1728" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Fluxo Principal" sap:VirtualizedContainerService.HintSize="588,1714" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap2010:Annotation.AnnotationText="Parte responsável por toda a interação com a Web e Explorador de Arquivos. " DisplayName="Abre o ECAC e baixa o Arquivo" sap:VirtualizedContainerService.HintSize="553.6,1497.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <Sequence sap2010:Annotation.AnnotationText="Parte responsável por toda a interação com a Web e Explorador de Arquivos. " DisplayName="Abre o ECAC e baixa o Arquivo" sap:VirtualizedContainerService.HintSize="554,1484" sap2010:WorkflowViewState.IdRef="Sequence_4">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -178,20 +178,20 @@
             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="eCAC - Comprovante de Pagamentos" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="518.4,1374.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="0e34caf3-c659-4fe0-a412-29bdf9aa3deb" UserDataFolderMode="DefaultFolder" Version="V2">
+        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="eCAC - Comprovante de Pagamentos" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="520,1361" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="0e34caf3-c659-4fe0-a412-29bdf9aa3deb" UserDataFolderMode="DefaultFolder" Version="V2">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Dentro do Ecac" sap:VirtualizedContainerService.HintSize="484.8,1134.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <Sequence DisplayName="Dentro do Ecac" sap:VirtualizedContainerService.HintSize="486,1121" sap2010:WorkflowViewState.IdRef="Sequence_5">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NCheckState DisplayName="Verifica se Precisa Acessar o GOV" EnableIfNotExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="451.2,56.8" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="0e34caf3-c659-4fe0-a412-29bdf9aa3deb" Version="V4">
+                <uix:NCheckState DisplayName="Verifica se Precisa Acessar o GOV" EnableIfNotExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="0e34caf3-c659-4fe0-a412-29bdf9aa3deb" Version="V4">
                   <uix:NCheckState.IfExists>
                     <Sequence DisplayName="Precisa Acessar o GOV" sap:VirtualizedContainerService.HintSize="580,4572" sap2010:WorkflowViewState.IdRef="Sequence_6">
                       <sap:WorkflowViewStateService.ViewState>
@@ -557,7 +557,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </uix:NCheckState>
-                <Sequence sap2010:Annotation.AnnotationText="Se tiver como fazer isso via URL seria melhor" DisplayName="Navega Até a página de Pagamentos" sap:VirtualizedContainerService.HintSize="451.2,88" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                <Sequence sap2010:Annotation.AnnotationText="Se tiver como fazer isso via URL seria melhor" DisplayName="Navega Até a página de Pagamentos" sap:VirtualizedContainerService.HintSize="452,88" sap2010:WorkflowViewState.IdRef="Sequence_27">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -673,7 +673,7 @@
                     </uix:NClick.VerifyOptions>
                   </uix:NClick>
                 </Sequence>
-                <ui:CommentOut sap2010:Annotation.AnnotationText="Essas etapas foram unificadas no fluxo &quot;func_consultaComprovantes&quot;.&#xA;&#xA;Antes disso estavam funcionando, só não funcionaram mais quando tem mais de 50 comprovantes." DisplayName="[DESATIVADO] Funções Unificadas" sap:VirtualizedContainerService.HintSize="451.2,228.8" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+                <ui:CommentOut sap2010:Annotation.AnnotationText="Essas etapas foram unificadas no fluxo &quot;func_consultaComprovantes&quot;.&#xA;&#xA;Antes disso estavam funcionando, só não funcionaram mais quando tem mais de 50 comprovantes." DisplayName="[DESATIVADO] Funções Unificadas" sap:VirtualizedContainerService.HintSize="452,219" sap2010:WorkflowViewState.IdRef="CommentOut_4">
                   <ui:CommentOut.Body>
                     <Sequence DisplayName="Atividades Ignoradas" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_52">
                       <sap:WorkflowViewStateService.ViewState>
@@ -1136,7 +1136,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:CommentOut>
-                <Sequence sap2010:Annotation.AnnotationText="Envia para um fluxo que faz a consulta, se necessário divide o período e salva todos os comprovantes emitidos em uma pasta chamada &quot;comprovantes&quot;, que é criada dentro da função.&#xA;&#xA;Retorna o caminho da pasta onde estão os arquivos para que seja feia a junção em um único." DisplayName="Faz a consulta e o download dos comprovantes" sap:VirtualizedContainerService.HintSize="451.2,699.2" sap2010:WorkflowViewState.IdRef="Sequence_53">
+                <Sequence sap2010:Annotation.AnnotationText="Envia para um fluxo que faz a consulta, se necessário divide o período e salva todos os comprovantes emitidos em uma pasta chamada &quot;comprovantes&quot;, que é criada dentro da função.&#xA;&#xA;Retorna o caminho da pasta onde estão os arquivos para que seja feia a junção em um único." DisplayName="Faz a consulta e o download dos comprovantes" sap:VirtualizedContainerService.HintSize="452,695" sap2010:WorkflowViewState.IdRef="Sequence_53">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:Boolean" Name="erroConsultaComprovante" />
                   </Sequence.Variables>
@@ -1147,7 +1147,7 @@
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="func_consultaComprovantes - Invoke Workflow File (func_consultaComprovantes.xaml)" sap:VirtualizedContainerService.HintSize="417.6,176" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="SistemaS\func_consultaComprovantes.xaml">
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="func_consultaComprovantes - Invoke Workflow File (func_consultaComprovantes.xaml)" sap:VirtualizedContainerService.HintSize="418,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="SistemaS\func_consultaComprovantes.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <InArgument x:TypeArguments="x:Double" x:Key="in_valorFinal" />
                       <InArgument x:TypeArguments="x:Double" x:Key="in_valorInicial" />
@@ -1161,7 +1161,7 @@
                       <InArgument x:TypeArguments="s:DateTime" x:Key="in_dataInicio">[new DateTime(2020, 6, 1, 0, 0, 0)]</InArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
-                  <If Condition="[erroConsultaComprovante = True]" DisplayName="Verifica se deu erro" sap:VirtualizedContainerService.HintSize="417.6,328.8" sap2010:WorkflowViewState.IdRef="If_4">
+                  <If Condition="[erroConsultaComprovante = True]" DisplayName="Verifica se deu erro" sap:VirtualizedContainerService.HintSize="418,329" sap2010:WorkflowViewState.IdRef="If_4">
                     <If.Then>
                       <Sequence DisplayName="Deu erro" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="Sequence_57">
                         <sap:WorkflowViewStateService.ViewState>

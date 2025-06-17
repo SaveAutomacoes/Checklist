@@ -281,13 +281,13 @@
       <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="func_comprovantesSistemaS" sap:VirtualizedContainerService.HintSize="2203,3829" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="func_comprovantesSistemaS" sap:VirtualizedContainerService.HintSize="768,3837" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Fluxo Principal" sap:VirtualizedContainerService.HintSize="768,3806" sap2010:WorkflowViewState.IdRef="Sequence_92">
+    <Sequence DisplayName="Fluxo Principal" sap:VirtualizedContainerService.HintSize="768,3814" sap2010:WorkflowViewState.IdRef="Sequence_92">
       <Sequence.Variables>
         <Variable x:TypeArguments="sd:DataTable" Name="df_pgmtDCTFWeb" />
       </Sequence.Variables>
@@ -296,7 +296,7 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap2010:Annotation.AnnotationText="Parte responsável por toda a interação com a Web" DisplayName="Abre o ECAC e Pega os Pagamentos" sap:VirtualizedContainerService.HintSize="734,3561" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <Sequence sap2010:Annotation.AnnotationText="Parte responsável por toda a interação com a Web" DisplayName="Abre o ECAC e Pega os Pagamentos" sap:VirtualizedContainerService.HintSize="734,3601" sap2010:WorkflowViewState.IdRef="Sequence_4">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -304,7 +304,7 @@
             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="eCAC - Comprovante de Pagamentos" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="700,3438" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="0e34caf3-c659-4fe0-a412-29bdf9aa3deb" UserDataFolderMode="DefaultFolder" Version="V2">
+        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="eCAC - Comprovante de Pagamentos" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="700,3478" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="0e34caf3-c659-4fe0-a412-29bdf9aa3deb" UserDataFolderMode="DefaultFolder" Version="V2">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
@@ -907,16 +907,16 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Sequence DisplayName="Passa pelo Captcha" sap:VirtualizedContainerService.HintSize="530,57" sap2010:WorkflowViewState.IdRef="Sequence_111">
+                          <Sequence DisplayName="Passa pelo Captcha" sap:VirtualizedContainerService.HintSize="528,382" sap2010:WorkflowViewState.IdRef="Sequence_111">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <uix:NCheckState DisplayName="Verifica se tem Captcha" EnableIfNotExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NCheckState_11" ScopeIdentifier="5d7cab89-52a1-4f60-90c1-cdf9576e279b" Version="V4">
+                            <uix:NCheckState DisplayName="Verifica se tem Captcha" EnableIfNotExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="494,57" sap2010:WorkflowViewState.IdRef="NCheckState_11" ScopeIdentifier="5d7cab89-52a1-4f60-90c1-cdf9576e279b" Version="V4">
                               <uix:NCheckState.IfExists>
-                                <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="450,262" sap2010:WorkflowViewState.IdRef="Sequence_112">
+                                <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="450,264" sap2010:WorkflowViewState.IdRef="Sequence_112">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -972,27 +972,57 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </uix:NCheckState>
-                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clica em Prosseguir" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="NClick_29" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5d7cab89-52a1-4f60-90c1-cdf9576e279b" Version="V4">
-                              <uix:NClick.Target>
+                            <uix:NCheckState DisplayName="Verifica se tem botão Prosseguir" EnableIfNotExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="494,265" sap2010:WorkflowViewState.IdRef="NCheckState_14" ScopeIdentifier="5d7cab89-52a1-4f60-90c1-cdf9576e279b" Version="V4">
+                              <uix:NCheckState.IfExists>
+                                <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_133">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clica em Prosseguir" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_29" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5d7cab89-52a1-4f60-90c1-cdf9576e279b" Version="V4">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" ContentHash="iQ-ZO07OKESY22vrFHrvTA" DesignTimeRectangle="28, 631, 100, 35" ElementType="Text" FullSelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl tag='A' visibleinnertext='Prosseguir' /&gt;" Guid="001a3e80-9684-40da-b66a-05bb9df72ed8" InformativeScreenshot="b36505b4adde99ddcd848aab392d6319.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/JAP1pgqY6kayt2DBPM9joA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                                    </uix:NClick.Target>
+                                    <uix:NClick.VerifyOptions>
+                                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                        <uix:VerifyExecutionOptions.Retry>
+                                          <InArgument x:TypeArguments="x:Boolean" />
+                                        </uix:VerifyExecutionOptions.Retry>
+                                        <uix:VerifyExecutionOptions.Timeout>
+                                          <InArgument x:TypeArguments="x:Double" />
+                                        </uix:VerifyExecutionOptions.Timeout>
+                                      </uix:VerifyExecutionOptions>
+                                    </uix:NClick.VerifyOptions>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </uix:NClick>
+                                </Sequence>
+                              </uix:NCheckState.IfExists>
+                              <uix:NCheckState.IfNotExists>
+                                <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="450,92" sap2010:WorkflowViewState.IdRef="Sequence_134">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Sequence>
+                              </uix:NCheckState.IfNotExists>
+                              <uix:NCheckState.Target>
                                 <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac/Aplicacao.aspx" ContentHash="iQ-ZO07OKESY22vrFHrvTA" DesignTimeRectangle="28, 631, 100, 35" ElementType="Text" FullSelectorArgument="&lt;webctrl id='frmApp' tag='IFRAME' /&gt;&lt;webctrl tag='A' visibleinnertext='Prosseguir' /&gt;" Guid="001a3e80-9684-40da-b66a-05bb9df72ed8" InformativeScreenshot="b36505b4adde99ddcd848aab392d6319.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/JAP1pgqY6kayt2DBPM9joA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
-                              </uix:NClick.Target>
-                              <uix:NClick.VerifyOptions>
-                                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                                  <uix:VerifyExecutionOptions.Retry>
-                                    <InArgument x:TypeArguments="x:Boolean" />
-                                  </uix:VerifyExecutionOptions.Retry>
-                                  <uix:VerifyExecutionOptions.Timeout>
-                                    <InArgument x:TypeArguments="x:Double" />
-                                  </uix:VerifyExecutionOptions.Timeout>
-                                </uix:VerifyExecutionOptions>
-                              </uix:NClick.VerifyOptions>
+                              </uix:NCheckState.Target>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                            </uix:NClick>
+                            </uix:NCheckState>
                           </Sequence>
                           <Sequence DisplayName="Define os Campos" sap:VirtualizedContainerService.HintSize="530,57" sap2010:WorkflowViewState.IdRef="Sequence_116">
                             <sap:WorkflowViewStateService.ViewState>
