@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Verifica se tem Data de Apuração",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "AKqBU7ZT50OPJIV5d4-NIw",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/AKqBU7ZT50OPJIV5d4-NIw",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/FHsgyf-nF0eIDPvP_dcdEg",
+  "Created": "2025-06-17T19:27:44.2355893Z",
+  "Updated": "2025-06-17T19:27:44.2355893Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

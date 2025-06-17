@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="_NLHKJXnhkG0l1z6VwQYOQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Default.aspx" DesignTimeRectangle="1449, 576, 412, 27" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Data de Arrecadação' tag='LABEL' /&gt;&lt;nav up='1' /&gt;&lt;webctrl tag='P' /&gt;" Guid="e2fe10d8-3665-4c8a-b40d-64251a709865" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Consulta Processamento / Relacionados' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="8ed3004781fd1e66417fc8efc8ee190c.png" xmlns="">0klaGpytq00ql2DpAeB86ng</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
