@@ -149,6 +149,9 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
       <AssemblyReference>Microsoft.Office.Interop.Word</AssemblyReference>
       <AssemblyReference>MimeDetective</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="func_consultaComprovantes" sap:VirtualizedContainerService.HintSize="2203,5791" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -820,6 +823,7 @@
                         <Sequence.Variables>
                           <Variable x:TypeArguments="x:Double" Name="valorFinal" />
                           <Variable x:TypeArguments="x:Double" Name="valorInicial" />
+                          <Variable x:TypeArguments="scg:IList(x:Double)" Name="list_valoresPagamentos" />
                         </Sequence.Variables>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -842,7 +846,6 @@
                               <Sequence DisplayName="Captura o Maior e o Menor Valor" sap:VirtualizedContainerService.HintSize="518,679" sap2010:WorkflowViewState.IdRef="Sequence_37">
                                 <Sequence.Variables>
                                   <Variable x:TypeArguments="sd:DataTable" Name="dfPagamentos" />
-                                  <Variable x:TypeArguments="scg:IList(x:Double)" Name="list_valoresPagamentos" />
                                 </Sequence.Variables>
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -1037,12 +1040,12 @@
                                   </Assign.Value>
                                 </Assign>
                               </Sequence>
-                              <Assign DisplayName="Define o Valor do Meio" sap:VirtualizedContainerService.HintSize="518,114" sap2010:WorkflowViewState.IdRef="Assign_12">
+                              <Assign DisplayName="Define o Valor do Meio" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_12">
                                 <Assign.To>
                                   <OutArgument x:TypeArguments="x:Double">[valorMeio]</OutArgument>
                                 </Assign.To>
                                 <Assign.Value>
-                                  <InArgument x:TypeArguments="x:Double">[(valorInicial + valorFinal) / 2]</InArgument>
+                                  <InArgument x:TypeArguments="x:Double">[list_valoresPagamentos.Sum() / list_valoresPagamentos.Count()]</InArgument>
                                 </Assign.Value>
                               </Assign>
                               <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Passa a primeira metade dos valores" DisplayName="Passa o primeiro Período para consulta" sap:VirtualizedContainerService.HintSize="518,208" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" UnSafe="False" WorkflowFileName="SistemaS\func_consultaComprovantes.xaml">
