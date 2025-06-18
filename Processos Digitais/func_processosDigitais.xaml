@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="func_comprovantesSistemaS" this:func_comprovantesSistemaS.in_cnpjFormatado="05496198000160" this:func_comprovantesSistemaS.in_certificado="SAVE" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="func_comprovantesSistemaS" this:func_comprovantesSistemaS.in_cnpjFormatado="05496198000160" this:func_comprovantesSistemaS.in_certificado="SAVE" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_pastaDestino" Type="InOutArgument(x:String)">
       <x:Property.Attributes>
@@ -74,6 +74,9 @@
       <x:String>GlobalVariablesNamespace</x:String>
       <x:String>GlobalConstantsNamespace</x:String>
       <x:String>UiPath.Activities.System.Text</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -146,9 +149,11 @@
       <AssemblyReference>System.Linq.Parallel</AssemblyReference>
       <AssemblyReference>System.Collections.Immutable</AssemblyReference>
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="func_comprovantesSistemaS" sap:VirtualizedContainerService.HintSize="2203,1577" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="func_comprovantesSistemaS" sap:VirtualizedContainerService.HintSize="2203,2149" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="pastaProcessos" />
     </Sequence.Variables>
@@ -157,7 +162,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap2010:Annotation.AnnotationText="Nesta pasta ficarão todos os processos baixados.&#xA;Se não houverem processos ou não for possível acessar, será adicionada uma nota .txt explicando o que ocorreu." DisplayName="Define e Cria a Pasta para os Processos" sap:VirtualizedContainerService.HintSize="586,114" sap2010:WorkflowViewState.IdRef="Sequence_61">
+    <Sequence sap2010:Annotation.AnnotationText="Nesta pasta ficarão todos os processos baixados.&#xA;Se não houverem processos ou não for possível acessar, será adicionada uma nota .txt explicando o que ocorreu." DisplayName="Define e Cria a Pasta para os Processos" sap:VirtualizedContainerService.HintSize="630,114" sap2010:WorkflowViewState.IdRef="Sequence_61">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -175,7 +180,7 @@
       </Assign>
       <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Cria a Pasta" sap:VirtualizedContainerService.HintSize="434,103" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[pastaProcessos]" />
     </Sequence>
-    <Sequence sap2010:Annotation.AnnotationText="Parte responsável por toda a interação com a Web e Explorador de Arquivos. " DisplayName="Abre o ECAC e baixa os arquivos" sap:VirtualizedContainerService.HintSize="586,1440" sap2010:WorkflowViewState.IdRef="Sequence_63">
+    <Sequence sap2010:Annotation.AnnotationText="Parte responsável por toda a interação com a Web e Explorador de Arquivos. " DisplayName="Abre o ECAC e baixa os arquivos" sap:VirtualizedContainerService.HintSize="630,2012" sap2010:WorkflowViewState.IdRef="Sequence_63">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -183,20 +188,20 @@
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Navega até a página de Processoss" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="552,449" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="0e34caf3-c659-4fe0-a412-29bdf9aa3deb" UserDataFolderMode="DefaultFolder" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Navega até a página de Processoss" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="596,1021" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="0e34caf3-c659-4fe0-a412-29bdf9aa3deb" UserDataFolderMode="DefaultFolder" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Dentro do Ecac" sap:VirtualizedContainerService.HintSize="484,200" sap2010:WorkflowViewState.IdRef="Sequence_99">
+            <Sequence DisplayName="Dentro do Ecac" sap:VirtualizedContainerService.HintSize="562,772" sap2010:WorkflowViewState.IdRef="Sequence_99">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NCheckState DisplayName="Verifica se Precisa Acessar o GOV" EnableIfNotExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="NCheckState_11" ScopeIdentifier="0e34caf3-c659-4fe0-a412-29bdf9aa3deb" Version="V4">
+              <uix:NCheckState DisplayName="Verifica se Precisa Acessar o GOV" EnableIfNotExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="528,57" sap2010:WorkflowViewState.IdRef="NCheckState_11" ScopeIdentifier="0e34caf3-c659-4fe0-a412-29bdf9aa3deb" Version="V4">
                 <uix:NCheckState.IfExists>
                   <Sequence DisplayName="Precisa Acessar o GOV" sap:VirtualizedContainerService.HintSize="580,4570" sap2010:WorkflowViewState.IdRef="Sequence_75">
                     <sap:WorkflowViewStateService.ViewState>
@@ -562,15 +567,15 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NCheckState>
-              <Sequence sap2010:Annotation.AnnotationText="Se tiver como fazer isso via URL seria melhor" DisplayName="Navega Até a página de Processos" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_64">
+              <Sequence sap2010:Annotation.AnnotationText="Se tiver como fazer isso via URL seria melhor" DisplayName="Navega Até a página de Processos" sap:VirtualizedContainerService.HintSize="528,653" sap2010:WorkflowViewState.IdRef="Sequence_64">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Volta para a Home" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NClick_43" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0e34caf3-c659-4fe0-a412-29bdf9aa3deb" Version="V4">
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Volta para a Home" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="494,57" sap2010:WorkflowViewState.IdRef="NClick_43" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0e34caf3-c659-4fe0-a412-29bdf9aa3deb" Version="V4">
                   <uix:NClick.Target>
                     <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac/Default.aspx" CVScreenId="b3495ec2-cf94-4635-a71e-67375c9e334e" ContentHash="e6IKVyqrjk2LINUoK5jz9A" CvElementArea="213, 323, 36, 36" CvType="Icon" DesignTimeRectangle="215, 323, 33, 35" ElementType="Text" FullSelectorArgument="&lt;webctrl id='linkHome' tag='A' /&gt;" Guid="5c40d4d4-94ab-4d17-9a8f-c8589b5b6c1b" ImageBase64="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" InformativeScreenshot="b1b67d2649dc4741bffcde7a9a7a8c3b.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/z_yd4rVpbk6tqOS43r80pQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                       <uix:TargetAnchorable.Anchors>
@@ -597,7 +602,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </uix:NClick>
-                <uix:NCheckState DisplayName="Verifica se possui a aba de Legislação e Processo" EnableIfExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NCheckState_12" ScopeIdentifier="0e34caf3-c659-4fe0-a412-29bdf9aa3deb" Version="V4">
+                <uix:NCheckState DisplayName="Verifica se possui a aba de Legislação e Processo" EnableIfExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="494,314" sap2010:WorkflowViewState.IdRef="NCheckState_12" ScopeIdentifier="0e34caf3-c659-4fe0-a412-29bdf9aa3deb" Version="V4">
                   <uix:NCheckState.IfExists>
                     <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="450,92" sap2010:WorkflowViewState.IdRef="Sequence_77">
                       <sap:WorkflowViewStateService.ViewState>
@@ -608,10 +613,11 @@
                     </Sequence>
                   </uix:NCheckState.IfExists>
                   <uix:NCheckState.IfNotExists>
-                    <Sequence DisplayName="Não possui aba de pagamentos" sap:VirtualizedContainerService.HintSize="468,391" sap2010:WorkflowViewState.IdRef="Sequence_78">
+                    <Sequence DisplayName="Não possui aba de pagamentos" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_78">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_14">
@@ -631,12 +637,12 @@
                   </uix:NCheckState.Target>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </uix:NCheckState>
-                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clica em Legislação e Processo" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NClick_32" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0e34caf3-c659-4fe0-a412-29bdf9aa3deb" Version="V4">
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clica em Legislação e Processo" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="494,57" sap2010:WorkflowViewState.IdRef="NClick_32" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0e34caf3-c659-4fe0-a412-29bdf9aa3deb" Version="V4">
                   <uix:NClick.Target>
                     <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac/Default.aspx" ContentHash="bqjbn-Uxo0C2jrxR3WLzKg" DesignTimeRectangle="1339, 419, 186, 29" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='btn295' tag='A' /&gt;" Guid="2bd28ee6-dd9d-46ae-bec0-aafb7ee20299" InformativeScreenshot="4761062191cf769500972b1e47f9f46c.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/nKFhS4k1V02MbCy3hjhozw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
                   </uix:NClick.Target>
@@ -647,7 +653,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </uix:NClick>
-                <uix:NCheckState DisplayName="Verifica se possui a aba de Processos Digitais" EnableIfExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NCheckState_13" ScopeIdentifier="0e34caf3-c659-4fe0-a412-29bdf9aa3deb" Version="V4">
+                <uix:NCheckState DisplayName="Verifica se possui a aba de Processos Digitais" EnableIfExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="494,57" sap2010:WorkflowViewState.IdRef="NCheckState_13" ScopeIdentifier="0e34caf3-c659-4fe0-a412-29bdf9aa3deb" Version="V4">
                   <uix:NCheckState.IfExists>
                     <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="450,92" sap2010:WorkflowViewState.IdRef="Sequence_79">
                       <sap:WorkflowViewStateService.ViewState>
@@ -686,7 +692,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </uix:NCheckState>
-                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clica em Processo Digitais" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,50" sap2010:WorkflowViewState.IdRef="NClick_33" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0e34caf3-c659-4fe0-a412-29bdf9aa3deb" Version="V4">
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clica em Processo Digitais" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="494,50" sap2010:WorkflowViewState.IdRef="NClick_33" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0e34caf3-c659-4fe0-a412-29bdf9aa3deb" Version="V4">
                   <uix:NClick.Target>
                     <uix:TargetAnchorable BrowserURL="cav.receita.fazenda.gov.br/ecac/Default.aspx" ContentHash="5hdjLpf7MUSwrcMtawY-vQ" DesignTimeRectangle="316, 597, 176, 14" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='containerServicos295' tag='A' /&gt;" Guid="c3266567-a13c-477b-9d93-d3720473a1ae" InformativeScreenshot="38cb428084ffe041da03347d811f8bf5.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/XpV4peHQmkapwYA3IbpovA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eCAC - Centro Virtual de Atendimento' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
                   </uix:NClick.Target>
@@ -711,7 +717,10 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </uix:NApplicationCard>
-      <Sequence DisplayName="Navega pela página de Processos" sap:VirtualizedContainerService.HintSize="552,877" sap2010:WorkflowViewState.IdRef="Sequence_100">
+      <Sequence DisplayName="Navega pela página de Processos" sap:VirtualizedContainerService.HintSize="596,877" sap2010:WorkflowViewState.IdRef="Sequence_100">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="sd:DataTable" Name="dfProcessosColetados" />
+        </Sequence.Variables>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -846,7 +855,7 @@
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NClick>
                 </Sequence>
-                <Sequence sap2010:Annotation.AnnotationText="Filtra o tipo Outros Tributário&#xA;&#xA;Ideia: Extrai uma tabela e interage com cada item da tabela.&#xA;O click estará vinculado à Variável.&#xA;Tipo o que tinha para achar PERDCOMP" DisplayName="Filtra os Processos a Serem Consultados - Fazer" sap:VirtualizedContainerService.HintSize="450,144" sap2010:WorkflowViewState.IdRef="Sequence_108">
+                <Sequence sap2010:Annotation.AnnotationText="Faz a extração de todas as colunas, conforme aparece no portal.&#xD;&#xA;&#xD;&#xA;Filtra apenas as que o Tipo do Processo contém &quot;OUTROS TRIBUTÁRIO&quot;&#xD;&#xA;&#xD;&#xA;Salva em dfProcessosColetados" DisplayName="Filtra os Processos a Serem Consultados" sap:VirtualizedContainerService.HintSize="450,144" sap2010:WorkflowViewState.IdRef="Sequence_108">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -854,6 +863,92 @@
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
+                  <TryCatch DisplayName="Tenta Extrair e Filtrar os Dados da Tabela" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <TryCatch.Try>
+                      <Sequence DisplayName="Tenta Extrair" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_110">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dfProcessosColetados]" DisplayName="Extrai a Tabela de Processos" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Ações' ReferenceIdx='0' Name='Ações'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Ações Url' ReferenceIdx='1' Name='Ações Url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Número do Processo' ReferenceIdx='2' Name='Número do Processo'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Número do Processo Url' ReferenceIdx='3' Name='Número do Processo Url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Data do Protocolo' ReferenceIdx='4' Name='Data do Protocolo'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Tipo do Processo' ReferenceIdx='5' Name='Tipo do Processo'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Subtipo do Processo' ReferenceIdx='6' Name='Subtipo do Processo'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Localização' ReferenceIdx='7' Name='Localização'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Situação' ReferenceIdx='8' Name='Situação'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Último Encaminhamento Externo' ReferenceIdx='9' Name='Último Encaminhamento Externo' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Ações' attr='fulltext' name2='Ações Url' attr2='href' /&gt;&lt;column name='Número do Processo' attr='fulltext' name2='Número do Processo Url' attr2='href' /&gt;&lt;column name='Data do Protocolo' attr='fulltext' /&gt;&lt;column name='Tipo do Processo' attr='fulltext' /&gt;&lt;column name='Subtipo do Processo' attr='fulltext' /&gt;&lt;column name='Localização' attr='fulltext' /&gt;&lt;column name='Situação' attr='fulltext' /&gt;&lt;column name='Último Encaminhamento Externo' attr='fulltext' /&gt;&lt;/extract-table&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,189" sap2010:WorkflowViewState.IdRef="NExtractData_3" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="20864e4e-37b0-426c-a2d6-5e72e025f808" Timeout="2" Version="V4">
+                          <uix:NExtractData.NextLink>
+                            <uix:TargetAnchorable BrowserURL="eprocesso.cav.receita.fazenda.gov.br/eprocessocontribuinte/processos_consultar" CVScreenId="8dcfd56c-87c7-4767-8434-e874c7a99d17" CvElementArea="947, 779, 31, 28" CvType="Button" DesignTimeRectangle="950, 782, 27, 21" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl aaname='                              ' idx='7' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                              ' type='' tag='A' class='ui-paginator-next ui-paginator-element ui-state-default ui-corner-all ui-state-disabled' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="ecd82028-b74e-4cd3-acf1-d4c3c9cbfe7a" ScopeSelectorArgument="&lt;html app='chrome.exe' title='e-Processo Contribuinte' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive">
+                              <uix:TargetAnchorable.PointOffset>
+                                <uix:PointOffset />
+                              </uix:TargetAnchorable.PointOffset>
+                            </uix:TargetAnchorable>
+                          </uix:NExtractData.NextLink>
+                          <uix:NExtractData.Target>
+                            <uix:TargetAnchorable BrowserURL="https://eprocesso.cav.receita.fazenda.gov.br/eprocessocontribuinte/processos_consultar?consulta=meus-processos" ContentHash="_I2NDQa7RkuafLyx81vdJA" DesignTimeRectangle="74, 477, 1791, 287" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl aaname='Ações Número do Processo Data do Protocolo Tipo do Processo Subtipo do Processo Localização Situação Último Encaminhamento Externo' tag='TABLE' /&gt;" Guid="ec191552-f790-4955-9caf-a66a0764e7f2" InformativeScreenshot="c37d5f7ba47a8479718523d945bf5ec8.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/UXMqox1JtkK1eUgFux4FEg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='e-Processo Contribuinte' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                          </uix:NExtractData.Target>
+                        </uix:NExtractData>
+                        <ui:FilterDataTable DataTable="[dfProcessosColetados]" DisplayName="Filtra os Dados da Tabela" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="382,184" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[dfProcessosColetados]" SelectColumnsMode="Remove">
+                          <ui:FilterDataTable.Filters>
+                            <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                              <ui:FilterOperationArgument BooleanOperator="And" Operator="CONTAINS">
+                                <ui:FilterOperationArgument.Column>
+                                  <InArgument x:TypeArguments="x:String">["Tipo do Processo"]</InArgument>
+                                </ui:FilterOperationArgument.Column>
+                                <ui:FilterOperationArgument.Operand>
+                                  <InArgument x:TypeArguments="x:String">["OUTROS TRIBUTÁRIO"]</InArgument>
+                                </ui:FilterOperationArgument.Operand>
+                              </ui:FilterOperationArgument>
+                            </scg:List>
+                          </ui:FilterDataTable.Filters>
+                          <ui:FilterDataTable.SelectColumns>
+                            <scg:List x:TypeArguments="InArgument" Capacity="4">
+                              <x:Null />
+                            </scg:List>
+                          </ui:FilterDataTable.SelectColumns>
+                        </ui:FilterDataTable>
+                      </Sequence>
+                    </TryCatch.Try>
+                    <TryCatch.Catches>
+                      <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                        <ActivityAction x:TypeArguments="s:Exception">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Houve um Erro" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_111">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_18">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[out_resultado]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">Aba de Legislação e Processo não Encontrada</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <ui:WriteTextFile File="{x:Null}" DisplayName="Escreve um Texto falando que houve um erro" FileName="[pastaProcessos + &quot;\Falha ao Extrair Processos.txt&quot;]" sap:VirtualizedContainerService.HintSize="434,165" sap2010:WorkflowViewState.IdRef="WriteTextFile_5" Text="[&quot;Houve um Erro ao extrair e filtrar a tabela de processos. Erro: &quot; + exception.Message]" />
+                            <ui:Return DisplayName="Volta para o Fluxo" sap:VirtualizedContainerService.HintSize="434,48" sap2010:WorkflowViewState.IdRef="Return_12" />
+                          </Sequence>
+                        </ActivityAction>
+                      </Catch>
+                    </TryCatch.Catches>
+                    <TryCatch.Finally>
+                      <Sequence DisplayName="Finalmente" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_112">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Sequence>
+                    </TryCatch.Finally>
+                  </TryCatch>
                 </Sequence>
                 <Sequence sap2010:Annotation.AnnotationText="Clica no seu link&#xA;Clica em Obter Cópia Integral do Processo&#xA;Na confirmação, clica em &quot;Não&quot;&#xA;Sobre cada arquivo, faz o Download e move para a pasta correta&#xA;Clica em Voltar&#xA;Clica em Voltar&#xA;Vai para o próximo processo" DisplayName="Itera sobre cada Processo - Fazer" sap:VirtualizedContainerService.HintSize="450,234" sap2010:WorkflowViewState.IdRef="Sequence_109">
                   <sap:WorkflowViewStateService.ViewState>
