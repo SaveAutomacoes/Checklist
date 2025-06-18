@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Rótulo",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "-3_AWpRl2kmp_O1J8uCN5Q",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/-3_AWpRl2kmp_O1J8uCN5Q",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/Gr5zH-I5fkmi7vRugTh89w",
+  "Created": "2025-06-18T14:22:16.2283241Z",
+  "Updated": "2025-06-18T14:22:16.2283241Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

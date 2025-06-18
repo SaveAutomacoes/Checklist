@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Iew0ATlAHkComRpVHs16pA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="eprocesso.cav.receita.fazenda.gov.br/eprocessocontribuinte/processos_consultar" DesignTimeRectangle="87, 382, 234, 28" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' placeholder='Filtro por qualquer campo...' idx='2' /&gt;" Guid="9d3974d1-6914-4f5c-955c-9a97d0d19634" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='e-Processo Contribuinte' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="819168074c9cb46fc1ee4e1798841b5a.png" xmlns="">0yW78nH9F7E-TAFBRT6NPsg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
