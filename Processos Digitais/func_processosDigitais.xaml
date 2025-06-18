@@ -157,7 +157,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="func_comprovantesSistemaS" sap:VirtualizedContainerService.HintSize="2203,2827" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="func_comprovantesSistemaS" sap:VirtualizedContainerService.HintSize="2203,3837" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="pastaProcessos" />
     </Sequence.Variables>
@@ -166,7 +166,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap2010:Annotation.AnnotationText="Nesta pasta ficarão todos os processos baixados.&#xA;Se não houverem processos ou não for possível acessar, será adicionada uma nota .txt explicando o que ocorreu." DisplayName="Define e Cria a Pasta para os Processos" sap:VirtualizedContainerService.HintSize="656,114" sap2010:WorkflowViewState.IdRef="Sequence_61">
+    <Sequence sap2010:Annotation.AnnotationText="Nesta pasta ficarão todos os processos baixados.&#xA;Se não houverem processos ou não for possível acessar, será adicionada uma nota .txt explicando o que ocorreu." DisplayName="Define e Cria a Pasta para os Processos" sap:VirtualizedContainerService.HintSize="752,114" sap2010:WorkflowViewState.IdRef="Sequence_61">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -184,7 +184,7 @@
       </Assign>
       <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Cria a Pasta" sap:VirtualizedContainerService.HintSize="434,103" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[pastaProcessos]" />
     </Sequence>
-    <Sequence sap2010:Annotation.AnnotationText="Parte responsável por toda a interação com a Web e Explorador de Arquivos. " DisplayName="Abre o ECAC e baixa os arquivos" sap:VirtualizedContainerService.HintSize="656,2690" sap2010:WorkflowViewState.IdRef="Sequence_63">
+    <Sequence sap2010:Annotation.AnnotationText="Parte responsável por toda a interação com a Web e Explorador de Arquivos. " DisplayName="Abre o ECAC e baixa os arquivos" sap:VirtualizedContainerService.HintSize="752,3700" sap2010:WorkflowViewState.IdRef="Sequence_63">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -192,7 +192,7 @@
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Navega até a página de Processoss" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="622,764" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="0e34caf3-c659-4fe0-a412-29bdf9aa3deb" UserDataFolderMode="DefaultFolder" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Navega até a página de Processoss" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="718,764" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="0e34caf3-c659-4fe0-a412-29bdf9aa3deb" UserDataFolderMode="DefaultFolder" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
@@ -721,7 +721,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </uix:NApplicationCard>
-      <Sequence DisplayName="Navega pela página de Processos" sap:VirtualizedContainerService.HintSize="622,1812" sap2010:WorkflowViewState.IdRef="Sequence_100">
+      <Sequence DisplayName="Navega pela página de Processos" sap:VirtualizedContainerService.HintSize="718,2822" sap2010:WorkflowViewState.IdRef="Sequence_100">
         <Sequence.Variables>
           <Variable x:TypeArguments="sd:DataTable" Name="dfProcessosColetados" />
         </Sequence.Variables>
@@ -730,19 +730,19 @@
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Chrome e-Processo Contribuinte" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="588,1729" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="20864e4e-37b0-426c-a2d6-5e72e025f808" UserDataFolderMode="DefaultFolder" Version="V2">
+        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Chrome e-Processo Contribuinte" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="684,2739" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="20864e4e-37b0-426c-a2d6-5e72e025f808" UserDataFolderMode="DefaultFolder" Version="V2">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="554,1489" sap2010:WorkflowViewState.IdRef="Sequence_101">
+              <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="650,2499" sap2010:WorkflowViewState.IdRef="Sequence_101">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Sequence DisplayName="Abre Processos em que sou o Interessado Principal" sap:VirtualizedContainerService.HintSize="520,57" sap2010:WorkflowViewState.IdRef="Sequence_104">
+                <Sequence DisplayName="Abre Processos em que sou o Interessado Principal" sap:VirtualizedContainerService.HintSize="616,57" sap2010:WorkflowViewState.IdRef="Sequence_104">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -800,7 +800,7 @@
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NClick>
                 </Sequence>
-                <Sequence DisplayName="Abre Arquivados e Inativos" sap:VirtualizedContainerService.HintSize="520,57" sap2010:WorkflowViewState.IdRef="Sequence_105">
+                <Sequence DisplayName="Abre Arquivados e Inativos" sap:VirtualizedContainerService.HintSize="616,57" sap2010:WorkflowViewState.IdRef="Sequence_105">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -859,15 +859,15 @@
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NClick>
                 </Sequence>
-                <Sequence sap2010:Annotation.AnnotationText="Faz um filtro digitando no campo de busca e seleciona 100 por página, para que não corra o risco de haverem mais de uma página para a consulta.&#xD;&#xA;&#xD;&#xA;Faz a extração de todas as colunas, conforme aparece no portal.&#xD;&#xA;&#xD;&#xA;Filtra apenas as que o Tipo do Processo contém &quot;OUTROS TRIBUTÁRIO&quot;&#xD;&#xA;&#xD;&#xA;Salva em dfProcessosColetados" DisplayName="Filtra os Processos a Serem Consultados" sap:VirtualizedContainerService.HintSize="520,189" sap2010:WorkflowViewState.IdRef="Sequence_108">
+                <Sequence sap2010:Annotation.AnnotationText="Faz um filtro digitando no campo de busca e seleciona 100 por página, para que não corra o risco de haverem mais de uma página para a consulta.&#xD;&#xA;&#xD;&#xA;Faz a extração de todas as colunas, conforme aparece no portal.&#xD;&#xA;&#xD;&#xA;Filtra apenas as que o Tipo do Processo contém &quot;OUTROS TRIBUTÁRIO&quot;&#xD;&#xA;&#xD;&#xA;Salva em dfProcessosColetados" DisplayName="Filtra os Processos a Serem Consultados" sap:VirtualizedContainerService.HintSize="616,2069" sap2010:WorkflowViewState.IdRef="Sequence_108">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Filtra na tabela" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="20864e4e-37b0-426c-a2d6-5e72e025f808" Text="OUTROS TRIBUTÁRIO&#x9;" Version="V4">
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Filtra na tabela" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="582,57" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="20864e4e-37b0-426c-a2d6-5e72e025f808" Text="OUTROS TRIBUTÁRIO&#x9;" Version="V4">
                     <uix:NTypeInto.Target>
                       <uix:TargetAnchorable BrowserURL="eprocesso.cav.receita.fazenda.gov.br/eprocessocontribuinte/processos_consultar" ContentHash="Iew0ATlAHkComRpVHs16pA" DesignTimeRectangle="87, 382, 234, 28" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' placeholder='Filtro por qualquer campo...' idx='2' /&gt;" Guid="9d3974d1-6914-4f5c-955c-9a97d0d19634" ImageBase64="" InformativeScreenshot="819168074c9cb46fc1ee4e1798841b5a.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/iHM5Oc62a0mYlWyvjV17dg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='e-Processo Contribuinte' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
                     </uix:NTypeInto.Target>
@@ -878,7 +878,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NTypeInto>
-                  <uix:NSelectItem DisplayName="Seleciona 100 processos por página" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="100" ScopeIdentifier="20864e4e-37b0-426c-a2d6-5e72e025f808" Version="V4">
+                  <uix:NSelectItem DisplayName="Seleciona 100 processos por página" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="582,57" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="100" ScopeIdentifier="20864e4e-37b0-426c-a2d6-5e72e025f808" Version="V4">
                     <uix:NSelectItem.Items>
                       <scg:List x:TypeArguments="x:String" Capacity="4">
                         <x:String>10</x:String>
@@ -903,22 +903,62 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NSelectItem>
-                  <TryCatch DisplayName="Tenta Extrair e Filtrar os Dados da Tabela" sap:VirtualizedContainerService.HintSize="418,211" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                  <TryCatch DisplayName="Tenta Extrair os Dados da Tabela" sap:VirtualizedContainerService.HintSize="582,1729" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <TryCatch.Try>
-                      <Sequence DisplayName="Tenta Extrair" sap:VirtualizedContainerService.HintSize="416,433" sap2010:WorkflowViewState.IdRef="Sequence_110">
+                      <Sequence DisplayName="Tenta Extrair" sap:VirtualizedContainerService.HintSize="580,1156" sap2010:WorkflowViewState.IdRef="Sequence_110">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dfProcessosColetados]" DisplayName="Extrai a Tabela de Processos" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Ações' ReferenceIdx='0' Name='Ações'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Ações Url' ReferenceIdx='1' Name='Ações Url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Número do Processo' ReferenceIdx='2' Name='Número do Processo'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Número do Processo Url' ReferenceIdx='3' Name='Número do Processo Url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Data do Protocolo' ReferenceIdx='4' Name='Data do Protocolo'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Tipo do Processo' ReferenceIdx='5' Name='Tipo do Processo'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Subtipo do Processo' ReferenceIdx='6' Name='Subtipo do Processo'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Localização' ReferenceIdx='7' Name='Localização'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Situação' ReferenceIdx='8' Name='Situação'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Último Encaminhamento Externo' ReferenceIdx='9' Name='Último Encaminhamento Externo' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Ações' attr='fulltext' name2='Ações Url' attr2='href' /&gt;&lt;column name='Número do Processo' attr='fulltext' name2='Número do Processo Url' attr2='href' /&gt;&lt;column name='Data do Protocolo' attr='fulltext' /&gt;&lt;column name='Tipo do Processo' attr='fulltext' /&gt;&lt;column name='Subtipo do Processo' attr='fulltext' /&gt;&lt;column name='Localização' attr='fulltext' /&gt;&lt;column name='Situação' attr='fulltext' /&gt;&lt;column name='Último Encaminhamento Externo' attr='fulltext' /&gt;&lt;/extract-table&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,189" sap2010:WorkflowViewState.IdRef="NExtractData_3" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="20864e4e-37b0-426c-a2d6-5e72e025f808" Timeout="2" Version="V4">
+                        <Sequence DisplayName="Verifica se tem algum processo" sap:VirtualizedContainerService.HintSize="546,723" sap2010:WorkflowViewState.IdRef="Sequence_129">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NCheckState DisplayName="Verifica se Tem pelo Menos um Processo" EnableIfExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="512,631" sap2010:WorkflowViewState.IdRef="NCheckState_26" ScopeIdentifier="20864e4e-37b0-426c-a2d6-5e72e025f808" Version="V4">
+                            <uix:NCheckState.IfExists>
+                              <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="450,92" sap2010:WorkflowViewState.IdRef="Sequence_130">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </Sequence>
+                            </uix:NCheckState.IfExists>
+                            <uix:NCheckState.IfNotExists>
+                              <Sequence DisplayName="Não há processos" sap:VirtualizedContainerService.HintSize="468,391" sap2010:WorkflowViewState.IdRef="Sequence_131">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_22">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:String">[out_resultado]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:String">Não há processos a serem extraídos</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                                <ui:WriteTextFile File="{x:Null}" DisplayName="Escreve um Texto falando que Não há processos" FileName="[pastaProcessos + &quot;\Falha ao Extrair Processos.txt&quot;]" sap:VirtualizedContainerService.HintSize="434,165" sap2010:WorkflowViewState.IdRef="WriteTextFile_10" Text="Não há processos a serem baixados." />
+                                <ui:Return DisplayName="Volta para o Fluxo" sap:VirtualizedContainerService.HintSize="434,50" sap2010:WorkflowViewState.IdRef="Return_15" />
+                              </Sequence>
+                            </uix:NCheckState.IfNotExists>
+                            <uix:NCheckState.Target>
+                              <uix:TargetAnchorable BrowserURL="eprocesso.cav.receita.fazenda.gov.br/eprocessocontribuinte/processos_consultar" ContentHash="srRxGyvIg0i9E6xbzBWC4g" DesignTimeRectangle="98, 550, 15, 15" FullSelectorArgument="&lt;webctrl aaname='Ações Número do Processo Data do Protocolo Tipo do Processo Subtipo do Processo Localização Situação Último Encaminhamento Externo' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='SPAN' /&gt;" Guid="cb1a60a2-6b69-479e-a0b7-aff5b04fa226" ImageBase64="" InformativeScreenshot="4e08ef7c288a9138c4a05aafdd09e3e5.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/5eWbK_tFSkWgmffco-6b-w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='e-Processo Contribuinte' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                            </uix:NCheckState.Target>
+                          </uix:NCheckState>
+                        </Sequence>
+                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dfProcessosColetados]" DisplayName="Extrai a Tabela de Processos" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Ações' ReferenceIdx='0' Name='Ações'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Ações Url' ReferenceIdx='1' Name='Ações Url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Número do Processo' ReferenceIdx='2' Name='Número do Processo'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Número do Processo Url' ReferenceIdx='3' Name='Número do Processo Url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Data do Protocolo' ReferenceIdx='4' Name='Data do Protocolo'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Tipo do Processo' ReferenceIdx='5' Name='Tipo do Processo'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Subtipo do Processo' ReferenceIdx='6' Name='Subtipo do Processo'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Localização' ReferenceIdx='7' Name='Localização'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Situação' ReferenceIdx='8' Name='Situação'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Último Encaminhamento Externo' ReferenceIdx='9' Name='Último Encaminhamento Externo' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Ações' attr='fulltext' name2='Ações Url' attr2='href' /&gt;&lt;column name='Número do Processo' attr='fulltext' name2='Número do Processo Url' attr2='href' /&gt;&lt;column name='Data do Protocolo' attr='fulltext' /&gt;&lt;column name='Tipo do Processo' attr='fulltext' /&gt;&lt;column name='Subtipo do Processo' attr='fulltext' /&gt;&lt;column name='Localização' attr='fulltext' /&gt;&lt;column name='Situação' attr='fulltext' /&gt;&lt;column name='Último Encaminhamento Externo' attr='fulltext' /&gt;&lt;/extract-table&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="546,189" sap2010:WorkflowViewState.IdRef="NExtractData_3" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="20864e4e-37b0-426c-a2d6-5e72e025f808" Timeout="2" Version="V4">
                           <uix:NExtractData.NextLink>
                             <uix:TargetAnchorable BrowserURL="eprocesso.cav.receita.fazenda.gov.br/eprocessocontribuinte/processos_consultar" CVScreenId="8dcfd56c-87c7-4767-8434-e874c7a99d17" CvElementArea="947, 779, 31, 28" CvType="Button" DesignTimeRectangle="950, 782, 27, 21" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl aaname='                              ' idx='7' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                              ' type='' tag='A' class='ui-paginator-next ui-paginator-element ui-state-default ui-corner-all ui-state-disabled' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="ecd82028-b74e-4cd3-acf1-d4c3c9cbfe7a" ScopeSelectorArgument="&lt;html app='chrome.exe' title='e-Processo Contribuinte' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive">
                               <uix:TargetAnchorable.PointOffset>
@@ -930,7 +970,7 @@
                             <uix:TargetAnchorable BrowserURL="https://eprocesso.cav.receita.fazenda.gov.br/eprocessocontribuinte/processos_consultar?consulta=meus-processos" ContentHash="_I2NDQa7RkuafLyx81vdJA" DesignTimeRectangle="74, 477, 1791, 287" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl aaname='Ações Número do Processo Data do Protocolo Tipo do Processo Subtipo do Processo Localização Situação Último Encaminhamento Externo' tag='TABLE' /&gt;" Guid="ec191552-f790-4955-9caf-a66a0764e7f2" InformativeScreenshot="c37d5f7ba47a8479718523d945bf5ec8.png" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/UXMqox1JtkK1eUgFux4FEg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='e-Processo Contribuinte' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
                           </uix:NExtractData.Target>
                         </uix:NExtractData>
-                        <ui:FilterDataTable DataTable="[dfProcessosColetados]" DisplayName="Filtra os Dados da Tabela" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="382,184" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[dfProcessosColetados]" SelectColumnsMode="Remove">
+                        <ui:FilterDataTable DataTable="[dfProcessosColetados]" DisplayName="Filtra os Dados da Tabela" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="546,184" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[dfProcessosColetados]" SelectColumnsMode="Remove">
                           <ui:FilterDataTable.Filters>
                             <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                               <ui:FilterOperationArgument BooleanOperator="And" Operator="CONTAINS">
@@ -957,14 +997,14 @@
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Houve um Erro" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_111">
+                          <Sequence DisplayName="Houve um Erro" sap:VirtualizedContainerService.HintSize="580,387" sap2010:WorkflowViewState.IdRef="Sequence_111">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_18">
+                            <Assign sap:VirtualizedContainerService.HintSize="546,114" sap2010:WorkflowViewState.IdRef="Assign_18">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:String">[out_resultado]</OutArgument>
                               </Assign.To>
@@ -972,14 +1012,14 @@
                                 <InArgument x:TypeArguments="x:String">Aba de Legislação e Processo não Encontrada</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <ui:WriteTextFile File="{x:Null}" DisplayName="Escreve um Texto falando que houve um erro" FileName="[pastaProcessos + &quot;\Falha ao Extrair Processos.txt&quot;]" sap:VirtualizedContainerService.HintSize="434,165" sap2010:WorkflowViewState.IdRef="WriteTextFile_5" Text="[&quot;Houve um Erro ao extrair e filtrar a tabela de processos. Erro: &quot; + exception.Message]" />
-                            <ui:Return DisplayName="Volta para o Fluxo" sap:VirtualizedContainerService.HintSize="434,48" sap2010:WorkflowViewState.IdRef="Return_12" />
+                            <ui:WriteTextFile File="{x:Null}" DisplayName="Escreve um Texto falando que houve um erro" FileName="[pastaProcessos + &quot;\Falha ao Extrair Processos.txt&quot;]" sap:VirtualizedContainerService.HintSize="546,165" sap2010:WorkflowViewState.IdRef="WriteTextFile_5" Text="[&quot;Houve um Erro ao extrair e filtrar a tabela de processos. Erro: &quot; + exception.Message]" />
+                            <ui:Return DisplayName="Volta para o Fluxo" sap:VirtualizedContainerService.HintSize="546,48" sap2010:WorkflowViewState.IdRef="Return_12" />
                           </Sequence>
                         </ActivityAction>
                       </Catch>
                     </TryCatch.Catches>
                     <TryCatch.Finally>
-                      <Sequence DisplayName="Finalmente" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_112">
+                      <Sequence DisplayName="Finalmente" sap:VirtualizedContainerService.HintSize="580,25" sap2010:WorkflowViewState.IdRef="Sequence_112">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -990,14 +1030,14 @@
                     </TryCatch.Finally>
                   </TryCatch>
                 </Sequence>
-                <Sequence sap2010:Annotation.AnnotationText="Clica no seu link&#xA;Clica em Obter Cópia Integral do Processo&#xA;Na confirmação, clica em &quot;Não&quot;&#xA;Sobre cada arquivo, faz o Download e move para a pasta correta&#xA;Clica em Voltar&#xA;Clica em Voltar&#xA;Vai para o próximo processo" DisplayName="Itera sobre cada Processo - Fazer" sap:VirtualizedContainerService.HintSize="520,1124" sap2010:WorkflowViewState.IdRef="Sequence_109">
+                <Sequence sap2010:Annotation.AnnotationText="Clica no seu link&#xA;Clica em Obter Cópia Integral do Processo&#xA;Na confirmação, clica em &quot;Não&quot;&#xA;Sobre cada arquivo, faz o Download e move para a pasta correta&#xA;Clica em Voltar&#xA;Clica em Voltar&#xA;Vai para o próximo processo" DisplayName="Itera sobre cada Processo - Fazer" sap:VirtualizedContainerService.HintSize="616,254" sap2010:WorkflowViewState.IdRef="Sequence_109">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dfProcessosColetados]" DisplayName="Para Cada Linha da Tabela" sap:VirtualizedContainerService.HintSize="486,920" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dfProcessosColetados]" DisplayName="Para Cada Linha da Tabela" sap:VirtualizedContainerService.HintSize="416,50" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                     <ui:ForEachRow.Body>
                       <ActivityAction x:TypeArguments="sd:DataRow">
                         <ActivityAction.Argument>
@@ -1317,6 +1357,12 @@
                         </Sequence>
                       </ActivityAction>
                     </ui:ForEachRow.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
                   </ui:ForEachRow>
                 </Sequence>
               </Sequence>

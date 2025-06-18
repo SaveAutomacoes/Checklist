@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="srRxGyvIg0i9E6xbzBWC4g" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/5eWbK_tFSkWgmffco-6b-w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="eprocesso.cav.receita.fazenda.gov.br/eprocessocontribuinte/processos_consultar" DesignTimeRectangle="98, 550, 15, 15" FullSelectorArgument="&lt;webctrl aaname='Ações Número do Processo Data do Protocolo Tipo do Processo Subtipo do Processo Localização Situação Último Encaminhamento Externo' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='SPAN' /&gt;" Guid="cb1a60a2-6b69-479e-a0b7-aff5b04fa226" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='e-Processo Contribuinte' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="4e08ef7c288a9138c4a05aafdd09e3e5.png" xmlns="">0iy5ybHjBXESLW2IMKPaWBA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
