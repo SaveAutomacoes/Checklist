@@ -148,7 +148,7 @@
       <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="func_consultaComprovantes" sap:VirtualizedContainerService.HintSize="2203,3795" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="func_consultaComprovantes" sap:VirtualizedContainerService.HintSize="1635,3795" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -315,7 +315,7 @@
                   </uix:NCheckState.Target>
                 </uix:NCheckState>
               </Sequence>
-              <Sequence sap2010:Annotation.AnnotationText="Verifica se passou do máximo que é 1000.&#xD;&#xA;Se sim, divide os períodos e envia novamente para esse fluxo porém dividido em duas partes." DisplayName="Verifica se Passou de 1000" sap:VirtualizedContainerService.HintSize="570,114" sap2010:WorkflowViewState.IdRef="Sequence_12">
+              <Sequence sap2010:Annotation.AnnotationText="Verifica se passou do máximo que é 1000.&#xA;Se sim, divide os períodos e envia novamente para esse fluxo porém dividido em duas partes." DisplayName="Verifica se Passou de 1000" sap:VirtualizedContainerService.HintSize="570,114" sap2010:WorkflowViewState.IdRef="Sequence_12">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
