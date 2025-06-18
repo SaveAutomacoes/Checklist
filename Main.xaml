@@ -465,7 +465,7 @@
         <OutArgument x:TypeArguments="x:String">[sheet]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="x:String">G:\Meu Drive\7. Automação\[NÃO EXCLUIR] Documentos-Base\Modelo..xlsx</InArgument>
+        <InArgument x:TypeArguments="x:String">G:\Meu Drive\7. Automação\[NÃO EXCLUIR] Documentos-Base\Modelo.xlsx</InArgument>
       </Assign.Value>
     </Assign>
     <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[tabelaDados]" DisplayName="Para Cada Linha" sap:VirtualizedContainerService.HintSize="3568,28895" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
