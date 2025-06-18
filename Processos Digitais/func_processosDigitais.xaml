@@ -148,7 +148,7 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="func_comprovantesSistemaS" sap:VirtualizedContainerService.HintSize="2203,2220" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="func_comprovantesSistemaS" sap:VirtualizedContainerService.HintSize="2203,1577" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="pastaProcessos" />
     </Sequence.Variables>
@@ -175,7 +175,7 @@
       </Assign>
       <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Cria a Pasta" sap:VirtualizedContainerService.HintSize="434,103" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[pastaProcessos]" />
     </Sequence>
-    <Sequence sap2010:Annotation.AnnotationText="Parte responsável por toda a interação com a Web e Explorador de Arquivos. " DisplayName="Abre o ECAC e baixa os arquivos" sap:VirtualizedContainerService.HintSize="586,2083" sap2010:WorkflowViewState.IdRef="Sequence_63">
+    <Sequence sap2010:Annotation.AnnotationText="Parte responsável por toda a interação com a Web e Explorador de Arquivos. " DisplayName="Abre o ECAC e baixa os arquivos" sap:VirtualizedContainerService.HintSize="586,1440" sap2010:WorkflowViewState.IdRef="Sequence_63">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -183,13 +183,13 @@
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Navega até a página de Processoss" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="552,764" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="0e34caf3-c659-4fe0-a412-29bdf9aa3deb" UserDataFolderMode="DefaultFolder" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Navega até a página de Processoss" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="552,449" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="0e34caf3-c659-4fe0-a412-29bdf9aa3deb" UserDataFolderMode="DefaultFolder" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Dentro do Ecac" sap:VirtualizedContainerService.HintSize="484,515" sap2010:WorkflowViewState.IdRef="Sequence_99">
+            <Sequence DisplayName="Dentro do Ecac" sap:VirtualizedContainerService.HintSize="484,200" sap2010:WorkflowViewState.IdRef="Sequence_99">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -562,10 +562,10 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NCheckState>
-              <Sequence sap2010:Annotation.AnnotationText="Se tiver como fazer isso via URL seria melhor" DisplayName="Navega Até a página de Processos" sap:VirtualizedContainerService.HintSize="450,396" sap2010:WorkflowViewState.IdRef="Sequence_64">
+              <Sequence sap2010:Annotation.AnnotationText="Se tiver como fazer isso via URL seria melhor" DisplayName="Navega Até a página de Processos" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_64">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
@@ -711,28 +711,28 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </uix:NApplicationCard>
-      <Sequence DisplayName="Navega pela página de Processos" sap:VirtualizedContainerService.HintSize="552,1205" sap2010:WorkflowViewState.IdRef="Sequence_100">
+      <Sequence DisplayName="Navega pela página de Processos" sap:VirtualizedContainerService.HintSize="552,877" sap2010:WorkflowViewState.IdRef="Sequence_100">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Chrome e-Processo Contribuinte" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="518,1122" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="20864e4e-37b0-426c-a2d6-5e72e025f808" UserDataFolderMode="DefaultFolder" Version="V2">
+        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Chrome e-Processo Contribuinte" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="518,794" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="20864e4e-37b0-426c-a2d6-5e72e025f808" UserDataFolderMode="DefaultFolder" Version="V2">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="484,842" sap2010:WorkflowViewState.IdRef="Sequence_101">
+              <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="484,554" sap2010:WorkflowViewState.IdRef="Sequence_101">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Sequence DisplayName="Abre Processos em que sou o Interessado Principal - Testar" sap:VirtualizedContainerService.HintSize="450,201" sap2010:WorkflowViewState.IdRef="Sequence_104">
+                <Sequence DisplayName="Abre Processos em que sou o Interessado Principal" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_104">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
@@ -787,10 +787,10 @@
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NClick>
                 </Sequence>
-                <Sequence DisplayName="Abre Arquivados e Inativos - Testar" sap:VirtualizedContainerService.HintSize="450,201" sap2010:WorkflowViewState.IdRef="Sequence_105">
+                <Sequence DisplayName="Abre Arquivados e Inativos" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_105">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>

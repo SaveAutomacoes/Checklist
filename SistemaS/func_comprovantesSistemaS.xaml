@@ -155,7 +155,7 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="func_comprovantesSistemaS" sap:VirtualizedContainerService.HintSize="2203,1304" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="func_comprovantesSistemaS" sap:VirtualizedContainerService.HintSize="1635,1304" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="pastaComprovantes" />
     </Sequence.Variables>
@@ -1259,7 +1259,7 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </ui:GetFolderInfoX>
-        <If Condition="[infoPastaComprovantes.GetFiles().Count() = 1]" DisplayName="Verifica a quantidade de arquivos" sap:VirtualizedContainerService.HintSize="418,576" sap2010:WorkflowViewState.IdRef="If_3">
+        <If Condition="[infoPastaComprovantes.GetFiles(&quot;*.pdf&quot;).Count() = 1]" DisplayName="Verifica a quantidade de arquivos" sap:VirtualizedContainerService.HintSize="418,576" sap2010:WorkflowViewState.IdRef="If_3">
           <If.Then>
             <Sequence DisplayName="Apenas um" sap:VirtualizedContainerService.HintSize="416,242" sap2010:WorkflowViewState.IdRef="Sequence_55">
               <sap:WorkflowViewStateService.ViewState>
