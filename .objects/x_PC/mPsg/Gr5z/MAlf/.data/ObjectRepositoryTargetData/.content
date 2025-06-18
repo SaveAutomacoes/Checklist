@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="qd09ayr9KkmId_c05orqcw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="eprocesso.cav.receita.fazenda.gov.br/eprocessocontribuinte/documentos_consultar/10166763761202170" DesignTimeRectangle="34, 1001, 82, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Voltar' tag='A' /&gt;" Guid="c62885a9-8b52-4ad7-a5b2-5987a4ecab69" ScopeSelectorArgument="&lt;html app='chrome.exe' title='e-Processo Contribuinte' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="182a5508e789557d358d1376e1d05080.png" xmlns="">01466UEOEhE2oc8EhnEo6Dg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

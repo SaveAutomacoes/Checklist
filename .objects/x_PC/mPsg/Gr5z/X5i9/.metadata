@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Verifica se apareceu Mensagem de Confirmação",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "X5i9n438_0-LQeZc9R4RYg",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/X5i9n438_0-LQeZc9R4RYg",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/Gr5zH-I5fkmi7vRugTh89w",
+  "Created": "2025-06-18T14:44:06.9128448Z",
+  "Updated": "2025-06-18T14:44:06.9128448Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

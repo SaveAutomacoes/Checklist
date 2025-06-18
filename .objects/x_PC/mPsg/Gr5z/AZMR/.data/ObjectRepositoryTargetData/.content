@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Ui6hO3JssUiHFKlVZl3PaA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="eprocesso.cav.receita.fazenda.gov.br/eprocessocontribuinte/documento_processo_download/processo/13031487385202125" DesignTimeRectangle="1608, 401, 89, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Download' type='' tag='SPAN' class='ui-button-text ui-c' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Download' /&gt;" Guid="9828896a-71b3-424a-94fe-2c0277c31e3e" ScopeSelectorArgument="&lt;html app='chrome.exe' title='e-Processo Contribuinte' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1597, 398, 111, 28" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='BUTTON' aaname='Download' /&gt;" Guid="b90fe12e-9d66-42b2-a87f-8dbe695bc1b3" ImageBase64="" SearchSteps="Selector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a2ae5d73354131c56589f507aeb93ff0.png" xmlns="">0wOSQ4WwLRkiBQ4P1IQd5HA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

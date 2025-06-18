@@ -286,7 +286,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="3568,29545" sap2010:WorkflowViewState.IdRef="Sequence_6">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="3568,29586" sap2010:WorkflowViewState.IdRef="Sequence_6">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="naoPossuiArrecadacao" />
       <Variable x:TypeArguments="x:Boolean" Name="verificaAcimaDeMil" />
@@ -468,13 +468,13 @@
         <InArgument x:TypeArguments="x:String">G:\Meu Drive\7. Automação\[NÃO EXCLUIR] Documentos-Base\Modelo.xlsx</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[tabelaDados]" DisplayName="Para Cada Linha" sap:VirtualizedContainerService.HintSize="3568,28854" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[tabelaDados]" DisplayName="Para Cada Linha" sap:VirtualizedContainerService.HintSize="3568,28895" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="linhaAtual" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Ações para cada Empresa" sap:VirtualizedContainerService.HintSize="3566,28674" sap2010:WorkflowViewState.IdRef="Sequence_438">
+          <Sequence DisplayName="Ações para cada Empresa" sap:VirtualizedContainerService.HintSize="3566,28715" sap2010:WorkflowViewState.IdRef="Sequence_438">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Boolean" Name="pastaFinalExiste" />
               <Variable x:TypeArguments="x:Boolean" Name="contribuiSistemaS" />
@@ -1107,12 +1107,12 @@
                 </ui:InvokeWorkflowFile.Arguments>
               </ui:InvokeWorkflowFile>
             </Sequence>
-            <Sequence sap2010:Annotation.AnnotationText="Argumentos:&#xA;in_caminhoPlanilhaChecklist -&gt; Caminho para a planilha do Checklist (onde os pagamentos serão salvos)&#xA;&#xA;in_cnpjFormatado -&gt; CNPJ formatado, caso seja necessário entrar no ECAC&#xA;&#xA;in_certificado -&gt; Certificado, caso seja necessário entrar no ECAC" DisplayName="Pega os Pagamentos da DCTFWeb" sap:VirtualizedContainerService.HintSize="3532,377" sap2010:WorkflowViewState.IdRef="Sequence_584">
+            <Sequence sap2010:Annotation.AnnotationText="Argumentos:&#xA;in_caminhoPlanilhaChecklist -&gt; Caminho para a planilha do Checklist (onde os pagamentos serão salvos)&#xA;&#xA;in_cnpjFormatado -&gt; CNPJ formatado, caso seja necessário entrar no ECAC&#xA;&#xA;in_certificado -&gt; Certificado, caso seja necessário entrar no ECAC" DisplayName="Pega os Pagamentos da DCTFWeb" sap:VirtualizedContainerService.HintSize="3532,174" sap2010:WorkflowViewState.IdRef="Sequence_584">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Chama a Função" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Pagamentos DCTFWEB\func_consultaPagamentosDCTFWEB.xaml">
@@ -1122,6 +1122,23 @@
                   <InArgument x:TypeArguments="x:String" x:Key="in_cnpjFormatado">[cnpjFormatado]</InArgument>
                   <InArgument x:TypeArguments="x:String" x:Key="in_caminhoPlanilhaChecklist">[newSheet]</InArgument>
                   <InArgument x:TypeArguments="x:String" x:Key="out_resultado" />
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+            </Sequence>
+            <Sequence sap2010:Annotation.AnnotationText="Responsável por Consultar os Processos no portal E-Processos e salvar na pasta &quot;E-Processos&quot; dentro do Checklist.&#xD;&#xA;&#xD;&#xA;Argumentos:&#xA;in_pastaDestino -&gt; Pasta do CheckList&#xA;&#xA;in_cnpjFormatado -&gt; CNPJ formatado, caso seja necessário entrar no ECAC&#xA;&#xA;in_certificado -&gt; Certificado, caso seja necessário entrar no ECAC" DisplayName="Pega os Processos E-Processo" sap:VirtualizedContainerService.HintSize="3532,204" sap2010:WorkflowViewState.IdRef="Sequence_593">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Chama a Função" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Processos Digitais\func_processosDigitais.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <InArgument x:TypeArguments="x:String" x:Key="in_pastaDestino">[caminho]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="in_cnpjFormatado">[cnpjFormatado]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="out_resultado" />
+                  <InArgument x:TypeArguments="x:String" x:Key="in_certificado">[certificado]</InArgument>
                 </ui:InvokeWorkflowFile.Arguments>
               </ui:InvokeWorkflowFile>
             </Sequence>
@@ -1142,13 +1159,13 @@
                 </ui:InvokeWorkflowFile.Arguments>
               </ui:InvokeWorkflowFile>
             </Sequence>
-            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" CreateNewFile="False" DisplayName="Abre o Excel" sap:VirtualizedContainerService.HintSize="3532,22475" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="[newSheet]">
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" CreateNewFile="False" DisplayName="Abre o Excel" sap:VirtualizedContainerService.HintSize="3532,22515" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="[newSheet]">
               <ueab:ExcelApplicationCard.Body>
                 <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="3498,22174" sap2010:WorkflowViewState.IdRef="Sequence_515">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="3498,22214" sap2010:WorkflowViewState.IdRef="Sequence_515">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1167,15 +1184,15 @@
                         <InArgument x:TypeArguments="x:String">[cnpj.replace(".","").replace("-","").replace("/","")]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <If Condition="[Excel.Sheet(&quot;CHECKLIST&quot;).Cell(&quot;B7&quot;).StringValue = &quot;&quot;]" DisplayName="Verifica se a célula B7 está vazia" sap:VirtualizedContainerService.HintSize="3464,3572" sap2010:WorkflowViewState.IdRef="If_60">
+                    <If Condition="[Excel.Sheet(&quot;CHECKLIST&quot;).Cell(&quot;B7&quot;).StringValue = &quot;&quot;]" DisplayName="Verifica se a célula B7 está vazia" sap:VirtualizedContainerService.HintSize="3464,3612" sap2010:WorkflowViewState.IdRef="If_60">
                       <If.Then>
-                        <Sequence DisplayName="Célula B7 está vazia" sap:VirtualizedContainerService.HintSize="1152,3344" sap2010:WorkflowViewState.IdRef="Sequence_398">
+                        <Sequence DisplayName="Célula B7 está vazia" sap:VirtualizedContainerService.HintSize="1152,3384" sap2010:WorkflowViewState.IdRef="Sequence_398">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Abre o Simples Nacional" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1118,2911" sap2010:WorkflowViewState.IdRef="NApplicationCard_21" InteractionMode="DebuggerApi" ScopeGuid="b1b732b3-8ce9-4a33-9a60-fbc138b7fbfb" UserDataFolderMode="DefaultFolder" Version="V2">
+                          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Abre o Simples Nacional" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1118,2951" sap2010:WorkflowViewState.IdRef="NApplicationCard_21" InteractionMode="DebuggerApi" ScopeGuid="b1b732b3-8ce9-4a33-9a60-fbc138b7fbfb" UserDataFolderMode="DefaultFolder" Version="V2">
                             <uix:NApplicationCard.Body>
                               <ActivityAction x:TypeArguments="x:Object">
                                 <ActivityAction.Argument>

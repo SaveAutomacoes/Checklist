@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="BrbY3C9VREqm6BsFRwtSqQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="eprocesso.cav.receita.fazenda.gov.br/eprocessocontribuinte/documentos_consultar/10166763761202170" DesignTimeRectangle="656, 586, 618, 40" ElementType="Text" FullSelectorArgument="&lt;webctrl class='ui-confirmdialog-message' idx='2' tag='SPAN' /&gt;" Guid="d30d744c-2295-4692-a2d8-b459b8743f5c" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='e-Processo Contribuinte' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="afe62fb90b4855a8c6c11bb7c4e1eb86.png" xmlns="">08v_TU60VekmdasxrYc6lmA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

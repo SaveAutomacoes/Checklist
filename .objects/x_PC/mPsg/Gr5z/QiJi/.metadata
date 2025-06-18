@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Obter Cópia Integral do…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "QiJiTw1QY0O5WJLo5IUXbA",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/QiJiTw1QY0O5WJLo5IUXbA",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/Gr5zH-I5fkmi7vRugTh89w",
+  "Created": "2025-06-18T14:40:39.5434042Z",
+  "Updated": "2025-06-18T14:40:39.5434042Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

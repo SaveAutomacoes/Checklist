@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="fSF31U9wJUy_ptf5LQIOOQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="eprocesso.cav.receita.fazenda.gov.br/eprocessocontribuinte/documentos_consultar/10166763761202170" DesignTimeRectangle="387, 825, 231, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Obter Cópia Integral do Processo' tag='SPAN' type='' class='ui-button-text ui-c' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Obter Cópia Integral do Processo' /&gt;" Guid="118a22e5-5e07-499c-b623-b702338c8c13" ScopeSelectorArgument="&lt;html app='chrome.exe' title='e-Processo Contribuinte' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="376, 823, 253, 27" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Obter Cópia Integral do Processo' tag='BUTTON' /&gt;" Guid="85196bdf-6be8-480b-ac23-2da1f35c566c" ImageBase64="" SearchSteps="Selector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="56c589fc711f3492dfe9151287203ded.png" xmlns="">0V-KDVArtm0WjN8RMnkKyJA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
