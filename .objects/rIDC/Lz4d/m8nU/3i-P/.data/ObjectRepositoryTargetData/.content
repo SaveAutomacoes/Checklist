@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="7RPlkZv92kyDkzHAMd_4nw" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/3i-Pj9TvzkagmP8VzqaZsw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="sisparnet.pgfn.fazenda.gov.br/sisparInternet/autenticacao.jsf" DesignTimeRectangle="20, 376, 1040, 29" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='TD' aaname='Você não tem permissão de acesso ou ele expirou. Feche o navegador, retorne ao Regularize e tente novamente.' /&gt;" Guid="7f4ee68a-06a7-47b0-9925-5cd565084183" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Procuradoria Geral da Fazenda Nacional - PGFN' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="1bb309f660a5e41b7b18e5e3b092bd9a.png" xmlns="">0sRoDNwyLQE-pgVKzWwV7oA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

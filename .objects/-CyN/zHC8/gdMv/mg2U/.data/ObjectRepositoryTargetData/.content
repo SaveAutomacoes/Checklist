@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="QzhEmIYzAUCQ9czm0wikGQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="regularize.pgfn.gov.br/consultaDividas" DesignTimeRectangle="1009, 555, 123, 27" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;app-root&amp;gt;div&amp;gt;div&amp;gt;app-consulta-divida&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;fieldset&amp;gt;div' tag='DIV' aaname=' Você possui  inscrições em Dívida Ativa da União e do FGTS, totalizando R$ . ' /&gt;&lt;webctrl css-selector='body&amp;gt;app-root&amp;gt;div&amp;gt;div&amp;gt;app-consulta-divida&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;fieldset&amp;gt;div&amp;gt;strong' tag='STRONG' idx='2' /&gt;" Guid="9087246d-7ede-43df-9a90-c7bd138fea3e" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Regularize' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="9ae760f1658f4b5a6209bea1a567279d.png" xmlns="">0gwV3Cakx50Kmw6SCgMvCVw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

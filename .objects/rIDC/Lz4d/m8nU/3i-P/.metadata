@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Erro Você não tem perm…",
+  "Type": "Element",
+  "Id": "3i-Pj9TvzkagmP8VzqaZsw",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/3i-Pj9TvzkagmP8VzqaZsw",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/m8nUnTAT4E216uFZlmt5EA",
+  "Created": "2025-06-20T18:49:01.0819447Z",
+  "Updated": "2025-06-20T18:49:01.0819447Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

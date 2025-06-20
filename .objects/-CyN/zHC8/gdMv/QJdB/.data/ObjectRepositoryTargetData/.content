@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="WlVHxSgDhU28KS6xkw9kRA" Reference="DRaOZbhlWkaD6Iu4Nuk-ug/QJdBGedU3EGnIktWGK4tKA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="regularize.pgfn.gov.br/consultaDividas" DesignTimeRectangle="1399, 478, 188, 32" ElementType="Text" FullSelectorArgument="&lt;webctrl class='col' parentid='aba_TRIBUTARIA_PREVIDENCIARIA' tag='DIV' aaname=' Ativa em cobrança - pendente de regularização ' /&gt;&lt;nav up='1' /&gt;&lt;webctrl class='titulo-valor-total' parentid='aba_TRIBUTARIA_PREVIDENCIARIA' tag='DIV' /&gt;" Guid="7289f5ea-7293-4850-83ea-44c62e3ff034" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Regularize' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="4a6600881ed847dbffa708a3ff285947.png" xmlns="">0dQ6C3O1mC0eTShbGSPeO-A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

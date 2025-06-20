@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="fn9Y6faKmEO8OuOLR153fQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAGjSURBVDhPxVG/L0NRFP4WG5uRhRgMEoMYEH8Ak1gkBovBP2CQSAzae+9rX1vqVyRlFaugve/19VXrV1tEiIjEj6ULFolYLEfufbTxgljEl5zk3nO+77v3nAP8KRLjdf7U72GJVhTiZSRZ1F/6HWTQxekSIR8hpESnv/wzJBtBIU6wBeFwlmCzAz/le7hmPRxxj1zEM1BRnCNYfNRP/RqSreB4gWC9i1V4Zo9ITTf66Z8hea9+bcf0RBb3DByDcJFQrUxUuLbogS36q+Kj5Ro4oRtkzTU9NCmKun9ltD9DSBsRuFO1mmsZY7DEHTKh7qqBZBO4WiUkg5P6vi0a4BiP2DFfIMVQhecY80izPCyjpSp2Qs1wwy96ZVnzFdusT+e3Ah3YDLTr8yZvQiacw2WCkGLDVbFCim+hoCdNyEeVyRNs0Vapp/kA3PCDXq1qyRFlbJj1H+JBnC8T9mYIezHCbpRwsqi28AzJOGy2jtI86c3sqnqMcLmiHpt9NxBdyJk5pHlJD04HL0KyM9j8FpJdw+LHXk4UYbMS9mMHkGKk8sN/xRuDouVPS/SyrwAAAABJRU5ErkJggg==" Selector="&lt;html app='chrome.exe' title='Regularize' /&gt;" Url="https://www.regularize.pgfn.gov.br/sispar" Version="V2">
+      <imageRef attrName="InformativeScreenshot" originalValue="08b0f3886d7c66eec7ea1e5f74b85c73.jpg" xmlns="">0Lo8H04W3wkC6tqifDJ4sgA</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

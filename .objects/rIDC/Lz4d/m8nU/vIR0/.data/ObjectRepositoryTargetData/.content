@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="At_1jPxthkm6JwqJm2Wu1A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="regularize.pgfn.gov.br/sispar" DesignTimeRectangle="266, 760, 159, 55" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Acessar' tag='BUTTON' type='button' class='btn btn-primary mt-2' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='ACESSAR' /&gt;" Guid="ff01cbb1-320b-43f9-b143-9781cbf31df7" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Regularize' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="266, 380, 1387, 60" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' tag='P' class='h5 pt-4' aaname='Acesso ao Sistema de Negociações - Parcelamento ou Acordo de Transação' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Acesso ao Sistema de Negociações - Parcelamento ou Acordo de Transação' /&gt;" Guid="5c1007e8-e8c4-4948-ab4b-cdf5a9a81d1d" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="96095072ab9512c9cd71221b88134ead.png" xmlns="">0TYbaD8SQLE6190_JkDqZxw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

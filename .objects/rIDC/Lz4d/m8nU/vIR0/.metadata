@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Acessar",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "vIR0nRspmEKCeCDxwndE6g",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/vIR0nRspmEKCeCDxwndE6g",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/m8nUnTAT4E216uFZlmt5EA",
+  "Created": "2025-06-20T18:19:29.6626934Z",
+  "Updated": "2025-06-20T18:19:29.6626934Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

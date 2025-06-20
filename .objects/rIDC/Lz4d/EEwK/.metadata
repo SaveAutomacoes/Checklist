@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Regularize",
+  "Type": "Screen",
+  "Id": "EEwKIBKo3E2yP2NOSwDXtw",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/EEwKIBKo3E2yP2NOSwDXtw",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/Lz4dN5jKxUCopJJqXo_C2A",
+  "Created": "2025-06-20T18:05:39.3357311Z",
+  "Updated": "2025-06-20T18:05:39.3357311Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
