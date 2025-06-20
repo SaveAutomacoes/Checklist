@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="T3flSqsqIkmWHJIxXT7WGQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cav.receita.fazenda.gov.br/ecac/Default.aspx" DesignTimeRectangle="292, 299, 1280, 60" ElementType="Text" FullSelectorArgument="&lt;webctrl isleaf='1' tag='DIV' aaname='Sistema indisponível no momento. O portal REGULARIZE está disponível para acesso somente de segunda a sexta-feira (exceto nos feriados nacionais), das 07 h às 22h (horário de Brasília).' /&gt;" Guid="ce3ebeb0-85e2-4c27-95d6-31a37bd1b4b6" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Regularize' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="8189a775f73035ad0733ed559d5a3bb9.png" xmlns="">0NX_6PmckAEGtUmvSsa4FLg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Sistema indisponível no…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "yPVCTdyxIUGb3YhYKvDqug",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/yPVCTdyxIUGb3YhYKvDqug",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/gdMvnDbGm0-uRckhK3u0kg",
+  "Created": "2025-06-20T11:50:06.8669174Z",
+  "Updated": "2025-06-20T11:50:06.8669174Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
