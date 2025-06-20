@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="1oPOZt8bQ0Km4wSnPOHLNQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="regularize.pgfn.gov.br/home" DesignTimeRectangle="434, 353, 595, 180" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;modal-container&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p' tag='P' aaname=' Para sua maior segurança, recomendamos que você realize o login com certificado digital e ative a opção &amp;quot;Habilitar acesso somente com certificado digital&amp;quot; em . Ao habilitar essa opção, o acesso por meio de usuário e senha fica bloqueado para o seu perfil. Caso mude de ideia, você pode desabilitar a opção, a qualquer momento. ' /&gt;" Guid="59a31793-45b0-4d89-a2c7-7c404f625f7f" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Regularize' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="e91f2cb3c55190c05e30e67cdadd1e9e.png" xmlns="">0SaZB2v75e0-Vj4wxHqTnoA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Procura Aba Dívida Ativa da União",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "RrismkRB6UqgT1mBPlvDtw",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/RrismkRB6UqgT1mBPlvDtw",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/K_7cDlVPaUuzKq4AxkFolg",
+  "Created": "2025-06-20T14:30:42.436621Z",
+  "Updated": "2025-06-20T14:30:42.436621Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Para sua maior seguranç…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "R1-HeEQXQ0GgliBPVi4dLA",
+  "Reference": "DRaOZbhlWkaD6Iu4Nuk-ug/R1-HeEQXQ0GgliBPVi4dLA",
+  "ParentRef": "DRaOZbhlWkaD6Iu4Nuk-ug/gdMvnDbGm0-uRckhK3u0kg",
+  "Created": "2025-06-20T14:39:09.1862749Z",
+  "Updated": "2025-06-20T14:39:09.1862749Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

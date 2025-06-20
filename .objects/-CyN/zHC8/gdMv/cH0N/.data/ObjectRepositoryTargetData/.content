@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="T_fvUO7amEypzzk2_f5new" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="regularize.pgfn.gov.br/home" DesignTimeRectangle="659, 574, 139, 55" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Ciente' tag='BUTTON' type='button' /&gt;" Guid="ae80eca9-2ca6-4715-b986-6a8aca3c0015" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Regularize' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="7e6da42eb5ca29ac21954c1fd854eabc.png" xmlns="">0l7qWECoWQ0ao8vvrli3Tew</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
