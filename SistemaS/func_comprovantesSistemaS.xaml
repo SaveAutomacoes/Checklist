@@ -81,6 +81,8 @@
       <x:String>GlobalVariablesNamespace</x:String>
       <x:String>GlobalConstantsNamespace</x:String>
       <x:String>UiPath.Activities.System.Text</x:String>
+      <x:String>UiPath.Core.Activities.Storage</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -1277,7 +1279,7 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <upap:JoinPDF sap2010:Annotation.AnnotationText="O caminho dos arquivos está nas propriedades" DisplayName="Join PDF Files" FileList="[Directory.GetFiles(pastaComprovantes)]" sap:VirtualizedContainerService.HintSize="382,136" sap2010:WorkflowViewState.IdRef="JoinPDF_2" OutputFileName="[in_pastaDestino + &quot;\Comprovantes de Pagamento.pdf&quot;]">
+              <upap:JoinPDF sap2010:Annotation.AnnotationText="O caminho dos arquivos está nas propriedades" DisplayName="Join PDF Files" FileList="[Directory.GetFiles(pastaComprovantes, &quot;*.pdf&quot;)]" sap:VirtualizedContainerService.HintSize="382,136" sap2010:WorkflowViewState.IdRef="JoinPDF_2" OutputFileName="[in_pastaDestino + &quot;\Comprovantes de Pagamento.pdf&quot;]">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
